@@ -1,0 +1,16 @@
+/*Cor inserida no background do menu Nav ao clicar no mesmo*/
+.bg-dark{
+    background: #007bff!important;
+}
+
+/*or da fonte dentro do Menu Nav ao clicar no mesmo*/
+.text-muted {
+    color: #f9fcff!important;
+}
+
+
+/*Cor do ícone Menu Hamburguer*/
+.navbar-dark .navbar-toggler {
+    color: rgb(248, 248, 248);
+    border-color: rgba(248, 248, 248, 0.979);
+}
