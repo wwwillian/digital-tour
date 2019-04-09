@@ -1,16 +1,67 @@
-/*Cor inserida no background do menu Nav ao clicar no mesmo*/
-.bg-dark{
-    background: #007bff!important;
+
+body{
+  background-image: linear-gradient(to right, #159ada, transparent);
+  }
+
+
+/* barra de navegacao */
+nav.navbar-transparente{
+  background: #ADD8E6;
 }
 
-/*or da fonte dentro do Menu Nav ao clicar no mesmo*/
-.text-muted {
-    color: #f9fcff!important;
+.awesome{
+  display: flex;
 }
 
 
-/*Cor do ícone Menu Hamburguer*/
-.navbar-dark .navbar-toggler {
-    color: rgb(248, 248, 248);
-    border-color: rgba(248, 248, 248, 0.979);
+.img-fundo{
+  height: 20em;
+  border: 5px solid white;
+  border-radius: 9px;
+}
+.img-perfil{
+  margin-left: 2em;
+}
+.img-perfil a img{
+    margin-top: 15em;
+    width: 125px;
+    height: 125px;
+    border: 5px solid white;
+    border-radius: 9px;
+}
+
+.btn-alt-foto{
+  position: relative;
+    bottom: 110%;
+    left: 0%;0
+}
+
+.btn-capa {
+    float: right;
+    margin-right: 2em;
+    margin-top: 2em;
+}
+
+
+.img-perfil{
+      position: relative;
+      display: inline-grid;
+}
+
+.btn {
+    border: none;
+    background: #159ada;
+    color: #ffffff;
+    padding: 9px 12px 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    line-height: 22px;
+}
+
+.content {
+  display: inline-block;
+}
+
+.tab-header{
+  margin-top: 4em;
 }
