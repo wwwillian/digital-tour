@@ -1,13 +1,18 @@
 
+/*Cor inserida no background do menu Nav ao clicar no mesmo*/
+header nav.navbar-transparente{
+    background-image: linear-gradient(to right, #4169E1, #00BFFF,#4169E1) !important;
+}
+
+
 body{
   background-image: linear-gradient(to right, #159ada, transparent);
   }
 
 
+
 /* barra de navegacao */
-nav.navbar-transparente{
-  background: #ADD8E6;
-}
+
 
 .awesome{
   display: flex;
@@ -33,7 +38,7 @@ nav.navbar-transparente{
 .btn-alt-foto{
   position: relative;
     bottom: 110%;
-    left: 0%;0
+    left: 0%;
 }
 
 .btn-capa {
@@ -64,4 +69,14 @@ nav.navbar-transparente{
 
 .tab-header{
   margin-top: 4em;
+}
+
+.videos-css {
+  margin-left: 0px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.resize{
+  resize:none;
 }
