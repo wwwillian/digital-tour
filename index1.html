@@ -19,89 +19,76 @@
 
 <body>
 
-  <!--Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Digital Tour</a>
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Novos Lugares" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-
-  <!--Carrossel com menu central-->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="img/001.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>teste image</h5>
-          <p>testando image</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/003.jpg" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>teste image</h5>
-          <p>testando image</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/001.jpg" alt="Third slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>teste image</h5>
-          <p>testando image</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+  
+  <div>
+      <a class="navbar-brand" href="#">DIGITAL TOUR</a>
   </div>
 
-  <!-- nav bar fixo -->
+  <div class="container">
+
+      <!--Carrossel com menu central-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/001.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>teste image</h5>
+              <p>testando image</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/003.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>teste image</h5>
+              <p>testando image</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/001.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>teste image</h5>
+              <p>testando image</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </div>  
+
+  <!-- navbar fixo -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
       aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Hidden brand</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">CADASTRO<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">QUEM SOMOS<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">VEJA<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">VIAGEM<span class="sr-only">(current)</span></a>
         </li>
       </ul>
       <!-- Campo de pesquisa para menu fixo se quisermos -->
@@ -112,116 +99,88 @@
     </div>
   </nav>
 
+<header>
+  <div class="container">
+    
 
-  <!-- Loren  para testar o scroll da page -->
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.Lorem ipsum dolor sit, amet consectetur
-  adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
+    <!--Postagens recentes-->
+      <section class="my-5">
 
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
+        <div class="card-header border-0 font-weight-bold">Leave a reply (logged in user)</div>
 
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quidem libero
-  corporis expedita, qui tenetur natus aut optio quasi, cum eligendi perferendis
-  ab aliquid eaque nesciunt, fugiat distinctio consectetur dignissimos.
+        <div class="d-md-flex flex-md-fill mt-4 px-1">
+          <div class="d-flex justify-content-center mr-md-5">
+            <img class="card-img-100 z-depth-1 mb-4" width="120" height="120" src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg"  alt="avatar">
+          </div>
+          <textarea class="form-control pl-3 pt-3" id="exampleFormControlTextarea1" rows="6" placeholder="Write something here..."></textarea>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-md">Submit</button>
+        </div>
 
+      </section>
+
+      <section class="my-5">
+
+        <div class="card-header border-0 font-weight-bold">Leave a reply (logged in user)</div>
+
+        <div class="d-md-flex flex-md-fill mt-4 px-1">
+          <div class="d-flex justify-content-center mr-md-5">
+            <img class="card-img-100 z-depth-1 mb-4" width="120" height="120" src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg"  alt="avatar">
+          </div>
+          <textarea class="form-control pl-3 pt-3" id="exampleFormControlTextarea1" rows="6" placeholder="Write something here..."></textarea>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-md">Submit</button>
+        </div>
+
+      </section>
+
+      <section class="my-5">
+
+        <div class="card-header border-0 font-weight-bold">Leave a reply (logged in user)</div>
+
+        <div class="d-md-flex flex-md-fill mt-4 px-1">
+          <div class="d-flex justify-content-center mr-md-5">
+            <img class="card-img-100 z-depth-1 mb-4" width="120" height="120" src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg"  alt="avatar">
+          </div>
+          <textarea class="form-control pl-3 pt-3" id="exampleFormControlTextarea1" rows="6" placeholder="Write something here..."></textarea>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-md">Submit</button>
+        </div>
+
+      </section>
+    <!-- <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div><br/> -->
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div><br/>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div><br/>
+  </div>
+
+</header>
+  
   <!-- Footer -->
   <footer class="page-footer font-small mdb-color lighten-3 pt-4">
 
@@ -322,7 +281,7 @@
     <!-- Footer Elements -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <div id="Copyrightcolor" class="footer-copyright text-center py-3">© 2018 Copyright:
       <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
     </div>
     <!-- Copyright -->

@@ -80,3 +80,21 @@ body{
 .resize{
   resize:none;
 }
+
+/*navbar*/
+.nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light{
+  padding: 10px;
+  text-align: center;
+}
+
+
+/*footer*/
+
+.footer-copyright.text-center.py-3{
+  background-color: #31363c
+}
+
+#Copyrightcolor{
+  color: #fff;
+}
+
