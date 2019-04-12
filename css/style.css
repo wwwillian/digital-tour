@@ -80,3 +80,54 @@ body{
 .resize{
   resize:none;
 }
+
+.camigos.camigos {
+  height: 60px;
+  line-height: 42px;
+  border-radius: 21px;
+  background-color: blue;
+}
+.chip.chip-md img {
+  height: 42px;
+  width: 42px;
+}
+
+.chip.chip-lg {
+  height: 52px;
+  line-height: 52px;
+  border-radius: 26px;
+}
+.chip.chip-lg img {
+  height: 52px;
+  width: 52px;
+}
+.img-fundo1{
+  height: 40em;
+  border: 10px solid black;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+}
+.sobre-flex{
+  position: relative;
+  left: 17em;
+}
+.sobre1{
+  display: contents;
+
+}
+.sobre2{
+  transform: rotate(350deg);
+}
+.ul-valores{
+  display: flex;
+}
+
+.cvideos{
+  border-radius: 9px !important;
+}
+
+.ul-header{
+  display: flex;
+  justify-content: space-between;
+}
