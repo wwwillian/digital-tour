@@ -131,3 +131,275 @@ body{
   display: flex;
   justify-content: space-between;
 }
+
+.heading {
+  font-weight: 700;
+  color: #5d4267;
+}
+.card.colorful-card .testimonial-card .card-up {
+  height: 95px;
+}
+.card.colorful-card .testimonial-card .avatar {
+  border: 3px solid #fff !important;
+}
+.card.booking-card {
+  background-color: #c7f2e3;
+}
+.card.booking-card .fa {
+  color: #f7aa00;
+}
+.card.booking-card .card-body .card-text {
+  color: #db2d43;
+}
+.card.card.booking-card .chip {
+  background-color: #87e5da;
+}
+.card.booking-card .card-body hr {
+  border-top: 1px solid #f7aa00;
+}
+.mimosa {
+  background-color: #F0C05A;
+}
+.fuchsia-rose-text {
+  color: #db0075;
+}
+.aqua-sky-text {
+  color: #5cc6c3;
+}
+.mimosa-text {
+  color: #F0C05A;
+}
+.list-inline-item .fas, .list-inline-item .far {
+  font-size: .8rem;
+}
+.chili-pepper-text {
+  color: #9B1B30;
+}
+.collapse-content .fa.fa-heart:hover {
+  color: #f44336 !important;
+}
+.collapse-content .fa.fa-share-alt:hover {
+  color: #0d47a1 !important;
+}
+.card-wrapper.card-action {
+  min-height: 400px;
+}
+.sticky-top{
+  z-index: 99999999;
+}
+
+/*Página Contato*/
+
+
+
+.fundo-contato{
+  background-image: url('../img/contato.jpg');
+  height: 20vh;
+  font-size: 32px;
+  text-align: center;
+  width: 700px;
+  margin: 28px auto;
+  background-color: rgba(255,255,255);
+  margin-block-start: 25px;
+  margin-block-end: 0px;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+}
+
+
+
+#contato{
+  padding: 20px 40px 40px 40px;
+  width: 700px;
+  border-radius: 0px 0px 10px 10px;
+  margin: 0px auto 25px;
+  background-color: rgba(255,255,255);
+}
+
+#contato h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+#contato label {
+  font-size: 20px;
+}
+
+#contato input,
+#contato textarea {
+  background-color: transparent;
+  border: 1px solid #afaaa6;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+}
+
+#contato textarea {
+  resize: none;
+  height: 20vh;
+}
+
+.submit-form {
+  padding: 6px 19px;
+  margin: 9px -17px 2px;
+  float: right;
+  border: 1px solid #027ba3;
+  border-radius: 23px;
+  background-color:  #027ba3;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-form:hover {
+  border: 1px solid #159ada;
+  background-color: #159ada;
+  cursor: pointer;
+  box-shadow:
+  0 8px 16px 0 rgba(0,0,0,0.2),
+  0 6px 20px 0 rgba(0,0,0,0.19);
+  transform: scale(1.05);
+}
+
+
+/*------------- Modal --------------*/
+
+.modal-footer .botaoev{         /* botão enviar do modal */
+    border: 1px solid #027ba3;
+    border-radius: 23px ;
+    background-color: #027ba3;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-footer .botaoev:hover { /* botão enviar do modal */
+    border: 1px solid #159ada ;
+    background-color: #159ada ;
+    cursor: pointer ;
+    box-shadow:
+    0 8px 16px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19) ;
+    transform: scale(1.05) ;
+}
+
+.modal-footer .botaofe{         /* botão fechar do modal */
+    border: 1px solid #a30202;
+    border-radius: 23px ;
+    background-color: #a30202;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-footer .botaofe:hover { /* botão fechar do modal */
+    border: 1px solid #ff0000 ;
+    background-color: #ff0000 ;
+    cursor: pointer ;
+    box-shadow:
+    0 8px 16px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19) ;
+    transform: scale(1.05) ;
+
+
+
+}
+
+/*--------------Pagina de cadastro--------------*/
+
+body{
+    background-image: linear-gradient( to right ,#159ada,#fff );
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fotocadastro{
+    background-image: url(../img/contato.jpg);
+    height: 15vh;
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+    margin: 0px ;
+    background-color: rgba(255,255,255);
+
+    margin-block-end: 2px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+.formulario {
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+form h1 {
+    color: #000;
+    margin: 10px;
+}
+
+.formulario label {
+    margin: 3px;
+    padding: 3px;
+}
+
+.formulario input.form-control {
+    border-radius: 15px;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #afaaa6;
+    height: 22px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.formulario .botaocadas {
+    padding: 6px 19px;
+    margin: 5px;
+    float: right;
+    border: 1px solid #027ba3;
+    border-radius: 23px;
+    background-color: #027ba3;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    display: block;
+    bottom: 50px;
+}
+
+.formulario .botaocadas:hover {
+    border: 1px solid #159ada;
+    background-color: #159ada;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+}
+
+
+/* -------------FAQ----------------- */
+
+
+.caixa2{
+    width: 500px;
+
+}
+
+.btn-link{
+    color: grey;
+    float: left;
+    text-decoration: none;
+
+}
+
+.btn-link:hover{
+    text-decoration: none;
+    font-weight:bold;
+    color: black;
+}
