@@ -1,18 +1,17 @@
 
 /*Cor inserida no background do menu Nav ao clicar no mesmo*/
-header nav.navbar-transparente{
-    background-image: linear-gradient(to right, #4169E1, #00BFFF,#4169E1) !important;
-}
-
-
 body{
   background-image: linear-gradient(to right, #159ada, transparent);
   }
 
-
-
+header nav.navbar-transparente{
+    background-image: linear-gradient(to right, #4169E1, #00BFFF,#4169E1) !important;
+}
 /* barra de navegacao */
 
+.margin-top{
+  margin-top: 40px;
+}
 
 .awesome{
   display: flex;
