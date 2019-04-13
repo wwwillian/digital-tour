@@ -22,8 +22,8 @@
         </div>
         <div class="col-md-4 margin-top">
             <div class="page-header-title">
-                <h5 class="m-b-10">Perfil</h5>
-                <p class="m-b-0"></p>
+                <h5 class="m-b-10">Viagens</h5>
+                <p class="m-b-0">*****</p>
             </div>
         </div>
     </div>

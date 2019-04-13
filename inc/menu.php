@@ -17,7 +17,7 @@
                     <li>
                         <ul class="collapsible collapsible-accordion">
                             <li><a class="collapsible-header waves-effect arrow-r active"><i
-                                        class="sv-slim-icon fas fa-chevron-right"></i> Submit blog<i
+                                        class="sv-slim-icon fas fa-chevron-right"></i> Submit blog<i>
                                         class="fas fa-angle-down rotate-icon"></i></a>
                                 <div class="collapsible-body">
                                     <ul>

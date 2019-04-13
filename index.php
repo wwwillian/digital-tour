@@ -184,19 +184,9 @@ include "inc/headerdif.php";
     </div>
     <!--Grid row-->
 
-    <div class="conteiner sticky-top">
-        <div class="row">
-            <div class="col-lg-12 mx-auto mt-3">
-                <ul class="ul-header mr-5 ">
-                    <li><a href="#" class="h5">Conheça</a></li>
-                    <li><a href="#" class="h5">Quem Somos</a></li>
-                    <li><a href="#" class="h5">Viagem</a></li>
-                    <li><a href="#" class="h5">Cadastre-se</a></li>
-                    <li><a href="#" class="h5">Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <?php
+    include 'inc/headerini.php';
+    ?>
 
     <div class="row">
 
@@ -258,9 +248,9 @@ include "inc/headerdif.php";
                         <div class="card-body card-body-cascade">
 
                             <!-- Label -->
-                            <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Culinary</h5>
+                            <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Gastronomia</h5>
                             <!-- Title -->
-                            <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
+                            <h4 class="font-weight-bold card-title">Experimente diferentes pratos pelo mundo.</h4>
                             <!-- Text -->
                             <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
                                 suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
@@ -292,7 +282,7 @@ include "inc/headerdif.php";
                             <!-- Title -->
                             <h4 class="card-title"><strong>Billy Coleman</strong></h4>
                             <!-- Subtitle -->
-                            <h6 class="font-weight-bold indigo-text py-2">Romantico</h6>
+                            <h6 class="font-weight-bold indigo-text py-2">Baladas</h6>
                             <!-- Text -->
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
                                 ex, recusandae. Facere modi sunt, quod quibusdam.
@@ -330,9 +320,9 @@ include "inc/headerdif.php";
                         <div class="card-body card-body-cascade text-center">
 
                             <!-- Title -->
-                            <h4 class="card-title"><strong>Alison Belmont</strong></h4>
+                            <h4 class="card-title"><strong>Arte</strong></h4>
                             <!-- Subtitle -->
-                            <h5 class="blue-text pb-2"><strong>Graffiti Artist</strong></h5>
+                            <h5 class="blue-text pb-2"><strong>Artes pelo mundo</strong></h5>
                             <!-- Text -->
                             <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
                                 doloremque laudantium, totam rem aperiam. </p>
