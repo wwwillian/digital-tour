@@ -9,7 +9,7 @@
                     <li>
                         <div class="logo-wrapper sn-ad-avatar-wrapper" onloadedmetadata="" <a href="#"><img
                                 src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg" width="90"
-                                class="rounded-circle"><span>Sheldon kupper</span></a>
+                                class="rounded-circle"><span> João Victor</span></a>
                         </div>
                     </li>
                     <!--/. Logo -->

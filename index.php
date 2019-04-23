@@ -15,7 +15,7 @@ include "inc/headerdif.php";
                     <li data-target="#video-carousel-example2" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                    <!-- Primeiro -->
+                    <!-- Primeiro Vídeo-->
                     <div class="carousel-item active ">
                         <div class="view cvideos1">
                             <!--Video-->
@@ -32,9 +32,9 @@ include "inc/headerdif.php";
                             </div>
                         </div>
                     </div>
-                    <!-- Fim Primeiro -->
+                    <!-- Fim Primeiro Vídeo-->
 
-                    <!-- Segundo -->
+                    <!-- Segundo Vídeo -->
                     <div class="carousel-item">
                         <div class="view">
                             <!--Video-->
@@ -51,9 +51,9 @@ include "inc/headerdif.php";
                             </div>
                         </div>
                     </div>
-                    <!-- Fim Segundo -->
+                    <!-- Fim Segundo Vídeo -->
 
-                    <!-- Terceiro -->
+                    <!-- Terceiro Vídeo -->
                     <div class="carousel-item">
                         <div class="view">
                             <!--Video-->

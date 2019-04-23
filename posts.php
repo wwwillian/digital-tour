@@ -16,7 +16,7 @@ include "inc/menu.php";
                 src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg" alt="avatar">
         </div>
         <textarea class="form-control pl-3 pt-3" id="exampleFormControlTextarea1" rows="6"
-            placeholder="Write something here..."></textarea>
+            placeholder="Em que está pensando ?..."></textarea>
     </div>
     <div class="text-center mt-4">
         <button class="btn btn-primary btn-md">Submit</button>

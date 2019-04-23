@@ -4,7 +4,7 @@
         <div class="col-md-4 margin-top">
             <ul class="breadcrumb">
                 <li class="breadcrumb-item text-right">
-                    <a href="index.html"> <i class="fa fa-home"></i> </a>
+                    <a href="index.php"><i class="fa fa-home"></i> </a>
                 </li>
                 <li class="breadcrumb-item">
                     <a href="#">Seu perfil</a>

@@ -20,7 +20,7 @@
                 <a class="nav-link" href="#">Viagem</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Cadastre-se</a>
+                <a class="nav-link" href="cadastro.php">Cadastre-se</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Conheça</a>

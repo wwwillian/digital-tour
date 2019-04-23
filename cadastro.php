@@ -15,10 +15,10 @@ include "inc/header.php";
 
                 <div class="form-inline">
                     <label for="nome">Nome:</label>
-                    <input type="text" class="form-control" id="nome">
+                    <input type="text" class="form-control" id="nome" placeholder="Seu some">
 
                     <label for="sobrenome">Sobrenome:</label>
-                    <input type="text" class="form-control" id="sobrenome">
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Insira seu sobrenome">
 
                 </div>
 
@@ -33,7 +33,7 @@ include "inc/header.php";
 
                 <div class="form-inline">
                     <label for="email">E-mail:</label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail">
 
                     <label for="data">Data de nascimento:</label>
                     <input type="date" class="form-control" id="data">
@@ -41,10 +41,10 @@ include "inc/header.php";
 
                 <div class="form-inline">
                     <label for="senha">Senha:</label>
-                    <input type="password" class="form-control" id="senha">
+                    <input type="password" class="form-control" id="senha" placeholder="Sua senha">
 
                     <label for="telefone">Telefone:</label>
-                    <input type="text" class="form-control" id="telefone">
+                    <input type="text" class="form-control" id="telefone" placeholder="(**)********">
                 </div>
 
 

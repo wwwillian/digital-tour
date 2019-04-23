@@ -7,6 +7,7 @@ body{
 
 header nav.navbar-transparente{
     background-image: linear-gradient(to right, #4169E1, #00BFFF,#4169E1) !important;
+    box-shadow: 1px 1px 5px black;
 }
 /* barra de navegacao */
 
@@ -125,6 +126,8 @@ header nav.navbar-transparente{
 
 .cvideos{
   border-radius: 9px !important;
+  border: 4px solid rgb(33, 101, 202);
+  box-shadow: 1px 1px 4px black;
 }
 
 .ul-header{
@@ -514,3 +517,18 @@ ul {
 }
 }
 
+/* ++++++++++++++++++Sobre Nós+++++++++++++++++++ */
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+
+/* ***********Perfil do Usuário*********** */
+breadcrumb-item text-right{
+  cursor: pointer;
+}
+
+a:link { 
+text-decoration:none; 
+} 

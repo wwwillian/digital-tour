@@ -21,10 +21,10 @@ include "inc/header.php";
             <input type="text" class="form-control" placeholder="Celular" id="telefone" name="celular"><br>
 
             <label for="mensagem">Mensagem</label>
-            <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem"
+            <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem!"
                 required></textarea>
 
-            <a href="#">Voltar para home</a>
+            <a href="index.php">Voltar para home</a>
 
             <button class="submit-form">Enviar</button>
         </form>
