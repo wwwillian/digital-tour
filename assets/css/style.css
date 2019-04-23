@@ -1,7 +1,8 @@
 
 /*Cor inserida no background do menu Nav ao clicar no mesmo*/
 body{
-  background-image: linear-gradient(to right, #159ada, transparent);
+  /* background-image: linear-gradient(to right, #159ada, transparent); */
+  background-color: rgb(241, 240, 240);
   }
 
 header nav.navbar-transparente{
@@ -307,9 +308,7 @@ header nav.navbar-transparente{
 
 /*--------------Pagina de cadastro--------------*/
 
-body{
-    background-image: linear-gradient( to right ,#159ada,#fff );
-}
+
 
 .caixa {
     display: flex;
@@ -438,3 +437,80 @@ form h1 {
   border-radius: 10px 10px 0px 0px;
   color: white;
 }
+
+
+/* ====================Index================ */
+
+div .navind li a{
+  text-decoration: none; 
+}
+
+ul {
+  list-style-type: none;
+  } 
+
+
+
+/* ====================Nav Index (menu hamburguer)==================== */
+
+.navbar span {
+  color: white;
+  font-weight: bold;
+}
+
+/* 
+.navbar-toggler{
+  float: right;
+}
+
+.navbar-expand-lg .navbar-collapse{
+ display: none !important;
+
+}
+
+@media (min-width:540px) and (max-width: 960px){
+
+.navbar-expand-lg .navbar-collapse{
+  display: none !important;
+ 
+ }
+} */
+
+@media (min-width:986px) and (max-width: 3200px){
+  .navbar-expand-lg .navbar-collapse{
+    display: none !important;
+   }
+}
+
+
+
+@media (max-width: 986px){
+  .ul-header {
+    display: none;
+    
+}
+.navbar-collapse {
+ 
+  text-align: center;
+}
+#navbarTogglerDemo01 {
+
+  box-shadow: 0px 15px 10px -15px;
+  background-color: white;
+
+}
+.nav-item {
+
+  border-bottom: 1px solid #e7e7e7;
+
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar {
+  padding: 10px 0 0 !important;
+}
+}
+
