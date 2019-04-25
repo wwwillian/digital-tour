@@ -2,8 +2,9 @@
   include "inc/head.php";
   include "inc/headerfixo.php";
  ?>
- <br>
- <br>
+
+ <br/><br/>
+ 
     <div class="caixa2 container">
         <div id="accordion">
 

@@ -7,9 +7,6 @@
                 <img src="assets/img/logorev1.png" width="60">
                 <span>Digital Tour</span>
             </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-                <i class="fas fa-bars"></i>
-            </button>
 
             <!-- Breadcrumb-->
             <div class="breadcrumb-dn mr-auto">

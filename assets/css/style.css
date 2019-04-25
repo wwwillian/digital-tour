@@ -9,8 +9,8 @@ header nav.navbar-transparente{
     background-image: linear-gradient(to right, #4169E1, #00BFFF,#4169E1) !important;
     box-shadow: 1px 1px 5px black;
 }
-/* barra de navegacao */
 
+/* barra de navegacao */
 .margin-top{
   margin-top: 40px;
 }
@@ -191,10 +191,7 @@ header nav.navbar-transparente{
   z-index: 99999999;
 }
 
-/*Página Contato*/
-
-
-
+/*----------Página Contato----------*/
 .fundo-contato{
   background-image: url('../img/contato.jpg');
   height: 20vh;
@@ -208,8 +205,6 @@ header nav.navbar-transparente{
   border-radius: 10px 10px 0px 0px;
   color: white;
 }
-
-
 
 #contato{
   padding: 20px 40px 40px 40px;
@@ -265,9 +260,7 @@ header nav.navbar-transparente{
   transform: scale(1.05);
 }
 
-
 /*------------- Modal --------------*/
-
 .modal-footer .botaoev{         /* botão enviar do modal */
     border: 1px solid #027ba3;
     border-radius: 23px ;
@@ -304,15 +297,9 @@ header nav.navbar-transparente{
     0 8px 16px 0 rgba(0,0,0,0.2),
     0 6px 20px 0 rgba(0,0,0,0.19) ;
     transform: scale(1.05) ;
-
-
-
 }
 
 /*--------------Pagina de cadastro--------------*/
-
-
-
 .caixa {
     display: flex;
     justify-content: center;
@@ -383,10 +370,7 @@ form h1 {
     transform: scale(1.05);
 }
 
-
 /* -------------FAQ----------------- */
-
-
 .caixa2{
     width: 500px;
 }
@@ -441,7 +425,6 @@ form h1 {
   color: white;
 }
 
-
 /* ====================Index================ */
 
 div .navind li a{
@@ -452,8 +435,6 @@ ul {
   list-style-type: none;
   } 
 
-
-
 /* ====================Nav Index (menu hamburguer)==================== */
 
 .navbar span {
@@ -461,31 +442,12 @@ ul {
   font-weight: bold;
 }
 
-/* 
-.navbar-toggler{
-  float: right;
-}
-
-.navbar-expand-lg .navbar-collapse{
- display: none !important;
-
-}
-
-@media (min-width:540px) and (max-width: 960px){
-
-.navbar-expand-lg .navbar-collapse{
-  display: none !important;
- 
- }
-} */
-
+/* ----------Media Queries---------- */
 @media (min-width:986px) and (max-width: 3200px){
   .navbar-expand-lg .navbar-collapse{
     display: none !important;
    }
 }
-
-
 
 @media (max-width: 986px){
   .ul-header {
@@ -523,7 +485,6 @@ ul {
   font-weight: bold;
 }
 
-
 /* ***********Perfil do Usuário*********** */
 breadcrumb-item text-right{
   cursor: pointer;
@@ -532,3 +493,4 @@ breadcrumb-item text-right{
 a:link { 
 text-decoration:none; 
 } 
+
