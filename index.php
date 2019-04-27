@@ -67,7 +67,7 @@ include "inc/headerdif.php";
                         <div class="carousel-caption">
                             <div class="animated fadeInDown">
                                 <h3 class="h3-responsive">Conheça!</h3>
-                                <p>Novos lugar.<p>
+                                <p>Novos lugares.<p>
                             </div>
                         </div>
                     </div>
@@ -91,8 +91,8 @@ include "inc/headerdif.php";
 <!--Fim do conteiner-->
 
 <!-- Imagens Novo conteiner-->
-<div class="container">
-    <div class="row mt-3 mb-4 mr-3 ml-1">
+<div class=" container">
+    <div class="imgcar row mt-3 mb-4 mr-3 ml-1">
         <div class="col-lg-2 col-md-12 mb-4">
 
             <div class="view overlay z-depth-1-half">
@@ -167,7 +167,7 @@ include "inc/headerdif.php";
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-2 col-md-6 mb-4">
+        <div class="imgcar col-lg-2 col-md-6 mb-4">
 
             <!--Image-->
             <div class="view overlay z-depth-1-half">
@@ -194,7 +194,7 @@ include "inc/headerdif.php";
             <hr>
             <div class="list-group-item">
 
-                <p class="mb-0"><span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span><img
+                <p class="mb-0"><span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span><img class="fotoperf"
                         src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" alt="img perfil"
                         width="120"> </i> <span class="glyphicon glyphicon-star-empt" aria-hedden="true">Lorem ipsum
                         dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -205,7 +205,7 @@ include "inc/headerdif.php";
             </div>
             <hr>
             <div class="list-group-item">
-                <p class="mb-0"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
+                <p class="mb-0"><img class="fotoperf" src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
                         alt="img perfil" width="120"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -214,7 +214,7 @@ include "inc/headerdif.php";
             </div>
             <hr>
             <div class="list-group-item">
-                <p class="mb-0"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
+                <p class=" mb-0"><img class="fotoperf" src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
                         alt="img perfil" width="120"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -248,15 +248,13 @@ include "inc/headerdif.php";
                         <div class="card-body card-body-cascade">
 
                             <!-- Label -->
-                            <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Gastronomia</h5>
+                            <!-- <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Gastronomia</h5> -->
                             <!-- Title -->
                             <h4 class="font-weight-bold card-title">Experimente diferentes pratos pelo mundo.</h4>
                             <!-- Text -->
                             <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
                                 suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-                            <!-- Button -->
-                            <a class="btn btn-unique">Button</a>
-
+                            
                         </div>
 
                     </div>
@@ -281,21 +279,11 @@ include "inc/headerdif.php";
 
                             <!-- Title -->
                             <h4 class="card-title"><strong>Billy Coleman</strong></h4>
-                            <!-- Subtitle -->
-                            <h6 class="font-weight-bold indigo-text py-2">Baladas</h6>
                             <!-- Text -->
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
                                 ex, recusandae. Facere modi sunt, quod quibusdam.
                             </p>
-
-                            <!-- Facebook -->
-                            <a type="button" class="btn-floating btn-small btn-fb"><i class="fab fa-facebook-f"></i></a>
-                            <!-- Twitter -->
-                            <a type="button" class="btn-floating btn-small btn-tw"><i class="fab fa-twitter"></i></a>
-                            <!-- Google + -->
-                            <a type="button" class="btn-floating btn-small btn-dribbble"><i
-                                    class="fab fa-dribbble"></i></a>
-
+                            
                         </div>
 
                     </div>
@@ -321,19 +309,10 @@ include "inc/headerdif.php";
 
                             <!-- Title -->
                             <h4 class="card-title"><strong>Arte</strong></h4>
-                            <!-- Subtitle -->
-                            <h5 class="blue-text pb-2"><strong>Artes pelo mundo</strong></h5>
                             <!-- Text -->
                             <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
                                 doloremque laudantium, totam rem aperiam. </p>
-
-                            <!-- Linkedin -->
-                            <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
-                            <!-- Twitter -->
-                            <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a>
-                            <!-- Dribbble -->
-                            <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
-
+                           
                         </div>
 
                     </div>
@@ -363,17 +342,12 @@ include "inc/headerdif.php";
 
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
-
-                                <!-- Label -->
-                                <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Culinary</h5>
                                 <!-- Title -->
                                 <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
                                 <!-- Text -->
                                 <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
                                     corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-                                <!-- Button -->
-                                <a class="btn btn-unique">Button</a>
-
+                                
                             </div>
 
                         </div>
@@ -398,23 +372,10 @@ include "inc/headerdif.php";
 
                                 <!-- Title -->
                                 <h4 class="card-title"><strong>Billy Coleman</strong></h4>
-                                <!-- Subtitle -->
-                                <h6 class="font-weight-bold indigo-text py-2">Web developer</h6>
                                 <!-- Text -->
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
                                 </p>
-
-                                <!-- Facebook -->
-                                <a type="button" class="btn-floating btn-small btn-fb"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <!-- Twitter -->
-                                <a type="button" class="btn-floating btn-small btn-tw"><i
-                                        class="fab fa-twitter"></i></a>
-                                <!-- Google + -->
-                                <a type="button" class="btn-floating btn-small btn-dribbble"><i
-                                        class="fab fa-dribbble"></i></a>
-
                             </div>
 
                         </div>
@@ -440,18 +401,9 @@ include "inc/headerdif.php";
 
                                 <!-- Title -->
                                 <h4 class="card-title"><strong>Alison Belmont</strong></h4>
-                                <!-- Subtitle -->
-                                <h5 class="blue-text pb-2"><strong>Graffiti Artist</strong></h5>
                                 <!-- Text -->
                                 <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem
                                     accusantium doloremque laudantium, totam rem aperiam. </p>
-
-                                <!-- Linkedin -->
-                                <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
-                                <!-- Twitter -->
-                                <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a>
-                                <!-- Dribbble -->
-                                <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
 
                             </div>
                         </div>

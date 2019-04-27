@@ -1,6 +1,6 @@
 <?php
 include "inc/head.php";
-include "inc/headerfixo.php";
+include "inc/headerdif.php";
 ?>
 
 <div class="container mt-5 img-fundo1" style="background-image: url('assets/img/about-bg_(2).jpg')">

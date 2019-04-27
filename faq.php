@@ -1,6 +1,6 @@
 <?php
   include "inc/head.php";
-  include "inc/headerfixo.php";
+  include "inc/headerdif.php";
  ?>
 
  <br/><br/>

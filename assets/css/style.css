@@ -125,9 +125,7 @@ header nav.navbar-transparente{
 }
 
 .cvideos{
-  border-radius: 9px !important;
-  border: 4px solid rgb(33, 101, 202);
-  box-shadow: 1px 1px 4px black;
+  border: 2px solid rgba(117, 120, 125, 0.26);
 }
 
 .ul-header{
@@ -429,11 +427,18 @@ form h1 {
 
 div .navind li a{
   text-decoration: none; 
+  color: black;
 }
 
 ul {
   list-style-type: none;
   } 
+
+  .list-group-item .fotoperf{
+    border-radius: 50%;
+    width: 90px;
+    margin: 4px;
+  }
 
 /* ====================Nav Index (menu hamburguer)==================== */
 
@@ -441,6 +446,22 @@ ul {
   color: white;
   font-weight: bold;
 }
+
+/* ++++++++++++++++++Sobre Nós+++++++++++++++++++ */
+.navbar-light .navbar-nav .nav-link {
+  color: gray;
+  font-weight: bold;
+}
+
+/* ***********Perfil do Usuário*********** */
+breadcrumb-item text-right{
+  cursor: pointer;
+}
+
+a:link { 
+text-decoration:none; 
+} 
+
 
 /* ----------Media Queries---------- */
 @media (min-width:986px) and (max-width: 3200px){
@@ -477,20 +498,10 @@ ul {
 .navbar {
   padding: 10px 0 0 !important;
 }
+
+.imgcar{
+  display: none;
+}
 }
 
-/* ++++++++++++++++++Sobre Nós+++++++++++++++++++ */
-.navbar-light .navbar-nav .nav-link {
-  color: white;
-  font-weight: bold;
-}
-
-/* ***********Perfil do Usuário*********** */
-breadcrumb-item text-right{
-  cursor: pointer;
-}
-
-a:link { 
-text-decoration:none; 
-} 
 

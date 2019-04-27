@@ -4,20 +4,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto text-center mt-4">
                 <ul class="list-inline text-center">
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
+                                        
                     <li class="list-inline-item">
                         <a href="#">
                             <span class="fa-stack fa-lg">
