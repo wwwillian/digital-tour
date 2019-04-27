@@ -7,7 +7,7 @@ include "inc/headerdif.php";
     <section class="pagina-contato margin-top mt-5 pt-3">
 
         <div class="fundo-contato">
-            <span>Contato</span>
+            <span class="SpanFaqContatoCadastro">Contato</span>
         </div>
 
         <form id="contato">

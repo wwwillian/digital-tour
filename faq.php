@@ -9,7 +9,7 @@
         <div id="accordion">
 
             <div class="fundo-faq">
-                <span class="SpanFaq">FAQ</span>
+                <span class="SpanFaqContatoCadastro">FAQ</span>
             </div>
 
             <div class="card">

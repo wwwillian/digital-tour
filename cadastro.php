@@ -9,7 +9,7 @@ include "inc/headerdif.php";
         <section>
 
             <div class="fotocadastro">
-                <span>Cadastro</span>
+                <span class="SpanFaqContatoCadastro">Cadastro</span>
             </div>
             <form action="/action_page.php">
 
