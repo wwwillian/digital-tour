@@ -105,15 +105,20 @@ header nav.navbar-transparente{
 .img-fundo1{
   height: 40em;
   /* border: 10px solid black; */
-  border-radius: 9px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   box-shadow: 1px 1px 10px black;
-  max-width:730px;
-    max-height:300px;
+  max-width:850px;
+    max-height:340px;
     width: auto;
     /* height: auto; */
 }
+/* Border top iMG faleconosco */
+.borda hr{
+  border-top:24px solid;
+}
+
 .sobre-flex{
   position: relative;
   left: 17em;

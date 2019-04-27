@@ -2,23 +2,16 @@
 include "inc/head.php";
 include "inc/headerdif.php";
 ?>
-
-<div class="container mt-4 img-fundo1" style="background-image: url('assets/img/about-bg_(2).jpg')">
-    <!-- <div class="row sobre2 mt-5 pt-5">
-        <div class="col-lg-8 col-md-10 sobre1">
-            <div class="page-heading sobre-flex">
-                <h1 class="font-weight-bold">Sobre Nós</h1>
-                <span class="subheading font-weight-bold">Embarque nessa viagem!</span>
-            </div>
-        </div>
-    </div> -->
+<span class="borda"><hr/></span>
+<div class="container mt-5 img-fundo1" style="background-image: url('assets/img/Viagem.jpg')">
 </div>
 </header>
 
 <!-- Main Content -->
 <div class="container mt-5">
     <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-9 col-md-10 mx-auto">
+            <h1 class="quemSomos">Quem somos ?  Somos assim.. <style>.quemSomos {text-align: center;}</style> </h1>
             <p>Somos um grupo de amigos, <strong>apaixonados por viajar e conhecer lugares e pessoas novas</strong>.
                 Amamos a programação, tecnologia e inovar. Nosso propósito é ajudar as pessoas a terem
                 <strong>experiências únicas e momentos inesquecíveis</strong>. <strong>Queremos ajudar você a realizar o
