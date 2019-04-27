@@ -3,15 +3,15 @@ include "inc/head.php";
 include "inc/headerdif.php";
 ?>
 
-<div class="container mt-5 img-fundo1" style="background-image: url('assets/img/about-bg_(2).jpg')">
-    <div class="row sobre2 mt-5 pt-5">
+<div class="container mt-4 img-fundo1" style="background-image: url('assets/img/about-bg_(2).jpg')">
+    <!-- <div class="row sobre2 mt-5 pt-5">
         <div class="col-lg-8 col-md-10 sobre1">
             <div class="page-heading sobre-flex">
                 <h1 class="font-weight-bold">Sobre Nós</h1>
                 <span class="subheading font-weight-bold">Embarque nessa viagem!</span>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 </header>
 
