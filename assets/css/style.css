@@ -8,6 +8,14 @@ body{
 header nav.navbar-transparente{
     background-image: linear-gradient(to right, #4169E1, #00BFFF,#4169E1) !important;
     box-shadow: 1px 1px 5px black;
+    height: 50px;
+}
+
+.navbar span{
+  cursor: default;
+}
+a:not([href]):not([tabindex]){
+  cursor: pointer;
 }
 
 /* barra de navegacao */
@@ -196,7 +204,7 @@ header nav.navbar-transparente{
   min-height: 400px;
 }
 .sticky-top{
-  z-index: 99999999;
+  z-index: 1030;
 }
 
 /*----------Página Contato----------*/
@@ -351,7 +359,7 @@ form h1 {
     background-color: transparent;
     outline: none;
     border: 1px solid #afaaa6;
-    height: 22px;
+    height: 30px;
     display: inline-block;
     margin: 5px;
 }
@@ -458,6 +466,29 @@ ul {
     margin: 4px;
   }
 
+  /*===================Nav outras paginas externas===================== */
+/* .collapse .navop{
+ 
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center; 
+  
+}
+.navbar-expand-lg .navbar-collapse{
+  display: inline-block !important;
+  flex-basis: auto;
+}
+
+.collapse .navop li a{
+  color: #000 !important;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight:normal !important;
+  margin:2px;
+  
+} */
+
+
 /* ====================Nav Index (menu hamburguer)==================== */
 
 .navbar span {
@@ -483,9 +514,31 @@ text-decoration:none;
 
 /* ----------Media Queries---------- */
 @media (min-width:986px) and (max-width: 3200px){
-  .navbar-expand-lg .navbar-collapse{
+  .navb  .navb1 ul li{
     display: none !important;
    }
+
+   .collapse .navop{
+ 
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center; 
+  
+}
+.navbar-expand-lg .navbar-collapse{
+  display: inline-block !important;
+  flex-basis: auto;
+}
+
+.collapse .navop li a{
+  color: #000 !important;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight:normal !important;
+  margin:2px;
+  
+}
+
 }
 
 @media (max-width: 986px){

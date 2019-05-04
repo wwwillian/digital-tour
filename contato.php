@@ -1,6 +1,6 @@
 <?php
 include "inc/head.php";
-include "inc/headerdif.php";
+include "inc/headerdif2.php";
 ?>
 
 <div class="container">

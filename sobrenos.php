@@ -1,6 +1,6 @@
 <?php
 include "inc/head.php";
-include "inc/headerdif.php";
+include "inc/headerdif2.php";
 ?>
 <span class="borda"><hr/></span>
 <div class="container mt-5 img-fundo1" style="background-image: url('assets/img/Viagem.jpg')"></div>
