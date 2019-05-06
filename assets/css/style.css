@@ -88,6 +88,7 @@ a:not([href]):not([tabindex]){
 
 .resize{
   resize:none;
+  width: 100%;
 }
 
 .camigos.camigos {
@@ -452,13 +453,13 @@ text-shadow: 2px 2px black;
 /* ====================Index================ */
 
 div .navind li a{
-  text-decoration: none; 
+  text-decoration: none;
   color: black;
 }
 
 ul {
   list-style-type: none;
-  } 
+  }
 
   .list-group-item .fotoperf{
     border-radius: 50%;
@@ -468,11 +469,11 @@ ul {
 
   /*===================Nav outras paginas externas===================== */
 /* .collapse .navop{
- 
+
   display: flex;
   justify-content: space-evenly;
-  text-align: center; 
-  
+  text-align: center;
+
 }
 .navbar-expand-lg .navbar-collapse{
   display: inline-block !important;
@@ -485,7 +486,7 @@ ul {
   text-decoration: none;
   font-weight:normal !important;
   margin:2px;
-  
+
 } */
 
 
@@ -507,9 +508,9 @@ breadcrumb-item text-right{
   cursor: pointer;
 }
 
-a:link { 
-text-decoration:none; 
-} 
+a:link {
+text-decoration:none;
+}
 
 
 /* ----------Media Queries---------- */
@@ -519,11 +520,11 @@ text-decoration:none;
    }
 
    .collapse .navop{
- 
+
   display: flex;
   justify-content: space-evenly;
-  text-align: center; 
-  
+  text-align: center;
+
 }
 .navbar-expand-lg .navbar-collapse{
   display: inline-block !important;
@@ -536,7 +537,7 @@ text-decoration:none;
   text-decoration: none;
   font-weight:normal !important;
   margin:2px;
-  
+
 }
 
 }
@@ -544,10 +545,10 @@ text-decoration:none;
 @media (max-width: 986px){
   .ul-header {
     display: none;
-    
+
 }
 .navbar-collapse {
- 
+
   text-align: center;
 }
 #navbarTogglerDemo01 {
@@ -574,5 +575,3 @@ text-decoration:none;
   display: none;
 }
 }
-
-

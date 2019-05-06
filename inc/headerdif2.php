@@ -3,29 +3,29 @@
         <!-- <a href="index.html" class="navbar-brand"> -->
         <a href="index.php"><img src="assets/img/logorev1.png" width="60"></a>
         <span href="index.php" >Digital Tour</span>
-        
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
-        </button>   
+        </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <!-- <a class="navbar-brand" href="#">DIGITAL TOUR</a> -->
-            <ul class="navop navbar-nav mr-auto mt-2 mt-lg-0">    
-                <li class="nav-item ">
-                <a class="h5 nav-link" data-toggle="modal" data-target="#exampleModal">Login</a>
-                </li>
-                <li class="nav-item">
-                <a class="h5 nav-link" href="sobrenos.php">Quem Somos</a>
-                </li>
-                <li class="nav-item">
-                <a class="h5 nav-link" href="faq.php">FAQ</a>
-                </li>
-                <li class="nav-item">
-                <a class="h5 nav-link" href="cadastro.php">Cadastre-se</a>
-                </li>
-                <li class="nav-item">
-                <a class="h5 nav-link" href="contato.php">Contato</a>
-                </li>
-            </ul>
+            <ul class="navop navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item exibindo">
+                <a class="h5 nav-link" data-toggle="modal" data-target="#exampleModal"> <i class="fas fa-user"></i> Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="h5 nav-link" href="sobrenos.php"><i class="fas fa-globe"></i> Quem Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="h5 nav-link" href="faq.php"> <i class="fas fa-info"></i>  FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="h5 nav-link" href="cadastro.php"><i class="fas fa-comments"></i> Chat</a>
+              </li>
+              <li class="nav-item">
+                <a class="h5 nav-link" href="contato.php"><i class="fas fa-envelope"></i> Contato</a>
+              </li>
+          </ul>
         </div>
     </nav>
 </header>
@@ -40,7 +40,7 @@
         </button>
       </div>
       <div class="modal-body">
-          
+
               <div class="form-group">
                 <label for="exampleDropdownFormEmail2">E-mail:</label>
                 <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="E-mail">
@@ -56,8 +56,8 @@
                 </label>
                 <a href="#">Esqueceu sua senha?</a>
               </div>
-             
-        
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>

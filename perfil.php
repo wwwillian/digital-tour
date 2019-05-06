@@ -1,6 +1,6 @@
 <?php
 include "inc/head.php";
-include "inc/header.php";
+include "inc/headerdif2.php";
 include "inc/barrapesquisa.php";
 include "inc/menu.php"
 ?>
@@ -12,12 +12,11 @@ include "inc/menu.php"
         <a class="btn btn-primary btn-embossed btn-capa" data-toggle="modal" href="#">Alterar Capa</a>
         <div class="wrapper"></div>
         <div class="img-perfil">
-            <a href="#"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" alt="img perfil"
-                    width="120"></a>
+            <a href="#"><img src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg"></a>
             <a href="#" class="btn btn-primary btn-small btn-alt-foto" data-toggle="modal">Alterar Foto</a>
         </div>
         <div class="content">
-            <h1 class="perfil">Sheldon Cupper</h1>
+            <h1 class="perfil">João Victor</h1>
         </div>
     </div>
 </div>
@@ -26,7 +25,7 @@ include "inc/menu.php"
 <div class="row">
     <div class="col-lg-12">
 
-        <div class="tab-header card">
+        <div class="tab-header card" id="myLinks">
             <ul class="nav nav-tabs md-tabs tab-timeline" role="tablist" id="mytab">
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#tposts" role="tab">Posts</a>
@@ -1941,7 +1940,7 @@ include "inc/menu.php"
                     <div class="card-header">
                         <h5 class="card-header-text mt-2">Publique seu Posts</h5>
                         <form class="form-group" action="index.html" method="post">
-                            <textarea name="posts" class="resize" rows="8" cols="80"></textarea>
+                            <textarea name="posts" class="resize"></textarea>
                             <button id="edit-btn" type="button"
                                 class="btn btn-sm btn-primary waves-effect waves-light f-right">Enviar</button>
                         </form>
