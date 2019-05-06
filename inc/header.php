@@ -1,14 +1,13 @@
 <!--<header>-->
-<header>
-    <nav
-        class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar navbar-light double-nav navbar-transparente">
+<!-- <header>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar navbar-light double-nav navbar-transparente">
         <div class="container">
             <a href="index.php" class="navbar-brand">
                 <img src="assets/img/logorev1.png" width="60">
                 <span>Digital Tour</span>
             </a>
 
-            <!--Breadcrumb-->
+
             <div class="breadcrumb-dn mr-auto">
                 <p></p>
             </div>
@@ -38,4 +37,4 @@
                 </li>
             </ul>
         </div>
-    </nav> 
+    </nav>  -->
