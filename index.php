@@ -91,12 +91,56 @@ include "inc/headerdif.php";
 <!--Fim do conteiner-->
 
 <!-- Imagens Novo conteiner-->
-<div class=" container">
+<div id="efeito" class=" container">
     <div class="imgcar row mt-3 mb-4 mr-3 ml-1">
+        <div class="col-lg-2 col-md- mb-12">
+            <div class="view overlay z-depth-1-half">
+                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid"
+                    alt="">
+                <a href="">
+                    <div class="mask rgba-white-light"></div>
+                </a>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-12 mb-12">
+
+            <!--Image-->
+            <div id="efeito" class="view overlay z-depth-1-half">
+                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
+                    alt="">
+                <a href="">
+                    <div class="mask rgba-white-light"></div>
+                </a>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4">
+
+            <!--Image-->
+            <div id="efeito" class="view overlay z-depth-1-half">
+                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
+                    alt="">
+                <a href="">
+                    <div class="mask rgba-white-light"></div>
+                </a>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
         <div class="col-lg-2 col-md-12 mb-4">
 
-            <div class="view overlay z-depth-1-half">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid"
+            <!--Image-->
+            <div id="efeito" class="view overlay z-depth-1-half">
+                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
                     alt="">
                 <a href="">
                     <div class="mask rgba-white-light"></div>
@@ -110,53 +154,8 @@ include "inc/headerdif.php";
         <div class="col-lg-2 col-md-6 mb-4">
 
             <!--Image-->
-            <div class="view overlay z-depth-1-half">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
-                    alt="">
-                <a href="">
-                    <div class="mask rgba-white-light"></div>
-                </a>
-            </div>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-2 col-md-6 mb-4">
-
-            <!--Image-->
-            <div class="view overlay z-depth-1-half">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
-                    alt="">
-                <a href="">
-                    <div class="mask rgba-white-light"></div>
-                </a>
-            </div>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-2 col-md-12 mb-4">
-
-            <!--Image-->
-            <div class="view overlay z-depth-1-half">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
-                    alt="">
-                <a href="">
-                    <div class="mask rgba-white-light"></div>
-                </a>
-            </div>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-2 col-md-6 mb-4">
-
-            <!--Image-->
-            <div class="view overlay z-depth-1-half">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
+            <div id="efeito" class="view overlay z-depth-1-half">
+                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
                     alt="">
                 <a href="">
                     <div class="mask rgba-white-light"></div>
@@ -170,8 +169,8 @@ include "inc/headerdif.php";
         <div class="imgcar col-lg-2 col-md-6 mb-4">
 
             <!--Image-->
-            <div class="view overlay z-depth-1-half">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid"
+            <div id="efeito" class="view overlay z-depth-1-half">
+                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid"
                     alt="">
                 <a href="">
                     <div class="mask rgba-white-light"></div>

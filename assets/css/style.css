@@ -575,4 +575,23 @@ text-decoration:none;
 }
 }
 
+/* ----------Efeito de Transição abaixo do carrossel nas imagens da page Index---------------//----------- */
 
+div#efeito img#transition{
+    float: left;
+    width: 120px;
+    height: 90px;
+    background: white;
+    -webkit-transition: width 2s, height 4s; /* ------For Safari 3.1 to 6.0------ */
+    transition: all .3s ease-in;
+    margin: 10px;
+    box-shadow: 1px 1px 9px black;
+    border: 4px solid white;
+    }
+    
+    div#efeito img#transition:hover {
+    width: 155px;
+    height: 155px;
+    }
+
+/* -------------------------//--------------------------------//---------------------------------- */
