@@ -3,7 +3,7 @@ include "inc/head.php";
 include "inc/headerdif2.php";
 ?>
 
-<div class="caixa container">
+<div class="caixa container formca">
 
     <div class="formulario">
         <section>

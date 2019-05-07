@@ -322,6 +322,7 @@ a:not([href]):not([tabindex]){
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
 
 .fotocadastro{
@@ -341,6 +342,7 @@ a:not([href]):not([tabindex]){
 .formulario {
     border-radius: 10px;
     background-color: #FFF;
+    display: block;
 }
 
 form h1 {
@@ -397,6 +399,10 @@ form h1 {
     float: left;
     text-decoration: none;
 
+}
+.botaoresp{
+  background-color: transparent !important;
+  font-size: 16px !important;
 }
 
 .btn-link:hover{
@@ -574,25 +580,87 @@ text-decoration:none;
 .imgcar{
   display: none;
 }
+
+.ul-valores{
+  display: inline-block;
+}
+
+}
+@media (min-width:768px) and (max-width: 992px){
+  .img-fundo1{
+    height: 350px;
+    width: 720px ;
+  }
+
+  #accordion{
+    width: 700px;
+  }
+  .fundo-faq{
+    width: 700px;
+  }
+}
+
+
+@media (min-width:576px) and (max-width: 768px){
+  .img-fundo1{
+    height: 400px;
+    width: 570px ;
+  }
+  .ul-valores{
+    margin: 100px;
+  }
+  #accordion{
+    width: 540px;
+  }
+  .fundo-faq{
+    width: 540px;
+  }
+}
+
+@media (min-width:420px) and (max-width: 576px){
+  .img-fundo1{
+    height: 350px;
+    width: 470px ;
+  }
+  #accordion{
+    width: 420px;
+  }
+  .fundo-faq{
+    width: 420px;
+  }
+  
+}
+
+@media (min-width:360px) and (max-width:420px){
+  #accordion{
+    width: 290px;
+  }
+  .fundo-faq{
+    width: 290px;
+  }
+.botaoresp{
+  font-size: 10px !important;
+  
+}
 }
 
 /* ----------Efeito de Transição abaixo do carrossel nas imagens da page Index---------------//----------- */
 
 div#efeito img#transition{
     float: left;
-    width: 120px;
-    height: 90px;
-    background: white;
-    -webkit-transition: width 2s, height 4s; /* ------For Safari 3.1 to 6.0------ */
+    width: 150px;
+    height: 70px;
+    /* background: white; */
+    -webkit-transition: width 2s, height 2s; /* ------For Safari 3.1 to 6.0------ */
     transition: all .3s ease-in;
     margin: 10px;
-    box-shadow: 1px 1px 9px black;
-    border: 4px solid white;
+    /* box-shadow: 1px 1px 9px black; */
+    /* border: 4px solid white; */
     }
     
     div#efeito img#transition:hover {
-    width: 155px;
-    height: 155px;
+    width: 185px;
+    height: 100px;
     }
 
 /* -------------------------//--------------------------------//---------------------------------- */

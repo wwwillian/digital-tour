@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-header" id="heading1">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1"
+                        <button class="btn btn-link collapsed botaoresp" data-toggle="collapse" data-target="#collapse1"
                             aria-expanded="false" aria-controls="collapse1">
                             Qual melhor época para ir para Orlando ?
                         </button>
@@ -31,7 +31,7 @@
             <div class="card">
                 <div class="card-header" id="heading2">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2"
+                        <button class="btn btn-link collapsed botaoresp" data-toggle="collapse" data-target="#collapse2"
                             aria-expanded="false" aria-controls="collapse2">
                             O que é melhor: ir de excursão ou por conta própria ?
                         </button>
@@ -46,7 +46,7 @@
             <div class="card">
                 <div class="card-header" id="heading3">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3"
+                        <button class="btn btn-link collapsed botaoresp" data-toggle="collapse" data-target="#collapse3"
                             aria-expanded="false" aria-controls="collapse3">
                             Quero fazer compras em Orlando, é um bom lugar ?
                         </button>
@@ -61,7 +61,7 @@
             <div class="card">
                 <div class="card-header" id="heading4">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4"
+                        <button class="btn btn-link collapsed botaoresp" data-toggle="collapse" data-target="#collapse4"
                             aria-expanded="false" aria-controls="collapseTwo">
                             O que devo levar na mala para Orlando?
                         </button>
@@ -76,7 +76,7 @@
             <div class="card">
                 <div class="card-header" id="heading5">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5"
+                        <button class="btn btn-link collapsed botaoresp" data-toggle="collapse" data-target="#collapse5"
                             aria-expanded="false" aria-controls="collapse5">
                             Não falo inglês, como posso fazer?
                         </button>
@@ -91,7 +91,7 @@
             <div class="card">
                 <div class="card-header" id="heading6">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6"
+                        <button class="btn btn-link collapsed botaoresp" data-toggle="collapse" data-target="#collapse6"
                             aria-expanded="false" aria-controls="collapse6">
                             O que é o fastpass?
                         </button>
