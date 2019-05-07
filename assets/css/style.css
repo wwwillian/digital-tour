@@ -615,6 +615,14 @@ text-decoration:none;
   .fundo-faq{
     width: 540px;
   }
+
+  #contato{
+    width: 540px;
+  }
+
+  .fundo-contato{
+   width: 540px;
+  }
 }
 
 @media (min-width:420px) and (max-width: 576px){
@@ -628,10 +636,18 @@ text-decoration:none;
   .fundo-faq{
     width: 420px;
   }
+
+  #contato{
+    width: 420px;
+  }
+
+  .fundo-contato{
+   width: 420px;
+  }
   
 }
 
-@media (min-width:360px) and (max-width:420px){
+@media (min-width:260px) and (max-width:420px){
   #accordion{
     width: 290px;
   }
@@ -641,6 +657,13 @@ text-decoration:none;
 .botaoresp{
   font-size: 10px !important;
   
+}
+#contato{
+  width: 290px;
+}
+
+.fundo-contato{
+ width: 290px;
 }
 }
 
