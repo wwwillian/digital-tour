@@ -36,10 +36,10 @@ include "inc/headerdif2.php";
                 <div class="mt-5 mb-5">
                     <h2 class="h6 text-center">Valores:</h2>
                     <ul class="ul-valores">
-                        <li>•Satisfação do cliente.</li>
-                        <li>•Valorização e respeito às pessoas.</li>
-                        <li>•Responsabilidade social.</li>
-                        <li>•Respeito ao Meio Ambiente.</li>
+                        <li>Satisfação do cliente.</li>
+                        <li>Valorização e respeito às pessoas.</li>
+                        <li>Responsabilidade social.</li>
+                        <li>Respeito ao Meio Ambiente.</li>
                     </ul>
 
                 </div>

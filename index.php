@@ -6,9 +6,9 @@ include "inc/headerdif.php";
 <!--Inicio conteiner-->
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 margin-top">
             <!--Inicio Carousel-->
-            <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+            <div id="video-carousel-example2" class="carousel slide carousel-fade margin-top" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
                     <li data-target="#video-carousel-example2" data-slide-to="1"></li>
@@ -91,26 +91,12 @@ include "inc/headerdif.php";
 <!--Fim do conteiner-->
 
 <!-- Imagens Novo conteiner-->
-<div id="efeito" class=" container">
+<div class=" container">
     <div class="imgcar row mt-3 mb-4 mr-3 ml-1">
-        <div class="col-lg-2 col-md- mb-12">
+        <div class="col-lg-2 col-md-12 mb-4">
+
             <div class="view overlay z-depth-1-half">
-                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid"
-                    alt="">
-                <a href="">
-                    <div class="mask rgba-white-light"></div>
-                </a>
-            </div>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-2 col-md-12 mb-12">
-
-            <!--Image-->
-            <div id="efeito" class="view overlay z-depth-1-half">
-                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid"
                     alt="">
                 <a href="">
                     <div class="mask rgba-white-light"></div>
@@ -124,8 +110,23 @@ include "inc/headerdif.php";
         <div class="col-lg-2 col-md-6 mb-4">
 
             <!--Image-->
-            <div id="efeito" class="view overlay z-depth-1-half">
-                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
+            <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
+                    alt="">
+                <a href="">
+                    <div class="mask rgba-white-light"></div>
+                </a>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4">
+
+            <!--Image-->
+            <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
                     alt="">
                 <a href="">
                     <div class="mask rgba-white-light"></div>
@@ -139,8 +140,8 @@ include "inc/headerdif.php";
         <div class="col-lg-2 col-md-12 mb-4">
 
             <!--Image-->
-            <div id="efeito" class="view overlay z-depth-1-half">
-                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
+            <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
                     alt="">
                 <a href="">
                     <div class="mask rgba-white-light"></div>
@@ -154,8 +155,8 @@ include "inc/headerdif.php";
         <div class="col-lg-2 col-md-6 mb-4">
 
             <!--Image-->
-            <div id="efeito" class="view overlay z-depth-1-half">
-                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
+            <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
                     alt="">
                 <a href="">
                     <div class="mask rgba-white-light"></div>
@@ -169,8 +170,8 @@ include "inc/headerdif.php";
         <div class="imgcar col-lg-2 col-md-6 mb-4">
 
             <!--Image-->
-            <div id="efeito" class="view overlay z-depth-1-half">
-                <img id="transition" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid"
+            <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid"
                     alt="">
                 <a href="">
                     <div class="mask rgba-white-light"></div>
@@ -194,7 +195,7 @@ include "inc/headerdif.php";
             <div class="list-group-item">
 
                 <p class="mb-0"><span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span><img class="fotoperf"
-                        src="assets/img/img2.jpg" alt="img perfil"
+                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" alt="img perfil"
                         width="120"> </i> <span class="glyphicon glyphicon-star-empt" aria-hedden="true">Lorem ipsum
                         dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -204,7 +205,7 @@ include "inc/headerdif.php";
             </div>
             <hr>
             <div class="list-group-item">
-                <p class="mb-0"><img class="fotoperf" src="assets/img/julius1.jpg"
+                <p class="mb-0"><img class="fotoperf" src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
                         alt="img perfil" width="120"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -213,7 +214,7 @@ include "inc/headerdif.php";
             </div>
             <hr>
             <div class="list-group-item">
-                <p class=" mb-0"><img class="fotoperf" src="assets/img/mulher.jpg"
+                <p class=" mb-0"><img class="fotoperf" src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
                         alt="img perfil" width="120"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -231,12 +232,12 @@ include "inc/headerdif.php";
             <!-- Card Narrower -->
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="card card-cascade "">
+                    <div class="card card-cascade narrower">
 
                         <!-- Card image -->
                         <div class="view view-cascade overlay">
                             <img class="card-img-top"
-                                src="assets/img/gastro.jpg"
+                                src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
                                 alt="Card image cap">
                             <a>
                                 <div class="mask rgba-white-slight"></div>
@@ -249,11 +250,11 @@ include "inc/headerdif.php";
                             <!-- Label -->
                             <!-- <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Gastronomia</h5> -->
                             <!-- Title -->
-                            <h4 class="card-title"><strong>Gastronomia</strong></h4>
+                            <h4 class="font-weight-bold card-title">Experimente diferentes pratos pelo mundo.</h4>
                             <!-- Text -->
                             <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
                                 suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-                            
+
                         </div>
 
                     </div>
@@ -266,7 +267,7 @@ include "inc/headerdif.php";
 
                         <!-- Card image -->
                         <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="assets/img/stadium.jpg"
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/men.jpg"
                                 alt="Card image cap">
                             <a>
                                 <div class="mask rgba-white-slight"></div>
@@ -277,12 +278,12 @@ include "inc/headerdif.php";
                         <div class="card-body card-body-cascade text-center">
 
                             <!-- Title -->
-                            <h4 class="card-title"><strong>Experiência</strong></h4>
+                            <h4 class="card-title"><strong>Billy Coleman</strong></h4>
                             <!-- Text -->
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
                                 ex, recusandae. Facere modi sunt, quod quibusdam.
                             </p>
-                            
+
                         </div>
 
                     </div>
@@ -296,7 +297,7 @@ include "inc/headerdif.php";
 
                         <!-- Card image -->
                         <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="assets/img/photo6.jpg"
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg"
                                 alt="Card image cap">
                             <a href="#!">
                                 <div class="mask rgba-white-slight"></div>
@@ -311,7 +312,7 @@ include "inc/headerdif.php";
                             <!-- Text -->
                             <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
                                 doloremque laudantium, totam rem aperiam. </p>
-                           
+
                         </div>
 
                     </div>
@@ -332,7 +333,7 @@ include "inc/headerdif.php";
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
                                 <img class="card-img-top"
-                                    src="assets/img/cutulra.jpg"
+                                    src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
                                     alt="Card image cap">
                                 <a>
                                     <div class="mask rgba-white-slight"></div>
@@ -342,11 +343,11 @@ include "inc/headerdif.php";
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Title -->
-                                <h4 class="font-weight-bold card-title">Cultura</h4>
+                                <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
                                 <!-- Text -->
                                 <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
                                     corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-                                
+
                             </div>
 
                         </div>
@@ -359,8 +360,8 @@ include "inc/headerdif.php";
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" src="assets/img/ferias.jpeg">
-                                    
+                                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/men.jpg"
+                                    alt="Card image cap">
                                 <a>
                                     <div class="mask rgba-white-slight"></div>
                                 </a>
@@ -370,7 +371,7 @@ include "inc/headerdif.php";
                             <div class="card-body card-body-cascade text-center">
 
                                 <!-- Title -->
-                                <h4 class="card-title"><strong>Viagem</strong></h4>
+                                <h4 class="card-title"><strong>Billy Coleman</strong></h4>
                                 <!-- Text -->
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
@@ -388,7 +389,7 @@ include "inc/headerdif.php";
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" src="assets/img/amigos.jpg"
+                                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg"
                                     alt="Card image cap">
                                 <a href="#!">
                                     <div class="mask rgba-white-slight"></div>
@@ -399,7 +400,7 @@ include "inc/headerdif.php";
                             <div class="card-body card-body-cascade text-center">
 
                                 <!-- Title -->
-                                <h4 class="card-title"><strong>Amizade</strong></h4>
+                                <h4 class="card-title"><strong>Alison Belmont</strong></h4>
                                 <!-- Text -->
                                 <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem
                                     accusantium doloremque laudantium, totam rem aperiam. </p>

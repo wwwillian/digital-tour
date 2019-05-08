@@ -3,13 +3,13 @@
         <!-- <a href="index.html" class="navbar-brand"> -->
         <img  src="assets/img/logorev1.png" width="60">
         <span >Digital Tour</span>
-        
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
-        </button>   
+        </button>
         <div class="navb1 collapse navbar-collapse" id="navbarTogglerDemo01">
             <!-- <a class="navbar-brand" href="#">DIGITAL TOUR</a> -->
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">    
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item ">
                 <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Login</a>
                 </li>
@@ -40,7 +40,7 @@
         </button>
       </div>
       <div class="modal-body">
-          
+
               <div class="form-group">
                 <label for="exampleDropdownFormEmail2">E-mail:</label>
                 <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="E-mail">
@@ -56,8 +56,8 @@
                 </label>
                 <a href="#">Esqueceu sua senha?</a>
               </div>
-             
-        
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>

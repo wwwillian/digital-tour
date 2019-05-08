@@ -12,6 +12,7 @@
     <!-- estilo -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logorev1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <title>Digital Tour</title>
 </head>
 

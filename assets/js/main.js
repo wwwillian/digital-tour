@@ -20,11 +20,21 @@ $(document).ready(function () {
            }
        })
    })
-   function myFunction() {
-     var x = document.getElementById("myLinks");
-     if (x.style.display === "block") {
-       x.style.display = "none";
-     } else {
-       x.style.display = "block";
-     }
-   }
+
+       $(document).ready(function (e) {
+           $(".divConteudo").hide();
+
+           $("#btnMostrarEsconder").click(function (e) {
+               $(".divConteudo").toggle();
+           });
+       });
+
+       $(document).ready(function (e) {
+           $(".divConteudo1").hide();
+
+           $("#btnMostrarEsconder1").click(function (e) {
+               $(".divConteudo1").toggle();
+           });
+       });
+
+  baguetteBox.run('.tz-gallery');

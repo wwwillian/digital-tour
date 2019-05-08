@@ -7,25 +7,30 @@ include "inc/menu.php"
 
 </div>
 <!-- Foto Perfil - Personalizado -->
-<div class="awesome user width-cover">
-    <div class="container img-fundo" style="background-image: url(assets/img/006.jpg);">
-        <a class="btn btn-primary btn-embossed btn-capa" data-toggle="modal" href="#">Alterar Capa</a>
-        <div class="wrapper"></div>
+<div class="content">
+  <div class="col-lg-12 col-md-12 col-xl-12">
+
+<div class="awesome user width-cover ">
+    <div class="container img-fundo" id="btnMostrarEsconder" style="background-image: url(assets/img/006.jpg);">
+        <div class="items-banner"></div>
         <div class="img-perfil">
-            <a href="#"><img src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg"></a>
-            <a href="#" class="btn btn-primary btn-small btn-alt-foto" data-toggle="modal">Alterar Foto</a>
+            <a href="#"><img src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg" id= "btnMostrarEsconder1"divConteudo alt="img perfil"
+                    width="120"></a>
+            <a href="#" class="btn btn-primary btn-small btn-alt-foto divConteudo1" data-toggle="modal">Alterar Foto</a>
         </div>
-        <div class="content">
-            <h1 class="perfil">João Victor</h1>
-        </div>
+            <h1 class="perfil ">João Victor</h1>
+          <a class="btn btn-primary btn-embossed btn-capa divConteudo" data-toggle="modal" href="#">Alterar Capa</a>
+
     </div>
 </div>
-
+</div>
 <!-- Cabecalho de postagem! -->
 <div class="row">
     <div class="col-lg-12">
-
-        <div class="tab-header card" id="myLinks">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="tab-header card">
             <ul class="nav nav-tabs md-tabs tab-timeline" role="tablist" id="mytab">
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#tposts" role="tab">Posts</a>
@@ -67,7 +72,7 @@ include "inc/menu.php"
                                 <div class="col-lg-12">
                                     <div class="general-info">
                                         <div class="row">
-                                            <div class="col-lg-12 col-xl-6">
+                                            <div class="col-lg-12 col-md-12 col-xs-6">
                                                 <div class="table-responsive">
                                                     <table class="table m-0">
                                                         <tbody>
@@ -769,11 +774,77 @@ include "inc/menu.php"
                             <div class="col-md-6">
                                 <div class="card b-l-success business-info services m-b-20">
                                     <div class="card-header">
-                                        <div class="service-header">
+                                      <div class="container">
+
+
+
+<div class="container gallery-container">
+
+   <div class="tz-gallery">
+
+       <div class="row mb-3">
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/park.jpg">
+                   <img src="images/park.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/benches.jpg">
+                   <img src="images/benches.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/bridge.jpg">
+                   <img src="images/bridge.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+       </div>
+         <div class="row">
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/coast.jpg">
+                   <img src="images/coast.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/rails.jpg">
+                   <img src="images/rails.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/rocks.jpg">
+                   <img src="images/rocks.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+       </div>
+
+   </div>
+
+</div>
+
+</div>
+
+                                        <!-- <div class="service-header">
                                             <a href="#">
                                                 <img src="assets/img/001.jpg" alt="img 1" class="rounded img-thumbnail">
                                             </a>
-                                        </div>
+                                        </div> -->
                                         <span class="dropdown-toggle addon-btn text-muted f-right service-btn"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
                                             role="tooltip">
@@ -790,10 +861,7 @@ include "inc/menu.php"
                                     <div class="card-block">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p class="task-detail">Lorem ipsum dolor sit amet, consectet ur
-                                                    adipisicing elit, sed do
-                                                    eiusmod temp or incidi dunt ut labore et.Lorem ipsum dolor sit amet,
-                                                    consecte.</p>
+                                                <p class="task-detail">Paisagem!</p>
                                             </div>
 
                                         </div>
@@ -805,11 +873,78 @@ include "inc/menu.php"
                             <div class="col-md-6">
                                 <div class="card b-l-danger business-info services">
                                     <div class="card-header">
+                                      <div class="container">
+
+
+
+                                    <div class="container gallery-container">
+
+                                    <div class="tz-gallery">
+
+                                    <div class="row mb-3">
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/park.jpg">
+                                    <img src="images/park.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/benches.jpg">
+                                    <img src="images/benches.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/bridge.jpg">
+                                    <img src="images/bridge.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/coast.jpg">
+                                    <img src="images/coast.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/rails.jpg">
+                                    <img src="images/rails.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/rocks.jpg">
+                                    <img src="images/rocks.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+
+                                    </div>
+
+                                    </div>
+
+                                    </div>
+
+                                    </div>
+
+<!--
                                         <div class="service-header">
                                             <a href="#">
                                                 <img src="assets/img/002.jpg" alt="img 2" class="rounded img-thumbnail">
                                             </a>
-                                        </div>
+                                        </div> -->
                                         <span class="dropdown-toggle addon-btn text-muted f-right service-btn"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
                                             role="tooltip">
@@ -826,10 +961,7 @@ include "inc/menu.php"
                                     <div class="card-block">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p class="task-detail">Lorem ipsum dolor sit amet, consectet ur
-                                                    adipisicing elit, sed do
-                                                    eiusmod temp or incidi dunt ut labore et.Lorem ipsum dolor sit amet,
-                                                    consecte.</p>
+                                                <p class="task-detail">Viagem Brasilia</p>
                                             </div>
 
                                         </div>
@@ -841,11 +973,78 @@ include "inc/menu.php"
                             <div class="col-md-6">
                                 <div class="card b-l-info business-info services">
                                     <div class="card-header">
-                                        <div class="service-header">
+                                      <div class="container">
+
+
+
+                                    <div class="container gallery-container">
+
+                                    <div class="tz-gallery">
+
+                                    <div class="row mb-3">
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/park.jpg">
+                                    <img src="images/park.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/benches.jpg">
+                                    <img src="images/benches.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/bridge.jpg">
+                                    <img src="images/bridge.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/coast.jpg">
+                                    <img src="images/coast.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/rails.jpg">
+                                    <img src="images/rails.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                    <div class="card">
+                                    <a class="lightbox" href="images/rocks.jpg">
+                                    <img src="images/rocks.jpg" alt="Park" class="card-img-top">
+                                    </a>
+                                    </div>
+                                    </div>
+
+                                    </div>
+
+                                    </div>
+
+                                    </div>
+
+                                    </div>
+
+
+                                        <!-- <div class="service-header">
                                             <a href="#">
                                                 <img src="assets/img/003.jpg" alt="img 3" class="rounded img-thumbnail">
                                             </a>
-                                        </div>
+                                        </div> -->
                                         <span class="dropdown-toggle addon-btn text-muted f-right service-btn"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
                                             role="tooltip">
@@ -862,10 +1061,7 @@ include "inc/menu.php"
                                     <div class="card-block">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p class="task-detail">Lorem ipsum dolor sit amet, consectet ur
-                                                    adipisicing elit, sed do
-                                                    eiusmod temp or incidi dunt ut labore et.Lorem ipsum dolor sit amet,
-                                                    consecte.</p>
+                                                <p class="task-detail">Viagem França</p>
                                             </div>
 
                                         </div>
@@ -877,12 +1073,72 @@ include "inc/menu.php"
                             <div class="col-md-6">
                                 <div class="card b-l-warning business-info services">
                                     <div class="card-header">
-                                        <div class="service-header">
-                                            <a href="#">
-                                                <img src="assets/img/teste1.jpg" alt="img 4"
-                                                    class="rounded img-thumbnail">
-                                            </a>
-                                        </div>
+                                      <div class="container">
+
+
+
+<div class="container gallery-container">
+
+   <div class="tz-gallery">
+
+       <div class="row mb-3">
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/park.jpg">
+                   <img src="images/park.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/benches.jpg">
+                   <img src="images/benches.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/bridge.jpg">
+                   <img src="images/bridge.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+       </div>
+         <div class="row">
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/coast.jpg">
+                   <img src="images/coast.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/rails.jpg">
+                   <img src="images/rails.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/rocks.jpg">
+                   <img src="images/rocks.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+       </div>
+
+   </div>
+
+</div>
+
+</div>
+
                                         <span class="dropdown-toggle addon-btn text-muted f-right service-btn"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
                                             role="tooltip">
@@ -899,10 +1155,7 @@ include "inc/menu.php"
                                     <div class="card-block">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p class="task-detail">Lorem ipsum dolor sit amet, consectet ur
-                                                    adipisicing elit, sed do
-                                                    eiusmod temp or incidi dunt ut labore et.Lorem ipsum dolor sit amet,
-                                                    consecte.</p>
+                                                <p class="task-detail">Índia</p>
                                             </div>
 
                                         </div>
@@ -914,12 +1167,72 @@ include "inc/menu.php"
                             <div class="col-md-6">
                                 <div class="card b-l-danger business-info services">
                                     <div class="card-header">
-                                        <div class="service-header">
-                                            <a href="#">
-                                                <img src="assets/img/fundo.png" alt="img 5"
-                                                    class="rounded img-thumbnail">
-                                            </a>
-                                        </div>
+                                      <div class="container">
+
+
+
+      <div class="container gallery-container">
+
+      <div class="tz-gallery">
+
+       <div class="row mb-3">
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/park.jpg">
+                   <img src="images/park.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/benches.jpg">
+                   <img src="images/benches.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/bridge.jpg">
+                   <img src="images/bridge.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+       </div>
+         <div class="row">
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/coast.jpg">
+                   <img src="images/coast.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/rails.jpg">
+                   <img src="images/rails.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/rocks.jpg">
+                   <img src="images/rocks.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+       </div>
+
+      </div>
+
+      </div>
+
+      </div>
+
                                         <span class="dropdown-toggle addon-btn text-muted f-right service-btn"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
                                             role="tooltip">
@@ -936,10 +1249,7 @@ include "inc/menu.php"
                                     <div class="card-block">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p class="task-detail">Lorem ipsum dolor sit amet, consectet ur
-                                                    adipisicing elit, sed do
-                                                    eiusmod temp or incidi dunt ut labore et.Lorem ipsum dolor sit amet,
-                                                    consecte.</p>
+                                                <p class="task-detail">São Paulo</p>
                                             </div>
 
                                         </div>
@@ -951,12 +1261,72 @@ include "inc/menu.php"
                             <div class="col-md-6">
                                 <div class="card b-l-success business-info services">
                                     <div class="card-header">
-                                        <div class="service-header">
-                                            <a href="#">
-                                                <img src="assets/img/teste.jpg" alt="img 1"
-                                                    class="rounded img-thumbnail">
-                                            </a>
-                                        </div>
+                                      <div class="container">
+
+
+
+<div class="container gallery-container">
+
+   <div class="tz-gallery">
+
+       <div class="row mb-3">
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/park.jpg">
+                   <img src="images/park.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/benches.jpg">
+                   <img src="images/benches.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/bridge.jpg">
+                   <img src="images/bridge.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+       </div>
+         <div class="row">
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/coast.jpg">
+                   <img src="images/coast.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/rails.jpg">
+                   <img src="images/rails.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="card">
+                   <a class="lightbox" href="images/rocks.jpg">
+                   <img src="images/rocks.jpg" alt="Park" class="card-img-top">
+                   </a>
+               </div>
+           </div>
+
+       </div>
+
+   </div>
+
+</div>
+
+</div>
+
                                         <span class="dropdown-toggle addon-btn text-muted f-right service-btn"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
                                             role="tooltip">
@@ -973,10 +1343,7 @@ include "inc/menu.php"
                                     <div class="card-block">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p class="task-detail">Lorem ipsum dolor sit amet, consectet ur
-                                                    adipisicing elit, sed do
-                                                    eiusmod temp or incidi dunt ut labore et.Lorem ipsum dolor sit amet,
-                                                    consecte.</p>
+                                                <p class="task-detail">Rio de Janeiro</p>
                                             </div>
 
                                         </div>
@@ -1021,534 +1388,300 @@ include "inc/menu.php"
             <!--fim das fotos-->
 
             <!--Amigos-->
-            <div class="tab-pane" id="contacts" role="tabpanel">
-                <div class="row">
-                    <div class="col-xl-3">
+            <div class="tab-pane" id="tamigos" role="tabpanel">
+              <div class="conteiner">
 
-                        <div class="card">
-                            <div class="card-header contact-user">
-                                <img class="img-radius img-40" src="../files/assets/images/avatar-4.jpg"
-                                    alt="contact-user">
-                                <h5 class="m-l-10">John Doe</h5>
-                            </div>
-                            <div class="card-block">
-                                <ul class="list-group list-contacts">
-                                    <li class="list-group-item active"><a href="#">All Contacts</a></li>
-                                    <li class="list-group-item"><a href="#">Recent Contacts</a></li>
-                                    <li class="list-group-item"><a href="#">Favourite Contacts</a></li>
-                                </ul>
-                            </div>
-                            <div class="card-block groups-contact">
-                                <h4>Groups</h4>
-                                <ul class="list-group">
-                                    <li class="list-group-item justify-content-between">
-                                        Project
-                                        <span class="badge badge-primary badge-pill">30</span>
-                                    </li>
-                                    <li class="list-group-item justify-content-between">
-                                        Notes
-                                        <span class="badge badge-success badge-pill">20</span>
-                                    </li>
-                                    <li class="list-group-item justify-content-between">
-                                        Activity
-                                        <span class="badge badge-info badge-pill">100</span>
-                                    </li>
-                                    <li class="list-group-item justify-content-between">
-                                        Schedule
-                                        <span class="badge badge-danger badge-pill">50</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Contacts<span class="f-15"> (100)</span></h4>
-                            </div>
-                            <div class="card-block">
-                                <div class="connection-list">
-                                    <a href="#"><img class="img-fluid img-radius"
-                                            src="../files/assets/images/user-profile/follower/f-1.jpg" alt="f-1"
-                                            data-toggle="tooltip" data-placement="top" data-original-title="Airi Satou">
-                                    </a>
-                                    <a href="#"><img class="img-fluid img-radius"
-                                            src="../files/assets/images/user-profile/follower/f-2.jpg" alt="f-2"
-                                            data-toggle="tooltip" data-placement="top"
-                                            data-original-title="Angelica Ramos">
-                                    </a>
-                                    <a href="#"><img class="img-fluid img-radius"
-                                            src="../files/assets/images/user-profile/follower/f-3.jpg" alt="f-3"
-                                            data-toggle="tooltip" data-placement="top" data-original-title="Ashton Cox">
-                                    </a>
-                                    <a href="#"><img class="img-fluid img-radius"
-                                            src="../files/assets/images/user-profile/follower/f-4.jpg" alt="f-4"
-                                            data-toggle="tooltip" data-placement="top"
-                                            data-original-title="Cara Stevens">
-                                    </a>
-                                    <a href="#"><img class="img-fluid img-radius"
-                                            src="../files/assets/images/user-profile/follower/f-5.jpg" alt="f-5"
-                                            data-toggle="tooltip" data-placement="top"
-                                            data-original-title="Garrett Winters">
-                                    </a>
-                                    <a href="#"><img class="img-fluid img-radius"
-                                            src="../files/assets/images/user-profile/follower/f-1.jpg" alt="f-6"
-                                            data-toggle="tooltip" data-placement="top"
-                                            data-original-title="Cedric Kelly">
-                                    </a>
-                                    <a href="#"><img class="img-fluid img-radius"
-                                            src="../files/assets/images/user-profile/follower/f-3.jpg" alt="f-7"
-                                            data-toggle="tooltip" data-placement="top"
-                                            data-original-title="Brielle Williamson">
-                                    </a>
-                                    <a href="#"><img class="img-fluid img-radius"
-                                            src="../files/assets/images/user-profile/follower/f-5.jpg" alt="f-8"
-                                            data-toggle="tooltip" data-placement="top"
-                                            data-original-title="Jena Gaines">
+                <!-- <div class="row"> -->
+                  <!-- <div class="tab-pane active show" id="tvideos" role="tabpanel"> -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-header-text">Amigos</h5>
+                    </div>
+                    <div class="card-block margin-rigth">
+                        <ul class="media-list">
+                            <li class="media">
+                                <div class="media-left">
+                                    <a href="#">
+
                                     </a>
                                 </div>
-                            </div>
-                        </div>
 
-                    </div>
-                    <div class="col-xl-9">
-                        <div class="row">
-                            <div class="col-sm-12">
 
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="card-header-text">Contacts</h5>
-                                    </div>
-                                    <div class="card-block contact-details">
-                                        <div class="data_table_main table-responsive dt-responsive">
-                                            <div id="simpletable_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                                                <div class="row">
-                                                    <div class="col-xs-12 col-sm-12 col-sm-12 col-md-6">
-                                                        <div class="dataTables_length" id="simpletable_length">
-                                                            <label>Show <select name="simpletable_length"
-                                                                    aria-controls="simpletable"
-                                                                    class="form-control input-sm">
-                                                                    <option value="10">10</option>
-                                                                    <option value="25">25</option>
-                                                                    <option value="50">50</option>
-                                                                    <option value="100">100</option>
-                                                                </select> entries</label></div>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-12 col-md-6">
-                                                        <div id="simpletable_filter" class="dataTables_filter">
-                                                            <label>Search:<input type="search"
-                                                                    class="form-control input-sm" placeholder=""
-                                                                    aria-controls="simpletable"></label></div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-xs-12 col-sm-12">
-                                                        <table id="simpletable"
-                                                            class="table table-striped table-bordered nowrap dataTable"
-                                                            role="grid" aria-describedby="simpletable_info">
-                                                            <thead>
-                                                                <tr role="row">
-                                                                    <th class="sorting_asc" tabindex="0"
-                                                                        aria-controls="simpletable" rowspan="1"
-                                                                        colspan="1" style="width: 0px;"
-                                                                        aria-sort="ascending"
-                                                                        aria-label="Name: activate to sort column descending">
-                                                                        Name</th>
-                                                                    <th class="sorting" tabindex="0"
-                                                                        aria-controls="simpletable" rowspan="1"
-                                                                        colspan="1" style="width: 0px;"
-                                                                        aria-label="Email: activate to sort column ascending">
-                                                                        Email</th>
-                                                                    <th class="sorting" tabindex="0"
-                                                                        aria-controls="simpletable" rowspan="1"
-                                                                        colspan="1" style="width: 0px;"
-                                                                        aria-label="Mobileno.: activate to sort column ascending">
-                                                                        Mobileno.</th>
-                                                                    <th class="sorting" tabindex="0"
-                                                                        aria-controls="simpletable" rowspan="1"
-                                                                        colspan="1" style="width: 0px;"
-                                                                        aria-label="Favourite: activate to sort column ascending">
-                                                                        Favourite</th>
-                                                                    <th class="sorting" tabindex="0"
-                                                                        aria-controls="simpletable" rowspan="1"
-                                                                        colspan="1" style="width: 0px;"
-                                                                        aria-label="Action: activate to sort column ascending">
-                                                                        Action</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
+                                <div class="amigos-css">
+                                    <!-- Grid row -->
+                                    <div class="row">
 
-                                                                <tr role="row" class="odd">
-                                                                    <td class="sorting_1">Garrett Winters</td>
-                                                                    <td>abc123@gmail.com</td>
-                                                                    <td>9989988988</td>
-                                                                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                                                                    </td>
-                                                                    <td class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-primary dropdown-toggle"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false"><i class="fa fa-cog"
-                                                                                aria-hidden="true"></i></button>
-                                                                        <div
-                                                                            class="dropdown-menu dropdown-menu-right b-none contact-menu">
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-edit"></i>Edit</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-delete"></i>Delete</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>View</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-tasks-alt"></i>Project</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-note"></i>Notes</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>Activity</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-badge"></i>Schedule</a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr role="row" class="even">
-                                                                    <td class="sorting_1">Garrett Winters</td>
-                                                                    <td>abc123@gmail.com</td>
-                                                                    <td>9989988988</td>
-                                                                    <td><i class="fa fa-star-o" aria-hidden="true"></i>
-                                                                    </td>
-                                                                    <td class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-primary dropdown-toggle"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false"><i class="fa fa-cog"
-                                                                                aria-hidden="true"></i></button>
-                                                                        <div
-                                                                            class="dropdown-menu dropdown-menu-right b-none contact-menu">
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-edit"></i>Edit</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-delete"></i>Delete</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>View</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-tasks-alt"></i>Project</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-note"></i>Notes</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>Activity</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-badge"></i>Schedule</a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr role="row" class="odd">
-                                                                    <td class="sorting_1">Garrett Winters</td>
-                                                                    <td>abc123@gmail.com</td>
-                                                                    <td>9989988988</td>
-                                                                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                                                                    </td>
-                                                                    <td class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-primary dropdown-toggle"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false"><i class="fa fa-cog"
-                                                                                aria-hidden="true"></i></button>
-                                                                        <div
-                                                                            class="dropdown-menu dropdown-menu-right b-none contact-menu">
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-edit"></i>Edit</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-delete"></i>Delete</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>View</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-tasks-alt"></i>Project</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-note"></i>Notes</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>Activity</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-badge"></i>Schedule</a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr role="row" class="even">
-                                                                    <td class="sorting_1">Garrett Winters</td>
-                                                                    <td>abc123@gmail.com</td>
-                                                                    <td>9989988988</td>
-                                                                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                                                                    </td>
-                                                                    <td class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-primary dropdown-toggle"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false"><i class="fa fa-cog"
-                                                                                aria-hidden="true"></i></button>
-                                                                        <div
-                                                                            class="dropdown-menu dropdown-menu-right b-none contact-menu">
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-edit"></i>Edit</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-delete"></i>Delete</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>View</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-tasks-alt"></i>Project</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-note"></i>Notes</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>Activity</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-badge"></i>Schedule</a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr role="row" class="odd">
-                                                                    <td class="sorting_1">Garrett Winters</td>
-                                                                    <td>abc123@gmail.com</td>
-                                                                    <td>9989988988</td>
-                                                                    <td><i class="fa fa-star-o" aria-hidden="true"></i>
-                                                                    </td>
-                                                                    <td class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-primary dropdown-toggle"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false"><i class="fa fa-cog"
-                                                                                aria-hidden="true"></i></button>
-                                                                        <div
-                                                                            class="dropdown-menu dropdown-menu-right b-none contact-menu">
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-edit"></i>Edit</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-delete"></i>Delete</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>View</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-tasks-alt"></i>Project</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-note"></i>Notes</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>Activity</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-badge"></i>Schedule</a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr role="row" class="even">
-                                                                    <td class="sorting_1">Garrett Winters</td>
-                                                                    <td>abc123@gmail.com</td>
-                                                                    <td>9989988988</td>
-                                                                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                                                                    </td>
-                                                                    <td class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-primary dropdown-toggle"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false"><i class="fa fa-cog"
-                                                                                aria-hidden="true"></i></button>
-                                                                        <div
-                                                                            class="dropdown-menu dropdown-menu-right b-none contact-menu">
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-edit"></i>Edit</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-delete"></i>Delete</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>View</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-tasks-alt"></i>Project</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-note"></i>Notes</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>Activity</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-badge"></i>Schedule</a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr role="row" class="odd">
-                                                                    <td class="sorting_1">Garrett Winters</td>
-                                                                    <td>abc123@gmail.com</td>
-                                                                    <td>9989988988</td>
-                                                                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                                                                    </td>
-                                                                    <td class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-primary dropdown-toggle"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false"><i class="fa fa-cog"
-                                                                                aria-hidden="true"></i></button>
-                                                                        <div
-                                                                            class="dropdown-menu dropdown-menu-right b-none contact-menu">
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-edit"></i>Edit</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-delete"></i>Delete</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>View</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-tasks-alt"></i>Project</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-note"></i>Notes</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>Activity</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-badge"></i>Schedule</a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr role="row" class="even">
-                                                                    <td class="sorting_1">Garrett Winters</td>
-                                                                    <td>abc123@gmail.com</td>
-                                                                    <td>9989988988</td>
-                                                                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                                                                    </td>
-                                                                    <td class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-primary dropdown-toggle"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false"><i class="fa fa-cog"
-                                                                                aria-hidden="true"></i></button>
-                                                                        <div
-                                                                            class="dropdown-menu dropdown-menu-right b-none contact-menu">
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-edit"></i>Edit</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-delete"></i>Delete</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>View</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-tasks-alt"></i>Project</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-note"></i>Notes</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>Activity</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-badge"></i>Schedule</a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr role="row" class="odd">
-                                                                    <td class="sorting_1">Garrett Winters</td>
-                                                                    <td>abc123@gmail.com</td>
-                                                                    <td>9989988988</td>
-                                                                    <td><i class="fa fa-star" aria-hidden="true"></i>
-                                                                    </td>
-                                                                    <td class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-primary dropdown-toggle"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false"><i class="fa fa-cog"
-                                                                                aria-hidden="true"></i></button>
-                                                                        <div
-                                                                            class="dropdown-menu dropdown-menu-right b-none contact-menu">
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-edit"></i>Edit</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-delete"></i>Delete</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>View</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-tasks-alt"></i>Project</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-note"></i>Notes</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>Activity</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-badge"></i>Schedule</a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr role="row" class="even">
-                                                                    <td class="sorting_1">Garrett Winters</td>
-                                                                    <td>abc123@gmail.com</td>
-                                                                    <td>9989988988</td>
-                                                                    <td><i class="fa fa-star-o" aria-hidden="true"></i>
-                                                                    </td>
-                                                                    <td class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-primary dropdown-toggle"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false"><i class="fa fa-cog"
-                                                                                aria-hidden="true"></i></button>
-                                                                        <div
-                                                                            class="dropdown-menu dropdown-menu-right b-none contact-menu">
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-edit"></i>Edit</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-delete"></i>Delete</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>View</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-tasks-alt"></i>Project</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-ui-note"></i>Notes</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-eye-alt"></i>Activity</a>
-                                                                            <a class="dropdown-item" href="#!"><i
-                                                                                    class="icofont icofont-badge"></i>Schedule</a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                            <tfoot>
-                                                                <tr>
-                                                                    <th rowspan="1" colspan="1">Name</th>
-                                                                    <th rowspan="1" colspan="1">Email</th>
-                                                                    <th rowspan="1" colspan="1">Mobileno.</th>
-                                                                    <th rowspan="1" colspan="1">Favourite</th>
-                                                                    <th rowspan="1" colspan="1">Action</th>
-                                                                </tr>
-                                                            </tfoot>
-                                                        </table>
+                                        <!-- Grid column -->
+                                        <div class="col-lg-4 col-md-12 mb-4">
+                                          <div class="card card-personal mb-md-0 mb-4">
+
+                                                      <!-- mdbCard image-->
+                                                      <div class="view overlay">
+                                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(28).jpg" alt="mdbCard image cap">
+                                                        <a href="#!">
+                                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                                        </a>
+                                                      </div>
+                                                      <!-- mdbCard image-->
+
+                                                      <!-- mdbCard content -->
+                                                      <div class="card-body">
+
+                                                        <!-- Title-->
+                                                        <a>
+                                                          <h4 class="card-title">Sara</h4>
+                                                        </a>
+                                                        <a class="card-meta">Coworker</a>
+                                                        <!-- Text -->
+                                                        <p class="card-text">Sara is a video maker living in Tokyo.</p>
+                                                        <hr>
+                                                        <a class="card-meta"><span><i class="fa fa-user"></i>127 Friends</span></a>
+                                                        <p class="card-meta float-right">Joined in 2014</p>
+
+                                                      </div>
+                                                      <!-- mdbCard content -->
+
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-xs-12 col-sm-12 col-md-5">
-                                                        <div class="dataTables_info" id="simpletable_info" role="status"
-                                                            aria-live="polite">
-                                                            Showing 1 to 10 of 51 entries</div>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-12 col-md-7">
-                                                        <div class="dataTables_paginate paging_simple_numbers"
-                                                            id="simpletable_paginate">
-                                                            <ul class="pagination">
-                                                                <li class="paginate_button page-item previous disabled"
-                                                                    id="simpletable_previous"><a href="#"
-                                                                        aria-controls="simpletable" data-dt-idx="0"
-                                                                        tabindex="0" class="page-link">Previous</a></li>
-                                                                <li class="paginate_button page-item active"><a href="#"
-                                                                        aria-controls="simpletable" data-dt-idx="1"
-                                                                        tabindex="0" class="page-link">1</a></li>
-                                                                <li class="paginate_button page-item "><a href="#"
-                                                                        aria-controls="simpletable" data-dt-idx="2"
-                                                                        tabindex="0" class="page-link">2</a></li>
-                                                                <li class="paginate_button page-item "><a href="#"
-                                                                        aria-controls="simpletable" data-dt-idx="3"
-                                                                        tabindex="0" class="page-link">3</a></li>
-                                                                <li class="paginate_button page-item "><a href="#"
-                                                                        aria-controls="simpletable" data-dt-idx="4"
-                                                                        tabindex="0" class="page-link">4</a></li>
-                                                                <li class="paginate_button page-item "><a href="#"
-                                                                        aria-controls="simpletable" data-dt-idx="5"
-                                                                        tabindex="0" class="page-link">5</a></li>
-                                                                <li class="paginate_button page-item "><a href="#"
-                                                                        aria-controls="simpletable" data-dt-idx="6"
-                                                                        tabindex="0" class="page-link">6</a></li>
-                                                                <li class="paginate_button page-item next"
-                                                                    id="simpletable_next"><a href="#"
-                                                                        aria-controls="simpletable" data-dt-idx="7"
-                                                                        tabindex="0" class="page-link">Next</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                          <div class="card card-personal mb-md-0 mb-4">
+
+                                                      <!-- mdbCard image-->
+                                                      <div class="view overlay">
+                                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" alt="mdbCard image cap">
+                                                        <a href="#!">
+                                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                                        </a>
+                                                      </div>
+                                                      <!-- mdbCard image-->
+
+                                                      <!-- mdbCard content -->
+                                                      <div class="card-body">
+
+                                                        <!-- Title-->
+                                                        <a>
+                                                          <h4 class="card-title">John</h4>
+                                                        </a>
+                                                        <a class="card-meta">Coworker</a>
+                                                        <!-- Text -->
+                                                        <p class="card-text">John is a copywriter living in Seattle.</p>
+                                                        <hr>
+                                                        <a class="card-meta"><span><i class="fa fa-user"></i>48 Friends</span></a>
+                                                        <p class="card-meta float-right">Joined in 2015</p>
+
+                                                      </div>
+                                                      <!-- mdbCard content -->
+
+                                                    </div>
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                          <div class="card card-personal mb-md-0 mb-4">
+
+                                                      <!-- mdbCard image-->
+                                                      <div class="view overlay">
+                                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="mdbCard image cap">
+                                                        <a href="#!">
+                                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                                        </a>
+                                                      </div>
+                                                      <!-- mdbCard image-->
+
+                                                      <!-- mdbCard content -->
+                                                      <div class="card-body">
+
+                                                        <!-- Title-->
+                                                        <a>
+                                                          <h4 class="card-title">Anna</h4>
+                                                        </a>
+                                                        <a class="card-meta">Friends</a>
+                                                        <!-- Text -->
+                                                        <p class="card-text">Anna is a web designer living in US.</p>
+                                                        <hr>
+                                                        <a class="card-meta"><span><i class="fa fa-user"></i>83 Friends</span></a>
+                                                        <p class="card-meta float-right">Joined in 2012</p>
+
+                                                      </div>
+                                                      <!-- mdbCard content -->
+
+                                                    </div>
+                                        </div>
+                                        <!-- Grid column -->
+
                                     </div>
+                                    <!-- Grid row -->
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-lg-4 col-md-12 mb-4">
+                                          <div class="card card-personal mb-md-0 mb-4">
+
+                                                      <!-- mdbCard image-->
+                                                      <div class="view overlay">
+                                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(28).jpg" alt="mdbCard image cap">
+                                                        <a href="#!">
+                                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                                        </a>
+                                                      </div>
+                                                      <!-- mdbCard image-->
+
+                                                      <!-- mdbCard content -->
+                                                      <div class="card-body">
+
+                                                        <!-- Title-->
+                                                        <a>
+                                                          <h4 class="card-title">Sara</h4>
+                                                        </a>
+                                                        <a class="card-meta">Coworker</a>
+                                                        <!-- Text -->
+                                                        <p class="card-text">Sara is a video maker living in Tokyo.</p>
+                                                        <hr>
+                                                        <a class="card-meta"><span><i class="fa fa-user"></i>127 Friends</span></a>
+                                                        <p class="card-meta float-right">Joined in 2014</p>
+
+                                                      </div>
+                                                      <!-- mdbCard content -->
+
+                                                    </div>
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                          <div class="card card-personal mb-md-0 mb-4">
+
+                                                      <!-- mdbCard image-->
+                                                      <div class="view overlay">
+                                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" alt="mdbCard image cap">
+                                                        <a href="#!">
+                                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                                        </a>
+                                                      </div>
+                                                      <!-- mdbCard image-->
+
+                                                      <!-- mdbCard content -->
+                                                      <div class="card-body">
+
+                                                        <!-- Title-->
+                                                        <a>
+                                                          <h4 class="card-title">John</h4>
+                                                        </a>
+                                                        <a class="card-meta">Coworker</a>
+                                                        <!-- Text -->
+                                                        <p class="card-text">John is a copywriter living in Seattle.</p>
+                                                        <hr>
+                                                        <a class="card-meta"><span><i class="fa fa-user"></i>48 Friends</span></a>
+                                                        <p class="card-meta float-right">Joined in 2015</p>
+
+                                                      </div>
+                                                      <!-- mdbCard content -->
+
+                                                    </div>
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-lg-4 col-md-6 mb-4">
+                                          <div class="card card-personal mb-md-0 mb-4">
+
+                                                      <!-- mdbCard image-->
+                                                      <div class="view overlay">
+                                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="mdbCard image cap">
+                                                        <a href="#!">
+                                                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                                        </a>
+                                                      </div>
+                                                      <!-- mdbCard image-->
+
+                                                      <!-- mdbCard content -->
+                                                      <div class="card-body">
+
+                                                        <!-- Title-->
+                                                        <a>
+                                                          <h4 class="card-title">Anna</h4>
+                                                        </a>
+                                                        <a class="card-meta">Friends</a>
+                                                        <!-- Text -->
+                                                        <p class="card-text">Anna is a web designer living in US.</p>
+                                                        <hr>
+                                                        <a class="card-meta"><span><i class="fa fa-user"></i>83 Friends</span></a>
+                                                        <p class="card-meta float-right">Joined in 2012</p>
+
+                                                      </div>
+                                                      <!-- mdbCard content -->
+
+                                                    </div>
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+                                    <nav class="d-flex justify-content-center mt-5 display-posts">
+        <ul class="pagination pagination-circle pg-teal mb-0">
+
+            <!--First-->
+            <li class="page-item disabled">
+                <a class="page-link">First</a>
+            </li>
+
+            <!--Arrow left-->
+            <li class="page-item disabled">
+                <a class="page-link" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+
+            <!--Numbers-->
+            <li class="page-item active">
+                <a class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link">4</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link">5</a>
+            </li>
+
+            <!--Arrow right-->
+            <li class="page-item">
+                <a class="page-link" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+
+            <!--Last-->
+            <li class="page-item">
+                <a class="page-link">Last</a>
+            </li>
+
+        </ul>
+    </nav>
                                 </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </li></ul></div>
+                <!-- </div> -->
             </div>
+
+
+                    <!-- </div> -->
+
+                </div>
+
+              </div>
             <!--fim Amigos-->
 
             <!-- videos -->
@@ -1934,6 +2067,7 @@ include "inc/menu.php"
             <!-- fim  videos -->
 
             <!-- Posts -->
+
             <div class="tab-pane active" id="tposts" role="tabpanel">
 
                 <div class="card">
@@ -1973,9 +2107,9 @@ include "inc/menu.php"
 
 
 <!--Postagens-->
-<section class="my-5">
+<section class="my-5 postagem-display">
 
-    <div class="card-header border-0 font-weight-bold">Leave a reply (logged in user)</div>
+    <div class="card-header border-0 font-weight-bold">Útimos Posts</div>
 
     <div class="d-md-flex flex-md-fill mt-4 px-1">
         <div class="d-flex justify-content-center mr-md-5">
@@ -1992,7 +2126,7 @@ include "inc/menu.php"
 </section>
 <!-- Reply section (logged in user) -->
 <!--Section: Comments-->
-<section class="my-5">
+<section class="my-5 postagem-display">
 
     <!-- Card header -->
     <div class="card-header border-0 font-weight-bold">Melhores ideias</div>
@@ -2074,7 +2208,7 @@ include "inc/menu.php"
     </div>
 
     <!--Pagination -->
-    <nav class="d-flex justify-content-center mt-5">
+    <nav class="d-flex justify-content-center mt-5 display-posts">
         <ul class="pagination pagination-circle pg-teal mb-0">
 
             <!--First-->
