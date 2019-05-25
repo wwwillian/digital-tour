@@ -1,7 +1,6 @@
-<?php
-include "inc/head.php";
-include "inc/headerdif2.php";
-?>
+@extends('layouts.masterDesconectado')
+
+@section ('content')
 <span class="borda"><hr/></span>
 <div class="container mt-5 img-fundo1" style="background-image: url('assets/img/Viagem.jpg')"></div>
 </header>
@@ -48,7 +47,4 @@ include "inc/headerdif2.php";
     </div>
 </div>
 </div>
-
-<?php
-include "inc/footer.php";
-?>
+@stop
