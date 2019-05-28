@@ -15,10 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', 'HomeController@mostrarHome');
+Route::get('/home', 'PaginasController@mostrarHome');
 
-Route::get('/home/cadastro', 'CadastroControllers@mostrarCadastro');
+Route::get('/cadastro', 'PaginasController@mostrarCadastro');
 
-Route::get('/home/sobrenos' , 'sobrenosControllers@mostarSobrenos');
+Route::get('/quemsomos', 'PaginasController@mostrarQuemSomos');
 
-Route::get('/home/faq' , 'FaqControllers@mostarFaq');
+Route::get('/faq', 'PaginasController@mostrarFaq');
+
+Route::get('/contato', 'PaginasController@mostrarContato');
+
+Route::get('/posts', 'PaginasController@mostrarPosts');
+
+Route::get('/perfil', 'PaginasController@mostrarPerfil');
