@@ -20,8 +20,8 @@
 <header>
     <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
         <!-- <a href="index.html" class="navbar-brand"> -->
-        <a href="index.php"><img src="img/logorev1.png" width="60"></a>
-        <span href="index.php" >Digital Tour</span>
+        <a href="/home"><img src="img/logorev1.png" width="60"></a>
+        <span href="/home" >Digital Tour</span>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,19 +30,19 @@
             <!-- <a class="navbar-brand" href="#">DIGITAL TOUR</a> -->
             <ul class="navop navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item exibindo">
-                    <a class="h5 nav-link" href=""> <i class="fas fa-user"></i> Login</a>
+                    <a class="h5 nav-link" href=""> <i class="fas fa-user"></i> João Victor</a>
                 </li>
                 <li class="nav-item">
-                    <a class="h5 nav-link" href=""><i class="fas fa-globe"></i> Quem Somos</a>
+                    <a class="h5 nav-link" href=""><i class="fas fa-user-friends"></i> Amigos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="h5 nav-link" href=""> <i class="fas fa-info"></i>  FAQ</a>
+                    <a class="h5 nav-link" href=""><i class="fas fa-file-image"></i> Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="h5 nav-link" href="/artigos"><i class="fas fa-plane-departure"></i></i> Artigos</a>
                 </li>
                 <li class="nav-item">
                     <a class="h5 nav-link" href=""><i class="fas fa-comments"></i> Chat</a>
-                </li>
-                <li class="nav-item">
-                    <a class="h5 nav-link" href=""><i class="fas fa-envelope"></i> Contato</a>
                 </li>
             </ul>
         </div>

@@ -17,39 +17,6 @@
 </head>
 
 <body>
-
-<header>
-    <nav class="navb navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
-        <!-- <a href="index.html" class="navbar-brand"> -->
-        <img  src="img/logorev1.png" width="60">
-        <span >Digital Tour</span>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navb1 collapse navbar-collapse" id="navbarTogglerDemo01">
-            <!-- <a class="navbar-brand" href="#">DIGITAL TOUR</a> -->
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item ">
-                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sobrenos.php">Quem Somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.php">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cadastro.php">Cadastre-se</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contato.php">Contato</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -102,16 +69,16 @@
                     <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="sobrenos.php">Quem Somos</a>
+                    <a class="nav-link" href="/quemsomos">Quem Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="faq.php">FAQ</a>
+                    <a class="nav-link" href="/faq">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="cadastro.php">Cadastre-se</a>
+                    <a class="nav-link" href="/cadastro">Cadastre-se</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contato.php">Contato</a>
+                    <a class="nav-link" href="/contato">Contato</a>
                 </li>
             </ul>
         </div>
@@ -165,7 +132,7 @@
                 <ul class="list-inline text-center">
 
                     <li class="list-inline-item">
-                        <a href="#">
+                        <a href="https://github.com/williangomes7004/digital-tour">
                               <span class="fa-stack fa-lg">
                                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                               </span>

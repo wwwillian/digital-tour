@@ -187,10 +187,10 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto mt-3">
                     <ul class="navind ul-header mr-5 " id="navind">
-                        <li><a href="contato.php" class="h5">Contato</a></li>
-                        <li><a href="sobrenos.php" class="h5">Quem Somos</a></li>
-                        <li><a href="faq.php" class="h5">FAQ</a></li>
-                        <li><a href="cadastro.php" class="h5">Cadastre-se</a></li>
+                        <li><a href="/contato" class="h5">Contato</a></li>
+                        <li><a href="/quemsomos" class="h5">Quem Somos</a></li>
+                        <li><a href="/faq" class="h5">FAQ</a></li>
+                        <li><a href="/cadastro" class="h5">Cadastre-se</a></li>
                         <li><a class="h5" data-toggle="modal" data-target="#exampleModal">Login</a></li>
                     </ul>
                 </div>

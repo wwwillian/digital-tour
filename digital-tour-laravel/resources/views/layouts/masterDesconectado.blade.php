@@ -20,8 +20,8 @@
 <header>
     <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
         <!-- <a href="index.html" class="navbar-brand"> -->
-        <a href="#"><img src="img/logorev1.png" width="60"></a>
-        <span href="#" >Digital Tour</span>
+        <a href="/home"><img src="img/logorev1.png" width="60"></a>
+        <span href="/home" >Digital Tour</span>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,16 +33,16 @@
                     <a class="h5 nav-link" data-toggle="modal" data-target="#exampleModal"> <i class="fas fa-user"></i> Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="h5 nav-link" href="#"><i class="fas fa-globe"></i> Quem Somos</a>
+                    <a class="h5 nav-link" href="/quemsomos"><i class="fas fa-globe"></i> Quem Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="h5 nav-link" href="#"> <i class="fas fa-info"></i>  FAQ</a>
+                    <a class="h5 nav-link" href="/faq"> <i class="fas fa-info"></i>  FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="h5 nav-link" href="#"><i class="fas fa-comments"></i> Chat</a>
+                    <a class="h5 nav-link" href="/artigos"><i class="fas fa-plane-departure"></i></i> Artigos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="h5 nav-link" href="#"><i class="fas fa-envelope"></i> Contato</a>
+                    <a class="h5 nav-link" href="/contato"><i class="fas fa-envelope"></i> Contato</a>
                 </li>
             </ul>
         </div>
@@ -96,7 +96,7 @@
                 <ul class="list-inline text-center">
 
                     <li class="list-inline-item">
-                        <a href="#">
+                        <a href="https://github.com/williangomes7004/digital-tour">
                             <span class="fa-stack fa-lg">
                                 <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                             </span>

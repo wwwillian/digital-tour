@@ -23,7 +23,7 @@
                 <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem!"
                           required></textarea>
 
-                <a href="index.php">Voltar para home</a>
+                <a href="/home">Voltar para home</a>
 
                 <button class="submit-form">Enviar</button>
             </form>

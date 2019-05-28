@@ -10,7 +10,7 @@
                 <div class="fotocadastro">
                     <span class="SpanFaqContatoCadastro">Cadastro</span>
                 </div>
-                <form action="/action_page.php">
+                <form action="#">
 
                     <div class="form-inline">
                         <label for="nome">Nome:</label>
