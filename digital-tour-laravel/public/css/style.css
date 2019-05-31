@@ -27,30 +27,31 @@ a:not([href]):not([tabindex]){
   display: flex;
 }
 
-.btn-alt-foto{
-  /* display: inline-table; */
-}
-.btn-primary{
-  display: inline-table;
-}
+
 .img-fundo{
   height: 20em;
   border: 5px solid white;
   border-radius: 9px;
-  display: flex;
-  align-items: flex-end;
-  /* align-items: flex-start; */
+}
+.img-perfil{
+  margin-left: 2em;
+}
+.img-perfil a img{
+    margin-top: 15em;
+    width: 125px;
+    height: 125px;
+    border: 5px solid white;
+    border-radius: 9px;
 }
 
 .btn-alt-foto{
-    position: absolute;
-    left: 8px;
-    top: 78px;
+  position: relative;
+    bottom: 110%;
+    left: 0%;
 }
 
-
-
 .btn-capa {
+    float: right;
     margin-right: 2em;
     margin-top: 2em;
 }
@@ -59,18 +60,8 @@ a:not([href]):not([tabindex]){
 .img-perfil{
       position: relative;
       display: inline-grid;
-      bottom: -70px;
-      margin-left: 2em;
-    }
-
-.img-perfil a img{
-    /* margin-top: 15em; */
-    margin-bottom: 0;
-    width: 125px;
-    height: 125px;
-    border: 5px solid white;
-    border-radius: 9px;
 }
+
 .btn {
     border: none;
     background: #159ada;
@@ -81,19 +72,8 @@ a:not([href]):not([tabindex]){
     line-height: 22px;
 }
 
-
-/* .items-banner{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-} */
 .content {
   display: inline-block;
-}
-h1{
-  margin-bottom: 0px;
-  margin-left: 25px;
-
 }
 
 .tab-header{
@@ -109,7 +89,6 @@ h1{
 .resize{
   resize:none;
   width: 100%;
-  height: 150px;
 }
 
 .camigos.camigos {
@@ -140,8 +119,8 @@ h1{
   align-items: center;
   box-shadow: 1px 1px 10px black;
   max-width:850px;
-  max-height:340px;
-  width: auto;
+    max-height:340px;
+    width: auto;
     /* height: auto; */
 }
 /* Border top iMG faleconosco */
@@ -177,13 +156,6 @@ h1{
   font-weight: 700;
   color: #5d4267;
 }
-/* .btn-capa{
-  display: none;
-}
-.btn-capa:hover{
-  display: block;
-} */
-
 .card.colorful-card .testimonial-card .card-up {
   height: 95px;
 }
@@ -350,6 +322,7 @@ h1{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
 
 .fotocadastro{
@@ -369,6 +342,7 @@ h1{
 .formulario {
     border-radius: 10px;
     background-color: #FFF;
+    display: block;
 }
 
 form h1 {
@@ -425,6 +399,10 @@ form h1 {
     float: left;
     text-decoration: none;
 
+}
+.textfaq.btn.btn-link.collapsed {
+  background-color: transparent !important;
+  font-size: 16px !important;
 }
 
 .btn-link:hover{
@@ -602,63 +580,110 @@ text-decoration:none;
 .imgcar{
   display: none;
 }
-.postagem-display{
-  display: none;
+
+.ul-valores{
+  display: inline-block;
 }
-#myLinks {
-  display: none;
+
+}
+@media (min-width:768px) and (max-width: 992px){
+  .img-fundo1{
+    height: 350px;
+    width: 720px ;
+  }
+
+  #accordion{
+    width: 700px;
+  }
+  .fundo-faq{
+    width: 700px;
+  }
+}
+
+
+@media (min-width:576px) and (max-width: 768px){
+  .img-fundo1{
+    height: 400px;
+    width: 570px ;
+  }
+  .ul-valores{
+    margin: 100px;
+  }
+  #accordion{
+    width: 540px;
+  }
+  .fundo-faq{
+    width: 540px;
+  }
+
+  #contato{
+    width: 540px;
+  }
+
+  .fundo-contato{
+   width: 540px;
+  }
+}
+
+@media (min-width:420px) and (max-width: 576px){
+  .img-fundo1{
+    height: 350px;
+    width: 470px ;
+  }
+  #accordion{
+    width: 420px;
+  }
+  .fundo-faq{
+    width: 420px;
+  }
+
+  #contato{
+    width: 415px;
+  }
+
+  .fundo-contato{
+   width: 415px;
+  }
+  
+}
+
+@media (min-width:260px) and (max-width:420px){
+  #accordion{
+    width: 290px;
+  }
+  .fundo-faq{
+    width: 290px;
+  }
+.botaoresp{
+  font-size: 10px !important;
+  
+}
+#contato{
+  width: 290px;
+}
+
+.fundo-contato{
+ width: 290px;
 }
 }
 
-.gallery-container p.page-description {
-    text-align: center;
-    margin: 30px auto;
-    font-size: 18px;
-    color: #85878c;
-}
+/* ----------Efeito de Transição abaixo do carrossel nas imagens da page Index---------------//----------- */
 
-/* Styles for the gallery */
+div#efeito img#transition{
+    float: left;
+    width: 150px;
+    height: 70px;
+    /* background: white; */
+    -webkit-transition: width 2s, height 2s; /* ------For Safari 3.1 to 6.0------ */
+    transition: all .3s ease-in;
+    margin: 10px;
+    /* box-shadow: 1px 1px 9px black; */
+    /* border: 4px solid white; */
+    }
+    
+    div#efeito img#transition:hover {
+    width: 185px;
+    height: 100px;
+    }
 
-.tz-gallery {
-    padding: 40px;
-}
-
-.tz-gallery .thumbnail {
-    padding: 0;
-    margin-bottom: 30px;
-    border: none;
-}
-
-.tz-gallery img {
-    border-radius: 2px;
-}
-
-.tz-gallery .caption{
-    padding: 26px 30px;
-    text-align: center;
-}
-
-.tz-gallery .caption h3 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 0;
-}
-
-.tz-gallery .caption p {
-    font-size: 12px;
-    color: #7b7d7d;
-    margin: 0;
-}
-
-.baguetteBox-button {
-    background-color: transparent !important;
-}
-
-.task-detail{
-  text-align: center;
-  font-weight: 800;
-}
-
-.margin-rigth{
-  margin-right: 40px;
-}
+/* -------------------------//--------------------------------//---------------------------------- */
