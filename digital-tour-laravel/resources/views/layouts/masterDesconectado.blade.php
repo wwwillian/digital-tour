@@ -30,7 +30,7 @@
             <!-- <a class="navbar-brand" href="#">DIGITAL TOUR</a> -->
             <ul class="navop navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item exibindo">
-                    <a class="h5 nav-link" data-toggle="modal" data-target="#exampleModal"> <i class="fas fa-user"></i> Login</a>
+                    <a class="h5 nav-link" href="/login"> <i class="fas fa-user"></i> Login</a>
                 </li>
                 <li class="nav-item">
                     <a class="h5 nav-link" href="/quemsomos"><i class="fas fa-globe"></i> Quem Somos</a>
@@ -48,43 +48,7 @@
         </div>
     </nav>
 </header>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-
-                <div class="form-group">
-                    <label for="exampleDropdownFormEmail2">E-mail:</label>
-                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="E-mail">
-                </div>
-                <div class="form-group">
-                    <label for="exampleDropdownFormPassword2">Senha:</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Senha">
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                    <label class="form-check-label" for="dropdownCheck2">
-                        Lembre me
-                    </label>
-                    <a href="#">Esqueceu sua senha?</a>
-                </div>
-
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
-                <button type="button" class="btn btn-primary">Enviar</button>
-            </div>
-        </div>
-    </div>
-</div>
+           
 
 @yield('content')
 

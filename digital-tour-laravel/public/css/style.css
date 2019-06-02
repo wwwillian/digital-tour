@@ -277,44 +277,26 @@ a:not([href]):not([tabindex]){
   transform: scale(1.05);
 }
 
-/*------------- Modal --------------*/
-.modal-footer .botaoev{         /* botão enviar do modal */
-    border: 1px solid #027ba3;
-    border-radius: 23px ;
-    background-color: #027ba3;
-    font-weight: bolder;
-    color: white;
-    cursor: pointer;
+/*-----------------Login-------------------------*/
+
+.col-md-8.login{
+  margin-top: 80px;
 }
 
-.modal-footer .botaoev:hover { /* botão enviar do modal */
-    border: 1px solid #159ada ;
-    background-color: #159ada ;
-    cursor: pointer ;
-    box-shadow:
-    0 8px 16px 0 rgba(0,0,0,0.2),
-    0 6px 20px 0 rgba(0,0,0,0.19) ;
-    transform: scale(1.05) ;
+.fundo-login{
+  background-image: url('../img/login1.jpg');
+  height: 20vh;
+  font-size: 32px;
+  text-align: center;
+  width: 700px;
+  margin: 28px auto;
+  background-color: rgba(255,255,255);
+  margin-block-start: 25px;
+  margin-block-end: 0px;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
 }
 
-.modal-footer .botaofe{         /* botão fechar do modal */
-    border: 1px solid #a30202;
-    border-radius: 23px ;
-    background-color: #a30202;
-    font-weight: bolder;
-    color: white;
-    cursor: pointer;
-}
-
-.modal-footer .botaofe:hover { /* botão fechar do modal */
-    border: 1px solid #ff0000 ;
-    background-color: #ff0000 ;
-    cursor: pointer ;
-    box-shadow:
-    0 8px 16px 0 rgba(0,0,0,0.2),
-    0 6px 20px 0 rgba(0,0,0,0.19) ;
-    transform: scale(1.05) ;
-}
 
 /*--------------Pagina de cadastro--------------*/
 .caixa {
@@ -417,7 +399,9 @@ form h1 {
 
 .caixa2{
     width: 700px;
-    margin: 0px auto 25px
+    margin: 0px auto 25px;
+    margin-top: 80px;
+    margin-bottom: -60px;
 }
 
 .btn-link{

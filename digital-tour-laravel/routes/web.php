@@ -28,3 +28,7 @@ Route::get('/contato', 'PaginasController@mostrarContato');
 Route::get('/posts', 'PaginasController@mostrarPosts');
 
 Route::get('/perfil', 'PaginasController@mostrarPerfil');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
