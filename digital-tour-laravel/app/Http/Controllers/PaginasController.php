@@ -40,4 +40,9 @@ class PaginasController extends Controller
     {
         return view('perfil');
     }
+
+    public function mostrarArtigos()
+    {
+        return view('artigos');
+    }
 }
