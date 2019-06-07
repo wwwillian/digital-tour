@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,6 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/index', 'PaginasController@mostrarIndex')->name('index');
 
 Route::get('/cadastro', 'PaginasController@mostrarCadastro')->name('cadastro');
+
+Route::get('/chat', 'Chat\ChatController@mostrarChat')->name('chat');
 
 Route::get('/quemsomos', 'PaginasController@mostrarQuemSomos')->name('quemsomos');
 

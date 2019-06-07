@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <!-- bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <!-- estilo -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="img/logorev1.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <title>Digital Tour</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Digital-tour') }}</title>
+    <link rel="icon" href="{{ asset('img/logorev1.png')}}">
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+</head>
 <body>
+<div id="app">
 <header>
     <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
         <!-- <a href="index.html" class="navbar-brand"> -->
@@ -67,112 +75,113 @@
 
         <div class="card-deck">
             <div class="card escondido">
-                <div class="card-body">
-                    <ul class="custom-scrollbar">
-                        <!-- Logo -->
-                        <li>
-                            <div class="logo-wrapper sn-ad-avatar-wrapper" onloadedmetadata="" <a href="#"><img
+                <ul class="custom-scrollbar">
+                    <!-- Logo -->
+                    <li>
+                        <div class="logo-wrapper sn-ad-avatar-wrapper" onloadedmetadata=""> <a href="#"><img
                                     src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg" width="90"
                                     class="rounded-circle"><span> João Victor</span></a>
-                </div>
-                </li>
-                <!--/. Logo -->
-                <!-- Side navigation links -->
-                <li>
-                    <ul class="collapsible collapsible-accordion">
-                        <li><a class="collapsible-header waves-effect arrow-r active"><i
-                                    class="sv-slim-icon fas fa-chevron-right"></i> Perfil<i class="fas fa-angle-down rotate-icon"></i></a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li><a href="#" class="waves-effect active">
-                                            <span class="sv-slim"> Amigos</span>
-                                            <span class="sv-normal"></span></a>
-                                    </li>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim"> Galeria</span>
-                                            <span class="sv-normal"></span></a>
-                                    </li>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim"> Videos</span>
-                                            <span class="sv-normal"></span></a>
-                                    </li>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim"> Perfil</span>
-                                            <span class="sv-normal"></span></a>
-                                    </li>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim"> Posts</span>
-                                            <span class="sv-normal"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a class="collapsible-header waves-effect arrow-r"><i
-                                    class="sv-slim-icon far fa-eye"></i> Visualizar<i
-                                    class="fas fa-angle-down rotate-icon"></i></a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim"> Praia</span>
-                                            <span class="sv-normal"></span></a>
-                                    </li>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim"> Comidas </span>
-                                            <span class="sv-normal"></span></a>
-                                    </li>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim"> Baladas </span>
-                                            <span class="sv-normal"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a class="collapsible-header waves-effect arrow-r"><i
-                                    class="sv-slim-icon fas fa-hand-point-right"></i> Planeje<i
-                                    class="fas fa-angle-down rotate-icon"></i></a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim">  </span>
-                                            <span class="sv-normal"> Proxima Viagens</span></a>
-                                    </li>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim"></span>
-                                            <span class="sv-normal"> Lugares Marcados</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- <li><a class="collapsible-header waves-effect arrow-r"><i
-                                    class="sv-slim-icon far fa-envelope"></i> Contact me<i
-                                    class="fas fa-angle-down rotate-icon"></i></a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim"> F </span>
-                                            <span class="sv-normal">FAQ</span></a>
-                                    </li>
-                                    <li><a href="#" class="waves-effect">
-                                            <span class="sv-slim"> W </span>
-                                            <span class="sv-normal">Write a message</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li> -->
-                        <li><a id="toggle" class="waves-effect exibindo"><i
-                                    class="sv-slim-icon fas fa-angle-double-left exibindo"></i>Minimize menu</a>
-                        </li>
-                    </ul>
-                </li>
-                <!--/. Side navigation links -->
+
+                        </div>
+                    </li>
+                    <!--/. Logo -->
+                    <!-- Side navigation links -->
+                    <li>
+                        <ul class="collapsible collapsible-accordion">
+                            <li><a class="collapsible-header waves-effect arrow-r active"><i
+                                        class="sv-slim-icon fas fa-chevron-right"></i> Perfil<i class="fas fa-angle-down rotate-icon"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#" class="waves-effect active">
+                                                <span class="sv-slim"> Amigos</span>
+                                                <span class="sv-normal"></span></a>
+                                        </li>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim"> Galeria</span>
+                                                <span class="sv-normal"></span></a>
+                                        </li>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim"> Videos</span>
+                                                <span class="sv-normal"></span></a>
+                                        </li>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim"> Perfil</span>
+                                                <span class="sv-normal"></span></a>
+                                        </li>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim"> Posts</span>
+                                                <span class="sv-normal"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a class="collapsible-header waves-effect arrow-r"><i
+                                        class="sv-slim-icon far fa-eye"></i> Visualizar<i
+                                        class="fas fa-angle-down rotate-icon"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim"> Praia</span>
+                                                <span class="sv-normal"></span></a>
+                                        </li>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim"> Comidas </span>
+                                                <span class="sv-normal"></span></a>
+                                        </li>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim"> Baladas </span>
+                                                <span class="sv-normal"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a class="collapsible-header waves-effect arrow-r"><i
+                                        class="sv-slim-icon fas fa-hand-point-right"></i> Planeje<i
+                                        class="fas fa-angle-down rotate-icon"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim">  </span>
+                                                <span class="sv-normal"> Proxima Viagens</span></a>
+                                        </li>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim"></span>
+                                                <span class="sv-normal"> Lugares Marcados</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- <li><a class="collapsible-header waves-effect arrow-r"><i
+                                        class="sv-slim-icon far fa-envelope"></i> Contact me<i
+                                        class="fas fa-angle-down rotate-icon"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim"> F </span>
+                                                <span class="sv-normal">FAQ</span></a>
+                                        </li>
+                                        <li><a href="#" class="waves-effect">
+                                                <span class="sv-slim"> W </span>
+                                                <span class="sv-normal">Write a message</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li> -->
+                            <li><a id="toggle" class="waves-effect exibindo"><i
+                                        class="sv-slim-icon fas fa-angle-double-left exibindo"></i>Minimize menu</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--/. Side navigation links -->
                 </ul>
                 </p>
                 <p class="card-text"><small class="text-muted">
                         <div class="sidenav-bg rgba-blue-strong"></div>
-            </div>
-            </small></p>
+                    </small></p>
         </div>
     </div>
+    </div>
+</div>
     <!--/. Sidebar navigation -->
 @yield('content')
 
@@ -199,6 +208,7 @@
     </footer>
     <!--fim conteiner-->
 
+
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -216,6 +226,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script src="js/main.js"></script>
+</div>
 </body>
 
 </html>
