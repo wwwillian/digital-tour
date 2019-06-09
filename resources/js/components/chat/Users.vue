@@ -8,7 +8,7 @@
                     <img :src="`/storage/users/${user.image}`" alt="">
                 </div>
                 <div class="user-img" v-else>
-                    <img src="/imgs/no-image.png" alt="">
+                    <img src="/img/no-image.png" alt="">
                 </div>
                 <strong v-text="user.name"></strong>
             </div>
