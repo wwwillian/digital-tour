@@ -8,13 +8,7 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+import store from './store/store'
 
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
@@ -22,8 +16,8 @@ window.Vue = require('vue');
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('chat', require('./components/chat/Chat').default);
 Vue.component('users', require('./components/chat/Users').default);
-// Vue.component('messages', require('./components/chat/Messages').default);
-// Vue.component('message', require('./components/chat/Message').default);
+Vue.component('messages', require('./components/chat/Messages').default);
+Vue.component('message', require('./components/chat/Message').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -32,6 +26,7 @@ Vue.component('users', require('./components/chat/Users').default);
  */
 
 const app = new Vue({
+    store,
     el: '#app',
 });
 

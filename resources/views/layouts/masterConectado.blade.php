@@ -22,6 +22,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+    <!-- CDN Galery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
 </head>
 <body>
 <div id="app">
@@ -41,16 +45,16 @@
                     <a class="h5 nav-link" href=""> <i class="fas fa-user"></i> João Victor</a>
                 </li>
                 <li class="nav-item">
-                    <a class="h5 nav-link" href=""><i class="fas fa-user-friends"></i> Amigos</a>
+                    <a class="h5 nav-link" href="#tamigos"><i class="fas fa-user-friends"></i> Amigos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="h5 nav-link" href=""><i class="fas fa-file-image"></i> Galeria</a>
+                    <a class="h5 nav-link" href="#tgaleria"><i class="fas fa-file-image"></i> Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="h5 nav-link" href="/artigos"><i class="fas fa-plane-departure"></i></i> Artigos</a>
+                    <a class="h5 nav-link" href=""><i class="fas fa-plane-departure"></i></i> Artigos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="h5 nav-link" href=""><i class="fas fa-comments"></i> Chat</a>
+                    <a class="h5 nav-link" href="{{ route('chat') }}"><i class="fas fa-comments"></i> Chat</a>
                 </li>
             </ul>
         </div>
@@ -220,11 +224,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script src="js/main.js"></script>
 </div>
 </body>
