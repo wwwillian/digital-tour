@@ -23,25 +23,25 @@ Route::group(['middleware'=>'auth'], function (){
 
     Route::get('/meu-perfil', 'User\UserController@profile')->name('profile');
     Route::post('/meu-perfil', 'User\UserController@profileUpdate')->name('profileUpdate');
+
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::get('/perfil', 'PaginasController@mostrarPerfil')->name('perfil');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/index', 'PaginasController@mostrarIndex')->name('index');
+// Route::get('/index', 'PaginasController@mostrarIndex')->name('index');
 
 Route::get('/cadastro', 'PaginasController@mostrarCadastro')->name('cadastro');
-
-Route::get('/quemsomos', 'PaginasController@mostrarQuemSomos')->name('quemsomos');
 
 Route::get('/faq', 'PaginasController@mostrarFaq')->name('faq');
 
 Route::get('/contato', 'PaginasController@mostrarContato')->name('contato');
 
-Route::get('/posts', 'PaginasController@mostrarPosts')->name('posts');
-
-Route::get('/perfil', 'PaginasController@mostrarPerfil')->name('perfil');
+// Route::get('/posts', 'PaginasController@mostrarPosts')->name('posts');
 
 Route::get('/artigos', 'PaginasController@mostrarArtigos')->name('artigos');
 
+Route::get('/quemsomos', 'PaginasController@mostrarQuemSomos')->name('quemsomos');

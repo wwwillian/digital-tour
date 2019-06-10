@@ -6450,7 +6450,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.users{\n    margin-top: 73px;\n    float: left;\n    width: 100%;\n    overflow-y: auto;\n    overflow-x: hidden;\n    height: 629px;\n    max-height: 629px;\n}\n.user{\n    float: left;\n    width: 100%;\n    margin: 10px 0;\n}\n.user-img{\n    float: left;\n}\n.user-img img{\n    max-width: 40px;\n    border: 1px solid #FFFFFF;\n    border-radius: 100%;\n}\n.user strong{\n    float: left;\n    margin: 9px 4px;\n}\n", ""]);
+exports.push([module.i, "\n.users{\n    float: left;\n    width: 100%;\n    overflow-y: auto;\n    overflow-x: hidden;\n    height: 629px;\n    max-height: 629px;\n}\n.user{\n    float: left;\n    width: 100%;\n    margin: 10px 0;\n}\n.user-img{\n    float: left;\n}\n.user-img img{\n    max-width: 40px;\n    border: 1px solid #FFFFFF;\n    border-radius: 100%;\n}\n.user strong{\n    float: left;\n    margin: 9px 4px;\n}\n", ""]);
 
 // exports
 

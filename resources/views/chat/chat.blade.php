@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.conectado')
 
 @section('content')
 
@@ -7,7 +7,7 @@
             <div class="col-9">
                 <chat></chat>
             </div>
-            <div class="col-3">
+            <div class="col-3 usuarios">
                 <users></users>
             </div>
         </div>
