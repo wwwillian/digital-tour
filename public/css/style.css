@@ -1,5 +1,10 @@
 
 /*Cor inserida no background do menu Nav ao clicar no mesmo*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
   background-color: rgb(241, 240, 240);
   }
@@ -149,6 +154,7 @@ a:not([href]):not([tabindex]){
 .ul-header{
   display: flex;
   justify-content: space-between;
+  font-size: 18px;
 }
 
 .heading {
@@ -535,6 +541,7 @@ text-decoration:none;
   text-align: center;
 
 }
+
 .navbar-expand-lg .navbar-collapse{
   display: inline-block !important;
   flex-basis: auto;
@@ -554,7 +561,6 @@ text-decoration:none;
 @media (max-width: 986px){
   .ul-header {
     display: none;
-
 }
 .navbar-collapse {
 
@@ -713,9 +719,14 @@ div#efeito img#transition{
 }
 
 .artigo {
-  border: none;
-  margin-top: 0px;
-  padding: 13px 0px 0px 0px;
+    border: none;
+    margin-top: 0px;
+    padding: 13px 0px 0px 0px;
 }
+
+.usuarios{
+    margin-top: 80px;
+}
+
 
 /* -------------------------//--------------------------------//---------------------------------- */

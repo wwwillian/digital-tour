@@ -93,9 +93,9 @@
 
         </nav>
     </header>
-        <main class="py-4">
+
             @yield('content')
-        </main>
+
     <!-- Footer -->
     <footer class="bg-dark mt-5">
         <div class="container">

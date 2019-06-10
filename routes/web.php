@@ -40,7 +40,7 @@ Route::get('/faq', 'PaginasController@mostrarFaq')->name('faq');
 
 Route::get('/contato', 'PaginasController@mostrarContato')->name('contato');
 
-// Route::get('/posts', 'PaginasController@mostrarPosts')->name('posts');
+//Route::get('/posts', 'PaginasController@mostrarPosts')->name('posts');
 
 Route::get('/artigos', 'PaginasController@mostrarArtigos')->name('artigos');
 

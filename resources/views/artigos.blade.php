@@ -1,7 +1,6 @@
-@extends('layouts.masterDesconectado')
+@extends('layouts.desconectado')
 
 @section('content')
-
 
 <!-------------------------------------------- Artigos ------------------------------------------------->
 
@@ -179,4 +178,4 @@
 
 </div>
 <!-- Fim Artigos -->
-@stop
+@endsection

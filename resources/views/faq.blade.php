@@ -1,8 +1,6 @@
-@extends('layouts.masterDesconectado')
+@extends('layouts.desconectado')
 
 @section('content')
-
-
 
     <div class="caixa2 container">
         <div id="accordion">
