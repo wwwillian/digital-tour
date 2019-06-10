@@ -658,19 +658,23 @@ text-decoration:none;
   .fundo-faq{
     width: 290px;
   }
-.botaoresp{
-  font-size: 10px !important;
-  
-}
-#contato{
+  .botaoresp{
+    font-size: 10px !important;
+    
+  }
+  #contato{
+    width: 290px;
+  }
+
+  .fundo-contato{
   width: 290px;
+  }
 }
 
-.fundo-contato{
- width: 290px;
+@media (min-width: 768px)
+.offset-md-3 {
+  margin-left: 0%;
 }
-}
-
 /* ----------Efeito de Transição abaixo do carrossel nas imagens da page Index---------------//----------- */
 
 div#efeito img#transition{
@@ -699,6 +703,20 @@ div#efeito img#transition{
 
 .link-artigo a{
   color: gray;
+}
+
+.botao-artigo {
+  background-color: white;
+  border-block-end: none;
+  border-right-style: none;
+  border-color: white;
+  color: gray;
+}
+
+.artigo {
+  border: none;
+  margin-top: 0px;
+  padding: 13px 0px 0px 0px;
 }
 
 /* -------------------------//--------------------------------//---------------------------------- */

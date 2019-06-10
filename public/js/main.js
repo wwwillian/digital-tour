@@ -48,7 +48,7 @@ $(document).ready(function (e) {
         
         $(this).parent().next('.artigo').slideToggle('slow');
         
-        
+      
     });
 
 });
