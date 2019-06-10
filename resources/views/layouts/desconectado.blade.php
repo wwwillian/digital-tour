@@ -36,8 +36,9 @@
         ]) !!}
     </script>
 <body>
+<div id="app">
     <header>
-        <div id="app">
+
         <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
             <!-- <a href="index.html" class="navbar-brand"> -->
             <a href="/"><img src="img/logorev1.png" width="60"></a>

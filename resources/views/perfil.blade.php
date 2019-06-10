@@ -1,4 +1,4 @@
-@extends('layouts.masterConectado')
+@extends('layouts.conectado')
 
 @section('content')
 
@@ -7,7 +7,7 @@
 <div class="content">
     <div class="col-lg-12 col-md-12 col-xl-12">
 
-        <div class="awesome user width-cover ">
+        <div class="awesome user width-cover">
             <div class="container img-fundo" id="btnMostrarEsconder" style="background-image: url('img/006.jpg');">
                 <div class="items-banner"></div>
                 <div class="img-perfil">
@@ -22,7 +22,7 @@
         </div>
     </div>
     <!-- Cabecalho de postagem! -->
-    <div class="row">
+    <div>
         <div class="col-lg-12">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

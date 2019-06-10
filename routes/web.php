@@ -27,6 +27,8 @@ Route::group(['middleware'=>'auth'], function (){
     Route::get('/home', 'HomeController@index')->name('home');
 
     Route::get('/perfil', 'PaginasController@mostrarPerfil')->name('perfil');
+
+    Route::get('/artigos', 'PaginasController@mostrarArtigos')->name('artigos');
 });
 
 Auth::routes();
@@ -42,6 +44,6 @@ Route::get('/contato', 'PaginasController@mostrarContato')->name('contato');
 
 //Route::get('/posts', 'PaginasController@mostrarPosts')->name('posts');
 
-Route::get('/artigos', 'PaginasController@mostrarArtigos')->name('artigos');
+
 
 Route::get('/quemsomos', 'PaginasController@mostrarQuemSomos')->name('quemsomos');

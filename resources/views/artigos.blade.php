@@ -1,8 +1,7 @@
-@extends('layouts.desconectado')
-
+@extends('layouts.conectado')
 @section('content')
 
-<!-------------------------------------------- Artigos ------------------------------------------------->
+    <!-------------------------------------------- Artigos ------------------------------------------------->
 
 <!-- Artigo 1 -->
 <div class="container, marginartigo col-md-10">

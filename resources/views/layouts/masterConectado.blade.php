@@ -26,6 +26,16 @@
     <!-- CDN Galery -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
+    <script>
+        window.laravel = {!! json_encode([
+            'csrf' => csrf_token(),
+            'pusher' =>[
+                   'key' => config('broadcasting.connections.pusher.key'),
+                   'cluster' => config('broadcasting.connections.pusher.options.cluster'),
+            ]
+        ]) !!}
+    </script>
+
 </head>
 <body>
 <div id="app">
