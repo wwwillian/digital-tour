@@ -14,18 +14,19 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <a href="http://gastronomianobrasil.com.br/gastronomia-brasileira-cultura-nacional/" target="_blank">
+                    <a href="http://gastronomianobrasil.com.br/gastronomia-brasileira-cultura-nacional/"
+                        target="_blank">
                         <h5 class="card-title">Gastronomia Brasileira</h5>
                     </a>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
                 </div>
 
-                <button class="offset-md-10">Ver mais</button>
-                
-                            </div>
-            <div class="artigo card mb-3 offset-md-2" style="max-width: 750px;">
-                <div class="col-md-8 offset-md-3">
+                <button class="botao-artigo offset-md-10">Ver mais</button>
+
+            </div>
+            <div class="artigo card mb-3 col-md-12">
+                <div class="texto-artigo col-md-12 ">
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aperiam rem quisquam labore
                         eius distinctio consequatur hic dolor dignissimos repudiandae recusandae minus earum atque
                         tenetur quibusdam architecto iste, officia saepe. </p>
@@ -49,6 +50,15 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
                 </div>
+                <button class="botao-artigo offset-md-10">Ver mais</button>
+
+            </div>
+            <div class="artigo card mb-3">
+                <div class="texto-artigo col-md-12">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aperiam rem quisquam labore
+                        eius distinctio consequatur hic dolor dignissimos repudiandae recusandae minus earum atque
+                        tenetur quibusdam architecto iste, officia saepe. </p>
+                </div>
             </div>
         </div>
     </div>
@@ -62,11 +72,21 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <a href="https://www.theenemy.com.br/esports/esports-esports-ou-e-sports-qual-a-grafia-correta-dos-esportes-eletronicos" target="_blank">
+                    <a href="https://www.theenemy.com.br/esports/esports-esports-ou-e-sports-qual-a-grafia-correta-dos-esportes-eletronicos"
+                        target="_blank">
                         <h5 class="card-title">E-sports</h5>
                     </a>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
+                </div>
+                <button class="botao-artigo offset-md-10">Ver mais</button>
+
+            </div>
+            <div class="artigo card mb-3">
+                <div class="texto-artigo col-md-12">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aperiam rem quisquam labore
+                        eius distinctio consequatur hic dolor dignissimos repudiandae recusandae minus earum atque
+                        tenetur quibusdam architecto iste, officia saepe. </p>
                 </div>
             </div>
         </div>
@@ -81,11 +101,21 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <a href="https://viagenscinematograficas.com.br/2018/12/melhores-destinos-do-brasil-top-10.html" target="_blank">
+                    <a href="https://viagenscinematograficas.com.br/2018/12/melhores-destinos-do-brasil-top-10.html"
+                        target="_blank">
                         <h5 class="card-title">Viagens</h5>
                     </a>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
+                </div>
+                <button class="botao-artigo offset-md-10">Ver mais</button>
+
+            </div>
+            <div class="artigo card mb-3">
+                <div class="texto-artigo col-md-12">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aperiam rem quisquam labore
+                        eius distinctio consequatur hic dolor dignissimos repudiandae recusandae minus earum atque
+                        tenetur quibusdam architecto iste, officia saepe. </p>
                 </div>
             </div>
         </div>
@@ -106,6 +136,15 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
                 </div>
+                <button class="botao-artigo offset-md-10">Ver mais</button>
+
+            </div>
+            <div class="artigo card mb-3">
+                <div class="texto-artigo col-md-12">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aperiam rem quisquam labore
+                        eius distinctio consequatur hic dolor dignissimos repudiandae recusandae minus earum atque
+                        tenetur quibusdam architecto iste, officia saepe. </p>
+                </div>
             </div>
         </div>
     </div>
@@ -124,6 +163,15 @@
                     </a>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
+                </div>
+                <button class="botao-artigo offset-md-10">Ver mais</button>
+
+            </div>
+            <div class="artigo card mb-3">
+                <div class="texto-artigo col-md-12">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aperiam rem quisquam labore
+                        eius distinctio consequatur hic dolor dignissimos repudiandae recusandae minus earum atque
+                        tenetur quibusdam architecto iste, officia saepe. </p>
                 </div>
             </div>
         </div>
