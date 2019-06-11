@@ -25,7 +25,7 @@ class CreateUsersTable extends Migration
             $table->enum('gender', ['Feminino', 'Masculino', 'Outros'])->nullable();
             $table->enum('maritalStatus', ['Casado', 'Enrolado', 'Namorando', 'Solteiro'])->nullable();
             $table->string('location')->nullable();
-            $table->integer('mobileNumber')->nullable();
+            $table->bigInteger('mobileNumber')->nullable();
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
             $table->string('skype')->nullable();

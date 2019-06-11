@@ -7,15 +7,25 @@
 <div class="content">
     <div class="col-lg-12 col-md-12 col-xl-12">
 
-        <div class="awesome user width-cover">
-            <div class="container img-fundo" id="btnMostrarEsconder" style="background-image: url('img/006.jpg');">
+        <div class="awesome user width-cover mt-5">
+            <div class="container img-fundo" id="btnMostrarEsconder"
+                 @if(auth()->user()->cupPhoto != null)
+                 style="background-image: url('img/006.jpg');"
+                @else
+                 style="background-image: url('img/imagenopaisagem.jpg'); width:1070px; height:280px"
+                @endif>
                 <div class="items-banner"></div>
                 <div class="img-perfil">
-                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg" id= "btnMostrarEsconder1"divConteudo alt="img perfil"
-                                     width="120"></a>
-                    <a href="#" class="btn btn-primary btn-small btn-alt-foto divConteudo1" data-toggle="modal">Alterar Foto</a>
+                    <a href="#">
+                        @if(auth()->user()->image != null)
+                            <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
+                        @else
+                            <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
+                        @endif
+                    </a>
+                    <a href="" class="btn btn-primary btn-small btn-alt-foto divConteudo1" data-toggle="modal">Alterar Foto</a>
                 </div>
-                <h1 class="perfil ">João Victor</h1>
+                <h1 class="perfil">{{ auth()->user()->name  }}</h1>
                 <a class="btn btn-primary btn-embossed btn-capa divConteudo" data-toggle="modal" href="#">Alterar Capa</a>
 
             </div>
@@ -58,10 +68,10 @@
                 <div class="tab-pane" id="tperfil" role="tabpanel">
 
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header textoperfil">
                             <h5 class="card-header-text">Perfil</h5>
                             <button id="edit-btn" type="button"
-                                    class="btn btn-sm btn-primary waves-effect waves-light f-right">Editar</button>
+                                    class="submit-form"><a href="{{ route('profile') }}">Editar</a></button>
                         </div>
                         <div class="card-block">
                             <div class="view-info">
@@ -69,29 +79,29 @@
                                     <div class="col-lg-12">
                                         <div class="general-info">
                                             <div class="row">
-                                                <div class="col-lg-12 col-md-12 col-xs-6">
+                                                <div class="col-lg-12 col-xl-6">
                                                     <div class="table-responsive">
                                                         <table class="table m-0">
                                                             <tbody>
                                                             <tr>
                                                                 <th scope="row">Nome Completo</th>
-                                                                <td>Sheldon Cupper</td>
+                                                                <td>{{ auth()->user()->name  }}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Genero</th>
-                                                                <td>Masculino</td>
+                                                                <td>{{ auth()->user()->gender  }}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Aniversario</th>
-                                                                <td> 250 de julho de 1984</td>
+                                                                <td>{{ auth()->user()->date  }}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Status Civil</th>
-                                                                <td>Solteiro</td>
+                                                                <td>{{ auth()->user()->maritalStatus  }}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Localizacao</th>
-                                                                <td>Sao Paulo, BR</td>
+                                                                <td>{{ auth()->user()->location  }}</td>
                                                             </tr>
                                                             </tbody>
                                                         </table>
@@ -104,24 +114,25 @@
                                                             <tbody>
                                                             <tr>
                                                                 <th scope="row">E-Mail</th>
-                                                                <td><a href="#">email@exemplo.com</a></td>
+                                                                <td><a href="mailto:{{ auth()->user()->email  }}">{{ auth()->user()->email  }}</a></td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Celular</th>
-                                                                <td>(011) - 95555-8985</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">Twitter</th>
-                                                                <td>@twitter</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">Skype</th>
-                                                                <td>sheldon.skype</td>
+                                                                <td>{{ auth()->user()->mobileNumber  }}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Facebook</th>
-                                                                <td><a href="#">www.facebook.com/sheldon</a></td>
+                                                                <td><a href="{{ auth()->user()->facebook  }}">{{ auth()->user()->facebook  }}</a></td>
                                                             </tr>
+                                                            <tr>
+                                                                <th scope="row">Skype</th>
+                                                                <td>{{ auth()->user()->skype  }}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Instagram</th>
+                                                                <td><a href="{{ auth()->user()->instagram  }}">{{ auth()->user()->instagram  }}</a></td>
+                                                            </tr>
+
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -258,12 +269,12 @@
 
                                             </div>
 
-                                            <div class="text-center">
-                                                <a href="#"
-                                                   class="btn btn-primary waves-effect waves-light m-r-20">Salvar</a>
-                                                <a href="#" id="edit-cancel"
-                                                   class="btn btn-default waves-effect">Cancelar</a>
-                                            </div>
+{{--                                            <div class="text-center">--}}
+{{--                                                <a href="#"--}}
+{{--                                                   class="btn btn-primary waves-effect waves-light m-r-20">Salvar</a>--}}
+{{--                                                <a href="#" id="edit-cancel"--}}
+{{--                                                   class="btn btn-default waves-effect">Cancelar</a>--}}
+{{--                                            </div>--}}
                                         </div>
 
                                     </div>
@@ -279,37 +290,15 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-header-text">Escreva sobre sua melhores experiencias</h5>
-                                    <button id="edit-info-btn" type="button"
-                                            class="btn btn-sm btn-primary waves-effect waves-light f-right">
-                                        <i class="icofont icofont-edit"></i>
-                                    </button>
+                                    <h5 class="card-header-text textoexperiencias">Compartilhe suas experiencias</h5>
+{{--                                    <button id="edit-info-btn" type="button"--}}
+{{--                                            class="btn btn-sm btn-primary waves-effect waves-light f-right">--}}
+{{--                                        <i class="icofont icofont-edit"></i>--}}
+{{--                                    </button>--}}
                                 </div>
                                 <div class="card-block user-desc">
                                     <div class="view-desc">
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                            in a piece of
-                                            classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                            McClintock, a
-                                            Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
-                                            obscure Latin
-                                            words, consectetur, from a Lorem Ipsum passage, and going through the cites of
-                                            the word in
-                                            classical literature, discovered the undoubtable source. Lorem Ipsum comes from
-                                            sections 1.10.32
-                                            and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
-                                            by Cicero,
-                                            written in 45 BC. This book is a treatise on the theory of ethics, very popular
-                                            during the
-                                            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                                            comes from a line in
-                                            section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is
-                                            reproduced below for
-                                            those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-                                            Malorum" by Cicero
-                                            are also reproduced in their exact original form, accompanied by English
-                                            versions from the 1914
-                                            translation by H. Rackham.</p>
+                                        <p class="p-5">{{ auth()->user()->experience  }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -1674,8 +1663,12 @@
 
         <div class="d-md-flex flex-md-fill mt-4 px-1">
             <div class="d-flex justify-content-center mr-md-5">
-                <img class="card-img-100 z-depth-1 mb-4" width="120" height="120"
-                     src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg" alt="avatar">
+                @if(auth()->user()->image != null)
+                    <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                @else
+                    <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                @endif
+
             </div>
             <textarea class="form-control pl-3 pt-3" id="exampleFormControlTextarea1" rows="6"
                       placeholder="Write something here..."></textarea>

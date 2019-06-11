@@ -37,7 +37,6 @@ $(document).ready(function (e) {
     });
 });
 
-baguetteBox.run('.tz-gallery');
 
 
 
@@ -52,3 +51,9 @@ $(document).ready(function (e) {
     });
 
 });
+
+$(document).ready(function () {
+    baguetteBox.run('.gallery', {
+        // Custom options
+    });
+})

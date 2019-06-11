@@ -97,13 +97,7 @@
                                 <label for="date" class="col-md-4 col-form-label text-md-right">Data de nascimento</label>
 
                                 <div class="col-md-6">
-                                    <input id="date" type="date" class="form-control @error('password') is-invalid @enderror" name="date">
-
-                                    @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
+                                    <input id="date" type="date" class="form-control @error('password') is-invalid @enderror" name="date" value="{{ auth()->user()->date  }}" required autofocus>
                                 </div>
                             </div>
 
@@ -112,11 +106,11 @@
 
                                 <div class="col-md-6">
                                     <label for="gender">Feminino</label>
-                                    <input id="gender" type="checkbox" name="gender"  value="Feminino">
+                                    <input id="gender" type="radio" name="gender"  value="Feminino">
                                     <label for="gender">Masculino</label>
-                                    <input id="gender" type="checkbox" name="gender"  value="Masculino">
+                                    <input id="gender" type="radio" name="gender"  value="Masculino">
                                     <label for="gender">Outros</label>
-                                    <input id="gender" type="checkbox" name="gender"  value="Outros">
+                                    <input id="gender" type="radio" name="gender"  value="Outros">
                                 </div>
                             </div>
 
@@ -137,7 +131,7 @@
                                 <label for="location" class="col-md-4 col-form-label text-md-right">Localização</label>
 
                                 <div class="col-md-6">
-                                    <input id="location" type="text" class="form-control" name="location">
+                                    <input id="location" type="text" class="form-control" name="location" value="{{ auth()->user()->location  }}">
                                 </div>
                             </div>
 
@@ -145,7 +139,7 @@
                                 <label for="mobilenumber" class="col-md-4 col-form-label text-md-right">Telefone</label>
 
                                 <div class="col-md-6">
-                                    <input id="mobilenumber" type="number" class="form-control" name="mobilenumber" value="location">
+                                    <input id="mobilenumber" type="number" class="form-control" name="mobilenumber" value="{{ auth()->user()->mobileNumber  }}">
                                 </div>
                             </div>
 
@@ -153,7 +147,7 @@
                                 <label for="facebook" class="col-md-4 col-form-label text-md-right">Facebook</label>
 
                                 <div class="col-md-6">
-                                    <input id="facebook" type="text" class="form-control" name="facebook">
+                                    <input id="facebook" type="text" class="form-control" name="facebook" value="{{ auth()->user()->facebook  }}">
                                 </div>
                             </div>
 
@@ -161,7 +155,7 @@
                                 <label for="instagram" class="col-md-4 col-form-label text-md-right">Instagram</label>
 
                                 <div class="col-md-6">
-                                    <input id="instagram" type="text" class="form-control" name="instagram">
+                                    <input id="instagram" type="text" class="form-control" name="instagram" value="{{ auth()->user()->instagram  }}">
                                 </div>
                             </div>
 
@@ -169,7 +163,7 @@
                                 <label for="skype" class="col-md-4 col-form-label text-md-right">Skype</label>
 
                                 <div class="col-md-6">
-                                    <input id="skype" type="text" class="form-control" name="skype">
+                                    <input id="skype" type="text" class="form-control" name="skype" value="{{ auth()->user()->skype  }}">
                                 </div>
                             </div>
 
@@ -177,7 +171,7 @@
                                 <label for="experience" class="col-md-4 col-form-label text-md-right">Experiencias</label>
 
                                 <div class="col-md-6">
-                                    <textarea id="experience" type="text" name="experience"></textarea>
+                                    <textarea id="experience" type="text" name="experience">{{ auth()->user()->experience }}</textarea>
                                 </div>
                             </div>
 

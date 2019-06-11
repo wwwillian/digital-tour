@@ -10,8 +10,11 @@
 
         <div class="d-md-flex flex-md-fill mt-4 px-1">
             <div class="d-flex justify-content-center mr-md-5">
-                <img class="card-img-100 z-depth-1 mb-4" width="120" height="120"
-                     src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg" alt="avatar">
+                @if(auth()->user()->image != null)
+                    <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                @else
+                    <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                @endif
             </div>
             <textarea class="form-control pl-3 pt-3" id="exampleFormControlTextarea1" rows="6"
                       placeholder="Em que está pensando ?..."></textarea>

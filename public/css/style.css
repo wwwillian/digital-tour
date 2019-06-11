@@ -127,6 +127,28 @@ a:not([href]):not([tabindex]){
     width: auto;
     /* height: auto; */
 }
+
+.textoperfil{
+    display: flex;
+    justify-content: space-between;
+    }
+
+.textoperfil h5{
+    margin: 15px;
+}
+
+.textoperfil .submit-form{
+    margin-right: 15px;
+}
+
+.textoperfil .submit-form a{
+    color:white;
+}
+
+.textoexperiencias{
+    margin: 15px;
+}
+
 /* Border top iMG faleconosco */
 .borda hr{
   border-top:24px solid;
@@ -416,6 +438,10 @@ form h1 {
 .form-group.sex {
   
   margin: 35px 100px 20px;
+}
+
+#btnMostrarEsconder1{
+    border-radius: 100%;
 }
 /* 
 .oucadastro{
@@ -757,3 +783,4 @@ div#efeito img#transition{
 
 
 /* -------------------------//--------------------------------//---------------------------------- */
+
