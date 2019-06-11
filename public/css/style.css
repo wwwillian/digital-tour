@@ -395,6 +395,33 @@ form h1 {
     transform: scale(1.05);
 }
 
+.incadastro{
+  width: 280px;
+
+  margin-left: 15px;
+}
+
+.incadastro1{
+  margin-left: 15px;
+}
+
+.incadastro2{
+  margin-left: 15px;
+}
+
+.incadastro label{
+   margin: 3px;
+}
+
+.form-group.sex {
+  
+  margin: 35px 100px 20px;
+}
+/* 
+.oucadastro{
+  margin: 1px;
+} */
+
 /* -------------FAQ----------------- */
 .caixa2{
     width: 500px;
