@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Meu Perfil</div>
+                    <div class="card-header">Editar Perfil</div>
 
                     <div class="card-body">
 
@@ -111,20 +111,76 @@
                                 <label for="gender" class="col-md-4 col-form-label text-md-right">Genero</label>
 
                                 <div class="col-md-6">
-                                    <label for="gender" class="col-md-4 col-form-label text-md-right">Feminino</label>
-                                    <input id="gender" type="checkbox" class="form-control @error('password') is-invalid @enderror" name="gender"  value="Feminino">
-                                    <label for="gender" class="col-md-4 col-form-label text-md-right">Masculino</label>
-                                    <input id="gender" type="checkbox" class="form-control @error('password') is-invalid @enderror" name="gender"  value="Masculino">
-                                    <label for="gender" class="col-md-4 col-form-label text-md-right">Outros</label>
-                                    <input id="gender" type="checkbox" class="form-control @error('password') is-invalid @enderror" name="gender"  value="Outros">
-
-                                    @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
+                                    <label for="gender">Feminino</label>
+                                    <input id="gender" type="checkbox" name="gender"  value="Feminino">
+                                    <label for="gender">Masculino</label>
+                                    <input id="gender" type="checkbox" name="gender"  value="Masculino">
+                                    <label for="gender">Outros</label>
+                                    <input id="gender" type="checkbox" name="gender"  value="Outros">
                                 </div>
                             </div>
+
+                            <div class="form-group row">
+                                <label for="maritalstatus" class="col-md-4 col-form-label text-md-right">Status Civil</label>
+
+                                <div class="col-md-6">
+                                    <select name="maritalstatus">
+                                        <option value="Casado">Casado</option>
+                                        <option value="Enrolado">Enrolado</option>
+                                        <option value="Namorando">Namorando</option>
+                                        <option value="Solteiro">Solteiro</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="location" class="col-md-4 col-form-label text-md-right">Localização</label>
+
+                                <div class="col-md-6">
+                                    <input id="location" type="text" class="form-control" name="location">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="mobilenumber" class="col-md-4 col-form-label text-md-right">Telefone</label>
+
+                                <div class="col-md-6">
+                                    <input id="mobilenumber" type="number" class="form-control" name="mobilenumber" value="location">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="facebook" class="col-md-4 col-form-label text-md-right">Facebook</label>
+
+                                <div class="col-md-6">
+                                    <input id="facebook" type="text" class="form-control" name="facebook">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="instagram" class="col-md-4 col-form-label text-md-right">Instagram</label>
+
+                                <div class="col-md-6">
+                                    <input id="instagram" type="text" class="form-control" name="instagram">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="skype" class="col-md-4 col-form-label text-md-right">Skype</label>
+
+                                <div class="col-md-6">
+                                    <input id="skype" type="text" class="form-control" name="skype">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="experience" class="col-md-4 col-form-label text-md-right">Experiencias</label>
+
+                                <div class="col-md-6">
+                                    <textarea id="experience" type="text" name="experience"></textarea>
+                                </div>
+                            </div>
+
                             <div class="form-group row mb-0">
                                 <div class="col-md-8 offset-md-4">
                                     <button type="submit" class="btn btn-success">
