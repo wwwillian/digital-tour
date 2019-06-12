@@ -31,21 +31,38 @@ a:not([href]):not([tabindex]){
   display: flex;
 }
 
-
 .img-fundo{
   height: 20em;
   border: 5px solid white;
   border-radius: 9px;
+    display: flex;
+    padding: 0;
 }
+
+#btnMostrarEsconder1{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.imgcapa{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
 .img-perfil{
-  margin-left: 2em;
+  margin-left: 3.5em;
+    position: relative;
 }
+
 .img-perfil a img{
-    margin-top: 15em;
+    margin-top: -5em;
     width: 125px;
     height: 125px;
     border: 5px solid white;
-    border-radius: 9px;
+    border-radius: 100%;
 }
 
 .btn-alt-foto{
@@ -59,11 +76,8 @@ a:not([href]):not([tabindex]){
     margin-right: 2em;
     margin-top: 2em;
 }
-
-
-.img-perfil{
-      position: relative;
-      display: inline-grid;
+.btn-alt-foto{
+    left: -116px;
 }
 
 .btn {
@@ -76,12 +90,23 @@ a:not([href]):not([tabindex]){
     line-height: 22px;
 }
 
+.btnfundo{
+    position: relative;
+    top: -351px;
+}
+
+.h1capa{
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
 .content {
   display: inline-block;
 }
 
 .tab-header{
-  margin-top: 4em;
+  margin-top: 1em;
 }
 
 .videos-css {
@@ -243,7 +268,7 @@ a:not([href]):not([tabindex]){
   text-align: center;
   width: 700px;
   margin: 28px auto;
-  background-color: rgba(255,255,255);
+  background-color: rgb(255,255,255);
   margin-block-start: 25px;
   margin-block-end: 0px;
   border-radius: 10px 10px 0px 0px;
@@ -255,7 +280,7 @@ a:not([href]):not([tabindex]){
   width: 700px;
   border-radius: 0px 0px 10px 10px;
   margin: 0px auto 25px;
-  background-color: rgba(255,255,255);
+  background-color: rgb(255,255,255);
   
 }
 
@@ -265,7 +290,7 @@ a:not([href]):not([tabindex]){
   width: 700px;
   border-radius: 0px 0px 10px 10px;
   margin: 0px auto 25px;
-  background-color: rgba(255,255,255);
+  background-color: rgb(255,255,255);
 }
 
 .login1 #contato .checkin{
@@ -336,7 +361,7 @@ a:not([href]):not([tabindex]){
   text-align: center;
   width: 700px;
   margin: 28px auto;
-  background-color: rgba(255,255,255);
+  background-color: rgb(255,255,255);
   margin-block-start: 25px;
   margin-block-end: 0px;
   border-radius: 10px 10px 0px 0px;
@@ -360,7 +385,7 @@ a:not([href]):not([tabindex]){
     text-align: center;
     width: 100%;
     margin: 0px ;
-    background-color: rgba(255,255,255);
+    background-color: rgb(255,255,255);
 
     margin-block-end: 2px;
     border-radius: 10px 10px 0px 0px;
@@ -440,9 +465,7 @@ form h1 {
   margin: 35px 100px 20px;
 }
 
-#btnMostrarEsconder1{
-    border-radius: 100%;
-}
+
 /* 
 .oucadastro{
   margin: 1px;
@@ -502,7 +525,7 @@ form h1 {
   text-align: center;
   width: 700px;
   margin: 28px auto;
-  background-color: rgba(255,255,255);
+  background-color: rgb(255,255,255);
   margin-block-start: 25px;
   margin-block-end: 0px;
   border-radius: 10px 10px 0px 0px;
@@ -729,10 +752,10 @@ text-decoration:none;
   }
 }
 
-@media (min-width: 768px)
+@media (min-width: 768px){
 .offset-md-3 {
-  margin-left: 0%;
-}
+    margin-left: 0%;
+}}
 /* ----------Efeito de Transição abaixo do carrossel nas imagens da page Index---------------//----------- */
 
 div#efeito img#transition{
@@ -746,7 +769,7 @@ div#efeito img#transition{
     /* box-shadow: 1px 1px 9px black; */
     /* border: 4px solid white; */
     }
-    
+
     div#efeito img#transition:hover {
     width: 185px;
     height: 100px;

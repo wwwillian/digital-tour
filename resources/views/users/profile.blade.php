@@ -15,7 +15,7 @@
                             </div>
                         @endif
                         @if(session('error'))
-                            <div class="alert alert-error">
+                            <div class="alert alert-danger">
                                 {{ session('error') }}
                             </div>
                         @endif
@@ -83,9 +83,9 @@
                                 <label for="cupPhoto" class="col-md-4 col-form-label text-md-right">Imagem Capa</label>
 
                                 <div class="col-md-6">
-                                    <input id="cupPhoto" type="file" class="form-control @error('image') is-invalid @enderror" name="cupphoto" autocomplete="current-image">
+                                    <input id="cupPhoto" type="file" class="form-control @error('cupPhoto') is-invalid @enderror" name="cupphoto" autocomplete="current-image">
 
-                                    @error('image')
+                                    @error('cupphoto')
                                     <span class="invalid-feedback" role="alert">
                                              <strong>{{ $message }}</strong>
                                          </span>

@@ -8,12 +8,14 @@
     <div class="col-lg-12 col-md-12 col-xl-12">
 
         <div class="awesome user width-cover mt-5">
-            <div class="container img-fundo" id="btnMostrarEsconder"
+            <div class="container img-fundo" id="btnMostrarEsconder">
                  @if(auth()->user()->cupPhoto != null)
-                 style="background-image: url('img/006.jpg');"
+                    <img src="{{ url('storage/usersfundo/'.auth()->user()->cupPhoto) }}" class="imgcapa">
                 @else
-                 style="background-image: url('img/imagenopaisagem.jpg'); width:1070px; height:280px"
-                @endif>
+                    <img src="/img/imagenopaisagem.jpg" class="imgcapa">
+                @endif
+            </div>
+        </div>
                 <div class="items-banner"></div>
                 <div class="img-perfil">
                     <a href="#">
@@ -24,16 +26,16 @@
                         @endif
                     </a>
                     <a href="" class="btn btn-primary btn-small btn-alt-foto divConteudo1" data-toggle="modal">Alterar Foto</a>
-                </div>
-                <h1 class="perfil">{{ auth()->user()->name  }}</h1>
+<div class="h1capa">
+                <h1 class="perfil">{{ auth()->user()->name  }}</h1> </div><div class="btnfundo">
                 <a class="btn btn-primary btn-embossed btn-capa divConteudo" data-toggle="modal" href="#">Alterar Capa</a>
 
-            </div>
-        </div>
+                </div>
+
     </div>
     <!-- Cabecalho de postagem! -->
     <div>
-        <div class="col-lg-12">
+        <div class="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -1664,11 +1666,10 @@
         <div class="d-md-flex flex-md-fill mt-4 px-1">
             <div class="d-flex justify-content-center mr-md-5">
                 @if(auth()->user()->image != null)
-                    <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                    <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
                 @else
-                    <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                    <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
                 @endif
-
             </div>
             <textarea class="form-control pl-3 pt-3" id="exampleFormControlTextarea1" rows="6"
                       placeholder="Write something here..."></textarea>

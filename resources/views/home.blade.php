@@ -9,18 +9,60 @@
         <div class="card-header border-0 font-weight-bold">Postagem</div>
 
         <div class="d-md-flex flex-md-fill mt-4 px-1">
+            <div class="col-2">
             <div class="d-flex justify-content-center mr-md-5">
                 @if(auth()->user()->image != null)
-                    <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                    <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
                 @else
-                    <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                    <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
                 @endif
             </div>
-            <textarea class="form-control pl-3 pt-3" id="exampleFormControlTextarea1" rows="6"
-                      placeholder="Em que está pensando ?..."></textarea>
-        </div>
-        <div class="text-center mt-4">
-            <button class="btn btn-primary btn-md">Enviar</button>
+            </div>
+            <div class="container">
+                @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+                @if (session('erro'))
+                     <div class="alert alert-danger">
+                         {{ session('erro') }}
+                     </div>
+                @endif
+                <form method="POST" action="{{ route('postsUpdate') }}" enctype="multipart/form-data">
+                @csrf
+                <div class="form-group row">
+                    <label for="texttitule" class="col-2 col-form-label text-md-right">Título</label>
+                        <div class="col-10">
+                            <strong><input id="texttitule" type="text" name="texttitule"></strong>
+                        </div>
+                </div>
+                <div class="form-group row">
+                    <label for="text" class="col-2 col-form-label text-md-right">Post</label>
+                            <div class="col-10">
+                                <textarea id="experience" type="text" name="text"></textarea>
+                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="photo" class="col-2 col-form-label text-md-right">Foto</label>
+                        <div class="col-10">
+                            <input id="photo" type="file" name="photo" class="form-control @error('photo') is-invalid @enderror" autocomplete="current-image">
+                            @error('photo')
+                            <span class="invalid-feedback" role="alert">
+                                             <strong>{{ $message }}</strong>
+                                         </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0">
+                        <div class="col-md-8 offset-md-4">
+                            <button type="submit" class="btn btn-success">
+                                Enviar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
 
     </section>

@@ -6,6 +6,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Models\Chat\Message;
+use App\Models\Posts\Posts;
 
 class User extends Authenticatable
 {
@@ -41,5 +42,10 @@ class User extends Authenticatable
     public function messages()
     {
         return $this -> hasMany(Message::class);
+    }
+
+    public function posts()
+    {
+        return $this -> hasMany(Posts::class);
     }
 }

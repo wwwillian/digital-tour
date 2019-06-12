@@ -25,6 +25,8 @@ Route::group(['middleware'=>'auth'], function (){
     Route::post('/editar-perfil', 'User\UserController@profileUpdate')->name('profileUpdate');
 
     Route::get('/home', 'HomeController@index')->name('home');
+    Route::post('/home', 'HomeController@postsUpdate')->name('postsUpdate');
+
 
     Route::get('/perfil', 'PaginasController@mostrarPerfil')->name('perfil');
 
