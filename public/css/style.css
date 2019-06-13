@@ -368,6 +368,83 @@ a:not([href]):not([tabindex]){
   color: white;
 }
 
+/*==================Home text area ==================*/
+
+#cke_46 {
+  display: none;
+}
+
+#cke_13{
+  display: none;
+}
+
+#cke_14{
+  display: none;
+}
+
+#cke_15{
+  display: none;
+}
+
+#cke_11{
+  display: none;
+}
+
+#cke_12{
+  display: none;
+}
+
+#cke_17{
+  display: none;
+}
+#cke_18{
+  display: none;
+}
+#cke_16{
+  display: none;
+}
+#cke_21{
+  display: none;
+}
+
+#cke_22{
+  display: none;
+}
+
+#cke_23{
+  display: none;
+}
+#cke_26{
+  display: none;
+}
+
+#cke_27{
+  display: none;
+}
+
+#cke_28{
+  display: none;
+}
+#cke_30{
+  display: none;
+}
+#cke_25{
+  display: none;
+}
+#cke_32{
+  display: none;
+}
+#cke_10 {
+  display: none;
+}
+
+#cke_43 {
+  display: none;
+}
+
+#cke_1_bottom {
+  display: none;
+}
 
 /*--------------Pagina de cadastro--------------*/
 .caixa {
