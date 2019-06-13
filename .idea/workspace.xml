@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93d6a1f9-8099-4697-9fcf-02739f32c84e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_04_125436_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_04_125436_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/imagenopaisagem.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/imagenopaisagem.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/imagepaisagem.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/imagepaisagem.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/no-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/no-image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/user.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/imgs/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/imgs/background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/imgs/no-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/imgs/no-image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Echo.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Echo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/chat/Chat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/chat/Chat.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/chat/Message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/chat/Message.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/chat/Messages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/chat/Messages.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/chat/Users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/chat/Users.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/modules/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/modules/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/chat/chat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chat/chat.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/conectado.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/conectado.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/desconectado.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/desconectado.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/perfil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/perfil.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -141,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            <state relative-caret-position="187">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -150,8 +124,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Posts/PostsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="170">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#46#74#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="62" column="78" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="62" selection-end-column="78" />
+              <folding>
+                <element signature="e#45#73#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,14 +154,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="229">
+              <caret line="71" column="83" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="83" />
               <folding>
-                <element signature="e#41#69#0#PHP" expanded="true" />
+                <element signature="e#47#74#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -255,12 +253,13 @@
         <option value="$PROJECT_DIR$/app/Models/Posts.php" />
         <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" />
         <option value="$PROJECT_DIR$/app/Models/Posts/Posts.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/users/profile.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_04_125436_create_posts_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -390,14 +389,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-tour" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-tour" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="digital-tour" type="b2602c69:ProjectViewProjectNode" />
@@ -558,12 +549,12 @@
       <workItem from="1560175205823" duration="13572000" />
       <workItem from="1560189246058" duration="21087000" />
       <workItem from="1560259969975" duration="39380000" />
-      <workItem from="1560313774139" duration="33138000" />
+      <workItem from="1560313774139" duration="41615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158711000" />
+    <option name="totallyTimeSpent" value="167188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -593,7 +584,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -604,9 +595,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/public/users/25cffb4184cc0f.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/public/users/25cff065de87b4.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -853,34 +841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="73" column="57" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="73" selection-end-column="57" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/users/profile.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="85" column="105" selection-start-line="85" selection-start-column="105" selection-end-line="85" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Posts/PostsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -891,13 +855,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Posts/PostsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#46#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="62" column="78" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="62" selection-end-column="78" />
+          <folding>
+            <element signature="e#45#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="229">
+          <caret line="71" column="83" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="83" />
           <folding>
-            <element signature="e#41#69#0#PHP" expanded="true" />
+            <element signature="e#47#74#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
