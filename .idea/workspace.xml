@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93d6a1f9-8099-4697-9fcf-02739f32c84e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaginasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaginasController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Posts/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Posts/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Posts/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Posts/Posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_04_125247_create_category_posts_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_04_125436_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_04_125436_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_04_125456_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_04_125456_create_comments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_04_125528_create_gallerys_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_04_125528_create_gallerys_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_04_125543_create_videos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_04_125543_create_videos_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/contato.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contato.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -179,7 +165,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/contato.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="19" column="107" selection-start-line="19" selection-start-column="107" selection-end-line="19" selection-end-column="107" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -590,12 +580,12 @@
       <workItem from="1560189246058" duration="21087000" />
       <workItem from="1560259969975" duration="39380000" />
       <workItem from="1560313774139" duration="49143000" />
-      <workItem from="1560430575879" duration="29884000" />
+      <workItem from="1560430575879" duration="30049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204600000" />
+    <option name="totallyTimeSpent" value="204765000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,7 +600,7 @@
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14247599" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14247599" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -625,7 +615,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -975,7 +965,11 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/contato.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="19" column="107" selection-start-line="19" selection-start-column="107" selection-end-line="19" selection-end-column="107" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

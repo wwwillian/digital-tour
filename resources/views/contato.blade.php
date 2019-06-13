@@ -17,7 +17,7 @@
                 <input class="form-control" type="email" name="email" id="email" placeholder="E-mail" required />
 
                 <label for="telefone">Celular</label>
-                <input type="text" class="form-control" placeholder="Celular" id="telefone" name="celular"><br>
+                <input type="text" class="form-control" placeholder="Celular" id="telefone" name="celular">
 
                 <label for="mensagem">Mensagem</label>
                 <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem!"
