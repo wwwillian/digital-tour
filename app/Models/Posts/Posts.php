@@ -12,7 +12,7 @@ class Posts extends Model
 //    protected $primaryKey = 'id';
 
     protected $fillable = [
-        'texttitule', 'text', 'photo',
+        'description', 'photo',
     ];
 
 

@@ -45,8 +45,7 @@ class HomeController extends Controller
         }
 
         $post = new Posts;
-        $post->texttitule = $request->input('texttitule');
-        $post->text = $request->input('text');
+        $post->description = $request->input('description');
         $post->release_date = now();
         $post->photo = '';
         $post->save();

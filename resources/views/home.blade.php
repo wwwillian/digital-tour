@@ -31,7 +31,14 @@
                 @endif
                 <form method="POST" action="{{ route('postsUpdate') }}" enctype="multipart/form-data">
                 @csrf
-                <textarea class="form-control" name="description" placeholder="Digite seu texto aqui.."></textarea>
+                <textarea class="form-control" name="description" id="description" type="description"></textarea>
+                    <div class="form-group row mb-0">
+                        <div class="col-md-8 offset-md-4">
+                            <button type="submit" class="submit-form">
+                                Atulizar Perfil
+                            </button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
