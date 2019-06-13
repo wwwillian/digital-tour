@@ -5,39 +5,51 @@
 <!-- Foto Perfil - Personalizado -->
 <div class="container">
 <div class="content">
+
+
+<div class="row">
     <div class="col-lg-12 col-md-12 col-xl-12">
 
         <div class="awesome user width-cover mt-5">
-            <div class="container img-fundo" id="btnMostrarEsconder"
-                 @if(auth()->user()->cupPhoto != null)
-                 style="background-image: url('img/006.jpg');"
+            <div class="container img-fundo" id="btnMostrarEsconder">
+                {{-- show img capa --}}
+                @if(auth()->user()->cupPhoto != null)                        
+                    <img src="{{ asset( 'storage/'.auth()->user()->cupPhoto ) }}" id="cupPhoto" alt="foto de capa do perfil." class="fotoCapaPerfil" width="1080" height="288"> 
                 @else
-                 style="background-image: url('img/imagenopaisagem.jpg'); width:1070px; height:280px"
-                @endif>
-                <div class="items-banner"></div>
+                    <div style="background-image: url('img/imagenopaisagem.jpg'); width:1070px; height:280px"></div>  
+                @endif
+                        
+                {{-- <div class="items-banner"></div> --}}
+                                        
                 <div class="img-perfil">
                     <a href="#">
-                        @if(auth()->user()->image != null)
-                            <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
+                                                
+                        @if( auth()->user()->image != null)
+                            <img src="{{ asset( 'storage/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="">
                         @else
-                            <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
+                            <img src="public/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
                         @endif
                     </a>
-                    <a href="" class="btn btn-primary btn-small btn-alt-foto divConteudo1" data-toggle="modal">Alterar Foto</a>
                 </div>
-                <h1 class="perfil">{{ auth()->user()->name  }}</h1>
-                <a class="btn btn-primary btn-embossed btn-capa divConteudo" data-toggle="modal" href="#">Alterar Capa</a>
-
-            </div>
-        </div>
+                                        
+                        <h1 class="perfil">{{ auth()->user()->name  }}</h1>            
+                            </div>
+                    </div>
+                </div>
+        {{-- btn´s alterar imgFoto e imgCapa --}}
     </div>
+    
     <!-- Cabecalho de postagem! -->
-    <div>
+    <div class="row">
+            
         <div class="col-lg-12">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
+            {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> --}}
+            
             <div class="tab-header card">
+            <a href="{{ route('profile')}}" class="btn btn-primary btn-small btn-alterFoto">Alterar Foto</a>
+            <a href="{{ route('profile')}}" class="btn btn-primary btn-embossed btn-alterCapa" >Alterar Capa</a>
                 <ul class="nav nav-tabs md-tabs tab-timeline" role="tablist" id="mytab">
                     <li class="nav-item">
                         <a class="nav-link active" data-toggle="tab" href="#tposts" role="tab">Posts</a>
@@ -61,7 +73,7 @@
                     </li>
                 </ul>
             </div>
-
+           
 
             <div class="tab-content">
                 <!--Perfil -->
@@ -1664,9 +1676,9 @@
         <div class="d-md-flex flex-md-fill mt-4 px-1">
             <div class="d-flex justify-content-center mr-md-5">
                 @if(auth()->user()->image != null)
-                    <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                    <img src="{{ url('storage/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
                 @else
-                    <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                    <img src="public/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="120" height="120" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
                 @endif
 
             </div>

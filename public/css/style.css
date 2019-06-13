@@ -31,12 +31,13 @@ a:not([href]):not([tabindex]){
   display: flex;
 }
 
-
+/* img fundo */
 .img-fundo{
   height: 20em;
   border: 5px solid white;
   border-radius: 9px;
 }
+/* img perfil */
 .img-perfil{
   margin-left: 2em;
 }
@@ -47,6 +48,7 @@ a:not([href]):not([tabindex]){
     border: 5px solid white;
     border-radius: 9px;
 }
+/*btn´s perfil */
 
 .btn-alt-foto{
   position: relative;
@@ -62,18 +64,21 @@ a:not([href]):not([tabindex]){
 
 
 .img-perfil{
-      position: relative;
       display: inline-grid;
+      position: absolute;
+      z-index: 1;
+      top: 0;
 }
 
 .btn {
+    display:inline-block;
+    position: relative;
     border: none;
     background: #159ada;
     color: #ffffff;
     padding: 9px 12px 10px;
-    padding-right: 12px;
-    padding-left: 12px;
     line-height: 22px;
+    margin: 0;
 }
 
 .content {
@@ -81,7 +86,7 @@ a:not([href]):not([tabindex]){
 }
 
 .tab-header{
-  margin-top: 4em;
+  margin-top: 100px;
 }
 
 .videos-css {

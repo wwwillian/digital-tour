@@ -83,7 +83,7 @@
                                 <label for="cupPhoto" class="col-md-4 col-form-label text-md-right">Imagem Capa</label>
 
                                 <div class="col-md-6">
-                                    <input id="cupPhoto" type="file" class="form-control @error('image') is-invalid @enderror" name="cupphoto" autocomplete="current-image">
+                                    <input id="cupPhoto" type="file" class="form-control @error('image') is-invalid @enderror" name="cupPhoto" autocomplete="current-image">
 
                                     @error('image')
                                     <span class="invalid-feedback" role="alert">

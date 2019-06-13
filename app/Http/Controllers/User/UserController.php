@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
+use App\Models\User;
 
 class UserController extends Controller
 {
@@ -15,42 +16,74 @@ class UserController extends Controller
 
     public function profileUpdate(Request $request)
     {
-        $user = auth()->user();
-        $data = $request->all();
+        $user = auth()->user();//return objeto model User
+        
+            try
+            {
+            //destroy the request, to save the new request´s
+            if($request->email)
+            {
+                unset($user->email);
+            }
+            
+            if($request->password)
+            {
+                $user->passowrd = bcrypt($user->password);
+            }
+            else
+            {
+                unset($user->passowrd);
+            }
 
-        if($request->email)
-            unset($data['email']);
+            /*
+            *stores the user's image
+            */
+            if($request->hasFile('image') && $request->file('image')->isValid())
+            {
 
-        if($request->password)
-            $data['password'] = bcrypt($data['password']);
-        else
-            unset($data['password']);
+                if($user->image && Storage::exists("user/{$user->image}"))
+                {
+                    Storage::delete("user/{$user->image}");
+                }
+                    
+            }
+            if($request->hasFile('image') && $request->file('image')->isValid())
+            {
+                
+                $user->image = $request->image->store('user');
+                
+            }
 
-        if($request->hasFile('image') && $request->file('image')->isValid()){
+            /*
+            *stores the user's cupImage
+            *profile cover image
+            */
+            if($request->hasFile('cupPhoto') && $request->file('cupPhoto')->isValid())
+            {
+                if($user->cupPhoto && Storage::exists("user/{$user->cupPhoto}"))
+                {
+                    Storage::delete("user/{$user->cupPhoto}");
+                }
+            }
+            
+            if($request->hasFile('cupPhoto'))
+            {
+                    $user->cupPhoto = $request->cupPhoto->store('cupPhoto');       
+            }
+            $user->save();
 
-            if($user->image && Storage::exists("user/{$user->image}"))
-                Storage::delete("user/{$user->image}");
-        }
-
-        if($request->hasFile('image') && $request->file('image')->isValid()){
-
-            $name = kebab_case($request->name).uniqid($user->id);
-            $extension = $request->image->extension();
-            $nameImage = "{$name}.$extension";
-            $data['image'] = $nameImage;
-
-            $upload = $request->image->storeAs('users', $nameImage);
-
-            if(!$upload)
+            return redirect()
+                ->route('profile')
+                ->with('success', 'Atualizado com Sucesso!');
+            }
+            catch(Exception $e)
+            {
                 return redirect()
                     ->route('profile')
-                    ->with('erro', 'Falha ao fazer o upload');
+                    ->with('erro', 'Falha ao atualizar o perfil: ',$e->getMessage(), "\n");
+            }
+        
         }
+    
 
-        $user->update($data);
-
-        return redirect()
-            ->route('profile')
-            ->with('success', 'Atualizado com Sucesso!');
-    }
-}
+}//fim class

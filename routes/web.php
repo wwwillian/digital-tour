@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//routes that can only be accessed if you are authenticated
 Route::group(['middleware'=>'auth'], function (){
     Route::get('chat', 'Chat\ChatController@mostrarChat')->name('chat');
 
@@ -25,9 +26,7 @@ Route::group(['middleware'=>'auth'], function (){
     Route::post('/editar-perfil', 'User\UserController@profileUpdate')->name('profileUpdate');
 
     Route::get('/home', 'HomeController@index')->name('home');
-
     Route::get('/perfil', 'PaginasController@mostrarPerfil')->name('perfil');
-
     Route::get('/artigos', 'PaginasController@mostrarArtigos')->name('artigos');
 });
 
@@ -37,9 +36,7 @@ Auth::routes();
 // Route::get('/index', 'PaginasController@mostrarIndex')->name('index');
 
 Route::get('/cadastro', 'PaginasController@mostrarCadastro')->name('cadastro');
-
 Route::get('/faq', 'PaginasController@mostrarFaq')->name('faq');
-
 Route::get('/contato', 'PaginasController@mostrarContato')->name('contato');
 
 //Route::get('/posts', 'PaginasController@mostrarPosts')->name('posts');
