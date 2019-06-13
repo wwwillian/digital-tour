@@ -24,8 +24,10 @@ Route::group(['middleware'=>'auth'], function (){
     Route::get('/editar-perfil', 'User\UserController@profile')->name('profile');
     Route::post('/editar-perfil', 'User\UserController@profileUpdate')->name('profileUpdate');
 
-    Route::get('/home', 'HomeController@index')->name('home');
-    Route::post('/home', 'HomeController@postsUpdate')->name('postsUpdate');
+    Route::get('home', 'HomeController@index')->name('home');
+
+    Route::get('home/posts', 'Posts\PostsController@mostrarPosts')->name('posts');
+    Route::post('home/posts', 'HomeController@postsUpdate')->name('postsUpdate');
 
 
     Route::get('/perfil', 'PaginasController@mostrarPerfil')->name('perfil');

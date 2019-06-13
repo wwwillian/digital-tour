@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Posts\Posts;
+use App\Models\User;
 use Illuminate\Http\File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Storage;
+
 
 class HomeController extends Controller
 {
@@ -24,9 +26,18 @@ class HomeController extends Controller
             ->with('posts', $posts);
     }
 
+    public function mostrarPosts()
+    {
+        $posts = Posts::all();
+        return view('home.posts')
+            ->with('posts',$posts);
+    }
+
     public function postsUpdate(Request $request)
     {
+
         $data = $request->all();
+        $user = auth()->user();
 
         $request->validate([
             'texttitule',
@@ -48,6 +59,8 @@ class HomeController extends Controller
         $post->description = $request->input('description');
         $post->release_date = now();
         $post->photo = '';
+        $post->user_id = $user->id;
+
         $post->save();
 
             if(Input::file('photo'))
@@ -66,6 +79,7 @@ class HomeController extends Controller
 
             }
         $post->update($data);
+
         return redirect()
             ->route('home')
             ->with('success', 'Atualizado com Sucesso!');

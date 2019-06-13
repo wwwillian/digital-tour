@@ -31,11 +31,6 @@ class PaginasController extends Controller
         return view('contato');
     }
 
-    public function mostrarPosts()
-    {
-        return view('posts');
-    }
-
     public function mostrarPerfil()
     {
         return view('perfil');

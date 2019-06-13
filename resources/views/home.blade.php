@@ -31,7 +31,23 @@
                 @endif
                 <form method="POST" action="{{ route('postsUpdate') }}" enctype="multipart/form-data">
                 @csrf
+                    <input type="hidden" id="escondido" name="user_id">
                 <textarea class="form-control" name="description" id="description" type="description"></textarea>
+
+                    <div class="form-group mt-3 row">
+                        <label for="photo" class="col-md-2 col-form-label text-md-right">Publique sua foto:</label>
+
+                        <div class="col-md-10">
+                            <input id="photo" type="file" class="form-control @error('photo') is-invalid @enderror" name="photo" autocomplete="current-image">
+
+                            @error('photo')
+                            <span class="invalid-feedback" role="alert">
+                                             <strong>{{ $message }}</strong>
+                                         </span>
+                            @enderror
+                        </div>
+                    </div>
+
                     <div class="form-group row mb-0">
                         <div class="col-md-8 offset-md-4">
                             <button type="submit" class="submit-form">
@@ -46,30 +62,40 @@
     </section>
     <!-- Reply section (logged in user) -->
     <!--Section: Comments-->
-    <section class="my-5">
+        <div class="card-header border-0 font-weight-bold">Postagem...</div>
+        @foreach($posts as $key => $value)
+        <div class="row">
 
-        <!-- Card header -->
-        <div class="card-header border-0 font-weight-bold">Amigos Postaram...</div>
+         <section class="my-5">
 
-        <div class="media d-block d-md-flex mt-4">
+
+            @if(auth()->user()->image != null)
+                 <div class="media d-block d-md-flex mt-4">
             <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
-                 src="https://mdbootstrap.com/img/Photos/Avatars/img (20).jpg" width="90" alt="Generic placeholder image">
+                 src="{{ url('storage/users/'.$value->user[0]->image) }}" width="90" alt="Generic placeholder image">
+            @else
+                         <div class="media d-block d-md-flex mt-4">
+                <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
+                     src="/img/user.png" width="90" alt="Generic placeholder image">
+            @endif
+
             <div class="media-body text-center text-md-left ml-md-3 ml-0">
                 <h5 class="font-weight-bold mt-0">
-                    <a class="text-default" href="">Hendy Almeida</a>
+                    <a class="text-default" href="">{{ $value->user[0]->name }}</a>
                     <a href="" class="pull-right text-default">
                         <i class="fas fa-reply"></i>
                     </a>
                 </h5>
-                <p>Ola! Você se inscreveu e ganhou!! Fintech talks hoje as 18:00 na Digital House entrada com 10% de desconto! Para validar a cortesia você precisa se inscrever nos proximos 10 minutos! É rápido e só vale por esse link: https://www.sympla.com.br/fintech-talks-7-neobanking__504046?token=2770e4276786a3630cd4d3053cbb0654</p>
-                <p>Ah é pessoal e intransferível! Corre lá pois o pessoal da organização está aguardando, ok? Avisa a gente aqui? Se passar das 11:40 o vip perde a validade ok? Bjos e parabéns!</p>
+                <p>
+                    {{$value->description}}
+                </p>
                 <div class="media d-block d-md-flex mt-4">
                     <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
                          src="https://mdbootstrap.com/img/Photos/Avatars/img (27).jpg" width="60"
                          alt="Generic placeholder image">
                     <div class="media-body text-center text-md-left ml-md-3 ml-0">
                         <h5 class="font-weight-bold mt-0">
-                            <a class="text-default" href="">Joao Victor</a>
+                            <a class="text-default" href=""></a>
                             <a href="" class="pull-right text-default">
                                 <i class="fas fa-reply"></i>
                             </a>
@@ -150,60 +176,60 @@
         </div>
 
         <!--Pagination -->
-        <nav class="d-flex justify-content-center mt-5">
-            <ul class="pagination pagination-circle pg-teal mb-0">
+{{--        <nav class="d-flex justify-content-center mt-5">--}}
+{{--            <ul class="pagination pagination-circle pg-teal mb-0">--}}
 
-                <!--First-->
-                <li class="page-item disabled">
-                    <a class="page-link">Proxima...</a>
-                </li>
+{{--                <!--First-->--}}
+{{--                <li class="page-item disabled">--}}
+{{--                    <a class="page-link">Proxima...</a>--}}
+{{--                </li>--}}
 
-                <!--Arrow left-->
-                <li class="page-item disabled">
-                    <a class="page-link" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </li>
+{{--                <!--Arrow left-->--}}
+{{--                <li class="page-item disabled">--}}
+{{--                    <a class="page-link" aria-label="Previous">--}}
+{{--                        <span aria-hidden="true">&laquo;</span>--}}
+{{--                        <span class="sr-only">Previous</span>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
 
-                <!--Numbers-->
-                <li class="page-item active">
-                    <a class="page-link">1</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link">2</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link">3</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link">4</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link">5</a>
-                </li>
+{{--                <!--Numbers-->--}}
+{{--                <li class="page-item active">--}}
+{{--                    <a class="page-link">1</a>--}}
+{{--                </li>--}}
+{{--                <li class="page-item">--}}
+{{--                    <a class="page-link">2</a>--}}
+{{--                </li>--}}
+{{--                <li class="page-item">--}}
+{{--                    <a class="page-link">3</a>--}}
+{{--                </li>--}}
+{{--                <li class="page-item">--}}
+{{--                    <a class="page-link">4</a>--}}
+{{--                </li>--}}
+{{--                <li class="page-item">--}}
+{{--                    <a class="page-link">5</a>--}}
+{{--                </li>--}}
 
-                <!--Arrow right-->
-                <li class="page-item">
-                    <a class="page-link" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
+{{--                <!--Arrow right-->--}}
+{{--                <li class="page-item">--}}
+{{--                    <a class="page-link" aria-label="Next">--}}
+{{--                        <span aria-hidden="true">&raquo;</span>--}}
+{{--                        <span class="sr-only">Next</span>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
 
-                <!--Last-->
-                <li class="page-item">
-                    <a class="page-link">Last</a>
-                </li>
+{{--                <!--Last-->--}}
+{{--                <li class="page-item">--}}
+{{--                    <a class="page-link">Last</a>--}}
+{{--                </li>--}}
 
-            </ul>
-        </nav>
+{{--            </ul>--}}
+{{--        </nav>--}}
         <!--Pagination -->
 
     </section>
     </div>
-
-
+    </div>
+@endforeach
 
 
 @endsection

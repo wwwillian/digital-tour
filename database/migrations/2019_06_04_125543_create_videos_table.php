@@ -18,15 +18,15 @@ class CreateVideosTable extends Migration
             $table->string('video');
             $table->text('comments');
             $table->unsignedBigInteger('user_id')->unsigned()->index();
-            $table->unsignedBigInteger('category_post_id')->unsigned()->index();
+            $table->unsignedBigInteger('post_id')->unsigned()->index();
             $table->timestamps();
 
             $table->foreign('user_id')
                 ->references('id')
                 ->on('users');
-            $table->foreign('category_post_id')
+            $table->foreign('post_id')
                 ->references('id')
-                ->on('category_posts');
+                ->on('posts');
         });
     }
 

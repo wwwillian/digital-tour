@@ -1,8 +1,5 @@
-@guest
-    @extends('layouts.desconectado')
-@else
-    @extends('layouts.conectado')
-@endguest
+@extends('layouts.desconectado')
+
 @section('content')
 
     <div class="container">
