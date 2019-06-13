@@ -23,15 +23,7 @@ class HomeController extends Controller
         return view('home')
             ->with('posts', $posts);
     }
-//    public function exibirDetalhe($id)
-//    {
-//        $posts = Posts::find($id);
-//        return view('')->with('filme', $filme);
-//    }
-//    public function adicionarFilme()
-//    {
-//        return view('filme-adicionar');
-//    }
+
     public function postsUpdate(Request $request)
     {
         $data = $request->all();
@@ -41,6 +33,7 @@ class HomeController extends Controller
             'text',
             'photo'
         ]);
+
         if(Input::file('photo')) {
             $photo = Input::file('photo');
             $extensao = $photo->getClientOriginalExtension();
@@ -50,6 +43,7 @@ class HomeController extends Controller
                     ->with('erro', 'Falha ao fazer o upload da imagem fundo');
             }
         }
+
         $post = new Posts;
         $post->texttitule = $request->input('texttitule');
         $post->text = $request->input('text');
@@ -66,42 +60,16 @@ class HomeController extends Controller
 
                  $upload = $request->photo->storeAs('posts', $nameImage);
 
-                 if(!$uploadfundo)
+                 if(!$upload)
                      return redirect()
                          ->route('profile')
                          ->with('erro', 'Falha ao fazer o upload da imagem fundo');
 
-//            File::move($photo,public_path().'/imagem-post/post-id_'.$post->id.'.'.$extensao);
-//            $post->photo = public_path().'/imagem-post/post-id_'.$post->id.'.'.$extensao;
-//            $post->save();
             }
-
+        $post->update($data);
         return redirect()
             ->route('home')
             ->with('success', 'Atualizado com Sucesso!');
     }
-//    public function editarFilme($id)
-//    {
-//        $filme = Filme::find($id);
-//        return view("filme-editar")->with('filme', $filme);
-//    }
-//    public function gravarFilme(Request $request, $id)
-//    {
-//        $request->validate([
-//            'title'=>'required|max:60|unique:movies',
-//            'rating'=>'required|numeric|between:1,10'
-//        ]);
-//        $filme = Filme::find($id);
-//        $filme->title = $request->input('title');
-//        $filme->rating = $request->input('rating');
-//        $filme->save();
-//        return redirect('/filmes');
-//    }
-//    public function excluirFilme($id)
-//    {
-//        $filme = Filme::find($id);
-//        $filme -> delete();
-//        return redirect('/filmes');
-//    }
 }
 
