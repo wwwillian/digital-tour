@@ -735,7 +735,8 @@ text-decoration:none;
 }
 
 @media (min-width: 768px)
-.offset-md-3 {
+{
+  .offset-md-3 {
   margin-left: 0%;
 }
 /* ----------Efeito de Transição abaixo do carrossel nas imagens da page Index---------------//----------- */
@@ -789,3 +790,4 @@ div#efeito img#transition{
 
 /* -------------------------//--------------------------------//---------------------------------- */
 
+}
