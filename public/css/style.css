@@ -443,7 +443,7 @@ form h1 {
 }
 
 .incadastro{
-  width: 280px;
+  width: 560px;
 
   margin-left: 15px;
 }
@@ -557,6 +557,15 @@ ul {
     width: 90px;
     margin: 4px;
   }
+
+
+  /*=======================Profile===================*/
+
+  #contato .texto textarea {
+    height: 250px;
+    width: 400px;
+}
+
 
   /*===================Nav outras paginas externas===================== */
 /* .collapse .navop{
@@ -754,8 +763,14 @@ text-decoration:none;
 
 @media (min-width: 768px){
 .offset-md-3 {
+<<<<<<< HEAD
+  margin-left: 0%;
+}
+}
+=======
     margin-left: 0%;
 }}
+>>>>>>> cc83ac5bcfbbde6ef721205784f31c37ec4ed869
 /* ----------Efeito de Transição abaixo do carrossel nas imagens da page Index---------------//----------- */
 
 div#efeito img#transition{

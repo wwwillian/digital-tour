@@ -10,7 +10,6 @@
 
             <form method="POST" action="{{ route('register') }}" id="contato">
                         @csrf
-                    <div class="row">
                         <div class="form-group">
                             <label for="name">{{ __('Nome completo') }}</label>
 
@@ -39,10 +38,8 @@
                                 @enderror
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="form-group">
+                       <div class="form-group">
                             <label for="password">{{ __('Senha') }}</label>
 
                             <div class="incadastro">
@@ -65,29 +62,9 @@
                             </div>
                         </div>
                         
-                    </div>
+                    
 
-                    <div class="row">
-                        
-                    <div class="form-group">
-                            <label for="date">{{ __('Data de nascimento') }}</label>
-
-                            <div class= "incadastro1" >
-                                <input id="date" type="date" class="form-control @error('date') is-invalid @enderror" name="date" value="{{ old('date') }}" required autocomplete="date" autofocus>
-
-                            
-                            </div>
-                        </div>
-
-                        <div class="form-group sex">
-                        <span>Sexo:</span>
-                        <label for="sexo" class="masculino">Masculino:</label>
-                        <input type="radio" name="sex"  id="masculino">
-                        <label for="sexo">Feminino:</label>
-                        <input type="radio" name="sex" id="famino">
-
-                    </div>
-                    </div>
+                    
                     
     
                         <!-- <div class="form-group">

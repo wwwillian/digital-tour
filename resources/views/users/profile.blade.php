@@ -2,10 +2,13 @@
 
 @section('content')
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
+        <div class="row justify-content-center profil">
+            <div class="col-md-8 mt-5">
                 <div class="card">
-                    <div class="card-header">Editar Perfil</div>
+                    <div class="card-header">
+                    <span>Editar Perfil</span>
+                    
+                    </div>
 
                     <div class="card-body">
 
@@ -20,7 +23,7 @@
                             </div>
                         @endif
 
-                        <form method="POST" action="{{ route('profileUpdate') }}" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('profileUpdate') }}" enctype="multipart/form-data" id="contato">
                             @csrf
 
                             <div class="form-group row">
@@ -105,11 +108,11 @@
                                 <label for="gender" class="col-md-4 col-form-label text-md-right">Genero</label>
 
                                 <div class="col-md-6">
-                                    <label for="gender">Feminino</label>
+                                    <label for="gender">Feminino:</label>
                                     <input id="gender" type="radio" name="gender"  value="Feminino">
-                                    <label for="gender">Masculino</label>
+                                    <label for="gender">Masculino:</label>
                                     <input id="gender" type="radio" name="gender"  value="Masculino">
-                                    <label for="gender">Outros</label>
+                                    <label for="gender">Outros:</label>
                                     <input id="gender" type="radio" name="gender"  value="Outros">
                                 </div>
                             </div>
@@ -167,7 +170,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group row">
+                            <div class="form-group texto row">
                                 <label for="experience" class="col-md-4 col-form-label text-md-right">Experiencias</label>
 
                                 <div class="col-md-6">
@@ -177,7 +180,7 @@
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-success">
+                                    <button type="submit" class="submit-form">
                                         Atulizar Perfil
                                     </button>
                                 </div>
