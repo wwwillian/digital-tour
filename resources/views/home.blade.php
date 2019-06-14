@@ -65,20 +65,15 @@
         <div class="card-header border-0 font-weight-bold">Postagem...</div>
         @foreach($posts as $key => $value)
         <div class="row">
-
          <section class="my-5">
-
-
-            @if(auth()->user()->image != null)
-                 <div class="media d-block d-md-flex mt-4">
-            <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
-                 src="{{ url('storage/users/'.$value->user[0]->image) }}" width="90" alt="Generic placeholder image">
-            @else
-                         <div class="media d-block d-md-flex mt-4">
-                <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
-                     src="/img/user.png" width="90" alt="Generic placeholder image">
-            @endif
-
+             <div class="media d-block d-md-flex mt-4">
+                @if(auth()->user()->image != null)
+                     <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
+                        src="{{ url('storage/users/'.$value->user[0]->image) }}" width="90" alt="Generic placeholder image">
+                @else
+                     <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
+                        src="/img/user.png" width="90" alt="Generic placeholder image">
+                @endif
             <div class="media-body text-center text-md-left ml-md-3 ml-0">
                 <h5 class="font-weight-bold mt-0">
                     <a class="text-default" href="">{{ $value->user[0]->name }}</a>
@@ -86,9 +81,13 @@
                         <i class="fas fa-reply"></i>
                     </a>
                 </h5>
-                <p>
-                    {{$value->description}}
-                </p>
+                    {!!$value->description!!}
+            </div>
+         </div>
+         </section>
+        </div>
+        @endforeach
+
                 <div class="media d-block d-md-flex mt-4">
                     <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
                          src="https://mdbootstrap.com/img/Photos/Avatars/img (27).jpg" width="60"
@@ -226,10 +225,8 @@
 {{--        </nav>--}}
         <!--Pagination -->
 
-    </section>
-    </div>
-    </div>
-@endforeach
+                            </div></div>
+
 
 
 @endsection
