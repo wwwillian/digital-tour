@@ -275,6 +275,10 @@ a:not([href]):not([tabindex]){
   color: white;
 }
 
+.text{
+  float:none;
+}
+
 #contato{
   padding: 20px 40px 40px 40px;
   width: 700px;
