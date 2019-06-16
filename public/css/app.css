@@ -175,6 +175,11 @@ a {
   background-color: transparent;
 }
 
+.telalogin-a{
+  color:black !important;
+  font-size: 15px !important;
+}
+
 a:hover {
   color: #1d68a7;
   text-decoration: underline;

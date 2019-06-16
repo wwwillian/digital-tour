@@ -54,6 +54,10 @@
                                             <a class="btn btn-link" href="{{ route('password.request') }}">
                                                 {{ __('Esqueceu sua senha?') }}
                                             </a>
+
+                                            @if (Route::has('register'))
+                                            <a class="nav-link h5 telalogin-a" href="{{ route('register') }}">Cadastra-se</a>
+                                            @endif
                                         @endif
                         </div>
                         
