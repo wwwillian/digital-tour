@@ -279,7 +279,7 @@
                     <table>
                         <tr>
                     <p class="mb-0"><span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span><td><img class="fotoperf mb-0"
-                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" alt="img perfil"
+                        src="/img/perfil11.png" alt="img perfil"
                         width="120"></td> <span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span></p>
                         <span>
                             <em>Viagem para </em><strong>Disney</strong>
@@ -298,7 +298,7 @@
                 <table>
                         <tr>
                     <p class="mb-0"><span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span><td><img class="fotoperf mb-0"
-                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" alt="img perfil"
+                        src="/img/perfil02.png" alt="img perfil"
                         width="120"></td> <span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span></p>
                         <span>
                             <em>Viagem para </em><strong>Canadá</strong>
@@ -317,7 +317,7 @@
                 <table>
                         <tr>
                     <p class="mb-0"><span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span><td><img class="fotoperf mb-0"
-                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" alt="img perfil"
+                        src="/img/terceira.png" alt="img perfil"
                         width="120"></td> <span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span></p>
                         <span><em>Viagem para </em><strong>Africa do Sul</strong></span>
                         <hr>
@@ -360,7 +360,7 @@
                                 <!-- Label -->
                                 <!-- <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Gastronomia</h5> -->
                                 <!-- Title -->
-                                <h4 class="font-weight-bold card-title">Experimente diferentes pratos pelo mundo.</h4>
+                                <h4 class="font-weight-bold card-title">Experimente diferentes lugares pelo mundo.</h4>
                                 <!-- Text -->
                                 <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
                                     suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
@@ -388,7 +388,7 @@
                             <div class="card-body card-body-cascade text-center">
 
                                 <!-- Title -->
-                                <h4 class="card-title"><strong>Billy Coleman</strong></h4>
+                                <h4 class="card-title"><strong>Beto Carrero World</strong></h4>
                                 <!-- Text -->
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
                                     ex, recusandae. Facere modi sunt, quod quibusdam.
@@ -418,7 +418,7 @@
                             <div class="card-body card-body-cascade text-center">
 
                                 <!-- Title -->
-                                <h4 class="card-title"><strong>Arte</strong></h4>
+                                <h4 class="card-title"><strong>Conheça Nova York</strong></h4>
                                 <!-- Text -->
                                 <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
                                     doloremque laudantium, totam rem aperiam. </p>
@@ -453,7 +453,7 @@
                                 <!-- Card content -->
                                 <div class="card-body card-body-cascade">
                                     <!-- Title -->
-                                    <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
+                                    <h4 class="font-weight-bold card-title">Cachoeiras maravilhosas</h4>
                                     <!-- Text -->
                                     <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
                                         corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
@@ -481,7 +481,7 @@
                                 <div class="card-body card-body-cascade text-center">
 
                                     <!-- Title -->
-                                    <h4 class="card-title"><strong>Billy Coleman</strong></h4>
+                                    <h4 class="card-title"><strong>Walt Disney World Resort</strong></h4>
                                     <!-- Text -->
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                         Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
@@ -510,7 +510,7 @@
                                 <div class="card-body card-body-cascade text-center">
 
                                     <!-- Title -->
-                                    <h4 class="card-title"><strong>Alison Belmont</strong></h4>
+                                    <h4 class="card-title"><strong>Safari na África</strong></h4>
                                     <!-- Text -->
                                     <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem
                                         accusantium doloremque laudantium, totam rem aperiam. </p>
