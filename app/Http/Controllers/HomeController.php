@@ -26,12 +26,12 @@ class HomeController extends Controller
             ->with('posts', $posts);
     }
 
-    public function mostrarPosts()
-    {
-        $posts = Posts::all();
-        return view('home.posts')
-            ->with('posts',$posts);
-    }
+//    public function mostrarPosts()
+//    {
+//        $posts = Posts::all();
+//        return view('home.posts')
+//            ->with('posts',$posts);
+//    }
 
     public function postsUpdate(Request $request)
     {

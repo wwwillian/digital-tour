@@ -26,9 +26,9 @@ Route::group(['middleware'=>'auth'], function (){
 
     Route::get('home', 'HomeController@index')->name('home');
 
-    Route::get('home/posts', 'Posts\PostsController@mostrarPosts')->name('posts');
     Route::post('home/posts', 'HomeController@postsUpdate')->name('postsUpdate');
-
+    Route::get('home/comments', 'CommentsController@mostarComments')->name('mostrarComments');
+    Route::post('home/comments', 'CommentsController@comments')->name('comments');
 
     Route::get('/perfil', 'PaginasController@mostrarPerfil')->name('perfil');
 
