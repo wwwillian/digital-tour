@@ -894,7 +894,16 @@ div#efeito img#transition{
     margin-top: 80px;
 }
 
+/* Comentários na tela Welcome */
+.titulo001,h2{
+  text-align: center !important;
+  font-size: 23px !important;
+  font-weight: bold;
+}
 
+.mgheader{
+  margin-top: -20px !important;
+}
 /* -------------------------//--------------------------------//---------------------------------- */
 
 }

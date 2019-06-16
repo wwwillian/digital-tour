@@ -8166,6 +8166,7 @@ button.bg-dark:focus {
 .mb-0,
 .my-0 {
   margin-bottom: 0 !important;
+  margin-right: 15px !important;
 }
 
 .ml-0,
@@ -10660,5 +10661,6 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+  
 }
 
