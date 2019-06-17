@@ -45,7 +45,7 @@
                             <div class="carousel-caption">
                                 <div class="animated fadeInDown">
                                     <h3 class="h3-responsive">Conecte-se!</h3>
-                                    <p>Conheça pessoa pelo mundo.</p>
+                                    <p>Conheça pessoas pelo mundo.</p>
                                 </div>
                             </div>
                         </div>
