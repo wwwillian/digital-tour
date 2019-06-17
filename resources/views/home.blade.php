@@ -12,7 +12,7 @@
             <div class="col-2">
             <div class="d-flex justify-content-center mr-md-5">
                 @if(auth()->user()->image != null)
-                    <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                    <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
                 @else
                     <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
                 @endif
@@ -94,7 +94,7 @@
             <section>
                 @foreach($posts as $key => $value)
                 <div class="media d-block d-md-flex mt-4">
-                    @if(auth()->user()->image != null)
+                    @if($value->user[0]->image != null)
                         <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
                              src="{{ url('storage/users/'.$value->user[0]->image) }}" width="90" alt="Generic placeholder image">
                     @else
@@ -111,48 +111,62 @@
                         {!!$value->description!!}
                         <hr>
                         @if($value->user_id === auth()->user()->id)
-                        <ul class="">
-                            <li><a>Editar</a></li>
-                            <li><a>Excluir</a></li>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-link"><a class="nav-item">Editar</a></li>
+                            <li class="nav-link"><a class="nav-item">Excluir</a></li>
                         </ul>
                         @else
-                            <ul class="">
-                                <li><a>Comentar</a></li>
-                                <li><a>Like</a></li>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-link"><a class="nav-item">Comentar</a></li>
+                                <li class="nav-link"><a class="nav-item">Like</a></li>
                             </ul>
                         @endif
-                        <div class="media d-block d-md-flex mt-4">
-                            <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
-                                 src="https://mdbootstrap.com/img/Photos/Avatars/img (27).jpg" width="60"
-                                 alt="Generic placeholder image">
-                            <div class="media-body text-center text-md-left ml-md-3 ml-0">
-                                <h5 class="font-weight-bold mt-0">
-                                    <a class="text-default" href="">Tommy Smith</a>
-                                    <a href="" class="pull-right text-default">
-                                        <i class="fas fa-reply"></i>
-                                    </a>
-                                </h5>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                                totam rem aperiam, eaque
-                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            </div>
-                        </div>
-                        <div class="media d-block d-md-flex mt-3">
-                            <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
-                                 src="https://mdbootstrap.com/img/Photos/Avatars/img (21).jpg" width="60"
-                                 alt="Generic placeholder image">
-                            <div class="media-body text-center text-md-left ml-md-3 ml-0">
-                                <h5 class="font-weight-bold mt-0">
-                                    <a class="text-default" href="">Sylvester the Cat</a>
-                                    <a href="" class="pull-right text-default">
-                                        <i class="fas fa-reply"></i>
-                                    </a>
-                                </h5>
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-                                quia non numquam eius modi
-                                tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                            </div>
-                        </div>
+{{--                        <div class="media d-block d-md-flex mt-4">--}}
+{{--                            <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"--}}
+{{--                                 src="https://mdbootstrap.com/img/Photos/Avatars/img (27).jpg" width="60"--}}
+{{--                                 alt="Generic placeholder image">--}}
+{{--                            <div class="media-body text-center text-md-left ml-md-3 ml-0">--}}
+{{--                                <h5 class="font-weight-bold mt-0">--}}
+{{--                                    <a class="text-default" href="">Tommy Smith</a>--}}
+{{--                                    <a href="" class="pull-right text-default">--}}
+{{--                                        <i class="fas fa-reply"></i>--}}
+{{--                                    </a>--}}
+{{--                                </h5>--}}
+{{--                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,--}}
+{{--                                totam rem aperiam, eaque--}}
+{{--                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="media d-block d-md-flex mt-3">--}}
+{{--                            <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"--}}
+{{--                                 src="https://mdbootstrap.com/img/Photos/Avatars/img (21).jpg" width="60"--}}
+{{--                                 alt="Generic placeholder image">--}}
+{{--                            <div class="media-body text-center text-md-left ml-md-3 ml-0">--}}
+{{--                                <h5 class="font-weight-bold mt-0">--}}
+{{--                                    <a class="text-default" href="">Sylvester the Cat</a>--}}
+{{--                                    <a href="" class="pull-right text-default">--}}
+{{--                                        <i class="fas fa-reply"></i>--}}
+{{--                                    </a>--}}
+{{--                                </h5>--}}
+
+{{--                            </div>--}}
+{{--                        </div>--}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                         <!-- Quick Reply -->
 {{--                        <form method="POST" action="{{ route('comments') }}" enctype="multipart/form-data">--}}
@@ -273,9 +287,3 @@
 
 @endsection
 
-@section('js')
-<script>
-        CKEDITOR.replace( 'description' );
-    </script>
-
-@endsection

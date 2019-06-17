@@ -53,7 +53,7 @@ $(document).ready(function (e) {
 });
 
 $(document).ready(function () {
-    baguetteBox.run('.gallery', {
+    baguetteBox.run('.tz-gallery', {
         // Custom options
     });
 })
