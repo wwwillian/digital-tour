@@ -273,7 +273,7 @@
             <div class="list-group-flush">
                 <hr>
                 <span class="titulo001">
-                    <strong><h2>Veja o que outros viajantes dizem</h1></strong>
+                    <h3>Veja o que outros viajantes dizem</h3>
                 </span>
                 <div class="list-group-item">
                     <table>
@@ -336,7 +336,7 @@
             <!-- Card Wider -->
             <div class="card card-cascade wider">
             <span class="titulo001">
-                <strong>Experiências</strong>
+                <h4>Experiências</h4>
             </span>
                 <hr>
                 <!-- Card Narrower -->
@@ -346,7 +346,8 @@
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                    <img src="../img/lugar.jpg" class="card-img" alt="...">
+                                <img class="card-img-top" src="http://1.bp.blogspot.com/-nfTKdEyjKsU/VL_vZw4Bc9I/AAAAAAAAXp4/GlhA5TciUU0/s1600/tour-angra-dos-reis-and-ilha-grande-4.jpg.1920x1080_default.jpg"
+                                     alt="Card image cap">
                                 <a>
                                     <div class="mask rgba-white-slight"></div>
                                 </a>
