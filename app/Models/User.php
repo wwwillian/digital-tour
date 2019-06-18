@@ -9,6 +9,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Models\Chat\Message;
 use App\Models\Posts\Posts;
 use App\Models\Comments\Comments;
+use App\Models\Perfil\Gallerys;
+use App\Models\Perfil\Videos;
+use App\Models\Friends\Friends;
 
 class User extends Authenticatable
 {
@@ -55,4 +58,20 @@ class User extends Authenticatable
     {
         return $this -> hasMany(Comments::class);
     }
+
+    public function gallerys()
+    {
+        return $this -> hasMany(Gallerys::class);
+    }
+
+    public function videos()
+    {
+        return $this -> hasMany(Videos::class);
+    }
+
+    public function Friends()
+    {
+        return $this -> hasMany(Friends::class);
+    }
+
 }

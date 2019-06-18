@@ -6,7 +6,6 @@
 <div class="container">
 <div class="content">
     <div class="col-lg-12 col-md-12 col-xl-12">
-
         <div class="awesome user width-cover mt-5">
             <div class="container img-fundo" id="btnMostrarEsconder">
                  @if(auth()->user()->cupPhoto != null)
@@ -26,7 +25,7 @@
                         @endif
                     </a>
                     <a href="" class="btn btn-primary btn-small btn-alt-foto divConteudo1" data-toggle="modal">Alterar Foto</a>
-<div class="h1capa">
+                <div class="h1capa">
                 <h1 class="perfil">{{ auth()->user()->name  }}</h1> </div><div class="btnfundo">
                 <a class="btn btn-primary btn-embossed btn-capa divConteudo" data-toggle="modal" href="#">Alterar Capa</a>
 
@@ -73,7 +72,7 @@
                         <div class="card-header textoperfil">
                             <h5 class="card-header-text">Perfil</h5>
                             <button id="edit-btn" type="button"
-                                    class="submit-form"><a href="{{ route('profile') }}">Editar</a></button>
+                                    class="btn btn-primary"><a href="{{ route('profile') }}">Editar</a></button>
                         </div>
                         <div class="card-block">
                             <div class="view-info">
@@ -270,7 +269,6 @@
                                                 </div>
 
                                             </div>
-
 {{--                                            <div class="text-center">--}}
 {{--                                                <a href="#"--}}
 {{--                                                   class="btn btn-primary waves-effect waves-light m-r-20">Salvar</a>--}}
@@ -313,6 +311,8 @@
 
 
                 <!--Fotos-->
+
+
                 <div class="tab-pane" id="tfotos" role="tabpanel">
 
                     <div class="card">
@@ -324,6 +324,7 @@
                                 <div class="col-md-6">
                                     <div class="card b-l-success business-info services m-b-20">
                                         <div class="card-header">
+
                                             <div class="container">
 
 
@@ -334,50 +335,77 @@
                                                         <div class="row mb-3">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="{{asset('img/park.jpg')}}">
-                                                                        <img src="{{asset('img/park.jpg')}}" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[0]->photo1 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo1)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo1)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="{{asset('img/benches.jpg')}}">
-                                                                        <img src="{{asset('img/benches.jpg')}}" alt="Park" class="card-img-top">
-                                                                    </a>
+
+                                                                    @if(auth()->user()->gallerys[0]->photo2 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo2)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo2)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="{{asset('img/bridge.jpg')}}">
-                                                                        <img src="{{asset('img/bridge.jpg')}}" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[0]->photo3 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo3)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo3)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="{{asset('img/coast.jpg')}}">
-                                                                        <img src="{{asset('img/coast.jpg')}}" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[0]->photo4 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo4)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo4)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="{{asset('img/rails.jpg')}}">
-                                                                        <img src="{{asset('img/rails.jpg')}}" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[0]->photo5 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo5)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo5)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="{{asset('img/rocks.jpg')}}">
-                                                                        <img src="{{asset('img/rocks.jpg')}}" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[0]->photo6 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo6)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo6)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
@@ -399,12 +427,131 @@
                                                   role="tooltip">
                                         </span>
                                             <div class="dropdown-menu dropdown-menu-right b-none services-list">
-                                                <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>
+                                                    <a class="dropdown-item" href="#!" data-toggle="modal" data-target="#gallery1">
                                                     Editar</a>
-                                                <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>
+                                                <a class="dropdown-item" href="#!">
                                                     Deletar</a>
-                                                <a class="dropdown-item" href="#!"><i class="icofont icofont-eye-alt"></i>
-                                                    Ampliar</a>
+                                            </div>
+                                            <div class="modal fade" id="gallery1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                @if(session('success'))
+                                                    <div class="alert alert-success">
+                                                        {{ session('success') }}
+                                                    </div>
+                                                @endif
+
+                                                @if(session('error'))
+                                                    <div class="alert alert-danger">
+                                                        {{ session('error') }}
+                                                    </div>
+                                                @endif
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Imagens</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+
+                                                        <form method="POST" action="{{ route('gallerysUpdate') }}" enctype="multipart/form-data">
+                                                            @csrf
+                                                        <div class="modal-body">
+                                                            <input type="hidden" id="escondido" name="user_id">
+                                                            <input type="hidden" id="escondido" name="post_id">
+
+                                                            <div class="form-group row">
+                                                                <label for="photo1" class="col-md-4 col-form-label text-md-right">Imagem 1</label>
+
+                                                                <div class="col-md-6">
+                                                                    <input id="photo1" type="file" class="form-control @error('photo1') is-invalid @enderror" name="photo1">
+
+
+                                                                    @error('photo1')
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                         <strong>{{ $message }}</strong>
+                                                                    </span>
+                                                                    @enderror
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="photo2" class="col-md-4 col-form-label text-md-right">Imagem 2</label>
+
+                                                                <div class="col-md-6">
+                                                                    <input id="photo2" type="file" class="form-control @error('photo2') is-invalid @enderror" name="photo2">
+
+
+                                                                    @error('photo2')
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                         <strong>{{ $message }}</strong>
+                                                                    </span>
+                                                                    @enderror
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="photo3" class="col-md-4 col-form-label text-md-right">Imagem 3</label>
+
+                                                                <div class="col-md-6">
+                                                                    <input id="photo3" type="file" class="form-control @error('photo3') is-invalid @enderror" name="photo3">
+
+
+                                                                    @error('photo3')
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                         <strong>{{ $message }}</strong>
+                                                                    </span>
+                                                                    @enderror
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="photo4" class="col-md-4 col-form-label text-md-right">Imagem 4</label>
+
+                                                                <div class="col-md-6">
+                                                                    <input id="photo4" type="file" class="form-control @error('photo4') is-invalid @enderror" name="photo4">
+
+
+                                                                    @error('photo4')
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                         <strong>{{ $message }}</strong>
+                                                                    </span>
+                                                                    @enderror
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="photo5" class="col-md-4 col-form-label text-md-right">Imagem 5</label>
+
+                                                                <div class="col-md-6">
+                                                                    <input id="photo5" type="file" class="form-control @error('photo5') is-invalid @enderror" name="photo5">
+
+
+                                                                    @error('photo5')
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                         <strong>{{ $message }}</strong>
+                                                                    </span>
+                                                                    @enderror
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="photo6" class="col-md-4 col-form-label text-md-right">Imagem 6</label>
+
+                                                                <div class="col-md-6">
+                                                                    <input id="photo6" type="file" class="form-control @error('photo6') is-invalid @enderror" name="photo6">
+
+
+                                                                    @error('photo')
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                         <strong>{{ $message }}</strong>
+                                                                    </span>
+                                                                    @enderror
+                                                                </div>
+                                                            </div>
+                                                            <input id="comments" name="comments" type="text">
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                                            <button type="submit" class="btn btn-secondary">Enviar</button>
+                                                        </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="card-block">
@@ -433,53 +580,79 @@
                                                         <div class="row mb-3">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/park.jpg">
-                                                                        <img src="img/park.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[1]->photo1 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo1)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo1)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/benches.jpg">
-                                                                        <img src="img/benches.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+
+                                                                    @if(auth()->user()->gallerys[1]->photo2 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo2)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo2)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/bridge.jpg">
-                                                                        <img src="img/bridge.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[1]->photo3 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo3)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo3)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/coast.jpg">
-                                                                        <img src="img/coast.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[1]->photo4 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo4)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo4)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/rails.jpg">
-                                                                        <img src="img/rails.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[1]->photo5 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo5)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo5)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/rocks.jpg">
-                                                                        <img src="img/rocks.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[1]->photo6 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo6)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo6)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
-
                                                         </div>
 
                                                     </div>
@@ -533,50 +706,79 @@
                                                         <div class="row mb-3">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/park.jpg">
-                                                                        <img src="img/park.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+
+
+                                                                    @if(auth()->user()->gallerys[2]->photo2 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo1)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo1)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/benches.jpg">
-                                                                        <img src="img/benches.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+
+                                                                    @if(auth()->user()->gallerys[2]->photo2 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo2)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo2)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/bridge.jpg">
-                                                                        <img src="img/bridge.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[2]->photo3 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo3)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo3)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/coast.jpg">
-                                                                        <img src="img/coast.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[2]->photo4 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo4)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo4)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/rails.jpg">
-                                                                        <img src="img/rails.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[2]->photo5 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo5)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo5)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/rocks.jpg">
-                                                                        <img src="img/rocks.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[2]->photo6 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo6)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[2]->photo6)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
@@ -633,50 +835,77 @@
                                                         <div class="row mb-3">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/park.jpg">
-                                                                        <img src="img/park.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[3]->photo1 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo1)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo1)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/benches.jpg">
-                                                                        <img src="img/benches.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+
+                                                                    @if(auth()->user()->gallerys[3]->photo2 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo2)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo2)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/bridge.jpg">
-                                                                        <img src="img/bridge.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[3]->photo3 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo3)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo3)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/coast.jpg">
-                                                                        <img src="img/coast.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[3]->photo4 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo4)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo4)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/rails.jpg">
-                                                                        <img src="img/rails.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[3]->photo5 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo5)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo5)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/rocks.jpg">
-                                                                        <img src="img/rocks.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[3]->photo6 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo6)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[3]->photo6)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
@@ -727,50 +956,77 @@
                                                         <div class="row mb-3">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/park.jpg">
-                                                                        <img src="img/park.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[4]->photo1 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo1)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo1)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/benches.jpg">
-                                                                        <img src="img/benches.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+
+                                                                    @if(auth()->user()->gallerys[4]->photo2 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo2)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo2)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/bridge.jpg">
-                                                                        <img src="img/bridge.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[4]->photo3 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo3)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo3)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/coast.jpg">
-                                                                        <img src="img/coast.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[4]->photo4 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo4)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo4)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/rails.jpg">
-                                                                        <img src="img/rails.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[4]->photo5 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo5)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo5)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/rocks.jpg">
-                                                                        <img src="img/rocks.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[4]->photo6 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo6)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[4]->photo6)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
@@ -821,50 +1077,77 @@
                                                         <div class="row mb-3">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/park.jpg">
-                                                                        <img src="img/park.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[5]->photo1 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo1)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo1)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/benches.jpg">
-                                                                        <img src="img/benches.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+
+                                                                    @if(auth()->user()->gallerys[5]->photo2 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo2)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo2)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
+
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/bridge.jpg">
-                                                                        <img src="img/bridge.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[5]->photo3 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo3)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo3)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/coast.jpg">
-                                                                        <img src="img/coast.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[5]->photo4 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo4)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo4)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/rails.jpg">
-                                                                        <img src="img/rails.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[5]->photo5 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo5)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo5)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    <a class="lightbox" href="img/rocks.jpg">
-                                                                        <img src="img/rocks.jpg" alt="Park" class="card-img-top">
-                                                                    </a>
+                                                                    @if(auth()->user()->gallerys[5]->photo6 != null)
+                                                                        <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo6)}}">
+                                                                            <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[5]->photo6)}}" alt="Park" class="card-img-top"></a>
+                                                                    @else
+                                                                        <a class="lightbox" href="{{url('img/imagenopaisagem.jpg')}}">
+                                                                            <img src="/img/imagenopaisagem.jpg" alt="Park" class="card-img-top"></a>
+                                                                    @endif
                                                                 </div>
                                                             </div>
 
@@ -944,7 +1227,43 @@
                         <!-- <div class="tab-pane active show" id="tvideos" role="tabpanel"> -->
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="card-header-text">Amigos</h5>
+                                <div class="row">
+                                    <h5 class="card-header-text col-lg-3">Amigos</h5>
+{{--                                <form class="navbar-form col-lg-9 d-flex flex-row justify-content-between" >--}}
+
+
+                                        <button type="submit" class="btn btn-defaulf col-lg-3" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
+{{--                                </form>--}}
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title col-lg-3" id="exampleModalLongTitle">Amigos</h5>
+                                                    <form class="navbar-form d-flex flex-row justify-content-between" >
+                                                        <input type="text" class="form-control col-lg-6" placeholder="Digite a pesquise seus amigos">
+                                                        <button type="submit" class="btn btn-defaulf col-lg-3" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
+                                                    </form>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+{{--                                                    @for($i = 0, $i < auth()->user().length, $i++)--}}
+                                                    <div class="chip chip-lg">
+{{--                                                        {{ dd(auth()->user().length) }}                                                        }}--}}
+                                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="Contact Person"> Lara Lim
+                                                        <button type="button" class="btn btn-secondary">Adicionar</button>
+                                                    </div>
+{{--                                                    @endfor--}}
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-block margin-rigth">
                                 <ul class="media-list">

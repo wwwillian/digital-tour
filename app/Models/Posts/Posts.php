@@ -2,6 +2,8 @@
 
 namespace App\Models\Posts;
 
+use App\Models\Perfil\Gallerys;
+use App\Models\Perfil\Videos;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use App\Models\Comments\Comments;
@@ -10,7 +12,6 @@ class Posts extends Model
 {
 
     protected $table = 'posts';
-//    protected $primaryKey = 'id';
     protected $appends = ['owner'];
     protected $fillable = [
         'description', 'photo'
@@ -36,4 +37,13 @@ class Posts extends Model
         return $this->hasMany(Comments::class);
     }
 
+    public function gallerys()
+    {
+        return $this->hasMany(Gallerys::class);
+    }
+
+    public function videos()
+    {
+        return $this->hasMany(Videos::class);
+    }
 }

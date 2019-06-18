@@ -908,3 +908,17 @@ div#efeito img#transition{
 /* -------------------------//--------------------------------//---------------------------------- */
 
 }
+
+/*amigos*/
+.chip.chip-lg {
+    height: 52px;
+    line-height: 52px;
+    border-radius: 26px;
+    background-color: blue;
+}
+.chip.chip-lg img {
+    height: 52px;
+    width: 52px;
+    border-radius: 100%;
+}
+/*fim amigos*/

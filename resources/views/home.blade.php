@@ -110,17 +110,30 @@
                         </h5>
                         {!!$value->description!!}
                         <hr>
-                        @if($value->user_id === auth()->user()->id)
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-link"><a class="nav-item">Editar</a></li>
-                            <li class="nav-link"><a class="nav-item">Excluir</a></li>
-                        </ul>
-                        @else
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-link"><a class="nav-item">Comentar</a></li>
-                                <li class="nav-link"><a class="nav-item">Like</a></li>
-                            </ul>
-                        @endif
+{{--                        @if($value->user_id === auth()->user()->id)--}}
+{{--                        <ul class="navbar-nav ml-auto">--}}
+{{--                            <li class="nav-link"><a class="nav-item">Editar</a></li>--}}
+{{--                            <li class="nav-link"><a class="nav-item">Excluir</a></li>--}}
+{{--                        </ul>--}}
+{{--                        @else--}}
+{{--                            <ul class="navbar-nav ml-auto">--}}
+{{--                                <li class="nav-link"><a class="nav-item">Comentar</a></li>--}}
+{{--                                <li class="nav-link"><a class="nav-item">Like</a></li>--}}
+{{--                            </ul>--}}
+{{--                        <form method="POST" action="{{ route('comments') }}" enctype="multipart/form-data">--}}
+{{--                            @csrf--}}
+{{--                            <input type="hidden" id="escondido1" name="user_id">--}}
+
+{{--                            <input type="hidden" id="escondido2" name="posts_id">--}}
+{{--                            <div class="md-form mt-4">--}}
+{{--                                <label for="quickReplyFormComment card-header border-0 font-weight-bold">Your comment</label>--}}
+{{--                                <textarea class="form-control md-textarea" id="comments" name="comments" rows="3"></textarea>--}}
+{{--                                    <div class="text-center my-4">--}}
+{{--                                        <button class="btn btn-default btn-sm btn-rounded" type="submit">Post</button>--}}
+{{--                                    </div>--}}
+{{--                            </div>--}}
+{{--                        </form>--}}
+
 {{--                        <div class="media d-block d-md-flex mt-4">--}}
 {{--                            <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"--}}
 {{--                                 src="https://mdbootstrap.com/img/Photos/Avatars/img (27).jpg" width="60"--}}
