@@ -330,7 +330,7 @@ section .esc{
 
 .submit-form {
   padding: 6px 19px;
-  margin: -27px -17px 2px;
+  margin: 9px -17px 2px;
   float: right;
   border: 1px solid #027ba3;
   border-radius: 23px;
@@ -338,6 +338,10 @@ section .esc{
   font-weight: bolder;
   color: white;
   cursor: pointer;
+}
+
+div .btnlogin{
+  margin: -30px -17px 2px;
 }
 
 .submit-form:hover {
@@ -495,7 +499,7 @@ form h1 {
     padding: 8px;
     margin-bottom: 10px;
     background-color: transparent;
-    outline: https://github.com/wtricks/very-simple-gallery.gitnone ;
+    outline:none;
     border: 1px solid #afaaa6;
     height: 30px;
     display: inline-block;
