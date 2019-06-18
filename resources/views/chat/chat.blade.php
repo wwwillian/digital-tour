@@ -1,4 +1,4 @@
-@extends('layouts.conectado')
+@extends('layouts.chat')
 
 @section('content')
 

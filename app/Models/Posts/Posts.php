@@ -4,6 +4,7 @@ namespace App\Models\Posts;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
+use App\Models\Comments\Comments;
 
 class Posts extends Model
 {
@@ -28,6 +29,11 @@ class Posts extends Model
     public function user()
     {
         return $this->hasMany(User::class, 'id', 'user_id');
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comments::class);
     }
 
 }

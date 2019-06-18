@@ -38,7 +38,6 @@
 <body>
 <div id="app">
     <header>
-
         <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
             <!-- <a href="index.html" class="navbar-brand"> -->
             <a href="/"><img src="img/logorev1.png" width="60"></a>
@@ -51,15 +50,15 @@
                 <!-- <a class="navbar-brand" href="#">DIGITAL TOUR</a> -->
                 <ul class="navop navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link h5" href="{{ route('quemsomos') }}">Quem Somos</a>
+                        <a class="nav-link h5" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link h5" href="{{ route('faq') }}">FAQ</a>
+                        <a class="nav-link h5" href="{{ route('perfil') }}">Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link h5" href="{{ route('contato') }}">Contato</a>
-                    </li><li class="nav-item">
                         <a class="nav-link h5" href="{{ route('artigos') }}">Artigos</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link h5" href="{{ route('chat') }}">Chat</a>
                     </li>
                     @guest
                         <li class="nav-item h5">
@@ -94,9 +93,7 @@
             </div>
         </nav>
     </header>
-
 @yield('content')
-
 <!-- Footer -->
     <footer class="bg-dark mt-5">
         <div class="container">
@@ -119,11 +116,10 @@
     </footer>
     <!--fim conteiner-->
 
-        <!-- JavaScript (Opcional) -->
+    <!-- JavaScript (Opcional) -->
     <script src="{{ asset('js/jquery-3.4.1.min.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
-    </div>
+</div>
 </body>
 </html>
-

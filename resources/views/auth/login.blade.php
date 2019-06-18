@@ -1,4 +1,4 @@
-@extends('layouts.masterDesconectado')
+@extends('layouts.desconectado')
 
 @section('content')
 

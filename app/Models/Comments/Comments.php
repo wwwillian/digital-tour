@@ -3,19 +3,14 @@
 namespace App\Models\Comments;
 
 use App\Models\User;
+use App\Models\Posts\Posts;
 use Illuminate\Database\Eloquent\Model;
 
 class Comments extends Model
 {
-    protected $table = 'comment';
-//    protected $primaryKey = 'id';
+    protected $table = 'comments';
     protected $appends = ['owner'];
     protected $fillable = ['comments'];
-
-    public function getOwnerAttribute()
-    {
-        return $this->user_id == auth()->user()->id;
-    }
 
     public function  getCreatedAtAttribute($value)
     {
@@ -29,6 +24,6 @@ class Comments extends Model
 
     public function posts()
     {
-//        return $this->
+        return $this->hasMany(Posts::class, 'id', 'post_id');
     }
 }
