@@ -499,7 +499,7 @@ form h1 {
     padding: 8px;
     margin-bottom: 10px;
     background-color: transparent;
-    outline: https://github.com/wtricks/very-simple-gallery.gitnone ;
+    outline:none;
     border: 1px solid #afaaa6;
     height: 30px;
     display: inline-block;
