@@ -22,13 +22,6 @@ class PerfilController extends Controller
             ->with('gallery', $gallery);
     }
 
-    public function mostrarAmigos()
-    {
-        $amigos = User::all();
-
-        return $amigos;
-
-    }
     public function gallerysUpdate(Request $request)
     {
 

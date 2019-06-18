@@ -32,8 +32,10 @@ Route::group(['middleware'=>'auth'], function (){
 
     Route::get('perfil', 'PerfilController@mostrarPerfil')->name('perfil');
 
-    Route::get('perfil/amigos', 'AmigosController@mostrarAmigos')->name('mostrarAmigos');
-    Route::post('perfil/amigos', 'AmigosController@pesquisarAmigos')->name('pesquisarAmigos');
+    Route::post('perfil', 'PerfilController@adicionarAmigos')->name('adicionarAmigos');
+
+//    Route::get('perfil/amigos', 'AmigosController@mostrarAmigos')->name('mostrarAmigos');
+//    Route::post('perfil', 'AmigosController@adicionarAmigos')->name('adicionarAmigos');
 
     Route::get('perfil/photos', 'PerfilController@exibirFotos')->name('exibirFotos');
     Route::post('perfil/photos', 'PerfilController@gallerysUpdate')->name('gallerysUpdate');

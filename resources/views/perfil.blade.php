@@ -1243,31 +1243,34 @@
                                                 <div class="modal-header">
                                                     <h5 class="modal-title col-lg-3" id="exampleModalLongTitle">Amigos</h5>
                                                     <form class="navbar-form d-flex flex-row justify-content-between" >
-                                                        <input type="text" cl{ass="form-control col-lg-6" plar="Digite a pesquise seus amigos">
+                                                        <input type="text" class="form-control col-lg-6" plar="Digite a pesquise seus amigos">
                                                         <button type="submit" class="btn btn-defaulf col-lg-ceholde3 submit-form" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
                                                     </form>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-
+{{--                                                <form method="POST" action="{{ route('adicionarAmigos') }}" enctype="multipart/form-data">--}}
+{{--                                                    @csrf--}}
                                                 <div class="modal-body">
                                                     @if(isset($amigos))
                                                     @foreach($amigos as $amigo)
                                                     <div class="chip chip-lg mt-3 pr-4">
                                                         @if($amigo->image != null)
-                                                            <img src="{{ url('storage/users/'.$amigo->image) }}" class="imgcapa">
+                                                            <img src="{{ url('storage/users/'.$amigo->image) }}">
                                                         @else
-                                                            <img src="/img/imagenopaisagem.jpg" class="imgcapa">
+                                                            <img src="/img/imagenopaisagem.jpg">
                                                         @endif
                                                         {{$amigo->name}}
-                                                        <button type="submit" class="btn btn-secondary submit-form ">Adicionar</button>
+{{--                                                            <input type="hidden" value="{{ $amigo->id }}">--}}
+                                                        <button type="submit" class="btn btn-secondary submit-form">Adicionar</button>
                                                     </div>
                                                     @endforeach
                                                     @endif
                                                 </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary submit-form" data-dismiss="modal">Close</button>
+{{--                                                </form>--}}
+                                                <div class="modal-footer pr-5">
+                                                    <button type="button" class="btn btn-secondary submit-form" data-dismiss="modal">Sair</button>
 
                                                 </div>
                                             </div>

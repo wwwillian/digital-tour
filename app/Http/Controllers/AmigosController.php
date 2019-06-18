@@ -10,13 +10,11 @@ class AmigosController extends Controller
 {
     public function mostrarAmigos()
     {
-        $amigos = User::all();
-
-        return view('perfil',["amigos"=>$amigos]);
+      return view('perfil');
 
     }
 
-    public function pesquisarAmigos()
+    public function adicionarAmigos()
     {
 
     }
