@@ -12,9 +12,8 @@ class AmigosController extends Controller
     {
         $amigos = User::all();
 
-        dd($amigos);
-        return view('perfil')
-            ->with('amigos', $amigos);
+        return view('perfil',["amigos"=>$amigos]);
+
     }
 
     public function pesquisarAmigos()

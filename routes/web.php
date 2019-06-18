@@ -32,7 +32,7 @@ Route::group(['middleware'=>'auth'], function (){
 
     Route::get('perfil', 'PerfilController@mostrarPerfil')->name('perfil');
 
-    Route::get('perfil/amigos', 'PerfilController@mostrarAmigos')->name('mostrarAmigos');
+    Route::get('perfil/amigos', 'AmigosController@mostrarAmigos')->name('mostrarAmigos');
     Route::post('perfil/amigos', 'AmigosController@pesquisarAmigos')->name('pesquisarAmigos');
 
     Route::get('perfil/photos', 'PerfilController@exibirFotos')->name('exibirFotos');

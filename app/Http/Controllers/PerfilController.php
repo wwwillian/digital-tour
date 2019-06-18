@@ -7,6 +7,7 @@ use App\Models\Posts\Posts;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Storage;
 
 
 class PerfilController extends Controller
@@ -14,21 +15,20 @@ class PerfilController extends Controller
     public function mostrarPerfil()
     {
 
-        $gallery = Gallerys::all();
+        $gallery = Gallerys::where("user_id",1)->first();
+        $amigos = $this->mostrarAmigos();
 
-        return view('perfil')
+        return view('perfil',["amigos"=>$amigos])
             ->with('gallery', $gallery);
     }
 
-//    public function mostrarAmigos()
-//    {
-//        $amigos = User::all();
-//
-//        dd($amigos);
-//        return view('perfil')
-//            ->with('amigos', $amigos);
-//    }
+    public function mostrarAmigos()
+    {
+        $amigos = User::all();
 
+        return $amigos;
+
+    }
     public function gallerysUpdate(Request $request)
     {
 
@@ -116,20 +116,25 @@ class PerfilController extends Controller
 
         $gallerys->save();
 
-        if(Input::file('photo1'))
-        {
-            $name = kebab_case($request->name).uniqid($gallerys->id);
-            $extension = $request->photo1->extension();
-            $nameImage = "{$name}.$extension";
-            $data['photo1'] = $nameImage;
+        if($request->hasFile('photo1') && $request->file('photo1')->isValid()) {
 
-            $upload = $request->photo1->storeAs('gallerys', $nameImage);
+            if ($user->photo1 && Storage::exists("user/{$gallerys->photo1}"))
+                Storage::delete("photo1/{$gallerys->photo1}");
 
-            if(!$upload)
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
+            if (Input::file('photo1')) {
+                $name = kebab_case($request->name) . uniqid($gallerys->id);
+                $extension = $request->photo1->extension();
+                $nameImage = "{$name}.$extension";
+                $data['photo1'] = $nameImage;
 
+                $upload = $request->photo1->storeAs('gallerys', $nameImage);
+
+                if (!$upload)
+                    return redirect()
+                        ->route('perfil')
+                        ->with('erro', 'Falha ao fazer o upload da imagem fundo');
+
+            }
         }
         if(Input::file('photo2'))
         {

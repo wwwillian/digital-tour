@@ -72,7 +72,7 @@
                         <div class="card-header textoperfil">
                             <h5 class="card-header-text">Perfil</h5>
                             <button id="edit-btn" type="button"
-                                    class="btn btn-primary"><a href="{{ route('profile') }}">Editar</a></button>
+                                    class="btn btn-primary submit-form"><a href="{{ route('profile') }}">Editar</a></button>
                         </div>
                         <div class="card-block">
                             <div class="view-info">
@@ -335,7 +335,11 @@
                                                         <div class="row mb-3">
                                                             <div class="col-md-4">
                                                                 <div class="card">
-                                                                    @if(auth()->user()->gallerys[0]->photo1 != null)
+{{--                                                        IMPORTANTE            @if(isset($gallery))--}}
+
+
+{{--                            IMPORTANTE                                            <img src="{{url('storage/gallerys/'.$gallery->photo1)}}" alt="Park" class="card-img-top">--}}
+                                                                        @if(auth()->user()->gallerys[0]->photo2 != null)
                                                                         <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo1)}}">
                                                                             <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo1)}}" alt="Park" class="card-img-top"></a>
                                                                     @else
@@ -580,6 +584,7 @@
                                                         <div class="row mb-3">
                                                             <div class="col-md-4">
                                                                 <div class="card">
+
                                                                     @if(auth()->user()->gallerys[1]->photo1 != null)
                                                                         <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo1)}}">
                                                                             <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[1]->photo1)}}" alt="Park" class="card-img-top"></a>
@@ -1227,12 +1232,12 @@
                         <!-- <div class="tab-pane active show" id="tvideos" role="tabpanel"> -->
                         <div class="card">
                             <div class="card-header">
-                                <div class="row">
-                                    <h5 class="card-header-text col-lg-3">Amigos</h5>
+                                <div class="row d-flex justify-content-between mr-5 ml-5 mt-2">
+                                    <h5 class="card-header-text">Amigos</h5>
 {{--                                <form class="navbar-form col-lg-9 d-flex flex-row justify-content-between" >--}}
 
 
-                                        <button type="submit" class="btn btn-defaulf col-lg-3" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
+                                        <button type="submit" class="btn btn-defaulf submit-form" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
 {{--                                </form>--}}
                                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1240,24 +1245,26 @@
                                                 <div class="modal-header">
                                                     <h5 class="modal-title col-lg-3" id="exampleModalLongTitle">Amigos</h5>
                                                     <form class="navbar-form d-flex flex-row justify-content-between" >
-                                                        <input type="text" class="form-control col-lg-6" placeholder="Digite a pesquise seus amigos">
-                                                        <button type="submit" class="btn btn-defaulf col-lg-3" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
+                                                        <input type="text" cl{ass="form-control col-lg-6" plar="Digite a pesquise seus amigos">
+                                                        <button type="submit" class="btn btn-defaulf col-lg-ceholde3 submit-form" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
                                                     </form>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-{{--                                                    @for($i = 0, $i < auth()->user().length, $i++)--}}
+                                                    @if(isset($amigos))
+                                                    @foreach($amigos as $amigo)
                                                     <div class="chip chip-lg">
-{{--                                                        {{ dd(auth()->user().length) }}                                                        }}--}}
-                                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="Contact Person"> Lara Lim
-                                                        <button type="button" class="btn btn-secondary">Adicionar</button>
+
+                                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="Contact Person"> {{$amigo->name}}
+                                                        <button type="button" class="btn btn-secondary submit-form">Adicionar</button>
                                                     </div>
-{{--                                                    @endfor--}}
+                                                    @endforeach
+                                                    @endif
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary submit-form" data-dismiss="modal">Close</button>
 
                                                 </div>
                                             </div>
