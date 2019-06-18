@@ -346,9 +346,7 @@
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top"
-                                     src="https://s2.best-wallpaper.net/wallpaper/1920x1080/1107/Waterfall-river-green_1920x1080.jpg"
-                                     alt="Card image cap">
+                                    <img src="../img/lugar.jpg" class="card-img" alt="...">
                                 <a>
                                     <div class="mask rgba-white-slight"></div>
                                 </a>
@@ -362,8 +360,7 @@
                                 <!-- Title -->
                                 <h4 class="font-weight-bold card-title">Experimente diferentes lugares pelo mundo.</h4>
                                 <!-- Text -->
-                                <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                                    suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                                <p class="card-text">Conheça varios destinos pelo mundo e planeje sua viagem.</p>
 
                             </div>
 
@@ -390,8 +387,7 @@
                                 <!-- Title -->
                                 <h4 class="card-title"><strong>Beto Carrero World</strong></h4>
                                 <!-- Text -->
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
-                                    ex, recusandae. Facere modi sunt, quod quibusdam.
+                                <p class="card-text">O maior parque do Brasil, obtenha descontos incriveis compartilhando sua experiência.
                                 </p>
 
                             </div>
@@ -420,8 +416,7 @@
                                 <!-- Title -->
                                 <h4 class="card-title"><strong>Conheça Nova York</strong></h4>
                                 <!-- Text -->
-                                <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
-                                    doloremque laudantium, totam rem aperiam. </p>
+                                <p class="card-text">Uma das maiores cidades do mundo sendo desvendada pelos nossos viajantes. </p>
 
                             </div>
 
@@ -455,8 +450,7 @@
                                     <!-- Title -->
                                     <h4 class="font-weight-bold card-title">Cachoeiras maravilhosas</h4>
                                     <!-- Text -->
-                                    <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                                    <p class="card-text">Veja as melhores cachoeiras para se visitar em um final de semana com a família.</p>
 
                                 </div>
 
@@ -481,10 +475,9 @@
                                 <div class="card-body card-body-cascade text-center">
 
                                     <!-- Title -->
-                                    <h4 class="card-title"><strong>Walt Disney World Resort</strong></h4>
+                                    <h4 class="card-title"><strong>Walt Disney World</strong></h4>
                                     <!-- Text -->
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+                                    <p class="card-text"> Veja como aproveitar ao máximo esse parque maravilhoso.
                                     </p>
                                 </div>
 
@@ -512,8 +505,7 @@
                                     <!-- Title -->
                                     <h4 class="card-title"><strong>Safari na África</strong></h4>
                                     <!-- Text -->
-                                    <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                                        accusantium doloremque laudantium, totam rem aperiam. </p>
+                                    <p class="card-text"> Veja como fazer para conhecer os melhores safaris no continente africano. </p>
 
                                 </div>
                             </div>
