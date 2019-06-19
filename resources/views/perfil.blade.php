@@ -1235,8 +1235,6 @@
                                 <div class="row d-flex justify-content-between mr-5 ml-5 mt-2">
                                     <h5 class="card-header-text">Amigos</h5>
 {{--                                <form class="navbar-form col-lg-9 d-flex flex-row justify-content-between" >--}}
-
-
                                         <button type="submit" class="btn btn-defaulf submit-form" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
 {{--                                </form>--}}
                                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -1252,13 +1250,18 @@
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
+
                                                 <div class="modal-body">
                                                     @if(isset($amigos))
                                                     @foreach($amigos as $amigo)
-                                                    <div class="chip chip-lg">
-
-                                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="Contact Person"> {{$amigo->name}}
-                                                        <button type="button" class="btn btn-secondary submit-form">Adicionar</button>
+                                                    <div class="chip chip-lg mt-3 pr-4">
+                                                        @if($amigo->image != null)
+                                                            <img src="{{ url('storage/users/'.$amigo->image) }}" class="imgcapa">
+                                                        @else
+                                                            <img src="/img/imagenopaisagem.jpg" class="imgcapa">
+                                                        @endif
+                                                        {{$amigo->name}}
+                                                        <button type="submit" class="btn btn-secondary submit-form ">Adicionar</button>
                                                     </div>
                                                     @endforeach
                                                     @endif

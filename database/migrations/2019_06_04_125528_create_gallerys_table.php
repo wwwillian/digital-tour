@@ -15,15 +15,9 @@ class CreateGallerysTable extends Migration
     {
         Schema::create('gallerys', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('photo1')->nullable();
-            $table->string('photo2')->nullable();
-            $table->string('photo3')->nullable();
-            $table->string('photo4')->nullable();
-            $table->string('photo5')->nullable();
-            $table->string('photo6')->nullable();
+            $table->string('photo')->nullable();
             $table->text('comments')->nullable();
             $table->unsignedBigInteger('user_id')->unsigned()->index();
-            $table->unsignedBigInteger('post_id')->unsigned()->index();
             $table->timestamps();
 
             $table->foreign('user_id')
