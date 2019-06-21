@@ -30,20 +30,19 @@ Route::group(['middleware'=>'auth'], function (){
     Route::get('home/comments', 'CommentsController@mostarComments')->name('mostrarComments');
     Route::post('home/comments', 'CommentsController@comments')->name('comments');
 
-    Route::get('perfil', 'PerfilController@mostrarPerfil')->name('perfil');
+    Route::get('perfil', 'FriendsController@index')->name('perfil'); 
 
-    Route::post('perfil', 'PerfilController@adicionarAmigos')->name('adicionarAmigos');
+    Route::get('perfil/{id}', 'FriendsController@show')->name('mostrarAmigos');
 
-//    Route::get('perfil/amigos', 'AmigosController@mostrarAmigos')->name('mostrarAmigos');
-//    Route::post('perfil', 'AmigosController@adicionarAmigos')->name('adicionarAmigos');
-
-    Route::get('perfil/photos', 'PerfilController@exibirFotos')->name('exibirFotos');
-    Route::post('perfil/photos', 'PerfilController@gallerysUpdate')->name('gallerysUpdate');
+    Route::get('perfil/photos', 'FriendsController@exibirFotos')->name('exibirFotos');
+    Route::post('perfil/photos', 'FriendsController@store')->name('gallerysUpdate');
 
     Route::get('perfil/videos', 'PerfilControllers@mostrarvideos')->name('mostrarVideos');
     Route::post('perfil/videos', 'PerfilControllers@videos')->name('videos');
 
     Route::get('/artigos', 'PaginasController@mostrarArtigos')->name('artigos');
+
+
 
 });
 

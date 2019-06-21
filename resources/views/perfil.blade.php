@@ -4,7 +4,7 @@
 
 <!-- Foto Perfil - Personalizado -->
 <div class="container">
-<div class="content">
+<div class="">
     <div class="col-lg-12 col-md-12 col-xl-12">
         <div class="awesome user width-cover mt-5">
             <div class="container img-fundo" id="btnMostrarEsconder">
@@ -1234,41 +1234,38 @@
                             <div class="card-header">
                                 <div class="row d-flex justify-content-between mr-5 ml-5 mt-2">
                                     <h5 class="card-header-text">Amigos</h5>
-{{--                                <form class="navbar-form col-lg-9 d-flex flex-row justify-content-between" >--}}
-                                        <button type="submit" class="btn btn-defaulf submit-form" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
-{{--                                </form>--}}
-                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                                        <button type="submit" class="btn btn-defaulf submit-form" data-toggle="modal" data-target="#amigos" onClick="">Pesquisar</button>
+
+                                    <div class="modal fade" id="amigos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title col-lg-3" id="exampleModalLongTitle">Amigos</h5>
                                                     <form class="navbar-form d-flex flex-row justify-content-between" >
-                                                        <input type="text" class="form-control col-lg-6" plar="Digite a pesquise seus amigos">
+                                                        <input type="text" cl{ass="form-control col-lg-6" plar="Digite a pesquise seus amigos">
                                                         <button type="submit" class="btn btn-defaulf col-lg-ceholde3 submit-form" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
                                                     </form>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-{{--                                                <form method="POST" action="{{ route('adicionarAmigos') }}" enctype="multipart/form-data">--}}
-{{--                                                    @csrf--}}
+
                                                 <div class="modal-body">
                                                     @if(isset($amigos))
                                                     @foreach($amigos as $amigo)
                                                     <div class="chip chip-lg mt-3 pr-4">
                                                         @if($amigo->image != null)
-                                                            <img src="{{ url('storage/users/'.$amigo->image) }}">
+                                                            <img src="{{ url('storage/users/'.$amigo->image) }}" class="imgcapa">
                                                         @else
-                                                            <img src="/img/imagenopaisagem.jpg">
+                                                            <img src="/img/imagenopaisagem.jpg" class="imgcapa">
                                                         @endif
                                                         {{$amigo->name}}
-{{--                                                            <input type="hidden" value="{{ $amigo->id }}">--}}
-                                                        <button type="submit" class="btn btn-secondary submit-form">Adicionar</button>
+                                                        <button type="submit" class="btn btn-secondary submit-form ">Adicionar</button>
                                                     </div>
                                                     @endforeach
                                                     @endif
                                                 </div>
-{{--                                                </form>--}}
                                                 <div class="modal-footer pr-5">
                                                     <button type="button" class="btn btn-secondary submit-form" data-dismiss="modal">Sair</button>
 
@@ -2022,23 +2019,6 @@
 
 
 
-    <!--Postagens-->
-    <section class="my-5 postagem-display">
-
-
-    <!-- Reply section (logged in user) -->
-    <!--Section: Comments-->
-{{--    <section class="my-5 postagem-display">--}}
-
-        <!-- Card header -->
-
-        <div class="esc">
-        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-        quia non numquam eius modi
-        tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-        </div>
-
-
 
 
     </section>
@@ -2051,3 +2031,11 @@
 
 
 @endsection
+
+<!-- @section('javascript')
+<script type="text/javascript">
+    function amigos(){
+        $(#amigos).modal('show')
+    }
+</script>
+@endsection -->

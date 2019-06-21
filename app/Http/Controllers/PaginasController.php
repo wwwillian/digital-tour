@@ -31,9 +31,9 @@ class PaginasController extends Controller
         return view('contato');
     }
 
-    public function mostrarPerfil()
+    public function mostrarGallery()
     {
-        return view('perfil');
+        return view('gallery');
     }
 
     public function mostrarArtigos()

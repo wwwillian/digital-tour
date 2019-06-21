@@ -115,11 +115,6 @@
         </div>
     </footer>
     <!--fim conteiner-->
-
-    <!-- JavaScript (Opcional) -->
-    <script src="{{ asset('js/jquery-3.4.1.min.js')}}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
 </div>
 </body>
 </html>

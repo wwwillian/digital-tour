@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Friends extends Model
 {
+    protected $primaryKey = 'id';
+    
     public function getOwnerAttribute()
     {
         return $this->user_id == auth()->user()->id;

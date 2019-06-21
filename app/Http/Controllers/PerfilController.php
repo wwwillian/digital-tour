@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Friends\Friends;
 use App\Models\Perfil\Gallerys;
 use App\Models\Posts\Posts;
 use App\Models\User;
@@ -12,14 +13,26 @@ use Illuminate\Support\Facades\Storage;
 
 class PerfilController extends Controller
 {
-    public function mostrarPerfil()
+    public function getMostrarPerfilByID()
     {
 
         $gallery = Gallerys::where("user_id",1)->first();
-        $amigos = $this->mostrarAmigos();
+        $amigos = $this->usuario();
 
         return view('perfil',["amigos"=>$amigos])
-            ->with('gallery', $gallery);
+            ->with('gallery', $gallery);           
+        }
+
+    public function usuario()
+    {
+        $amigos = User::all();
+        
+        return $amigos;
+    }
+
+    public function mostrarAmigos($id)
+    {
+        $amigos = User::find($id);
     }
 
     public function gallerysUpdate(Request $request)

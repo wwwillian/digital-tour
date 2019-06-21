@@ -175,11 +175,6 @@ a {
   background-color: transparent;
 }
 
-.telalogin-a{
-  color:black !important;
-  font-size: 15px !important;
-}
-
 a:hover {
   color: #1d68a7;
   text-decoration: underline;
@@ -8171,7 +8166,6 @@ button.bg-dark:focus {
 .mb-0,
 .my-0 {
   margin-bottom: 0 !important;
-  margin-right: 15px !important;
 }
 
 .ml-0,
@@ -10666,6 +10660,5 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
-  
 }
 

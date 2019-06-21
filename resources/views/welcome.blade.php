@@ -18,7 +18,7 @@
                             <div class="view cvideos1">
                                 <!--Video-->
                                 <video class="video-fluid cvideos" width="100%" autoplay loop muted>
-                                    <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+                                    <source src="/videos/Tropical.mp4" type="video/mp4" />
                                 </video>
                                 <div class="mask rgba-indigo-light"></div>
                             </div>
@@ -37,7 +37,7 @@
                             <div class="view">
                                 <!--Video-->
                                 <video class="video-fluid cvideos" width="100%" autoplay loop muted>
-                                    <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+                                    <source src="/videos/forest.mp4" type="video/mp4" />
                                 </video>
                                 <div class="mask rgba-purple-slight"></div>
                             </div>
@@ -56,7 +56,7 @@
                             <div class="view">
                                 <!--Video-->
                                 <video class="video-fluid cvideos" width="100%" autoplay loop muted>
-                                    <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4" type="video/mp4" />
+                                    <source src="/videos/aguanatural.mp4" type="video/mp4" />
                                 </video>
                                 <div class="mask rgba-black-strong"></div>
                             </div>
@@ -186,6 +186,19 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto mt-2">
                     <ul class="navind ul-header mr-5 " id="navind">
+                        <li class="nav-item">
+                            <a class="nav-link h5" href="{{ route('contato') }}">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h5" href="{{ route('quemsomos') }}">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h5" href="{{ route('faq') }}">FAQ</a>
+                        </li>
+
+{{--                        <li class="nav-item">--}}
+{{--                            <a class="nav-link h5" href="{{ route('artigos') }}">Artigos</a>--}}
+{{--                        </li>--}}
                         @guest
                             <li class="nav-item h5">
                                 <a class="nav-link" href="{{ route('login') }}">Login</a>
@@ -215,17 +228,7 @@
                                 </div>
                             </li>
                         @endguest
-                            <li class="nav-item">
-                                <a class="nav-link h5" href="{{ route('quemsomos') }}">Quem Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link h5" href="{{ route('faq') }}">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link h5" href="{{ route('contato') }}">Contato</a>
-                            </li><li class="nav-item">
-                                <a class="nav-link h5" href="{{ route('artigos') }}">Artigos</a>
-                            </li>
+
                     </ul>
                 </div>
             </div>
@@ -317,7 +320,7 @@
                 <table>
                         <tr>
                     <p class="mb-0"><span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span><td><img class="fotoperf mb-0"
-                        src="/img/terceira.png" alt="img perfil"
+                        src="/img/oculos.jpg" alt="img perfil"
                         width="120"></td> <span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span></p>
                         <span><em>Viagem para </em><strong>Africa do Sul</strong></span>
                         <hr>

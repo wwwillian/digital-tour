@@ -22,6 +22,8 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected $primaryKey = 'id';
+    
     protected $fillable = [
         'name', 'email', 'password', 'image', 'cupphoto', 'date', 'gender', 'maritalstatus', 'location', 'mobilenumber', 'facebook', 'instagram', 'skype', 'experience'
     ];

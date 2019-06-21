@@ -10,7 +10,7 @@ class AmigosController extends Controller
 {
     public function mostrarAmigos()
     {
-      return view('perfil');
+//      return view('perfil');
 
     }
 
