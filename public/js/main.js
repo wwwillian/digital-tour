@@ -40,12 +40,12 @@ $(document).ready(function (e) {
 
 
 
-$(document).ready(function (e) {
+$(document).ready(function () {
     
-    $('.artigo').hide()
-    $('button').click(function (e) {
+    $('.artigo').hide();
+    $('.botao-artigo').click(function (e) {
         
-        $(this).parent().next('.artigo').slideToggle('slow');
+        $(this).parent().next('.artigo').toggle('d-none');
         
       
     });
