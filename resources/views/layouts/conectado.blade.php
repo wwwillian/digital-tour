@@ -9,9 +9,7 @@
 
     <title>{{ config('app.name', 'Digital-tour') }}</title>
     <link rel="icon" href="{{ asset('img/logorev1.png')}}">
-
-   
-
+    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -130,9 +128,9 @@
 <script>
     CKEDITOR.replace( 'description' );
 </script>
-    <!-- @hasSection('javascript')
+    @hasSection('javascript')
                 @yield('javascript')
     @endif
-             -->
+            
 </body>
 </html>

@@ -258,9 +258,39 @@ class FriendsController extends Controller
      */
     public function show($id)
     {
+        // $amigo = User::find($id);
+        // $friends = $this->amizades();
+        //     return view('perfil-amigos', ["friends"=>$friends])
+        //         ->with('amigo', $amigo);
         $amigo = User::find($id);
-            return view('perfil-amigos')
-                ->with('amigo', $amigo);
+        
+
+        return view('perfil-amigos')->with('amigo', $amigo);
+    }
+    // $gallery = Gallerys::where("user_id",1)->first();
+    // $amigos = $this->usuario();
+
+    // return view('perfil',["amigos"=>$amigos])
+    //     ->with('gallery', $gallery);
+    public function amizades()
+    {
+        $friends = Friends::all();
+
+        return $friends;
+    }
+
+    public function adicionarAmigo(Request $request)
+    {
+        $data = $request->all();
+        
+        $friend = new Friends;
+        $friend->user_id = $request->input('user_id');
+        
+        $friend->save();
+       
+        return redirect()
+            ->back()
+            ->with('success', 'Atualizado com Sucesso!');
     }
 
     /**
@@ -296,4 +326,10 @@ class FriendsController extends Controller
     {
         //
     }
+    // public function indexJson()
+    // {
+    //     $amigos = User::all();
+
+    //     return json_encode($amigos);
+    // }
 }

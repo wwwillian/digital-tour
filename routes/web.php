@@ -34,6 +34,9 @@ Route::group(['middleware'=>'auth'], function (){
 
     Route::get('perfil/{id}', 'FriendsController@show')->name('mostrarAmigos');
 
+    // Route::get('perfil/{id}/a')
+    Route::post('perfil/id', 'FriendsController@adicionarAmigo')->name('adicionarAmigo');
+
     Route::get('perfil/photos', 'FriendsController@exibirFotos')->name('exibirFotos');
     Route::post('perfil/photos', 'FriendsController@store')->name('gallerysUpdate');
 
@@ -42,7 +45,8 @@ Route::group(['middleware'=>'auth'], function (){
 
     Route::get('/artigos', 'PaginasController@mostrarArtigos')->name('artigos');
 
-
+    Route::get('/amizade', 'AmigosController@mostrarAmigos')->name('amigos');
+    Route::any('/amizade/{id}','AmigosController@pesquisar')->name('amigos');
 
 });
 

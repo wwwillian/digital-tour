@@ -4,31 +4,12 @@
     <list default="true" id="93d6a1f9-8099-4697-9fcf-02739f32c84e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AmigosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AmigosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaginasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaginasController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PerfilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PerfilController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Friends/Friends.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Friends/Friends.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/lugar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/lugar.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sports.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sports.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sports1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sports1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sports2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sports2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sports3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sports3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sports4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sports4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sports5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sports5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sports6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sports6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sports7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sports7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sports8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sports8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sports9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sports9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/chat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/chat.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FriendsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FriendsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/conectado.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/conectado.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/perfil-amigos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/perfil-amigos.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/perfil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/perfil.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
@@ -141,24 +122,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/view.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/perfil-amigos.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FriendsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="183" column="79" selection-start-line="183" selection-start-column="79" selection-end-line="193" selection-end-column="90" />
+            <state relative-caret-position="120">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/perfil.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/amizade.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40820">
-              <caret line="2041" selection-end-line="2041" />
+            <state relative-caret-position="2680">
+              <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="940">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#7#389#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AmigosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+              <folding>
+                <element signature="e#40#60#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/amizade.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -211,8 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/quemsomos.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/faq.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/masterConectado.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/artigos.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
@@ -249,7 +256,6 @@
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_04_125528_create_gallerys_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AmigosController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PerfilController.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/perfil.blade.php" />
@@ -262,6 +268,9 @@
         <option value="$PROJECT_DIR$/public/js/index.html" />
         <option value="$PROJECT_DIR$/resources/views/gallery.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/perfil-amigos.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/amizade.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/amizade.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AmigosController.php" />
       </list>
     </option>
   </component>
@@ -405,6 +414,12 @@
             <path>
               <item name="digital-tour" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/docker/digital-tour" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="digital-tour" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/docker/digital-tour" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -412,6 +427,13 @@
               <item name="~/docker/digital-tour" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="digital-tour" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/docker/digital-tour" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="layouts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="digital-tour" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -574,12 +596,15 @@
       <workItem from="1560990657312" duration="7000" />
       <workItem from="1560991639384" duration="7000" />
       <workItem from="1561085351244" duration="2480000" />
-      <workItem from="1561088595097" duration="768000" />
+      <workItem from="1561088595097" duration="1428000" />
+      <workItem from="1561165448540" duration="5932000" />
+      <workItem from="1561227008424" duration="1015000" />
+      <workItem from="1561229079362" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356075000" />
+    <option name="totallyTimeSpent" value="363685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,9 +617,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6" weight="0.16435432" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6" visible="true" weight="0.17075774" />
       <window_info id="Structure" order="1" sideWeight="0.4" side_tool="true" weight="0.16435432" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.6" side_tool="true" weight="0.16435432" />
@@ -609,7 +633,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32937366" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053364" side_tool="true" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4994664" weight="0.9676026" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4994664" visible="true" weight="0.36825055" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -643,12 +667,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/users/15cfcf06564119.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/gallerys/25d07ef8db1bc6.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/public/gallerys/25d07e7f53b461.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -812,16 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AmigosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#40#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -837,11 +845,6 @@
             <element signature="e#40#71#0#PHP" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-406" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/gallery/karma.conf.js" />
@@ -866,16 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
-          <folding>
-            <element signature="e#40#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/artigos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -893,44 +886,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/resources/gallery/src/main.ts" />
+    <entry file="file://$PROJECT_DIR$/resources/views/gallery.blade.php" />
+    <entry file="file://$PROJECT_DIR$/public/js/index.html" />
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/gallery.blade.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="56" column="76" selection-start-line="56" selection-start-column="76" selection-end-line="56" selection-end-column="76" />
+        <state relative-caret-position="529">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
           <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
+            <element signature="e#40#67#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gallery/src/main.ts" />
     <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-426">
           <caret selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/gallery.blade.php" />
-    <entry file="file://$PROJECT_DIR$/public/js/index.html" />
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/gallery.blade.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FriendsController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/view.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/perfil.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40820">
-          <caret line="2041" selection-end-line="2041" />
+          <caret line="2055" selection-end-line="2055" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/perfil-amigos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="183" column="79" selection-start-line="183" selection-start-column="79" selection-end-line="193" selection-end-column="90" />
+          <caret line="178" column="79" selection-start-line="178" selection-start-column="79" selection-end-line="178" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/view.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="859">
+          <caret line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FriendsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/amizade.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2680">
+          <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/amizade.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AmigosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="e#40#60#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

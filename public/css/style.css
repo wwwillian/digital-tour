@@ -1,66 +1,69 @@
-
 /*Cor inserida no background do menu Nav ao clicar no mesmo*/
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body{
-  background-color: rgb(241, 240, 240);
-  }
+body {
+    background-color: rgb(241, 240, 240);
+}
 
-header nav.navbar-transparente{
-    background-image: linear-gradient(to right, #4169E1, #00BFFF,#4169E1) !important;
+header nav.navbar-transparente {
+    background-image: linear-gradient(to right, #4169E1, #00BFFF, #4169E1) !important;
     box-shadow: 1px 1px 5px black;
     height: 50px;
 }
 
-.navbar span{
-  cursor: default;
-}
-a:not([href]):not([tabindex]){
-  cursor: pointer;
+.navbar span {
+    cursor: default;
 }
 
-section .esc{
+a:not([href]):not([tabindex]) {
+    cursor: pointer;
+}
+
+section .esc {
     display: none;
 }
+
+
 /* barra de navegacao */
-.margin-top{
-  margin-top: 40px;
+
+.margin-top {
+    margin-top: 40px;
 }
 
-.awesome{
-  display: flex;
+.awesome {
+    display: flex;
 }
 
-.img-fundo{
-  height: 20em;
-  border: 5px solid white;
-  border-radius: 9px;
+.img-fundo {
+    height: 20em;
+    border: 5px solid white;
+    border-radius: 9px;
     display: flex;
     padding: 0;
 }
 
-#btnMostrarEsconder1{
+#btnMostrarEsconder1 {
     border-radius: 100%;
     width: 100px;
     height: 100px;
-
 }
 
-.imgcapa{
+.imgcapa {
     z-index: -1;
     width: 100%;
     height: 100%;
 }
 
-.img-perfil{
-  margin-left: 3.5em;
+.img-perfil {
+    margin-left: 3.5em;
     position: relative;
 }
 
-.img-perfil a img{
+.img-perfil a img {
     margin-top: -5em;
     width: 125px;
     height: 125px;
@@ -68,8 +71,8 @@ section .esc{
     border-radius: 100%;
 }
 
-.btn-alt-foto{
-  position: relative;
+.btn-alt-foto {
+    position: relative;
     bottom: 110%;
     left: 0%;
 }
@@ -79,7 +82,8 @@ section .esc{
     margin-right: 2em;
     margin-top: 2em;
 }
-.btn-alt-foto{
+
+.btn-alt-foto {
     left: -116px;
 }
 
@@ -93,386 +97,437 @@ section .esc{
     line-height: 22px;
 }
 
-.btnfundo{
+.btnfundo {
     position: relative;
     top: -351px;
 }
 
-.h1capa{
+.h1capa {
     position: relative;
     display: inline-block;
     top: 0;
     left: 0;
 }
+
 .content {
-  display: inline-block;
+    display: inline-block;
 }
 
-.tab-header{
-  margin-top: 1em;
+.tab-header {
+    margin-top: 1em;
 }
 
 .videos-css {
-  margin: 40px; 
+    margin: 40px;
 }
 
-.resize{
-  resize:none;
-  width: 100%;
+.resize {
+    resize: none;
+    width: 100%;
 }
 
 .camigos.camigos {
-  height: 60px;
-  line-height: 42px;
-  border-radius: 21px;
-  background-color: blue;
+    height: 60px;
+    line-height: 42px;
+    border-radius: 21px;
+    background-color: blue;
 }
+
 .chip.chip-md img {
-  height: 42px;
-  width: 42px;
+    height: 42px;
+    width: 42px;
 }
 
 .chip.chip-lg {
-  height: 52px;
-  line-height: 52px;
-  border-radius: 26px;
+    height: 52px;
+    line-height: 52px;
+    border-radius: 26px;
 }
+
 .chip.chip-lg img {
-  height: 52px;
-  width: 52px;
+    height: 52px;
+    width: 52px;
 }
-.img-fundo1{
-  height: 40em;
-  /* border: 10px solid black; */
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  box-shadow: 1px 1px 10px black;
-  max-width:850px;
-    max-height:340px;
+
+.img-fundo1 {
+    height: 40em;
+    /* border: 10px solid black; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 10px black;
+    max-width: 850px;
+    max-height: 340px;
     width: auto;
     /* height: auto; */
 }
 
-.textoperfil{
+.textoperfil {
     display: flex;
     justify-content: space-between;
-    }
+}
 
-.textoperfil h5{
+.textoperfil h5 {
     margin: 15px;
 }
 
-.textoperfil .submit-form{
+.textoperfil .submit-form {
     margin-right: 15px;
 }
 
-.textoperfil .submit-form a{
-    color:white;
+.textoperfil .submit-form a {
+    color: white;
 }
 
-.textoexperiencias{
+.textoexperiencias {
     margin: 15px;
 }
 
+
 /* Border top iMG faleconosco */
-.borda hr{
-  border-top:24px solid;
+
+.borda hr {
+    border-top: 24px solid;
 }
 
-.sobre-flex{
-  position: relative;
-  left: 17em;
-}
-.sobre1{
-  display: contents;
-
-}
-.sobre2{
-  transform: rotate(350deg);
-}
-.ul-valores{
-  display: flex;
+.sobre-flex {
+    position: relative;
+    left: 17em;
 }
 
-.cvideos{
-  border: 2px solid rgba(117, 120, 125, 0.26);
+.sobre1 {
+    display: contents;
 }
 
-.ul-header{
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
+.sobre2 {
+    transform: rotate(350deg);
 }
+
+.ul-valores {
+    display: flex;
+}
+
+.cvideos {
+    border: 2px solid rgba(117, 120, 125, 0.26);
+}
+
+.ul-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+
+/* .pills-peach-gradient .nav-item .nav-link.active {
+    background: linear-gradient(to right, #4169E1, #00BFFF);
+}
+
+.pills-blue-gradient .nav-item .nav-link.active {
+    background: linear-gradient(to right, #4169E1, #00BFFF);
+}
+
+.pills-purple-gradient .nav-item .nav-link.active {
+    background: linear-gradient(to right, #4169E1, #00BFFF);
+}
+
+.pills-aqua-gradient .nav-item .nav-link.active {
+    background: linear-gradient(to right, #4169E1, #00BFFF);
+} */
 
 .heading {
-  font-weight: 700;
-  color: #5d4267;
+    font-weight: 700;
+    color: #5d4267;
 }
+
 .card.colorful-card .testimonial-card .card-up {
-  height: 95px;
+    height: 95px;
 }
+
 .card.colorful-card .testimonial-card .avatar {
-  border: 3px solid #fff !important;
+    border: 3px solid #fff !important;
 }
+
 .card.booking-card {
-  background-color: #c7f2e3;
+    background-color: #c7f2e3;
 }
+
 .card.booking-card .fa {
-  color: #f7aa00;
+    color: #f7aa00;
 }
+
 .card.booking-card .card-body .card-text {
-  color: #db2d43;
+    color: #db2d43;
 }
+
 .card.card.booking-card .chip {
-  background-color: #87e5da;
+    background-color: #87e5da;
 }
+
 .card.booking-card .card-body hr {
-  border-top: 1px solid #f7aa00;
+    border-top: 1px solid #f7aa00;
 }
+
 .mimosa {
-  background-color: #F0C05A;
+    background-color: #F0C05A;
 }
+
 .fuchsia-rose-text {
-  color: #db0075;
+    color: #db0075;
 }
+
 .aqua-sky-text {
-  color: #5cc6c3;
+    color: #5cc6c3;
 }
+
 .mimosa-text {
-  color: #F0C05A;
+    color: #F0C05A;
 }
-.list-inline-item .fas, .list-inline-item .far {
-  font-size: .8rem;
+
+.list-inline-item .fas,
+.list-inline-item .far {
+    font-size: .8rem;
 }
+
 .chili-pepper-text {
-  color: #9B1B30;
+    color: #9B1B30;
 }
+
 .collapse-content .fa.fa-heart:hover {
-  color: #f44336 !important;
+    color: #f44336 !important;
 }
+
 .collapse-content .fa.fa-share-alt:hover {
-  color: #0d47a1 !important;
+    color: #0d47a1 !important;
 }
+
 .card-wrapper.card-action {
-  min-height: 400px;
+    min-height: 400px;
 }
-.sticky-top{
-  z-index: 1030;
+
+.sticky-top {
+    z-index: 1030;
 }
+
 
 /*----------Página Contato----------*/
-.fundo-contato{
-  background-image: url('../img/contato.jpg');
-  height: 20vh;
-  font-size: 32px;
-  text-align: center;
-  width: 700px;
-  margin: 28px auto;
-  background-color: rgb(255,255,255);
-  margin-block-start: 25px;
-  margin-block-end: 0px;
-  border-radius: 10px 10px 0px 0px;
-  color: white;
+
+.fundo-contato {
+    background-image: url('../img/contato.jpg');
+    height: 20vh;
+    font-size: 32px;
+    text-align: center;
+    width: 700px;
+    margin: 28px auto;
+    background-color: rgb(255, 255, 255);
+    margin-block-start: 25px;
+    margin-block-end: 0px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
 }
 
-.text{
-  float:none;
+.text {
+    float: none;
 }
 
-#contato{
-  padding: 20px 40px 40px 40px;
-  width: 700px;
-  border-radius: 0px 0px 10px 10px;
-  margin: 0px auto 25px;
-  background-color: rgb(255,255,255);
-  
+#contato {
+    padding: 20px 40px 40px 40px;
+    width: 700px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px auto 25px;
+    background-color: rgb(255, 255, 255);
 }
 
-.login1 #contato{
-  height: 255px;
-  padding: 20px 40px 40px 40px;
-  width: 700px;
-  border-radius: 0px 0px 10px 10px;
-  margin: 0px auto 25px;
-  background-color: rgb(255,255,255);
+.login1 #contato {
+    height: 255px;
+    padding: 20px 40px 40px 40px;
+    width: 700px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px auto 25px;
+    background-color: rgb(255, 255, 255);
 }
 
-.login1 #contato .checkin{
-  width:0px;
+.login1 #contato .checkin {
+    width: 0px;
 }
 
 #contato h1 {
-  text-align: center;
-  font-size: 32px;
+    text-align: center;
+    font-size: 32px;
 }
 
 #contato .label1 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 #contato input,
 #contato textarea {
-  background-color: transparent;
-  border: 1px solid #afaaa6;
-  border-radius: 15px;
-  padding: 10px;
-  /* width: 100%; */
-  outline: none;
+    background-color: transparent;
+    border: 1px solid #afaaa6;
+    border-radius: 15px;
+    padding: 10px;
+    /* width: 100%; */
+    outline: none;
 }
 
-
-
 #contato textarea {
-  resize: none;
-  height: 20vh;
+    resize: none;
+    height: 20vh;
 }
 
 .submit-form {
-  padding: 6px 19px;
-  margin: 9px -17px 2px;
-  float: right;
-  border: 1px solid #027ba3;
-  border-radius: 23px;
-  background-color:  #027ba3;
-  font-weight: bolder;
-  color: white;
-  cursor: pointer;
+    padding: 6px 19px;
+    margin: 9px -17px 2px;
+    float: right;
+    border: 1px solid #027ba3;
+    border-radius: 23px;
+    background-color: #027ba3;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
 }
 
-div .btnlogin{
-  margin: -30px -17px 2px;
+div .btnlogin {
+    margin: -30px -17px 2px;
 }
 
 .submit-form:hover {
-  border: 1px solid #159ada;
-  background-color: #159ada;
-  cursor: pointer;
-  box-shadow:
-  0 8px 16px 0 rgba(0,0,0,0.2),
-  0 6px 20px 0 rgba(0,0,0,0.19);
-  transform: scale(1.05);
+    border: 1px solid #159ada;
+    background-color: #159ada;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
 }
+
 
 /*-----------------Login-------------------------*/
 
-.col-md-8.login{
-  margin-top: 80px;
+.col-md-8.login {
+    margin-top: 80px;
 }
 
-.pagina-contato.margin-top.mt-5.pt-3{
-  margin-bottom: 130px;
+.pagina-contato.margin-top.mt-5.pt-3 {
+    margin-bottom: 130px;
 }
-.fundo-login{
-  background-image: url('../img/login1.jpg');
-  height: 20vh;
-  font-size: 32px;
-  text-align: center;
-  width: 700px;
-  margin: 28px auto;
-  background-color: rgb(255,255,255);
-  margin-block-start: 25px;
-  margin-block-end: 0px;
-  border-radius: 10px 10px 0px 0px;
-  color: white;
+
+.fundo-login {
+    background-image: url('../img/login1.jpg');
+    height: 20vh;
+    font-size: 32px;
+    text-align: center;
+    width: 700px;
+    margin: 28px auto;
+    background-color: rgb(255, 255, 255);
+    margin-block-start: 25px;
+    margin-block-end: 0px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
 }
+
 
 /*==================Home text area ==================*/
 
 #cke_46 {
-  display: none;
+    display: none;
 }
 
-#cke_13{
-  display: none;
+#cke_13 {
+    display: none;
 }
 
-#cke_14{
-  display: none;
+#cke_14 {
+    display: none;
 }
 
-#cke_15{
-  display: none;
+#cke_15 {
+    display: none;
 }
 
-#cke_11{
-  display: none;
+#cke_11 {
+    display: none;
 }
 
-#cke_12{
-  display: none;
+#cke_12 {
+    display: none;
 }
 
-#cke_17{
-  display: none;
-}
-#cke_18{
-  display: none;
-}
-#cke_16{
-  display: none;
-}
-#cke_21{
-  display: none;
+#cke_17 {
+    display: none;
 }
 
-#cke_22{
-  display: none;
+#cke_18 {
+    display: none;
 }
 
-#cke_23{
-  display: none;
-}
-#cke_26{
-  display: none;
+#cke_16 {
+    display: none;
 }
 
-#cke_27{
-  display: none;
+#cke_21 {
+    display: none;
 }
 
-#cke_28{
-  display: none;
+#cke_22 {
+    display: none;
 }
-#cke_30{
-  display: none;
+
+#cke_23 {
+    display: none;
 }
-#cke_25{
-  display: none;
+
+#cke_26 {
+    display: none;
 }
-#cke_32{
-  display: none;
+
+#cke_27 {
+    display: none;
 }
+
+#cke_28 {
+    display: none;
+}
+
+#cke_30 {
+    display: none;
+}
+
+#cke_25 {
+    display: none;
+}
+
+#cke_32 {
+    display: none;
+}
+
 #cke_10 {
-  display: none;
+    display: none;
 }
 
 #cke_43 {
-  display: none;
+    display: none;
 }
 
 #cke_1_bottom {
-  display: none;
+    display: none;
 }
 
+
 /*--------------Pagina de cadastro--------------*/
+
 .caixa {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
 
-.fotocadastro{
+.fotocadastro {
     background-image: url(../img/contato.jpg);
     height: 15vh;
     font-size: 32px;
     text-align: center;
     width: 100%;
-    margin: 0px ;
-    background-color: rgb(255,255,255);
-
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
     margin-block-end: 2px;
     border-radius: 10px 10px 0px 0px;
     color: white;
@@ -499,7 +554,7 @@ form h1 {
     padding: 8px;
     margin-bottom: 10px;
     background-color: transparent;
-    outline:none;
+    outline: none;
     border: 1px solid #afaaa6;
     height: 30px;
     display: inline-block;
@@ -528,27 +583,25 @@ form h1 {
     transform: scale(1.05);
 }
 
-.incadastro{
-  width: 560px;
-
-  margin-left: 15px;
+.incadastro {
+    width: 560px;
+    margin-left: 15px;
 }
 
-.incadastro1{
-  margin-left: 15px;
+.incadastro1 {
+    margin-left: 15px;
 }
 
-.incadastro2{
-  margin-left: 15px;
+.incadastro2 {
+    margin-left: 15px;
 }
 
-.incadastro label{
-   margin: 3px;
+.incadastro label {
+    margin: 3px;
 }
 
 .form-group.sex {
-  
-  margin: 35px 100px 20px;
+    margin: 35px 100px 20px;
 }
 
 
@@ -557,103 +610,108 @@ form h1 {
   margin: 1px;
 } */
 
+
 /* -------------FAQ----------------- */
-.caixa2{
+
+.caixa2 {
     width: 500px;
 }
 
-.btn-link{
+.btn-link {
     color: grey;
     float: left;
     text-decoration: none;
-
 }
+
 .textfaq.btn.btn-link.collapsed {
-  background-color: transparent !important;
-  font-size: 16px !important;
+    background-color: transparent !important;
+    font-size: 16px !important;
 }
 
-.btn-link:hover{
+.btn-link:hover {
     text-decoration: none;
-    font-weight:bold;
+    font-weight: bold;
     color: black;
 }
 
 #accordion {
-  width: 700px;
+    width: 700px;
 }
 
-.caixa2{
+.caixa2 {
     width: 700px;
     margin: 0px auto 25px;
     margin-top: 80px;
     margin-bottom: -60px;
 }
 
-.btn-link{
+.btn-link {
     color: rgb(26, 26, 26);
     float: left;
     text-decoration: none;
     background-color: #FFF;
-
 }
 
-.btn-link:hover{
+.btn-link:hover {
     text-decoration: none;
-    font-weight:bold;
+    font-weight: bold;
     color: black;
 }
 
-.fundo-faq{
-  background-image: url('../img/contato.jpg');
-  height: 25vh;
-  font-size: 32px;
-  text-align: center;
-  width: 700px;
-  margin: 28px auto;
-  background-color: rgb(255,255,255);
-  margin-block-start: 25px;
-  margin-block-end: 0px;
-  border-radius: 10px 10px 0px 0px;
-  color: white;
+.fundo-faq {
+    background-image: url('../img/contato.jpg');
+    height: 25vh;
+    font-size: 32px;
+    text-align: center;
+    width: 700px;
+    margin: 28px auto;
+    background-color: rgb(255, 255, 255);
+    margin-block-start: 25px;
+    margin-block-end: 0px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
 }
 
+
 /* paginas com essa formatação */
-.SpanFaqContatoCadastro{
-font-weight: bold;
-position: center;
-color: white;
-text-shadow: 2px 2px black;
+
+.SpanFaqContatoCadastro {
+    font-weight: bold;
+    position: center;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 
 /* ====================Index================ */
 
-div .navind li a{
-  text-decoration: none;
-  color: black;
+div .navind li a {
+    text-decoration: none;
+    color: black;
 }
 
 ul {
-  list-style-type: none;
-  }
+    list-style-type: none;
+}
 
-  .list-group-item .fotoperf{
+.list-group-item .fotoperf {
     border-radius: 50%;
     width: 90px;
     margin: 4px;
-  }
+}
 
 
-  /*=======================Profile===================*/
+/*=======================Profile===================*/
 
-  #contato .texto textarea {
+#contato .texto textarea {
     height: 250px;
     width: 400px;
 }
 
 
-  /*===================Nav outras paginas externas===================== */
+/*===================Nav outras paginas externas===================== */
+
+
 /* .collapse .navop{
 
   display: flex;
@@ -679,250 +737,326 @@ ul {
 /* ====================Nav Index (menu hamburguer)==================== */
 
 .navbar span {
-  color: white;
-  font-weight: bold;
+    color: white;
+    font-weight: bold;
 }
+
 
 /* ++++++++++++++++++Sobre Nós+++++++++++++++++++ */
+
 .navbar-light .navbar-nav .nav-link {
-  color: gray;
-  font-weight: bold;
+    color: gray;
+    font-weight: bold;
 }
 
+
 /* ***********Perfil do Usuário*********** */
-breadcrumb-item text-right{
-  cursor: pointer;
+
+breadcrumb-item text-right {
+    cursor: pointer;
 }
 
 a:link {
-text-decoration:none;
+    text-decoration: none;
 }
 
 
 /* ----------Media Queries---------- */
-@media (min-width:986px) and (max-width: 3200px){
-  .navb  .navb1 ul li{
-    display: none !important;
-   }
 
-   .collapse .navop{
-
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-
-}
-
-.navbar-expand-lg .navbar-collapse{
-  display: inline-block !important;
-  flex-basis: auto;
-}
-
-.collapse .navop li a{
-  color: #000 !important;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight:normal !important;
-  margin:2px;
-
-}
-
-}
-
-@media (max-width: 986px){
-  .ul-header {
-    display: none;
-}
-.navbar-collapse {
-
-  text-align: center;
-}
-#navbarTogglerDemo01 {
-
-  box-shadow: 0px 15px 10px -15px;
-  background-color: white;
-
-}
-.nav-item {
-
-  border-bottom: 1px solid #e7e7e7;
-
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.navbar {
-  padding: 10px 0 0 !important;
-}
-
-.imgcar{
-  display: none;
-}
-
-.ul-valores{
-  display: inline-block;
-}
-
-}
-@media (min-width:768px) and (max-width: 992px){
-  .img-fundo1{
-    height: 350px;
-    width: 720px ;
-  }
-
-  #accordion{
-    width: 700px;
-  }
-  .fundo-faq{
-    width: 700px;
-  }
-}
-
-
-@media (min-width:576px) and (max-width: 768px){
-  .img-fundo1{
-    height: 400px;
-    width: 570px ;
-  }
-  .ul-valores{
-    margin: 100px;
-  }
-  #accordion{
-    width: 540px;
-  }
-  .fundo-faq{
-    width: 540px;
-  }
-
-  #contato{
-    width: 540px;
-  }
-
-  .fundo-contato{
-   width: 540px;
-  }
-}
-
-@media (min-width:420px) and (max-width: 576px){
-  .img-fundo1{
-    height: 350px;
-    width: 470px ;
-  }
-  #accordion{
-    width: 420px;
-  }
-  .fundo-faq{
-    width: 420px;
-  }
-
-  #contato{
-    width: 415px;
-  }
-
-  .fundo-contato{
-   width: 415px;
-  }
-  
-}
-
-@media (min-width:260px) and (max-width:420px){
-  #accordion{
-    width: 290px;
-  }
-  .fundo-faq{
-    width: 290px;
-  }
-  .botaoresp{
-    font-size: 10px !important;
-    
-  }
-  #contato{
-    width: 290px;
-  }
-
-  .fundo-contato{
-  width: 290px;
-  }
-}
-
-@media (min-width: 768px){
-.offset-md-3 {
-  margin-left: 0%;
-}
-/* ----------Efeito de Transição abaixo do carrossel nas imagens da page Index---------------//----------- */
-
-div#efeito img#transition{
-    float: left;
-    width: 150px;
-    height: 70px;
-    /* background: white; */
-    -webkit-transition: width 2s, height 2s; /* ------For Safari 3.1 to 6.0------ */
-    transition: all .3s ease-in;
-    margin: 10px;
-    /* box-shadow: 1px 1px 9px black; */
-    /* border: 4px solid white; */
+@media (min-width:986px) and (max-width: 3200px) {
+    .navb .navb1 ul li {
+        display: none !important;
     }
+    .collapse .navop {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: inline-block !important;
+        flex-basis: auto;
+    }
+    .collapse .navop li a {
+        color: #000 !important;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: normal !important;
+        margin: 2px;
+    }
+}
 
+@media (max-width: 986px) {
+    .ul-header {
+        display: none;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    #navbarTogglerDemo01 {
+        box-shadow: 0px 15px 10px -15px;
+        background-color: white;
+    }
+    .nav-item {
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    .navbar {
+        padding: 10px 0 0 !important;
+    }
+    .imgcar {
+        display: none;
+    }
+    .ul-valores {
+        display: inline-block;
+    }
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+    .img-fundo1 {
+        height: 350px;
+        width: 720px;
+    }
+    #accordion {
+        width: 700px;
+    }
+    .fundo-faq {
+        width: 700px;
+    }
+}
+
+@media (min-width:576px) and (max-width: 768px) {
+    .img-fundo1 {
+        height: 400px;
+        width: 570px;
+    }
+    .ul-valores {
+        margin: 100px;
+    }
+    #accordion {
+        width: 540px;
+    }
+    .fundo-faq {
+        width: 540px;
+    }
+    #contato {
+        width: 540px;
+    }
+    .fundo-contato {
+        width: 540px;
+    }
+}
+
+@media (min-width:420px) and (max-width: 576px) {
+    .img-fundo1 {
+        height: 350px;
+        width: 470px;
+    }
+    #accordion {
+        width: 420px;
+    }
+    .fundo-faq {
+        width: 420px;
+    }
+    #contato {
+        width: 415px;
+    }
+    .fundo-contato {
+        width: 415px;
+    }
+}
+
+@media (min-width:260px) and (max-width:420px) {
+    #accordion {
+        width: 290px;
+    }
+    .fundo-faq {
+        width: 290px;
+    }
+    .botaoresp {
+        font-size: 10px !important;
+    }
+    #contato {
+        width: 290px;
+    }
+    .fundo-contato {
+        width: 290px;
+    }
+}
+
+@media (min-width: 768px) {
+    .offset-md-3 {
+        margin-left: 0%;
+    }
+    /* ----------Efeito de Transição abaixo do carrossel nas imagens da page Index---------------//----------- */
+    div#efeito img#transition {
+        float: left;
+        width: 150px;
+        height: 70px;
+        /* background: white; */
+        -webkit-transition: width 2s, height 2s;
+        /* ------For Safari 3.1 to 6.0------ */
+        transition: all .3s ease-in;
+        margin: 10px;
+        /* box-shadow: 1px 1px 9px black; */
+        /* border: 4px solid white; */
+    }
     div#efeito img#transition:hover {
-    width: 185px;
-    height: 100px;
+        width: 185px;
+        height: 100px;
     }
-
-
-/* Page Artigo */
-.marginartigo{
-  margin-top: 80px;
-  margin-left: 100px;
+    /* Page Artigo */
+    .marginartigo {
+        margin-top: 80px;
+        margin-left: 100px;
+    }
+    .link-artigo a {
+        color: gray;
+    }
+    .botao-artigo {
+        background-color: white;
+        border-block-end: none;
+        border-right-style: none;
+        border-color: white;
+        color: gray;
+    }
+    .artigo {
+        border: none;
+        margin-top: 0px;
+        padding: 13px 0px 0px 0px;
+    }
+    .usuarios {
+        margin-top: 80px;
+    }
+    /* Comentários na tela Welcome */
+    .titulo001,
+    h2 {
+        text-align: center !important;
+        font-size: 23px !important;
+        font-weight: bold;
+    }
+    .mgheader {
+        margin-top: -20px !important;
+    }
+    /* -------------------------//--------------------------------//---------------------------------- */
 }
 
-.link-artigo a{
-  color: gray;
-}
-
-.botao-artigo {
-  background-color: white;
-  border-block-end: none;
-  border-right-style: none;
-  border-color: white;
-  color: gray;
-}
-
-.artigo {
-    border: none;
-    margin-top: 0px;
-    padding: 13px 0px 0px 0px;
-}
-
-.usuarios{
-    margin-top: 80px;
-}
-
-/* Comentários na tela Welcome */
-.titulo001,h2{
-  text-align: center !important;
-  font-size: 23px !important;
-  font-weight: bold;
-}
-
-.mgheader{
-  margin-top: -20px !important;
-}
-/* -------------------------//--------------------------------//---------------------------------- */
-
-}
 
 /*amigos*/
+
 .chip.chip-lg {
     height: 52px;
     line-height: 52px;
     border-radius: 26px;
-    background-color: blue;
+    background-color: darkgray;
 }
+
 .chip.chip-lg img {
     height: 52px;
     width: 52px;
     border-radius: 100%;
 }
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    border: 1px solid #000000;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    background-color: #bbb;
+    color: white;
+    padding: 10px;
+    transform: rotateY(180deg);
+}
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_input {
+    padding: 0 10px;
+    width: 450px;
+    caret-color: rgb(0, 38, 255);
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_icon {
+    background: white;
+    color: rgb(0, 38, 255);
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+
+
 /*fim amigos*/
