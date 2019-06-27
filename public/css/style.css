@@ -5,8 +5,10 @@
     padding: 0;
 }
 
-body {
+body,
+html {
     background-color: rgb(241, 240, 240);
+    height: 100%;
 }
 
 header nav.navbar-transparente {
@@ -44,6 +46,8 @@ section .esc {
     border-radius: 9px;
     display: flex;
     padding: 0;
+    background-position: center;
+    background-size: cover;
 }
 
 #btnMostrarEsconder1 {
@@ -53,7 +57,6 @@ section .esc {
 }
 
 .imgcapa {
-    z-index: -1;
     width: 100%;
     height: 100%;
 }
@@ -1060,3 +1063,23 @@ a:link {
 
 
 /*fim amigos*/
+
+main.main {
+    padding-bottom: 100px;
+}
+
+footer.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.conteudo {
+    min-height: 100%;
+    position: relative;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 5rem !important;
+}

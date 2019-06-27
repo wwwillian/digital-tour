@@ -22,10 +22,11 @@ class CommentsController extends Controller
 
         $comments = new Comments;
         $comments->comments = $request->input('comments');
+        // $comments->post_id = $req>;
         $comments->release_date = now();
 
         $comments->user_id = $user->id;
-        $comments->post_id = $posts->id;
+
         $comments->save();
 
 

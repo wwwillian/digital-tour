@@ -14,7 +14,7 @@
                 @if(auth()->user()->image != null)
                     <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
                 @else
-                    <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
+                    <img src="/img/user.jpg" id="btnMostrarEsconder1" alt="img perfil" class="card-img-100 z-depth-1 mb-4 btnMostrarEsconder1">
                 @endif
             </div>
             </div>
@@ -93,13 +93,13 @@
 
             <section>
                 @foreach($posts as $key => $value)
-                <div class="media d-block d-md-flex mt-4">
+                  <div class="media d-block d-md-flex mt-4">
                     @if($value->user[0]->image != null)
                         <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
                              src="{{ url('storage/users/'.$value->user[0]->image) }}" width="90" alt="Generic placeholder image">
                     @else
                         <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
-                             src="/img/user.png" width="90" alt="Generic placeholder image">
+                             src="/img/user.jpg" width="90" alt="Generic placeholder image">
                     @endif
                     <div class="media-body text-center text-md-left ml-md-3 ml-0">
                         <h5 class="font-weight-bold mt-0">
@@ -108,7 +108,11 @@
                                 <i class="fas fa-reply"></i>
                             </a>
                         </h5>
+                        @if($value->photo != null)
+                                <img src="{{ url('storage/posts/'.$value->photo) }}" width="100%" height="100%">
+                        @endif
                         {!!$value->description!!}
+
                         <hr>
 {{--                        @if($value->user_id === auth()->user()->id)--}}
 {{--                        <ul class="navbar-nav ml-auto">--}}
@@ -120,19 +124,19 @@
 {{--                                <li class="nav-link"><a class="nav-item">Comentar</a></li>--}}
 {{--                                <li class="nav-link"><a class="nav-item">Like</a></li>--}}
 {{--                            </ul>--}}
-{{--                        <form method="POST" action="{{ route('comments') }}" enctype="multipart/form-data">--}}
-{{--                            @csrf--}}
-{{--                            <input type="hidden" id="escondido1" name="user_id">--}}
+                        <!-- <form method="POST" action="{{ route('comments') }}" enctype="multipart/form-data">
+                            @csrf
+                            <input type="hidden" id="escondido" name="$value->user_id">
 
-{{--                            <input type="hidden" id="escondido2" name="posts_id">--}}
-{{--                            <div class="md-form mt-4">--}}
-{{--                                <label for="quickReplyFormComment card-header border-0 font-weight-bold">Your comment</label>--}}
-{{--                                <textarea class="form-control md-textarea" id="comments" name="comments" rows="3"></textarea>--}}
-{{--                                    <div class="text-center my-4">--}}
-{{--                                        <button class="btn btn-default btn-sm btn-rounded" type="submit">Post</button>--}}
-{{--                                    </div>--}}
-{{--                            </div>--}}
-{{--                        </form>--}}
+                            <input type="hidden" id="escondido" name="$value->posts_id">
+                            <div class="md-form mt-4">
+                               <label for="quickReplyFormComment card-header border-0 font-weight-bold">Your comment</label>
+                                <textarea class="form-control md-textarea" id="comments" name="comments" rows="3"></textarea>
+                                   <div class="text-center my-4">
+                                       <button class="btn btn-default btn-sm btn-rounded" type="submit">Post</button>
+                                     </div>
+                            </div>
+                        </form> -->
 
 {{--                        <div class="media d-block d-md-flex mt-4">--}}
 {{--                            <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"--}}
@@ -299,4 +303,3 @@
                             <!-- </div></div> -->
 
 @endsection
-

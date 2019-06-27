@@ -30,11 +30,11 @@ Route::group(['middleware'=>'auth'], function (){
     Route::get('home/comments', 'CommentsController@mostarComments')->name('mostrarComments');
     Route::post('home/comments', 'CommentsController@comments')->name('comments');
 
-    Route::get('perfil', 'FriendsController@index')->name('perfil'); 
+    Route::get('perfil', 'FriendsController@index')->name('perfil');
+    Route::post('perfil/posts', 'FriendsController@seusPostsUpdate')->name('seusPostsUpdate');
 
     Route::get('perfil/{id}', 'FriendsController@show')->name('mostrarAmigos');
 
-    // Route::get('perfil/{id}/a')
     Route::post('perfil/id', 'FriendsController@adicionarAmigo')->name('adicionarAmigo');
 
     Route::get('perfil/photos', 'FriendsController@exibirFotos')->name('exibirFotos');
@@ -43,10 +43,8 @@ Route::group(['middleware'=>'auth'], function (){
     Route::get('perfil/videos', 'PerfilControllers@mostrarvideos')->name('mostrarVideos');
     Route::post('perfil/videos', 'PerfilControllers@videos')->name('videos');
 
-    Route::get('/artigos', 'PaginasController@mostrarArtigos')->name('artigos');
-
     Route::get('/amizade', 'AmigosController@mostrarAmigos')->name('amigos');
-    Route::any('/amizade/{id}','AmigosController@pesquisar')->name('amigos');
+    Route::any('/pesquisar-amigos','AmigosController@pesquisar')->name('pesquisa');
 
 });
 
@@ -59,3 +57,5 @@ Route::get('/faq', 'PaginasController@mostrarFaq')->name('faq');
 Route::get('/contato', 'PaginasController@mostrarContato')->name('contato');
 
 Route::get('/quemsomos', 'PaginasController@mostrarQuemSomos')->name('quemsomos');
+
+Route::get('/artigos', 'PaginasController@mostrarArtigos')->name('artigos');

@@ -21,30 +21,36 @@
                         @if($amigo->image != null)
                             <img src="{{ url('storage/users/'.$amigo->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
                         @else
-                            <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
+                            <img src="/img/user.jpg" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
                         @endif
                     </a>
                     <div class="h1capa">
                         <h1 class="perfil">{{ $amigo->name }}</h1> 
                     </div>
-                </div>
+                </div>             
                 <!-- Cabecalho de postagem! -->
                 <div>
+                @if(auth()->user()->id != $amigo->id)
                 <form method="POST" action="{{ route('adicionarAmigo') }}" enctype="multipart/form-data">
                     @csrf
-                    <input type="hidden" id="escondido" name="user_id" value="{{$amigo->id}}">
+                    <input type="hidden" id="escondido" name="user_id" value="{{auth()->user()->id}}">
+                    <input type="hidden" id="escondido" name="friend_id" value="{{$amigo->id}}">
+                    <input type="hidden" id="escondido" name="add" value="0">
+
                     <button type="submit" class="submit-form">
                         Adicionar
                     </button>
                 </form>
+                @endif
                 </div>
                 <div>
+                
                     <div class="">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="nav md-pills nav-justified pills-peach-gradient d-flex justify-content-end">
-                <ul class="nav nav-tabs md-tabs tab-timeline" role="tablist" id="mytab">
+                         <ul class="nav nav-tabs md-tabs tab-timeline" role="tablist" id="mytab">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="tab" href="#tperfil" role="tab">Perfil</a>
                                     <div class="slide"></div>

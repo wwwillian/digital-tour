@@ -13,7 +13,7 @@ class UserController extends Controller
         return view('users.profile');
     }
 
-    public function profileUpdate(Request $request, $id)
+    public function profileUpdate(Request $request)
     {
         $user = auth()->user();
         $data = $request->all();

@@ -9,6 +9,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
 
 class FriendsController extends Controller
 {
@@ -21,15 +22,19 @@ class FriendsController extends Controller
     {
         $gallery = Gallerys::where("user_id",1)->first();
         $amigos = $this->usuario();
+        $friends = $this->amizades(Auth::user()->id);
+        $posts = $this->seusPosts(Auth::user()->id);
 
-        return view('perfil',["amigos"=>$amigos])
-            ->with('gallery', $gallery);
+        return view('perfil')
+            ->with('gallery', $gallery)
+            ->with('friends', $friends)
+            ->with('posts', $posts);
     }
 
     public function usuario()
     {
         $amigos = User::all();
-        
+
         return $amigos;
     }
 
@@ -38,9 +43,14 @@ class FriendsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function seusPosts($id)
     {
-        //
+        $posts = Posts::orderBy('posts.id', 'desc')
+        ->where("user_id", "=", $id)
+            ->join('users', 'users.id', '=', 'posts.user_id')
+                ->get();
+
+        return $posts;
     }
 
     /**
@@ -62,58 +72,8 @@ class FriendsController extends Controller
             'comments'
         ]);
 
-        if(Input::file('photo1')) {
-            $photo = Input::file('photo1');
-            $extensao = $photo->getClientOriginalExtension();
-            if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-            }
-        }
-
-        if(Input::file('photo2')) {
-            $photo = Input::file('photo2');
-            $extensao = $photo->getClientOriginalExtension();
-            if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-            }
-        }
-
-        if(Input::file('photo3')) {
-            $photo = Input::file('photo3');
-            $extensao = $photo->getClientOriginalExtension();
-            if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-            }
-        }
-
-        if(Input::file('photo4')) {
-            $photo = Input::file('photo4');
-            $extensao = $photo->getClientOriginalExtension();
-            if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-            }
-        }
-
-        if(Input::file('photo5')) {
-            $photo = Input::file('photo5');
-            $extensao = $photo->getClientOriginalExtension();
-            if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-            }
-        }
-
-        if(Input::file('photo6')) {
-            $photo = Input::file('photo6');
+        if(Input::file('photo')) {
+            $photo = Input::file('photo');
             $extensao = $photo->getClientOriginalExtension();
             if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
                 return redirect()
@@ -124,111 +84,29 @@ class FriendsController extends Controller
 
         $gallerys = new Gallerys;
         $gallerys->comments= $request->input('comments');
-        $gallerys->photo1 = '';
-        $gallerys->photo2 = '';
-        $gallerys->photo3 = '';
-        $gallerys->photo4 = '';
-        $gallerys->photo5 = '';
-        $gallerys->photo6 = '';
+        $gallerys->photo = '';
         $gallerys->user_id = $user->id;
-        $gallerys->post_id = $posts->id;
 
         $gallerys->save();
 
-        if($request->hasFile('photo1') && $request->file('photo1')->isValid()) {
+        if($request->hasFile('photo') && $request->file('photo')->isValid()) {
 
-            if ($user->photo1 && Storage::exists("user/{$gallerys->photo1}"))
-                Storage::delete("photo1/{$gallerys->photo1}");
+            if ($user->photo && Storage::exists("user/{$gallerys->photo}"))
+                Storage::delete("photo/{$gallerys->photo}");
 
-            if (Input::file('photo1')) {
+            if (Input::file('photo')) {
                 $name = kebab_case($request->name) . uniqid($gallerys->id);
-                $extension = $request->photo1->extension();
+                $extension = $request->photo->extension();
                 $nameImage = "{$name}.$extension";
-                $data['photo1'] = $nameImage;
+                $data['photo'] = $nameImage;
 
-                $upload = $request->photo1->storeAs('gallerys', $nameImage);
+                $upload = $request->photo->storeAs('gallerys', $nameImage);
 
                 if (!$upload)
                     return redirect()
                         ->route('perfil')
                         ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-
             }
-        }
-        if(Input::file('photo2'))
-        {
-            $name = kebab_case($request->name).uniqid($gallerys->id);
-            $extension = $request->photo2->extension();
-            $nameImage = "{$name}.$extension";
-            $data['photo2'] = $nameImage;
-
-            $upload = $request->photo2->storeAs('gallerys', $nameImage);
-
-            if(!$upload)
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-
-        }
-        if(Input::file('photo3'))
-        {
-            $name = kebab_case($request->name).uniqid($gallerys->id);
-            $extension = $request->photo3->extension();
-            $nameImage = "{$name}.$extension";
-            $data['photo3'] = $nameImage;
-
-            $upload = $request->photo3->storeAs('gallerys', $nameImage);
-
-            if(!$upload)
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-
-        }
-        if(Input::file('photo4'))
-        {
-            $name = kebab_case($request->name).uniqid($gallerys->id);
-            $extension = $request->photo4->extension();
-            $nameImage = "{$name}.$extension";
-            $data['photo4'] = $nameImage;
-
-            $upload = $request->photo4->storeAs('gallerys', $nameImage);
-
-            if(!$upload)
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-
-        }
-        if(Input::file('photo5'))
-        {
-            $name = kebab_case($request->name).uniqid($gallerys->id);
-            $extension = $request->photo5->extension();
-            $nameImage = "{$name}.$extension";
-            $data['photo5'] = $nameImage;
-
-            $upload = $request->photo5->storeAs('gallerys', $nameImage);
-
-            if(!$upload)
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-
-        }
-        if(Input::file('photo6'))
-        {
-            $name = kebab_case($request->name).uniqid($gallerys->id);
-            $extension = $request->photo6->extension();
-            $nameImage = "{$name}.$extension";
-            $data['photo6'] = $nameImage;
-
-            $upload = $request->photo6->storeAs('gallerys', $nameImage);
-
-            if(!$upload)
-                return redirect()
-                    ->route('perfil')
-                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-
         }
         $gallerys->update($data);
 
@@ -258,23 +136,19 @@ class FriendsController extends Controller
      */
     public function show($id)
     {
-        // $amigo = User::find($id);
-        // $friends = $this->amizades();
-        //     return view('perfil-amigos', ["friends"=>$friends])
-        //         ->with('amigo', $amigo);
         $amigo = User::find($id);
-        
+        $amigos = $this->amizades($id);
 
-        return view('perfil-amigos')->with('amigo', $amigo);
+        return view('perfil-amigos')
+            ->with('amigo', $amigo)
+            ->with('amigos', $amigos);
     }
-    // $gallery = Gallerys::where("user_id",1)->first();
-    // $amigos = $this->usuario();
 
-    // return view('perfil',["amigos"=>$amigos])
-    //     ->with('gallery', $gallery);
-    public function amizades()
+    public function amizades($id)
     {
-        $friends = Friends::all();
+        $friends = Friends::where("user_id", "=", $id)
+            ->join('users', 'users.id', '=', 'friends.friend_id')
+                ->get();
 
         return $friends;
     }
@@ -282,12 +156,14 @@ class FriendsController extends Controller
     public function adicionarAmigo(Request $request)
     {
         $data = $request->all();
-        
+
         $friend = new Friends;
         $friend->user_id = $request->input('user_id');
-        
+        $friend->friend_id = $request->input('friend_id');
+        $friend->add = $request->input('add');
+
         $friend->save();
-       
+
         return redirect()
             ->back()
             ->with('success', 'Atualizado com Sucesso!');
@@ -301,7 +177,7 @@ class FriendsController extends Controller
      */
     public function edit($id)
     {
-        //
+        ///img/user.png
     }
 
     /**
@@ -326,10 +202,55 @@ class FriendsController extends Controller
     {
         //
     }
-    // public function indexJson()
-    // {
-    //     $amigos = User::all();
+    public function seusPostsUpdate(Request $request)
+    {
 
-    //     return json_encode($amigos);
-    // }
+        $data = $request->all();
+        $user = auth()->user();
+
+        $request->validate([
+            'texttitule',
+            'text',
+            'photo'
+        ]);
+
+        if(Input::file('photo')) {
+            $photo = Input::file('photo');
+            $extensao = $photo->getClientOriginalExtension();
+            if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
+                return redirect()
+                    ->route('home')
+                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
+            }
+        }
+
+        $post = new Posts;
+        $post->description = $request->input('description');
+        $post->release_date = now();
+        $post->photo = '';
+        $post->user_id = $user->id;
+
+        $post->save();
+
+            if(Input::file('photo'))
+             {
+                 $name = kebab_case($request->name).uniqid($post->id);
+                 $extension = $request->photo->extension();
+                 $nameImage = "{$name}.$extension";
+                 $data['photo'] = $nameImage;
+
+                 $upload = $request->photo->storeAs('posts', $nameImage);
+
+                 if(!$upload)
+                     return redirect()
+                         ->route('profile')
+                         ->with('erro', 'Falha ao fazer o upload da imagem fundo');
+
+            }
+        $post->update($data);
+
+        return redirect()
+            ->back()
+            ->with('success', 'Atualizado com Sucesso!');
+    }
 }

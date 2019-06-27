@@ -35,7 +35,7 @@
 
 </head>
 <body>
-    
+   <div class="conteudo">
     <header>
         <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
             <!-- <a href="index.html" class="navbar-brand"> -->
@@ -55,7 +55,7 @@
                         <a class="nav-link h5" href="{{ route('perfil') }}">Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link h5" href="{{ route('artigos') }}">Artigos</a>
+                        <a class="nav-link h5" href="{{ route('amigos') }}">Amigos</a>
                     </li><li class="nav-item">
                         <a class="nav-link h5" href="{{ route('chat') }}">Chat</a>
                     </li>
@@ -92,11 +92,11 @@
             </div>
         </nav>
     </header>
-    <main class="py-4">
+    <main class="main">
         @yield('content')
     </main>
     <!-- Footer -->
-    <footer class="bg-dark mt-5">
+    <footer class="bg-dark mt-5 footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto text-center mt-4">
@@ -115,7 +115,7 @@
             </div>
         </div>
     </footer>
-
+           </div>
     <!-- JavaScript -->
      <!-- Scripts -->
      <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
@@ -131,6 +131,6 @@
     @hasSection('javascript')
                 @yield('javascript')
     @endif
-            
+
 </body>
 </html>

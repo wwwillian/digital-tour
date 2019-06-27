@@ -36,7 +36,7 @@
         ]) !!}
     </script>
 <body>
-<div id="app">
+<div id="app" class="conteudo">
     <header>
 
         <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
@@ -94,11 +94,11 @@
             </div>
         </nav>
     </header>
-
+    <main class="main">
 @yield('content')
-
+   <main>
 <!-- Footer -->
-    <footer class="bg-dark mt-5">
+    <footer class="bg-dark mt-5 footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto text-center mt-4">

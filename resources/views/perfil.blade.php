@@ -2,31 +2,32 @@
 
 @section('content')
 
-<!-- Foto Perfil - Personalizado -->
+<!-- Foto Perfil - Personalizado onfocus-->
 <div class="container">
 <div class="">
     <div class="col-lg-12 col-md-12 col-xl-12">
         <div class="awesome user width-cover mt-5">
-            <div class="container img-fundo" id="btnMostrarEsconder">
-                 @if(auth()->user()->cupPhoto != null)
-                    <img src="{{ url('storage/usersfundo/'.auth()->user()->cupPhoto) }}" class="imgcapa">
-                @else
-                    <img src="/img/imagenopaisagem.jpg" class="imgcapa">
-                @endif
-            </div>
+            @if(auth()->user()->cupPhoto != null)
+                <div class="container img-fundo" id="btnMostrarEsconder" style="background-image: url({{ url('storage/usersfundo/'.auth()->user()->cupPhoto) }})">
+                </div>
+            @else
+                <div class="container img-fundo" id="btnMostrarEsconder" style="background-image: url(/img/imagenopaisagem.jpg)">
+                </div>
+            @endif
         </div>
+
                 <div class="items-banner"></div>
                 <div class="img-perfil">
                     <a href="#">
                         @if(auth()->user()->image != null)
                             <img src="{{ url('storage/users/'.auth()->user()->image) }}" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
                         @else
-                            <img src="/img/user.png" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
+                            <img src="/img/user.jpg" id="btnMostrarEsconder1" alt="img perfil"  width="170" class="btnMostrarEsconder1">
                         @endif
                     </a>
                     <a href="" class="btn btn-primary btn-small btn-alt-foto divConteudo1" data-toggle="modal">Alterar Foto</a>
                 <div class="h1capa">
-                <h1 class="perfil">{{ auth()->user()->name  }}</h1> </div><div class="btnfundo">
+                <h1 class="perfil">{{ auth()->user()->name }}</h1> </div><div class="btnfundo">
                 <a class="btn btn-primary btn-embossed btn-capa divConteudo" data-toggle="modal" href="#">Alterar Capa</a>
 
                 </div>
@@ -34,7 +35,18 @@
     </div>
     <!-- Cabecalho de postagem! -->
     <div>
+
         <div class="">
+        @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+                @if (session('erro'))
+                     <div class="alert alert-danger">
+                         {{ session('erro') }}
+                     </div>
+                @endif
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -189,7 +201,7 @@
                                                             <i class="fa fa-birthday-cake"></i>
                                                         </div>
                                                         <div class="form-group form-primary">
-                                                            <input type="text" name="footer-email" class="form-control"
+                                                            <input type="text" name="foauth()->user()oter-email" class="form-control"
                                                                    required="">
                                                             <span class="form-bar"></span>
                                                             <label class="float-label">Select Your Birth Date</label>
@@ -298,7 +310,7 @@
                                 </div>
                                 <div class="card-block user-desc">
                                     <div class="view-desc">
-                                        <p class="p-5">{{ auth()->user()->experience  }}</p>
+                                        <p class="p-5">{{ auth()->user()->experience }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -322,48 +334,13 @@
                         <!-- <div class="row"> -->
                         <!-- <div class="tab-pane active show" id="tvideos" role="tabpanel"> -->
                         <div class="card">
-                            <div class="card-header">
+
+                  <div class="card-header">
+
                                 <div class="row d-flex justify-content-between mr-5 ml-5 mt-2">
                                     <h5 class="card-header-text">Amigos</h5>
 
-                                        <button type="submit" class="btn btn-defaulf submit-form" data-toggle="modal" data-target="#amigos" onClick="mostrarAmigos">Pesquisar</button>
 
-                                    <div class="modal fade" id="amigos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title col-lg-3" id="exampleModalLongTitle">Amigos</h5>
-                                                    <form class="navbar-form d-flex flex-row justify-content-between">
-                                                        <input type="text" cl{ass="form-control col-lg-6" plar="Digite a pesquise seus amigos">
-                                                        <button type="submit" class="btn btn-defaulf col-lg-ceholde3 submit-form" data-toggle="modal" data-target="#exampleModalCenter">Pesquisar</button>
-                                                    </form>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-
-                                                <div class="modal-body">
-                                                    <!-- @if(isset($amigos))
-                                                    @foreach($amigos as $amigo)
-                                                    <div class="chip chip-lg mt-3 pr-4">
-                                                        @if($amigo->image != null)
-                                                            <span id="#image"></span>
-                                                        @else
-                                                            <span id="#name"></span>
-                                                        @endif
-                                                        
-                                                        <button type="submit" class="btn btn-secondary submit-form ">Adicionar</button>
-                                                    </div>
-                                                    @endforeach
-                                                    @endif -->
-                                                </div>
-                                                <div class="modal-footer pr-5">
-                                                    <button type="button" class="btn btn-secondary submit-form" data-dismiss="modal">Sair</button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="card-block margin-rigth">
@@ -374,22 +351,24 @@
 
                                             </a>
                                         </div>
-
-
-                                        <div class="amigos-css">
+                                        <div class="amigos-css p-5">
                                             <!-- Grid row -->
                                             <div class="row">
-
-                                                <!-- Grid column -->
-                                                <div class="col-lg-4 col-md-12 mb-4">
+                                                @if($friends)
+                                                @foreach($friends as $friend)
+                                                <div class="col-lg-4 col-md-6 mb-4">
                                                     <div class="card card-personal mb-md-0 mb-4">
 
                                                         <!-- mdbCard image-->
                                                         <div class="view overlay">
-                                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(28).jpg" alt="mdbCard image cap">
-                                                            <a href="#!">
+                                                        @if($friend->image != null)
+                                                            <img class="card-img-top" src="{{ url('storage/users/'.$friend->image) }}" alt="mdbCard image cap">
+                                                             <a href="#!">
                                                                 <div class="mask rgba-white-slight waves-effect waves-light"></div>
                                                             </a>
+                                                            @else
+                                                             <img src="/img/user.jpg" class="card-img-top">
+                                                             @endif
                                                         </div>
                                                         <!-- mdbCard image-->
 
@@ -398,14 +377,14 @@
 
                                                             <!-- Title-->
                                                             <a>
-                                                                <h4 class="card-title">Sara</h4>
+                                                                <h4 class="card-title">{{$friend->name}}</h4>
                                                             </a>
-                                                            <a class="card-meta">Coworker</a>
+                                                            <a class="card-meta">{{$friend->location}}</a>
                                                             <!-- Text -->
-                                                            <p class="card-text">Sara is a video maker living in Tokyo.</p>
+                                                            <p class="card-text">{{$friend->email}}</p>
                                                             <hr>
                                                             <a class="card-meta"><span><i class="fa fa-user"></i>127 Friends</span></a>
-                                                            <p class="card-meta float-right">Joined in 2014</p>
+                                                            <p class="card-meta float-right">{{$friend->created_at}}</p>
 
                                                         </div>
                                                         <!-- mdbCard content -->
@@ -413,182 +392,8 @@
                                                     </div>
                                                 </div>
                                                 <!-- Grid column -->
-
-                                                <!-- Grid column -->
-                                                <div class="col-lg-4 col-md-6 mb-4">
-                                                    <div class="card card-personal mb-md-0 mb-4">
-
-                                                        <!-- mdbCard image-->
-                                                        <div class="view overlay">
-                                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" alt="mdbCard image cap">
-                                                            <a href="#!">
-                                                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                                                            </a>
-                                                        </div>
-                                                        <!-- mdbCard image-->
-
-                                                        <!-- mdbCard content -->
-                                                        <div class="card-body">
-
-                                                            <!-- Title-->
-                                                            <a>
-                                                                <h4 class="card-title">John</h4>
-                                                            </a>
-                                                            <a class="card-meta">Coworker</a>
-                                                            <!-- Text -->
-                                                            <p class="card-text">John is a copywriter living in Seattle.</p>
-                                                            <hr>
-                                                            <a class="card-meta"><span><i class="fa fa-user"></i>48 Friends</span></a>
-                                                            <p class="card-meta float-right">Joined in 2015</p>
-
-                                                        </div>
-                                                        <!-- mdbCard content -->
-
-                                                    </div>
-                                                </div>
-                                                <!-- Grid column -->
-
-                                                <!-- Grid column -->
-                                                <div class="col-lg-4 col-md-6 mb-4">
-                                                    <div class="card card-personal mb-md-0 mb-4">
-
-                                                        <!-- mdbCard image-->
-                                                        <div class="view overlay">
-                                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="mdbCard image cap">
-                                                            <a href="#!">
-                                                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                                                            </a>
-                                                        </div>
-                                                        <!-- mdbCard image-->
-
-                                                        <!-- mdbCard content -->
-                                                        <div class="card-body">
-
-                                                            <!-- Title-->
-                                                            <a>
-                                                                <h4 class="card-title">Anna</h4>
-                                                            </a>
-                                                            <a class="card-meta">Friends</a>
-                                                            <!-- Text -->
-                                                            <p class="card-text">Anna is a web designer living in US.</p>
-                                                            <hr>
-                                                            <a class="card-meta"><span><i class="fa fa-user"></i>83 Friends</span></a>
-                                                            <p class="card-meta float-right">Joined in 2012</p>
-
-                                                        </div>
-                                                        <!-- mdbCard content -->
-
-                                                    </div>
-                                                </div>
-                                                <!-- Grid column -->
-
-                                            </div>
-                                            <!-- Grid row -->
-                                            <!-- Grid row -->
-                                            <div class="row">
-
-                                                <!-- Grid column -->
-                                                <div class="col-lg-4 col-md-12 mb-4">
-                                                    <div class="card card-personal mb-md-0 mb-4">
-
-                                                        <!-- mdbCard image-->
-                                                        <div class="view overlay">
-                                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(28).jpg" alt="mdbCard image cap">
-                                                            <a href="#!">
-                                                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                                                            </a>
-                                                        </div>
-                                                        <!-- mdbCard image-->
-
-                                                        <!-- mdbCard content -->
-                                                        <div class="card-body">
-
-                                                            <!-- Title-->
-                                                            <a>
-                                                                <h4 class="card-title">Sara</h4>
-                                                            </a>
-                                                            <a class="card-meta">Coworker</a>
-                                                            <!-- Text -->
-                                                            <p class="card-text">Sara is a video maker living in Tokyo.</p>
-                                                            <hr>
-                                                            <a class="card-meta"><span><i class="fa fa-user"></i>127 Friends</span></a>
-                                                            <p class="card-meta float-right">Joined in 2014</p>
-
-                                                        </div>
-                                                        <!-- mdbCard content -->
-
-                                                    </div>
-                                                </div>
-                                                <!-- Grid column -->
-
-                                                <!-- Grid column -->
-                                                <div class="col-lg-4 col-md-6 mb-4">
-                                                    <div class="card card-personal mb-md-0 mb-4">
-
-                                                        <!-- mdbCard image-->
-                                                        <div class="view overlay">
-                                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" alt="mdbCard image cap">
-                                                            <a href="#!">
-                                                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                                                            </a>
-                                                        </div>
-                                                        <!-- mdbCard image-->
-
-                                                        <!-- mdbCard content -->
-                                                        <div class="card-body">
-
-                                                            <!-- Title-->
-                                                            <a>
-                                                                <h4 class="card-title">John</h4>
-                                                            </a>
-                                                            <a class="card-meta">Coworker</a>
-                                                            <!-- Text -->
-                                                            <p class="card-text">John is a copywriter living in Seattle.</p>
-                                                            <hr>
-                                                            <a class="card-meta"><span><i class="fa fa-user"></i>48 Friends</span></a>
-                                                            <p class="card-meta float-right">Joined in 2015</p>
-
-                                                        </div>
-                                                        <!-- mdbCard content -->
-
-                                                    </div>
-                                                </div>
-                                                <!-- Grid column -->
-
-                                                <!-- Grid column -->
-                                                <div class="col-lg-4 col-md-6 mb-4">
-                                                    <div class="card card-personal mb-md-0 mb-4">
-
-                                                        <!-- mdbCard image-->
-                                                        <div class="view overlay">
-                                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="mdbCard image cap">
-                                                            <a href="#!">
-                                                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                                                            </a>
-                                                        </div>
-                                                        <!-- mdbCard image-->
-
-                                                        <!-- mdbCard content -->
-                                                        <div class="card-body">
-
-                                                            <!-- Title-->
-                                                            <a>
-                                                                <h4 class="card-title">Anna</h4>
-                                                            </a>
-                                                            <a class="card-meta">Friends</a>
-                                                            <!-- Text -->
-                                                            <p class="card-text">Anna is a web designer living in US.</p>
-                                                            <hr>
-                                                            <a class="card-meta"><span><i class="fa fa-user"></i>83 Friends</span></a>
-                                                            <p class="card-meta float-right">Joined in 2012</p>
-
-                                                        </div>
-                                                        <!-- mdbCard content -->
-
-                                                    </div>
-                                                </div>
-                                                <!-- Grid column -->
-
+                                                    @endforeach
+                                                    @endif
                                             </div>
                                             <!-- Grid row -->
                                             <nav class="d-flex justify-content-center mt-5 display-posts">
@@ -1055,7 +860,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h5 class="card-header-text mt-2">Publique seu Posts</h5>
-                            <form method="POST" action="{{ route('postsUpdate') }}" enctype="multipart/form-data">
+                            <form method="POST" action="{{ route('seusPostsUpdate') }}" enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" id="escondido" name="user_id">
                                 <textarea class="form-control" name="description" id="description" type="description"></textarea>
@@ -1083,34 +888,42 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="card-block">
+                        <div class="card-block p-5">
                             <div class="view-info">
                                 <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="general-info">
-                                            <div class="row">
-                                                <div class="col-lg-12 col-xl-6">
-                                                    ...
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                                                <section>
+                @foreach($posts as $key => $value)
+                <div class="media d-block d-md-flex mt-4">
+                    @if($value->user[0]->image != null)
+                        <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
+                             src="{{ url('storage/users/'.$value->user[0]->image) }}" width="90" alt="Generic placeholder image">
+                    @else
+                        <img class="card-img-64 rounded-circle z-depth-1 d-flex mx-auto mb-3"
+                             src="/img/user.jpg" width="90" alt="Generic placeholder image">
+                    @endif
+                    <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                        <h5 class="font-weight-bold mt-0">
+                            <a class="text-default" href="">{{ $value->user[0]->name }}</a>
+                            <a href="" class="pull-right text-default">
+                                <i class="fas fa-reply"></i>
+                            </a>
+                        </h5>
+                        @if($value->photo != null)
+                                <img src="{{ url('storage/posts/'.$value->photo) }}" width="100%">
+                        @endif
+                        {!!$value->description!!}
+                        <hr>
+                      </div>
+                    </div>
+    @endforeach
+                              </section>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Fim de Posts -->
-            </div>
-            <!-- Fim de Posts -->
-        </div>
-        <!-- fim da col-lg-12 -->
-    </div>
-    <!-- fim da row -->
-
-
-
-                                                                                                
 
     </section>
     <!--Fim das postagens-->
@@ -1127,14 +940,14 @@
 <script type="text/javascript">
 function mostrarAmigos(){
    $('#amigos').modal('show')
-}   
+}
 function carregarAmigos(){
     $.getJSON('/api/perfil', function(data){
         for(i=0;i<data.lenth;i++){
         divif = '<img src="storage/users/'+data[i].image+'">'+data[i].name
-        
+
         $('#image').append(divif)
-        
+
         }
     })
 }
@@ -1143,4 +956,3 @@ $(function(){
 })
 </script>
 @endsection
-

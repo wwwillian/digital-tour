@@ -20,11 +20,26 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $posts = Posts::orderBy('id', 'desc')
+          ->get();
 
-        $posts = Posts::paginate(15);
+
+        // $posts = $this->messages();
         return view('home')
             ->with('posts', $posts);
+
     }
+
+    // public function messages()
+    // {
+    //     $posts = Posts::with('posts')
+    //         ->orderBy('id', 'DESC')
+    //         ->limit(50)
+    //         ->latest()
+    //         ->get();
+    //
+    //     return $posts;
+    // }
 
 //    public function mostrarPosts()
 //    {
@@ -85,4 +100,3 @@ class HomeController extends Controller
             ->with('success', 'Atualizado com Sucesso!');
     }
 }
-

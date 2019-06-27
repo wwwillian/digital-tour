@@ -23,7 +23,7 @@
 {{--                                                        IMPORTANTE            @if(isset($gallery))--}}
 
 
-{{--                            IMPORTANTE                                            <img src="{{url('storage/gallerys/'.$gallery->photo1)}}" alt="Park" class="card-img-top">--}}
+{{--                            IMPORTANTE                                            <img src="{{url('storage/gallerys/'.$gallery->photo)}}" alt="Park" class="card-img-top">--}}
                                                                         @if(auth()->user()->gallerys[0]->photo2 != null)
                                                                         <a class="lightbox" href="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo1)}}">
                                                                             <img src="{{url('storage/gallerys/'.auth()->user()->gallerys[0]->photo1)}}" alt="Park" class="card-img-top"></a>
