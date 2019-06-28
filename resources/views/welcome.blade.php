@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.desconectado')
 
 @section('content')
     <!--Inicio conteiner-->
@@ -93,13 +93,13 @@
         <div class="imgcar row mt-3 mb-3 mr-3 ml-1">
             <div class="col-lg-2 col-md-12 mb-3">
 
-                <div class="view overlay z-depth-1-half">
+                <!-- <div class="view overlay z-depth-1-half">
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid"
                          alt="">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
-                </div>
+                </div> -->
 
             </div>
             <!--Grid column-->
@@ -108,13 +108,13 @@
             <div class="col-lg-2 col-md-6 mb-2">
 
                 <!--Image-->
-                <div class="view overlay z-depth-1-half">
+                <!-- <div class="view overlay z-depth-1-half">
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
                          alt="">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
-                </div>
+                </div> -->
 
             </div>
             <!--Grid column-->
@@ -123,13 +123,13 @@
             <div class="col-lg-2 col-md-6 mb-2">
 
                 <!--Image-->
-                <div class="view overlay z-depth-1-half">
+                <!-- <div class="view overlay z-depth-1-half">
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
                          alt="">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
-                </div>
+                </div> -->
 
             </div>
             <!--Grid column-->
@@ -138,13 +138,13 @@
             <div class="col-lg-2 col-md-12 mb-2">
 
                 <!--Image-->
-                <div class="view overlay z-depth-1-half">
+                <!-- <div class="view overlay z-depth-1-half">
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
                          alt="">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
-                </div>
+                </div> -->
 
             </div>
             <!--Grid column-->
@@ -153,13 +153,13 @@
             <div class="col-lg-2 col-md-6 mb-2">
 
                 <!--Image-->
-                <div class="view overlay z-depth-1-half">
+                <!-- <div class="view overlay z-depth-1-half">
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
                          alt="">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
-                </div>
+                </div> -->
 
             </div>
             <!--Grid column-->
@@ -168,13 +168,13 @@
             <div class="imgcar col-lg-2 col-md-6 mb-2">
 
                 <!--Image-->
-                <div class="view overlay z-depth-1-half">
+                <!-- <div class="view overlay z-depth-1-half">
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid"
                          alt="">
                     <a href="">
                         <div class="mask rgba-white-light"></div>
                     </a>
-                </div>
+                </div> -->
 
             </div>
             <!--Grid column-->
@@ -185,7 +185,7 @@
         <div class="conteiner sticky-top">
             <div class="row">
                 <div class="col-lg-10 mx-auto mt-2">
-                    <ul class="navind ul-header mr-5 " id="navind">
+                    <!-- <ul class="navind ul-header mr-5 " id="navind">
                         <li class="nav-item">
                             <a class="nav-link h5" href="{{ route('contato') }}">Contato</a>
                         </li>
@@ -194,19 +194,19 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link h5" href="{{ route('faq') }}">FAQ</a>
-                        </li>
+                        </li> -->
 
-{{--                        <li class="nav-item">--}}
-{{--                            <a class="nav-link h5" href="{{ route('artigos') }}">Artigos</a>--}}
-{{--                        </li>--}}
+<!-- // {{--                        <li class="nav-item">--}}
+// {{--                            <a class="nav-link h5" href="{{ route('artigos') }}">Artigos</a>--}}
+// {{--                        </li>--}} -->
                         @guest
-                            <li class="nav-item h5">
+                            <!-- <li class="nav-item h5">
                                 <a class="nav-link" href="{{ route('login') }}">Login</a>
-                            </li>
+                            </li> -->
                             @if (Route::has('register'))
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link h5" href="{{ route('register') }}">Cadastra-se</a>
-                                </li>
+                                </li> -->
                             @endif
                         @else
                             <li class="nav-item dropdown">
