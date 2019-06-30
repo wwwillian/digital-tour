@@ -99,16 +99,67 @@
     <footer class="bg-dark mt-5 footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto text-center mt-4">
+                <div class="col-lg-8 col-md-10 mx-auto text-center mt-4 map">
+                    
                     <ul class="list-inline text-center">
-
-                        <li class="list-inline-item">
-                            <a href="https://github.com/williangomes7004/digital-tour">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                              </span>
+                    <li>
+                <a href="{{ route('quemsomos') }}">
+                            <span >
+                                Quem somos
+                            </span>
                             </a>
-                        </li>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                <a href="{{ route('faq') }}">
+                            <span >
+                                FAQ
+                            </span>
+                            </a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                <a href="{{ route('contato') }}">
+                            <span >
+                                Contato
+                            </span>
+                            </a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                <a href="{{ route('artigos') }}">
+                            <span >
+                                Artigos
+                            </span>
+                            </a>
+                </li>
+                <!-- <li>
+                    <span>|</span>
+                </li>
+                <li>
+                <a href="{{ route('login') }}">
+                            <span >
+                                Login
+                            </span>
+                            </a>
+                </li> -->
+                <!-- <li>
+                    <span>|</span>
+                </li>
+                <li>
+                <a href="{{ route('register') }}">
+                            <span >
+                                Cadastre-se
+                            </span>
+                            </a>
+                </li> -->
+
                     </ul>
                     <span class="copyright text-muted"><strong>&copy;Digital tour</strong> - Digital House 2019.</span>
                 </div>

@@ -85,7 +85,7 @@
 
                         <div class="form-group row col-md-12">
                             <div class="offset-11">
-                                <button type="submit" class="submit-form">
+                                <button type="submit" class="submit-form" onclick="return validar_form_cadastro()">
                                     {{ __('Register') }}
                                 </button>
                             </div>

@@ -4,6 +4,16 @@
     margin: 0;
     padding: 0;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
 
 body,
 html {
@@ -1082,4 +1092,18 @@ footer.footer {
 .mt-5,
 .my-5 {
     margin-top: 5rem !important;
+}
+
+.map ul li{
+    display: inline;
+    margin: 0 auto;
+    color: lightgrey;
+}
+
+.map ul li a{
+    color:gray;
+}
+
+.map ul li a:hover{
+    color:lightgrey;
 }
