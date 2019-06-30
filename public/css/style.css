@@ -1107,3 +1107,14 @@ footer.footer {
 .map ul li a:hover{
     color:lightgrey;
 }
+
+.nav-link.h5:hover {
+
+    color: lightgray;
+
+}
+
+div .navop li a:hover{
+
+    color:lightgrey !important;
+}
