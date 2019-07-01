@@ -158,7 +158,7 @@
                             <!-- editar perfil -->
                             <div class="edit-info" style="display: none;">
                                 <div class="row">
-                                    <div class="col-lg-12">
+                                    <div class="">
                                         <div class="general-info form-material">
                                             <div class="row">
                                                 <div class="col-lg-6 ">

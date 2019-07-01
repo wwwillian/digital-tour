@@ -10,6 +10,15 @@
     <title>{{ config('app.name', 'Digital-tour') }}</title>
     <link rel="icon" href="{{ asset('img/logorev1.png')}}">
 
+<<<<<<< HEAD
+=======
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
+    
+    
+
+>>>>>>> 7db95949dff52f8e72345e92da40b70fe9af99de
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -100,16 +109,66 @@
     <footer class="bg-dark mt-5 footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto text-center mt-4">
+                <div class="col-lg-8 col-md-10 mx-auto text-center mt-4 map">
                     <ul class="list-inline text-center">
-
-                        <li class="list-inline-item">
-                            <a href="https://github.com/williangomes7004/digital-tour">
-                            <span class="fa-stack fa-lg">
-                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                    <li>
+                <a href="{{ route('quemsomos') }}">
+                            <span >
+                                Quem somos
                             </span>
                             </a>
-                        </li>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                <a href="{{ route('faq') }}">
+                            <span >
+                                FAQ
+                            </span>
+                            </a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                <a href="{{ route('contato') }}">
+                            <span >
+                                Contato
+                            </span>
+                            </a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                <a href="{{ route('artigos') }}">
+                            <span >
+                                Artigos
+                            </span>
+                            </a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                <a href="{{ route('login') }}">
+                            <span >
+                                Login
+                            </span>
+                            </a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                <a href="{{ route('register') }}">
+                            <span >
+                                Cadastre-se
+                            </span>
+                            </a>
+                </li>
+
                     </ul>
                     <span class="copyright text-muted"><strong>&copy;Digital tour</strong> - Digital House 2019.</span>
                 </div>
@@ -118,11 +177,19 @@
     </footer>
     <!--fim conteiner-->
 
+<<<<<<< HEAD
     <!-- Scripts -->
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 
    
    <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
+=======
+        <!-- JavaScript (Opcional) -->
+    <script src="{{ asset('js/jquery-3.4.1.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
+
+>>>>>>> 7db95949dff52f8e72345e92da40b70fe9af99de
     </div>
 </body>
 </html>
