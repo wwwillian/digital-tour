@@ -17,8 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/categorias', function(){
-    return "teste";
-});     
-
-Route::get('perfil', 'FriendsController@indexJson')->name('mostrarAmigos');
+Route::get('/', 'GalleryController@index');
+Route::post('/', 'GalleryController@store');
+Route::delete('/{id}', 'GalleryController@destroy');
+Route::get('/like/{id}', 'GalleryController@like');

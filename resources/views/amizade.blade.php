@@ -41,17 +41,16 @@
                             <!-- Text -->
                             <p class="card-text">{{$friend->email}}</p>
                             <hr>
-                            <a class="card-meta"><span><i class="fa fa-user"></i>48 Friends</span></a>
+                            <a class="card-meta" href="{{$friend->id}}"><span><i class="fa fa-user"></i>Ver amigos</span></a>
                             <p class="card-meta float-right">{{$friend->created_at}}</p>
                         </div>
                     </div>
                     <div class="flip-card-back">
                         <h1>{{$friend->name}}</h1>
-                        <p>
+                        <div class="over">
                         {{$friend->experience}}
-                        </p>
-                        <a href="">Ver amigo</a>
-
+                        </div>
+                          <a class="card-meta" href="{{'perfil/'.$friend->id}}"><span><i class="fa fa-user"></i>Ver amigos</span></a>
                     </div>
                 </div>
             </div>

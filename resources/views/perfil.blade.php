@@ -383,7 +383,7 @@
                                                             <!-- Text -->
                                                             <p class="card-text">{{$friend->email}}</p>
                                                             <hr>
-                                                            <a class="card-meta"><span><i class="fa fa-user"></i>127 Friends</span></a>
+                                                            <a class="card-meta" href="{{'perfil/'.$friend->id}}"><span><i class="fa fa-user"></i>Ver amigos</span></a>
                                                             <p class="card-meta float-right">{{$friend->created_at}}</p>
 
                                                         </div>

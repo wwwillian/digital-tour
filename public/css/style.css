@@ -608,7 +608,7 @@ form h1 {
 }
 
 
-/* 
+/*
 .oucadastro{
   margin: 1px;
 } */
@@ -1082,4 +1082,10 @@ footer.footer {
 .mt-5,
 .my-5 {
     margin-top: 5rem !important;
+}
+
+.flip-card-back .over{
+  height: 80%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }

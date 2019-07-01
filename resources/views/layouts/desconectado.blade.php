@@ -10,9 +10,6 @@
     <title>{{ config('app.name', 'Digital-tour') }}</title>
     <link rel="icon" href="{{ asset('img/logorev1.png')}}">
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -24,7 +21,9 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
 
     <!-- CDN Galery -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">  <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer>
+</script>
 
     <script>
         window.laravel = {!! json_encode([
@@ -36,7 +35,7 @@
         ]) !!}
     </script>
 <body>
-<div id="app" class="conteudo">
+<div class="conteudo">
     <header>
 
         <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
@@ -119,11 +118,11 @@
     </footer>
     <!--fim conteiner-->
 
-        <!-- JavaScript (Opcional) -->
-    <script src="{{ asset('js/jquery-3.4.1.min.js')}}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
+    <!-- Scripts -->
+    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+
+   
+   <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
     </div>
 </body>
 </html>
-

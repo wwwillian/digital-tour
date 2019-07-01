@@ -4,13 +4,16 @@
     <!-- Artigos ------------------------------------------------->
 
 <!-- Artigo 1 -->
-<div class="container, marginartigo col-md-10">
+<div class="conteiner">
+
+
+<div class="marginartigo col-md-10">
     <div class="card mb-3 offset-md-2" style="max-width: 750px;">
         <div class="row no-gutters">
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4">
                 <img src="../img/gastro.jpg" class="card-img" alt="Gastronomia">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-lg-8">
                 <div class="card-body">
                     <a href="http://gastronomianobrasil.com.br/gastronomia-brasileira-cultura-nacional/"
                         target="_blank">
@@ -22,8 +25,8 @@
                 <button class="botao-artigo offset-md-10">Ver mais</button>
 
             </div>
-            <div class="artigo card mb-3 col-md-12">
-                <div class="texto-artigo col-md-12 ">
+            <div class="artigo card mb-3 col-md-12 col-lg-12">
+                <div class="texto-artigo col-md-12 col-lg-12">
                     <p> A culinária do Brasil é fruto de uma mistura de ingredientes europeus, indígenas e africanos. Muitos dos componentes das receitas e técnicas de preparo são de origem indígena, tendo sofrido modificações por parte dos portugueses e dos escravos oriundos da África. Esses faziam adaptações dos seus pratos típicos substituindo os ingredientes que faltassem por correspondentes locais. A feijoada à brasileira, prato típico do país, é um exemplo disso. Os escravos trazidos ao Brasil desde meados do século XVI somaram à culinária nacional elementos como o azeite de dendê e o cuscuz. E as levas de imigrantes recebidas pelo país entre os séculos XIX e XX, vindos em grande número da Europa, trouxeram algumas novidades ao cardápio nacional e concomitantemente fortaleceram o consumo de diversos ingredientes. <br><br>
                     A alimentação diária, feita em três refeições, envolve o consumo de café com leite, pão, frutas, bolos e doces no café da manhã, feijão com arroz no almoço — refeição básica do brasileiro, aos quais são somados, por vezes, o macarrão, a carne, a salada e a batata — e, no jantar, sopas e também as várias comidas regionais. <br><br>
                     As bebidas destiladas foram trazidas pelos portugueses ou, como a cachaça, fabricadas na terra. O vinho é também muito consumido, por vezes somado à água e açúcar, na conhecida sangria. A cerveja por sua vez começou a ser consumida em fins do século XVIII e é hoje uma das bebidas alcoólicas mais comuns. <br><br>
@@ -38,10 +41,10 @@
     <!-- Artigo 2 -->
     <div class="card mb-3 offset-md-2" style="max-width: 750px;">
         <div class="row no-gutters">
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4">
                 <img src="../img/photo6.jpg" class="card-img" alt="Arte">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-lg-8">
                 <div class="card-body">
                     <a href="https://pt.wikipedia.org/wiki/Arte" target="_blank">
                         <h5 class="card-title">Arte</h5>
@@ -52,7 +55,7 @@
 
             </div>
             <div class="artigo card mb-3">
-                <div class="texto-artigo col-md-12">
+                <div class="texto-artigo col-md-12 col-lg-12">
                     <p>O homem diante dos diversos setores sociais é influenciado a seguir os caminhos da arte, pela necessidade de se adequar a cultura do seu habitat. Caminhos esses, que o leva ao conhecimento e ao aperfeiçoamento da ciência, em seu desenvolvimento geral.
 O homem precisa conhecer o meio artístico cultural e se desenvolver dentro dele, na busca do melhoramento das condições da vida humana. <br>
 Como o corpo vivo necessita de alimento para a sua sobrevivência, o homem necessita de arte para o seu crescimento e seu desenvolvimento pessoal.
@@ -72,10 +75,10 @@ Assim todo o homem torna-se capaz de conhecer essa competência e adquirir a hab
     <!-- Artigo 3 -->
     <div class="card mb-3 offset-md-2" style="max-width: 750px;">
         <div class="row no-gutters">
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4">
                 <img src="../img/stadium.jpg" class="card-img" alt="E-sports">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-lg-8">
                 <div class="card-body">
                     <a href="https://www.theenemy.com.br/esports/esports-esports-ou-e-sports-qual-a-grafia-correta-dos-esportes-eletronicos"
                         target="_blank">
@@ -87,7 +90,7 @@ Assim todo o homem torna-se capaz de conhecer essa competência e adquirir a hab
 
             </div>
             <div class="artigo card mb-3">
-                <div class="texto-artigo col-md-12">
+                <div class="texto-artigo col-md-12 col-lg-12">
                 <p>O eSports, ou esporte eletrônico, veio para ficar. A modalidade de competição profissional com videogames não é muito nova, mas cresce a cada ano, sempre na cola de jogos de sucesso, como League of Legends, DotA 2, Counter-Strike, Starcraft e outros. Entenda melhor essa febre e alguns de seus principais torneios.</p><br><br>
 
 
@@ -146,10 +149,10 @@ Hoje, além da Ásia, outros grandes territórios do eSport são América do Nor
     <!-- Artigo 4 -->
     <div class="card mb-3 offset-md-2" style="max-width: 750px;">
         <div class="row no-gutters">
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4">
                 <img src="../img/ferias.jpeg" class="card-img" alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-lg-8">
                 <div class="card-body">
                     <a href="https://viagenscinematograficas.com.br/2018/12/melhores-destinos-do-brasil-top-10.html"
                         target="_blank">
@@ -162,7 +165,7 @@ Preparamos super dicas que vão esclarecer suas dúvidas e facilitar bastante a 
 
             </div>
             <div class="artigo card mb-3">
-                <div class="texto-artigo col-md-12">
+                <div class="texto-artigo col-md-12 col-lg-12">
                 <h3>1. Planejando o roteiro de uma viagem de volta ao mundo</h3>
 <p>Você quer viajar, ótimo. Mas para onde? Definir um itinerário é essencial, já que uma viagem de volta ao mundo não necessariamente significa viajar o mundo todo. <br><br>
 Faça uma lista dos lugares que você deseja conhecer e defina o tempo disponível que pretende ficar em cada um deles. Nessa etapa, é importante buscar algumas informações básicas sobre os destinos escolhidos, como exigência de visto e o clima da região no período de sua visita.<br><br>
@@ -226,10 +229,10 @@ Com todo o checklist resolvido, é hora de embarcar na maior viagem da sua vida!
     <!-- Artigo 5 -->
     <div class="card mb-3 offset-md-2" style="max-width: 750px;">
         <div class="row no-gutters">
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4">
                 <img src="../img/musica.jpg" class="card-img" alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-lg-8">
                 <div class="card-body">
                     <a href="https://pt.wikipedia.org/wiki/M%C3%BAsica" target="_blank">
                         <h5 class="card-title">Música</h5>
@@ -240,7 +243,7 @@ Com todo o checklist resolvido, é hora de embarcar na maior viagem da sua vida!
 
             </div>
             <div class="artigo card mb-3">
-                <div class="texto-artigo col-md-12">
+                <div class="texto-artigo col-md-12 col-lg-12">
                     <p>O feito de cantar ou escutar uma canção pode desencadear efeitos emocionais numa pessoa. Tristeza, alegria, nostalgia, raiva, muitos são os sentimentos que veem aos ouvintes da música. Estes sentimentos, quando contidos em várias pessoas, podem gerar movimentos sociais. Como exemplo, os movimentos: punk, grunge, alternativo e emotivo (este, o mais popular no Brasil). Muitos movimentos buscavam, como meta, uma maior liberdade de expressão e uma melhor qualidade de vida na sociedade. <br><br>
 Portanto, a música pode ser considerada uma das artes que mais influenciam na sociedade. Por isso, muitas mídias optam pela monopolização do mercado fonográfico. Se há décadas era a censura a principal vilã, agora é a alienação, o controle do que vai ou não fazer sucesso. Isso somado ao descaso pela qualidade musical atual na sociedade brasileira, especialmente nas classes mais pobres, provocando um declínio cultural. <br><br>
 Ocorrendo o declínio cultural, ocorre juntamente o declínio da educação, com o declínio da educação, aumenta a facilidade de alienação. Situação perfeita para os políticos, burgueses e outros monopolizadores da nossa sociedade. É só observar em volta, liga o rádio e escuta o que está tocando, liga a TV no domingo e vê os grupos convidados para tocar nos programas, provavelmente não são grupos tocando canções com letras bem elaboradas e que falem sobre questões sociais, certo?<br><br>
@@ -256,10 +259,10 @@ A população tem que entender como é preciso uma melhoria na arte nacional, po
     <!-- Artigo 6 -->
     <div class="card mb-3 offset-md-2" style="max-width: 750px;">
         <div class="row no-gutters">
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4">
                 <img src="../img/cutulra.jpg" class="card-img" alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-lg-8">
                 <div class="card-body">
                     <a href="https://pt.wikipedia.org/wiki/Cultura_do_Brasil" target="_blank">
                         <h5 class="card-title">Cultura Brasileira</h5>
@@ -270,7 +273,7 @@ A população tem que entender como é preciso uma melhoria na arte nacional, po
 
             </div>
             <div class="artigo card mb-3">
-                <div class="texto-artigo col-md-12">
+                <div class="texto-artigo col-md-12 col-lg-12">
                     <p> A diversidade cultural predominante no Brasil é consequência também da grande extensão territorial e das características geradas em cada região do país. <br><br>
 O indivíduo branco, que participou da formação da cultura brasileira, fazia parte de vários grupos que chegaram ao país durante a época colonial. <br><br>
 Além dos portugueses, vieram os espanhóis, de 1580 a 1640, durante a União Ibérica (período o qual Portugal ficou sob o domínio da Espanha). <br><br>
@@ -283,7 +286,7 @@ Foram eles, os colonizadores, os responsáveis pela formação inicial da popula
             </div>
         </div>
     </div>
-
+</div>
 </div>
 <!-- Fim Artigos -->
 @endsection

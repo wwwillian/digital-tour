@@ -45,7 +45,7 @@ Route::group(['middleware'=>'auth'], function (){
 
     Route::get('/amizade', 'AmigosController@mostrarAmigos')->name('amigos');
     Route::any('/pesquisar-amigos','AmigosController@pesquisar')->name('pesquisa');
-
+    Route::get('/gallery', 'PaginasController@mostrarGallery')->name('gallery');
 });
 
 Auth::routes();
