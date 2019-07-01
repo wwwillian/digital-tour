@@ -1094,14 +1094,7 @@ footer.footer {
     margin-top: 5rem !important;
 }
 
-<<<<<<< HEAD
-.flip-card-back .over{
-  height: 80%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-=======
-.map ul li{
+.map li{
     display: inline;
     margin: 0 auto;
     color: lightgrey;
@@ -1125,4 +1118,3 @@ div .navop li a:hover{
 
     color:lightgrey !important;
 }
->>>>>>> 7db95949dff52f8e72345e92da40b70fe9af99de
