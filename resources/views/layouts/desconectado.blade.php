@@ -10,6 +10,15 @@
     <title>{{ config('app.name', 'Digital-tour') }}</title>
     <link rel="icon" href="{{ asset('img/logorev1.png')}}">
 
+
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
+    
+    
+
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -168,11 +177,19 @@
     </footer>
     <!--fim conteiner-->
 
+<<<<<<< HEAD
     <!-- Scripts -->
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 
    
    <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
+=======
+        <!-- JavaScript (Opcional) -->
+    <script src="{{ asset('js/jquery-3.4.1.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
+
+>>>>>>> 7db95949dff52f8e72345e92da40b70fe9af99de
     </div>
 </body>
 </html>
