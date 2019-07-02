@@ -1072,7 +1072,7 @@ pre code {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
@@ -1123,6 +1123,7 @@ pre code {
   .col-md-8 {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
+    margin: 90px !important;
   }
 
   .col-md-9 {
@@ -8013,7 +8014,7 @@ button.bg-dark:focus {
 }
 
 .fixed-top {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   right: 0;
   left: 0;
