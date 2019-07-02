@@ -20,13 +20,11 @@ class FriendsController extends Controller
      */
     public function index()
     {
-        $gallery = Gallerys::where("user_id",1)->first();
         $amigos = $this->usuario();
         $friends = $this->amizades(Auth::user()->id);
         $posts = $this->seusPosts(Auth::user()->id);
 
         return view('perfil')
-            ->with('gallery', $gallery)
             ->with('friends', $friends)
             ->with('posts', $posts);
     }

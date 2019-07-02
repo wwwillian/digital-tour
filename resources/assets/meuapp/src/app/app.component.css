@@ -1,0 +1,9 @@
+.float-button {
+    position: fixed;
+    bottom: 100px;
+    right: 90px;
+}
+
+app-post {
+    margin: 20px;
+}

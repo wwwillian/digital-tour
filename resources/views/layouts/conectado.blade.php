@@ -9,11 +9,12 @@
 
     <title>{{ config('app.name', 'Digital-tour') }}</title>
     <link rel="icon" href="{{ asset('img/logorev1.png')}}">
-    
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Boodstrap -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -100,7 +101,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto text-center mt-4 map">
-                    
+
                     <ul class="list-inline text-center">
                     <li>
                 <a href="{{ route('quemsomos') }}">
@@ -172,7 +173,7 @@
      <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/main1.js')}}"></script>
 
 
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>

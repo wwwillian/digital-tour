@@ -15,8 +15,8 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
-    
-    
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js" defer></script>
     <!-- Fonts -->
@@ -180,8 +180,8 @@
     <!-- Scripts -->
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 
-   
-   <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
+
+   <script type="text/javascript" src="{{ asset('js/main1.js')}}"></script>
     </div>
 </body>
 </html>

@@ -1,0 +1,10 @@
+.card {
+    max-width: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+mat-card-actions {
+    position: absolute;
+    bottom: 30px;
+}

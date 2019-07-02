@@ -21,6 +21,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- Galery-->
@@ -55,7 +57,7 @@
                         <a class="nav-link h5" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link h5" href="{{ route('perfil') }}">Perfil</a>
+                        <a class="nav-link h5" href="{{ route('gallery') }}">Galeria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link h5" href="{{ route('amigos') }}">Amigos</a>
@@ -124,16 +126,6 @@
      <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script type="text/javascript" src="{{ asset('js/main.js')}}"></script>
-
-
-    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace( 'description' );
-</script>
-    @hasSection('javascript')
-                @yield('javascript')
-    @endif
-
+    <script type="text/javascript" src="{{ asset('js/main1.js')}}"></script>
 </body>
 </html>

@@ -323,7 +323,27 @@
 
 
                 <!--Fotos-->
+                <div class="tab-pane" id="tfotos" role="tabpanel">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-header-text">Galeria</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                    <app-root></app-root>
 
+                                    <script type="text/javascript" src="{{ asset('js/runtime.js') }}"></script>
+                                    <script type="text/javascript" src="{{ asset('js/polyfills.js') }}"></script>
+                                    <script type="text/javascript" src="{{ asset('js/styles.js') }}"></script>
+                                    <script type="text/javascript" src="{{ asset('js/vendor.js') }}"></script>
+                                    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- fotos -->
 
