@@ -1,4 +1,4 @@
-@extends('layouts.amizade')
+@extends('layouts.conectado')
 @section('content')
 <!--Section: Group of personal cards-->
 

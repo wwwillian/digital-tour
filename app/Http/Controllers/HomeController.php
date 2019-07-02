@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Storage;
-
+use App\Events\HomeEvent;
 
 class HomeController extends Controller
 {
@@ -23,7 +23,7 @@ class HomeController extends Controller
         $posts = Posts::orderBy('id', 'desc')
           ->get();
 
-
+        event(new HomeEvent('Olá, Seja bem-vindo(a)'));
         // $posts = $this->messages();
         return view('home')
             ->with('posts', $posts);

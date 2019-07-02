@@ -40,7 +40,7 @@
 
 </head>
 <body>
-    <div class="conteudo">
+<div class="conteudo">
     <header>
         <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
             <!-- <a href="index.html" class="navbar-brand"> -->
@@ -80,7 +80,8 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right h5" aria-labelledby="navbarDropdown">
-                                <a href="{{route('profile')}}" class="dropdown-item"> Editar Perfil</a>
+
+                            <a href="{{route('profile')}}" class="dropdown-item"> Editar Perfil</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -97,9 +98,9 @@
             </div>
         </nav>
     </header>
-    <main class="main">
+    <main class="main-top">
         @yield('content')
-        </main>
+    </main>
     <!-- Footer -->
     <footer class="bg-dark mt-5">
         <div class="container">

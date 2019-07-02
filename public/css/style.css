@@ -4,15 +4,17 @@
     margin: 0;
     padding: 0;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 input[type=number] {
-    -moz-appearance:textfield;
+    -moz-appearance: textfield;
 }
 
 body,
@@ -1089,32 +1091,32 @@ footer.footer {
     position: relative;
 }
 
-.mt-5,
 .my-5 {
     margin-top: 5rem !important;
 }
 
-.map li{
+.map li {
     display: inline;
     margin: 0 auto;
     color: lightgrey;
 }
 
-.map ul li a{
-    color:gray;
+.map ul li a {
+    color: gray;
 }
 
-.map ul li a:hover{
-    color:lightgrey;
+.map ul li a:hover {
+    color: lightgrey;
 }
 
 .nav-link.h5:hover {
-
     color: lightgray;
-
 }
 
-div .navop li a:hover{
+div .navop li a:hover {
+    color: lightgrey !important;
+}
 
-    color:lightgrey !important;
+.main-top {
+    margin-top: 50px;
 }

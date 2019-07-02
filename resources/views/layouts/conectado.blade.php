@@ -13,7 +13,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Boodstrap -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -53,7 +53,7 @@
                         <a class="nav-link h5" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link h5" href="{{ route('perfil') }}">Perfil</a>
+                        <a class="nav-link h5" href="{{ route('gallery') }}">Galeria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link h5" href="{{ route('amigos') }}">Amigos</a>
@@ -76,6 +76,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right h5" aria-labelledby="navbarDropdown">
+                                <a href="{{route('perfil')}}" class="dropdown-item">Perfil</a>
                                 <a href="{{route('profile')}}" class="dropdown-item"> Editar Perfil</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
@@ -181,7 +182,7 @@
     CKEDITOR.replace( 'description' );
 </script>
     @hasSection('javascript')
-                @yield('javascript')
+        @yield('javascript')
     @endif
 
 </body>
