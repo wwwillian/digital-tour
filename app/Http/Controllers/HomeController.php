@@ -3,50 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Models\Posts\Posts;
-use App\Models\User;
-use Illuminate\Http\File;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\Storage;
-use App\Events\HomeEvent;
+
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function index()
     {
         $posts = Posts::orderBy('id', 'desc')
-          ->get();
+            ->get();
 
-        event(new HomeEvent('Olá, Seja bem-vindo(a)'));
-        // $posts = $this->messages();
-        return view('home')
+        return view('feed')
             ->with('posts', $posts);
-
     }
-
-    // public function messages()
-    // {
-    //     $posts = Posts::with('posts')
-    //         ->orderBy('id', 'DESC')
-    //         ->limit(50)
-    //         ->latest()
-    //         ->get();
-    //
-    //     return $posts;
-    // }
-
-//    public function mostrarPosts()
-//    {
-//        $posts = Posts::all();
-//        return view('home.posts')
-//            ->with('posts',$posts);
-//    }
 
     public function postsUpdate(Request $request)
     {
@@ -60,7 +30,7 @@ class HomeController extends Controller
             'photo'
         ]);
 
-        if(Input::file('photo')) {
+        if (Input::file('photo')) {
             $photo = Input::file('photo');
             $extensao = $photo->getClientOriginalExtension();
             if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
@@ -78,25 +48,23 @@ class HomeController extends Controller
 
         $post->save();
 
-            if(Input::file('photo'))
-             {
-                 $name = kebab_case($request->name).uniqid($post->id);
-                 $extension = $request->photo->extension();
-                 $nameImage = "{$name}.$extension";
-                 $data['photo'] = $nameImage;
+        if (Input::file('photo')) {
+            $name = kebab_case($request->name) . uniqid($post->id);
+            $extension = $request->photo->extension();
+            $nameImage = "{$name}.$extension";
+            $data['photo'] = $nameImage;
 
-                 $upload = $request->photo->storeAs('posts', $nameImage);
+            $upload = $request->photo->storeAs('posts', $nameImage);
 
-                 if(!$upload)
-                     return redirect()
-                         ->route('profile')
-                         ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-
-            }
+            if (!$upload)
+                return redirect()
+                    ->route('profile')
+                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
+        }
         $post->update($data);
 
         return redirect()
-            ->route('home')
+            ->back()
             ->with('success', 'Atualizado com Sucesso!');
     }
 }

@@ -12,7 +12,7 @@ class CommentsController extends Controller
     public function mostrarComments()
     {
         $comments = Comments::all();
-        return view('home')
+        return view('feed')
             ->with('comments',$comments);
     }
 
@@ -31,7 +31,7 @@ class CommentsController extends Controller
 
 
         return redirect()
-            ->route('home');
+            ->route('feed');
 
     }
 }

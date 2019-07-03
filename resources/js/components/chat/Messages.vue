@@ -69,8 +69,8 @@
 
 <style scoped>
     .messages{
-        margin-top: 73px;
-        height: 629px;
+        margin-top: 20px;
+        height:     629px;
         max-height: 629px;
         overflow-x: hidden;
         overflow-y: auto;
