@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container">
-        <section class="pagina-contato margin-top mt-5 pt-3">
+        <section class="pagina-contato mt-3 pt-3">
 
             <div class="fundo-contato">
                 <span class="SpanFaqContatoCadastro">Contato</span>
