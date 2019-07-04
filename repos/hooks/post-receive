@@ -1,3 +1,0 @@
-#!/bin/sh 
-GIT_WORK_TREE=/[willian]/apps/http://digital-tour.herokuapp.com git checkout -f
-cd /[willian]/apps/http://digital-tour.herokuapp.com

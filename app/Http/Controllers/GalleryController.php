@@ -15,7 +15,7 @@ class GalleryController extends Controller
     public function store(Request $request) {
         $post = new P2ost();
 
-        $path = $request->file('arquivo')->store('imagens', 'public');
+        $path = $request->file('arquivo')->storeAs('imagens', 'public');
 
         $post->titulo    = $request->titulo;
         $post->subtitulo = $request->subtitulo;
