@@ -855,13 +855,44 @@ a:link {
         border-color: white;
         color: gray;
     }
+    .fundo-login{
+        width: 100%;
+        padding-top: 0 !important;
+    }
+    .pagina-contato{
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    form#contato.login{
+        width: 100%;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;  
+        height: 25em;
+    }
+    button.submit-form.btnlogin{
+        margin: 0.1em;
+        bottom: 0;
+    }
+    .incadastro{
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn-register{
+        margin-left: 0 !important;
+    }
 }
 
 @media (min-width:768px) and (max-width: 992px) {
     .img-fundo1 {
         height: 350px;
         width: 720px;
-    }
+}                                           
     #accordion {
         width: 700px;
     }
@@ -893,6 +924,37 @@ a:link {
         border-right-style: none;
         border-color: white;
         color: gray;
+    }
+    .fundo-login{
+        width: 100%;
+        padding-top: 0 !important;
+    }
+    .pagina-contato{
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    form#contato.login{
+        width: 100%;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;  
+        height: 25em;
+    }
+    button.submit-form.btnlogin{
+        margin: 0.1em;
+        bottom: 0;
+    }
+    .incadastro{
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn-register{
+        margin-left: 0 !important;
     }
 }
 
@@ -947,6 +1009,38 @@ a:link {
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .fundo-login{
+        width: 100%;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .pagina-contato{
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    form#contato.login{
+        width: 100%;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;  
+        height: 25em;
+    }
+    button.submit-form.btnlogin{
+        margin: 0.1em;
+        bottom: 0;
+    }
+    .incadastro{
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn-register{
         margin-left: 0 !important;
     }
 }
@@ -1006,6 +1100,37 @@ a:link {
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .fundo-login{
+        width: 100%;
+        padding-top: 0 !important;
+    }
+    .pagina-contato{
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    form#contato.login{
+        width: 100%;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;  
+        height: 25em;
+    }
+    button.submit-form.btnlogin{
+        margin: 0.1em;
+        bottom: 0;
+    }
+    .incadastro{
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn-register{
         margin-left: 0 !important;
     }
 }
@@ -1095,6 +1220,40 @@ a:link {
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .fundo-login{
+        width: 100%;
+        padding-top: 0 !important;
+    }
+    .pagina-contato{
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    form#contato.login{
+        width: 100%;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;  
+        height: 25em;
+    }
+    button.submit-form.btnlogin{
+        margin: 0.1em;
+        bottom: 0;
+    }
+    .incadastro{
+        width: 100%;
+    }
+    .incadastro{
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn-register{
         margin-left: 0 !important;
     }
 }
@@ -1469,4 +1628,13 @@ h4{
     display: flex;
     justify-content: center;
     flex-direction: column; 
+}
+.btnlogin{
+    display: inline-block;
+    position: relative;
+    bottom: 7em;
+}
+
+.btn-register{
+    margin-left: 33em;
 }
