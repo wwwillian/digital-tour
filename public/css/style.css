@@ -943,6 +943,12 @@ a:link {
         border-color: white;
         color: gray;
     }
+    div.card.card-cascade.wider, .col-sm-4{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
 }
 
 @media (min-width:420px) and (max-width: 576px) {
@@ -995,6 +1001,12 @@ a:link {
         border-right-style: none;
         border-color: white;
         color: gray;
+    }
+    div.card.card-cascade.wider, .col-sm-4{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -1079,6 +1091,12 @@ a:link {
         border-color: white;
         color: gray;
     }
+    div.card.card-cascade.wider, .col-sm-4{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1141,6 +1159,13 @@ a:link {
         border-right-style: none;
         border-color: white;
         color: gray;
+    }
+
+    div.card.card-cascade.wider, .col-sm-4{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
     /* -------------------------//--------------------------------//---------------------------------- */
 }
