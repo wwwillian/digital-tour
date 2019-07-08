@@ -11,7 +11,6 @@
                     <span class="SpanFaqContatoCadastro">Cadastro</span>
                 </div>
                 <form name="formalariocadastro" action="#">
-
                     <div class="form-inline">
                         <label for="nome">Nome:</label>
                         <input type="text" class="form-control" id="nome" placeholder="Nome">
@@ -43,7 +42,7 @@
                         <input type="password" class="form-control" id="senha" placeholder="Senha">
 
                         <label for="telefone">Telefone:</label>
-                        <input type="text" name= class="form-control" id="telefone">
+                        <input type="text" name="" class="form-control" id="telefone">
                     </div>
 
                     <button type="submit" class="botaocadas btn btn-primary" onclick="return validar_form_cadastro()">Enviar</button>

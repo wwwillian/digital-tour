@@ -9,11 +9,18 @@
     <title>{{ config('app.name', 'Digital-tour') }}</title>
     <link rel="icon" href="{{ asset('img/logorev1.png')}}">
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"> <!-- Scripts -->
 
+    <script>
+        window.laravel = {!! json_encode([
+            'csrf' => csrf_token(),
+            'pusher' =>[
+                   'key' => config('broadcasting.connections.pusher.key'),
+                   'cluster' => config('broadcasting.connections.pusher.options.cluster'),
+            ]
+        ]) !!}
+    </script>
 <body>
     <div class="conteudo">
         <header>
@@ -32,7 +39,7 @@
                             <a class="nav-link h5" href="{{ route('faq') }}">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link h5" href="{{ route('contato') }}">Contato</a>
+                            <a class="nav-link h5" href="{{ route('enviando') }}">Contato</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link h5" href="{{ route('artigos') }}">Artigos</a>
@@ -107,14 +114,13 @@
                                     <span>FAQ</span>
                                 </a></li>
                             <li><span>|</span></li>
-                            <li><a href="{{ route('contato') }}">
+                            <li><a href="{{ route('enviando') }}">
                                     <span>Contato</span>
                                 </a></li>
                             <li><span>|</span></li>
                             <li><a href="{{ route('artigos') }}">
                                     <span>Artigos</span>
                                 </a></li>
-                            <li><span>|</span></li>
                         </ul>
                         <span class="copyright text-muted"><strong>&copy;Digital tour</strong> - Digital House 2019.</span>
                     </div>
@@ -122,7 +128,7 @@
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="{{ asset('js/app.js') }}" defer></script>
+    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main1.js')}}"></script>
 </body>
 

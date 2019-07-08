@@ -35,7 +35,7 @@ class HomeController extends Controller
             $extensao = $photo->getClientOriginalExtension();
             if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
                 return redirect()
-                    ->route('home')
+                    ->route('feed')
                     ->with('erro', 'Falha ao fazer o upload da imagem fundo');
             }
         }
@@ -58,7 +58,7 @@ class HomeController extends Controller
 
             if (!$upload)
                 return redirect()
-                    ->route('profile')
+                    ->back()
                     ->with('erro', 'Falha ao fazer o upload da imagem fundo');
         }
         $post->update($data);

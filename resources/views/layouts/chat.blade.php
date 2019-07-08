@@ -19,30 +19,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
     <script>
-        window.laravel = {
-            !!json_encode([
-                'csrf' => csrf_token(),
-                'pusher' => [
-                    'key' => config('broadcasting.connections.pusher.key'),
-                    'cluster' => config('broadcasting.connections.pusher.options.cluster'),
-                ]
-            ]) !!
-        }
+        window.laravel = {!! json_encode([
+            'csrf' => csrf_token(),
+            'pusher' =>[
+                   'key' => config('broadcasting.connections.pusher.key'),
+                   'cluster' => config('broadcasting.connections.pusher.options.cluster'),
+            ]
+        ]) !!}
     </script>
 
 <body>
     <div id="app" class="conteudo">
         <header>
             <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
-                <!-- <a href="index.html" class="navbar-brand"> -->
                 <a href="/"><img src="img/logorev1.png" width="60"></a>
                 <span href="/">Digital Tour</span>
-
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <!-- <a class="navbar-brand" href="#">DIGITAL TOUR</a> -->
                     <ul class="navop navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item">
                             <a class="nav-link h5" href="{{ route('feed') }}">Feed</a>
@@ -70,7 +65,6 @@
                             <a id="navbarDropdown" class="nav-link dropdown-toggle h5" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
-
                             <div class="dropdown-menu dropdown-menu-right h5" aria-labelledby="navbarDropdown">
                                 <a href="{{route('perfil')}}" class="dropdown-item">Perfil</a>
                                 <a href="{{route('profile')}}" class="dropdown-item"> Editar Perfil</a>
@@ -78,7 +72,6 @@
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
-
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>
@@ -129,7 +122,7 @@
                                     <span>FAQ</span>
                                 </a></li>
                             <li><span>|</span></li>
-                            <li><a href="{{ route('contato') }}">
+                            <li><a href="{{ route('enviando') }}">
                                     <span>Contato</span>
                                 </a></li>
                             <li><span>|</span></li>

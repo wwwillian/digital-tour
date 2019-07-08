@@ -420,9 +420,10 @@ div .btnlogin {
     margin-top: 80px;
 }
 
-.pagina-contato.margin-top.mt-5.pt-3 {
+
+/* .pagina-contato.margin-top.mt-5.pt-3 {
     margin-bottom: 130px;
-}
+} */
 
 .fundo-login {
     background-image: url('../img/login1.jpg');
@@ -678,7 +679,7 @@ form h1 {
     height: 25vh;
     font-size: 32px;
     text-align: center;
-    width: 700px;
+    width: 100%;
     margin: 28px auto;
     background-color: rgb(255, 255, 255);
     margin-block-start: 25px;
@@ -798,6 +799,13 @@ a:link {
         font-weight: normal !important;
         margin: 2px;
     }
+    .botao-artigo {
+        background-color: white;
+        border-block-end: none;
+        border-right-style: none;
+        border-color: white;
+        color: gray;
+    }
 }
 
 @media (max-width: 986px) {
@@ -826,6 +834,27 @@ a:link {
     .ul-valores {
         display: inline-block;
     }
+    .col-lg-12{
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div.card.card-cascade.wider {
+        margin-bottom: 2em;
+    }
+
+    div.card.card-cascade.wider hr{
+        display: none;
+    }
+    .botao-artigo {
+        background-color: white;
+        border-block-end: none;
+        border-right-style: none;
+        border-color: white;
+        color: gray;
+    }
 }
 
 @media (min-width:768px) and (max-width: 992px) {
@@ -838,6 +867,32 @@ a:link {
     }
     .fundo-faq {
         width: 700px;
+    }
+    .divvalores ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .col-lg-12{
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div.card.card-cascade.wider {
+        margin-bottom: 2em;
+    }
+
+    div.card.card-cascade.wider hr{
+        display: none;
+    }
+    .botao-artigo {
+        background-color: white;
+        border-block-end: none;
+        border-right-style: none;
+        border-color: white;
+        color: gray;
     }
 }
 
@@ -856,10 +911,37 @@ a:link {
         width: 540px;
     }
     #contato {
-        width: 540px;
+        width: 100%;
     }
     .fundo-contato {
-        width: 540px;
+        width: 100%;
+    }
+    .divvalores ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+    .col-lg-12{
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div.card.card-cascade.wider {
+        margin-bottom: 2em;
+    }
+
+    div.card.card-cascade.wider hr{
+        display: none;
+    }
+    .botao-artigo {
+        background-color: white;
+        border-block-end: none;
+        border-right-style: none;
+        border-color: white;
+        color: gray;
     }
 }
 
@@ -875,10 +957,44 @@ a:link {
         width: 420px;
     }
     #contato {
-        width: 415px;
+        width: 100%;
     }
     .fundo-contato {
-        width: 415px;
+        width: 100%;
+    }
+    .divvalores ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+    .col-lg-12{
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div.card.card-cascade.wider {
+        margin-bottom: 2em;
+    }
+
+    div.card.card-cascade.wider hr{
+        display: none;
+    }
+    .caixa2{
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .botao-artigo {
+        background-color: white;
+        border-block-end: none;
+        border-right-style: none;
+        border-color: white;
+        color: gray;
     }
 }
 
@@ -893,10 +1009,75 @@ a:link {
         font-size: 10px !important;
     }
     #contato {
-        width: 290px;
+        width: 100%;
+    }
+    form#contato {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     .fundo-contato {
-        width: 290px;
+        width: 100%;
+    }
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .col-12 {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .submit-form {
+        margin-right: 0.6em;
+    }
+
+    .col-lg-12{
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div.card.card-cascade.wider {
+        margin-bottom: 2em;
+    }
+
+    div.card.card-cascade.wider hr{
+        display: none;
+    }
+
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .col-2 {
+        flex: 0 0 16.6666666667%;
+        justify-content: center;
+    }
+    .divvalores ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .caixa2{
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.1em;
+    }
+    .botao-artigo {
+        background-color: white;
+        border-block-end: none;
+        border-right-style: none;
+        border-color: white;
+        color: gray;
     }
 }
 
@@ -923,8 +1104,8 @@ a:link {
     }
     /* Page Artigo */
     .marginartigo {
-        margin-top: 80px;
-        margin-left: 100px;
+        margin-top: 2em;
+        margin-left: 15%;
     }
     .link-artigo a {
         color: gray;
@@ -953,6 +1134,13 @@ a:link {
     }
     .mgheader {
         margin-top: -20px !important;
+    }
+    .botao-artigo {
+        background-color: white;
+        border-block-end: none;
+        border-right-style: none;
+        border-color: white;
+        color: gray;
     }
     /* -------------------------//--------------------------------//---------------------------------- */
 }
@@ -1222,16 +1410,38 @@ a:not([href]):not([tabindex]) {
     transform: scale(1.05);
 }
 
-@media (min-width:260px) and (max-width:420px) {
-    .container {
-        padding-right: 0;
-        padding-left: 0;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .col-2 {
-        flex: 0 0 16.6666666667%;
-        /* max-width: 16.6666666667%; */
-        justify-content: center;
-    }
+.divvalores {
+    width: 100%;
+}
+
+.divvalores ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#quemsomos {
+    text-align: center;
+}
+
+.quemsomos strong {
+    font-weight: normal;
+}
+
+.card-body-cascade {
+    background-color: #ffffff;
+}
+
+div.card.card-cascade.wider {
+    background-color: #f1f0f0;
+    padding: 1.5em;
+}
+
+h4{
+    margin: 0;
+}
+
+.marginartigo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
 }

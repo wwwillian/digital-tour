@@ -1,27 +1,27 @@
-export default{
+export default {
     state: {
         messages: [],
         users: [],
     },
 
     mutations: {
-        LOAD_MESSAGES(state, messages){
+        LOAD_MESSAGES(state, messages) {
             state.messages = messages
         },
 
-        ADD_MESSAGE(state, message){
+        ADD_MESSAGE(state, message) {
             state.messages.push(message)
         },
 
-        LOAD_USERS(state, users){
+        LOAD_USERS(state, users) {
             state.users = users
         },
 
-        JOINING_USER(state, user){
+        JOINING_USER(state, user) {
             state.users.push(user)
         },
 
-        LEAVING_USER(state, user){
+        LEAVING_USER(state, user) {
             state.users = state.users.filter(u => {
                 return u.id !== user.id
             })
@@ -29,15 +29,15 @@ export default{
     },
 
     actions: {
-        loadMessages(context){
+        loadMessages(context) {
             return axios.get('/chat/messages')
                 .then(response => context.commit('LOAD_MESSAGES', response.data))
         },
 
-        storeMessage(context, params){
+        storeMessage(context, params) {
             return axios.post('/chat/message', params)
                 .then(response => context.commit('ADD_MESSAGE', response.data))
-            //.catch(() => console.log('error'))
+                //.catch(() => console.log('error'))
         },
     },
 

@@ -131,7 +131,7 @@
                                     <span>FAQ</span>
                                 </a></li>
                             <li><span>|</span></li>
-                            <li><a href="{{ route('contato') }}">
+                            <li><a href="{{ route('enviando') }}">
                                     <span>Contato</span>
                                 </a></li>
                             <li><span>|</span></li>

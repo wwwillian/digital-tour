@@ -1,33 +1,38 @@
 @extends('layouts.desconectado')
 
 @section('content')
-
+<section class="pagina-contato">
     <div class="container">
-        <section class="pagina-contato mt-3 pt-3">
-
+        <div class="row">
+        <div class="col-12">
             <div class="fundo-contato">
                 <span class="SpanFaqContatoCadastro">Contato</span>
             </div>
-
-            <form name="formcontato" id="contato" method="post">
-                <label for="nome">Nome</label>
-                <input class="form-control" type="text" name="nome" id="nome" placeholder="Nome" />
-
+            <form action="{{ route('postContact') }}" name="formcontato" id="contato" method="post">
+            @csrf
+            @include('messages')
+                <div class="form-group">
+                <label for="name">Nome</label>
+                <input class="form-control" type="text" name="name" id="nome" placeholder="Nome">
+                </div>
+                <div class="form-group">
                 <label for="email">E-mail</label>
-                <input class="form-control" type="email" name="email" id="email" placeholder="E-mail"  />
-
-                <label for="telefone">Celular</label>
-                <input type="number" class="form-control" placeholder="Celular" id="telefone" name="celular" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
-
+                <input class="form-control" type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="number" class="form-control" placeholder="telefone" id="celular" name="phone">
+                </div>
+                <div class="form-group">
                 <label for="mensagem">Mensagem</label>
-                <textarea class="form-control text" name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem!"
-                          ></textarea>
-
+                <textarea class="form-control text" name="bodyMessage" id="mensagem" placeholder="Escreva aqui sua mensagem!"></textarea>
+                </div>
                 <a href="/home">Voltar para home</a>
-
                 <button class="submit-form" onclick="return validar_form_contato()" >Enviar</button>
             </form>
-        </section>
-    </div>
 
+        </div>
+    </div>
+    </div>
+    </section>
 @stop
