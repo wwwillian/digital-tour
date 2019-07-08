@@ -1319,13 +1319,6 @@ a:link {
         border-color: white;
         color: gray;
     }
-
-    div.card.card-cascade.wider, .col-sm-4{
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-        margin-right: 0 !important;
-        margin-left: 0 !important;
-    }
     /* -------------------------//--------------------------------//---------------------------------- */
 }
 
