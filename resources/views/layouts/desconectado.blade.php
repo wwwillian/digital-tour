@@ -21,11 +21,12 @@
             ]
         ]) !!}
     </script>
+
 <body>
     <div class="conteudo">
         <header>
             <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
-                <a href="/"><img src="img/logorev1.png" width="60"></a>
+                <a href="/"><img src="../img/logorev1.png" width="60"></a>
                 <span href="/">Digital Tour</span>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -96,7 +97,7 @@
                                 </a></li>
                             <li><span>|</span></li>
                             <li><a href="{{ route('gallery') }}">
-                                    <span>Galeria</span>
+                                    <span>Mural</span>
                                 </a></li>
                             <li><span>|</span></li>
                             <li><a href="{{ route('amigos') }}">

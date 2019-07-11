@@ -13,7 +13,7 @@
         </form>
       </div>
     </div>
-      <div class="row">
+      <div class="row rowamizade">
 
 @foreach($friends as $friend)
 
@@ -24,14 +24,14 @@
 
                         @if($friend->image != null)
                         
-                        <img class="card-img-top" src="{{ url('storage/users/'.$friend->image) }}" alt="mdbCard image cap">
+                        <img class="card-img-top" src="{{ url('storage/users/'.$friend->image) }}" alt="mdbCard image cap" height="310px">
                         <a href="#!">
                             <div class="mask rgba-white-slight waves-effect waves-light"></div>
                         </a>
 
                         @else
 
-                        <img src="/img/user.jpg" class="card-img-top">
+                        <img src="/img/user.jpg" class="card-img-top" height="310px">
 
                         @endif
 

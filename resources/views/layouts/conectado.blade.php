@@ -19,15 +19,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
     <script>
-        window.laravel = {
-            !!json_encode([
-                'csrf' => csrf_token(),
-                'pusher' => [
-                    'key' => config('broadcasting.connections.pusher.key'),
-                    'cluster' => config('broadcasting.connections.pusher.options.cluster'),
-                ]
-            ]) !!
-        }
+        window.laravel = {!! json_encode([
+            'csrf' => csrf_token(),
+            'pusher' =>[
+                   'key' => config('broadcasting.connections.pusher.key'),
+                   'cluster' => config('broadcasting.connections.pusher.options.cluster'),
+            ]
+        ]) !!}
     </script>
 
 </head>
@@ -37,7 +35,7 @@
         <header>
             <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
 
-                <a href="/"><img src="img/logorev1.png" width="60"></a>
+                <a href="/"><img src="../img/logorev1.png" width="60"></a>
                 <span href="/">Digital Tour</span>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +47,7 @@
                             <a class="nav-link h5" href="{{ route('feed') }}">Feed</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link h5" href="{{ route('gallery') }}">Galeria</a>
+                            <a class="nav-link h5" href="{{ route('gallery') }}">Mural de fotos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link h5" href="{{ route('amigos') }}">Amigos</a>
@@ -93,7 +91,6 @@
         <main class="main">
             @yield('content')
         </main>
-        <!-- Footer -->
         <footer class="bg-dark mt-5 footer">
             <div class="container">
                 <div class="row">
@@ -113,7 +110,7 @@
                                 </a></li>
                             <li><span>|</span></li>
                             <li><a href="{{ route('gallery') }}">
-                                    <span>Galeria</span>
+                                    <span>Mural</span>
                                 </a></li>
                             <li><span>|</span></li>
                             <li><a href="{{ route('amigos') }}">

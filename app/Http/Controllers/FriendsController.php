@@ -20,7 +20,7 @@ class FriendsController extends Controller
      */
     public function index()
     {
-        $amigos = $this->usuario();
+        
         $friends = $this->amizades(Auth::user()->id);
         $posts = $this->seusPosts(Auth::user()->id);
 
@@ -29,9 +29,10 @@ class FriendsController extends Controller
             ->with('posts', $posts);
     }
 
-    public function usuario()
+    public function usuario($id)
     {
-        $amigos = User::all();
+        $amigos = User::where("user_id", "=", $id)
+        ->join('users', 'users.id', '=', 'friends.user_id');
 
         return $amigos;
     }
@@ -126,20 +127,38 @@ class FriendsController extends Controller
             ->with('gallery', $foto);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function posts($id)
     {
+        $posts = Posts::orderBy('posts.id', 'desc')
+                ->get();
+
+        return $posts;
+    }
+
+    
+    public function amigos($id)
+    {
+        $amigos = Friends::where("user_id", "=", $id)
+            ->join('users', 'users.id', '=', 'friends.friend_id')
+                ->get();
+        //$amigos = Friends::select('friend_id')->where("user_id", "=", $id)->get();
+        // ->user_id->get();
+ 
+        return $amigos;
+    }
+
+    public function show(Request $request, $id)
+    {
+        $botao = Friends::where("user_id", "=", $id)->get();
         $amigo = User::find($id);
-        $amigos = $this->amizades($id);
+        $posts = $this->posts(Auth::user()->id);
+        $amigos = $this->amigos($id);
 
         return view('perfil-amigos')
             ->with('amigo', $amigo)
-            ->with('amigos', $amigos);
+            ->with('amigos', $amigos)
+            ->with('botao', $botao)
+            ->with('posts', $posts);
     }
 
     public function amizades($id)
@@ -196,10 +215,15 @@ class FriendsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+    public function destroy($id) {
+        $friend = Friends::find($id);
+        if (isset($friend)) {
+            $friend->delete();
+            return redirect()->back();
+        }
+        return response('Amigo não encontrado', 404);
     }
+
     public function seusPostsUpdate(Request $request)
     {
 
