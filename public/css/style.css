@@ -13,7 +13,7 @@ input::-webkit-inner-spin-button {
     /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-input[type=number] {
+input[type="number"] {
     -moz-appearance: textfield;
 }
 
@@ -24,7 +24,12 @@ html {
 }
 
 header nav.navbar-transparente {
-    background-image: linear-gradient(to right, #4169E1, #00BFFF, #4169E1) !important;
+    background-image: linear-gradient(
+        to right,
+        #4169e1,
+        #00bfff,
+        #4169e1
+    ) !important;
     box-shadow: 1px 1px 5px black;
     height: 50px;
 }
@@ -41,7 +46,6 @@ section .esc {
     display: none;
 }
 
-
 /* barra de navegacao */
 
 .margin-top {
@@ -50,6 +54,9 @@ section .esc {
 
 .awesome {
     display: flex;
+}
+.fundo-text {
+    font-size: -webkit-xxx-large;
 }
 
 .img-fundo {
@@ -90,6 +97,17 @@ section .esc {
     position: relative;
     bottom: 110%;
     left: 0%;
+}
+
+div#heading1.card-header,
+div#heading2.card-header,
+div#heading3.card-header,
+div#heading4.card-header,
+div#heading5.card-header,
+div#heading6.card-header {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
 }
 
 .btn-capa {
@@ -166,15 +184,15 @@ section .esc {
 
 .img-fundo1 {
     height: 40em;
-    /* border: 10px solid black; */
     border-radius: 5px;
     display: flex;
     align-items: center;
     box-shadow: 1px 1px 10px black;
-    max-width: 850px;
     max-height: 340px;
     width: auto;
-    /* height: auto; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .textoperfil {
@@ -197,7 +215,6 @@ section .esc {
 .textoexperiencias {
     margin: 15px;
 }
-
 
 /* Border top iMG faleconosco */
 
@@ -231,7 +248,6 @@ section .esc {
     justify-content: space-between;
     font-size: 18px;
 }
-
 
 /* .pills-peach-gradient .nav-item .nav-link.active {
     background: linear-gradient(to right, #4169E1, #00BFFF);
@@ -283,7 +299,7 @@ section .esc {
 }
 
 .mimosa {
-    background-color: #F0C05A;
+    background-color: #f0c05a;
 }
 
 .fuchsia-rose-text {
@@ -295,16 +311,16 @@ section .esc {
 }
 
 .mimosa-text {
-    color: #F0C05A;
+    color: #f0c05a;
 }
 
 .list-inline-item .fas,
 .list-inline-item .far {
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .chili-pepper-text {
-    color: #9B1B30;
+    color: #9b1b30;
 }
 
 .collapse-content .fa.fa-heart:hover {
@@ -323,21 +339,20 @@ section .esc {
     z-index: 1030;
 }
 
-
 /*----------Página Contato----------*/
 
 .fundo-contato {
-    background-image: url('../img/contato.jpg');
+    background-image: url("../img/contato.jpg");
     height: 20vh;
     font-size: 32px;
     text-align: center;
-    width: 700px;
-    margin: 28px auto;
+    margin: 22px auto;
     background-color: rgb(255, 255, 255);
     margin-block-start: 25px;
     margin-block-end: 0px;
     border-radius: 10px 10px 0px 0px;
     color: white;
+    box-shadow: 1px 1px 10px black;
 }
 
 .text {
@@ -346,7 +361,6 @@ section .esc {
 
 #contato {
     padding: 20px 40px 40px 40px;
-    width: 700px;
     border-radius: 0px 0px 10px 10px;
     margin: 0px auto 25px;
     background-color: rgb(255, 255, 255);
@@ -355,7 +369,7 @@ section .esc {
 .login1 #contato {
     height: 255px;
     padding: 20px 40px 40px 40px;
-    width: 700px;
+
     border-radius: 0px 0px 10px 10px;
     margin: 0px auto 25px;
     background-color: rgb(255, 255, 255);
@@ -409,10 +423,10 @@ div .btnlogin {
     border: 1px solid #159ada;
     background-color: #159ada;
     cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.05);
 }
-
 
 /*-----------------Login-------------------------*/
 
@@ -420,25 +434,23 @@ div .btnlogin {
     margin-top: 80px;
 }
 
-
 /* .pagina-contato.margin-top.mt-5.pt-3 {
     margin-bottom: 130px;
 } */
 
 .fundo-login {
-    background-image: url('../img/login1.jpg');
+    background-image: url("../img/contato.jpg");
     height: 20vh;
     font-size: 32px;
     text-align: center;
-    width: 700px;
     margin: 28px auto;
     background-color: rgb(255, 255, 255);
     margin-block-start: 25px;
     margin-block-end: 0px;
     border-radius: 10px 10px 0px 0px;
     color: white;
+    box-shadow: 1px 1px 10px black;
 }
-
 
 /*==================Home text area ==================*/
 
@@ -526,7 +538,6 @@ div .btnlogin {
     display: none;
 }
 
-
 /*--------------Pagina de cadastro--------------*/
 
 .caixa {
@@ -551,7 +562,7 @@ div .btnlogin {
 
 .formulario {
     border-radius: 10px;
-    background-color: #FFF;
+    background-color: #fff;
     display: block;
 }
 
@@ -595,7 +606,8 @@ form h1 {
     border: 1px solid #159ada;
     background-color: #159ada;
     cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.05);
 }
 
@@ -620,18 +632,16 @@ form h1 {
     margin: 35px 100px 20px;
 }
 
-
 /*
 .oucadastro{
   margin: 1px;
 } */
 
-
 /* -------------FAQ----------------- */
 
-.caixa2 {
+/* .caixa2 {
     width: 500px;
-}
+} */
 
 .btn-link {
     color: grey;
@@ -650,12 +660,7 @@ form h1 {
     color: black;
 }
 
-#accordion {
-    width: 700px;
-}
-
 .caixa2 {
-    width: 700px;
     margin: 0px auto 25px;
     margin-top: 80px;
     margin-bottom: -60px;
@@ -665,7 +670,7 @@ form h1 {
     color: rgb(26, 26, 26);
     float: left;
     text-decoration: none;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 .btn-link:hover {
@@ -675,7 +680,7 @@ form h1 {
 }
 
 .fundo-faq {
-    background-image: url('../img/contato.jpg');
+    background-image: url("../img/contato.jpg");
     height: 25vh;
     font-size: 32px;
     text-align: center;
@@ -686,8 +691,8 @@ form h1 {
     margin-block-end: 0px;
     border-radius: 10px 10px 0px 0px;
     color: white;
+    box-shadow: 1px 1px 10px black;
 }
-
 
 /* paginas com essa formatação */
 
@@ -697,7 +702,6 @@ form h1 {
     color: white;
     text-shadow: 2px 2px black;
 }
-
 
 /* ====================Index================ */
 
@@ -716,7 +720,6 @@ ul {
     margin: 4px;
 }
 
-
 /*=======================Profile===================*/
 
 #contato .texto textarea {
@@ -724,9 +727,7 @@ ul {
     width: 400px;
 }
 
-
 /*===================Nav outras paginas externas===================== */
-
 
 /* .collapse .navop{
 
@@ -749,7 +750,6 @@ ul {
 
 } */
 
-
 /* ====================Nav Index (menu hamburguer)==================== */
 
 .navbar span {
@@ -757,14 +757,12 @@ ul {
     font-weight: bold;
 }
 
-
 /* ++++++++++++++++++Sobre Nós+++++++++++++++++++ */
 
 .navbar-light .navbar-nav .nav-link {
     color: gray;
     font-weight: bold;
 }
-
 
 /* ***********Perfil do Usuário*********** */
 
@@ -776,10 +774,9 @@ a:link {
     text-decoration: none;
 }
 
-
 /* ----------Media Queries---------- */
 
-@media (min-width:986px) and (max-width: 3200px) {
+@media (min-width: 986px) and (max-width: 3200px) {
     .navb .navb1 ul li {
         display: none !important;
     }
@@ -834,7 +831,7 @@ a:link {
     .ul-valores {
         display: inline-block;
     }
-    .col-lg-12{
+    .col-lg-12 {
         margin-right: 0;
         margin-left: 0;
         padding-left: 0;
@@ -845,7 +842,7 @@ a:link {
         margin-bottom: 2em;
     }
 
-    div.card.card-cascade.wider hr{
+    div.card.card-cascade.wider hr {
         display: none;
     }
     .botao-artigo {
@@ -855,11 +852,11 @@ a:link {
         border-color: white;
         color: gray;
     }
-    .fundo-login{
+    .fundo-login {
         width: 100%;
         padding-top: 0 !important;
     }
-    .pagina-contato{
+    .pagina-contato {
         margin-top: 0 !important;
         padding-top: 0 !important;
         padding-right: 0 !important;
@@ -867,32 +864,32 @@ a:link {
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
-    form#contato.login{
+    form#contato.login {
         width: 100%;
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
-        margin-left: 0 !important;  
+        margin-left: 0 !important;
         height: 25em;
     }
-    button.submit-form.btnlogin{
+    button.submit-form.btnlogin {
         margin: 0.1em;
         bottom: 0;
     }
-    .incadastro{
+    .incadastro {
         width: 100%;
         margin-left: 0;
     }
-    .btn-register{
+    .btn-register {
         margin-left: 0 !important;
     }
 }
 
-@media (min-width:768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .img-fundo1 {
         height: 350px;
         width: 720px;
-}                                           
+    }
     #accordion {
         width: 700px;
     }
@@ -904,7 +901,7 @@ a:link {
         flex-direction: column;
         text-align: center;
     }
-    .col-lg-12{
+    .col-lg-12 {
         margin-right: 0;
         margin-left: 0;
         padding-left: 0;
@@ -915,7 +912,7 @@ a:link {
         margin-bottom: 2em;
     }
 
-    div.card.card-cascade.wider hr{
+    div.card.card-cascade.wider hr {
         display: none;
     }
     .botao-artigo {
@@ -925,11 +922,11 @@ a:link {
         border-color: white;
         color: gray;
     }
-    .fundo-login{
+    .fundo-login {
         width: 100%;
         padding-top: 0 !important;
     }
-    .pagina-contato{
+    .pagina-contato {
         margin-top: 0 !important;
         padding-top: 0 !important;
         padding-right: 0 !important;
@@ -937,31 +934,31 @@ a:link {
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
-    form#contato.login{
+    form#contato.login {
         width: 100%;
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
-        margin-left: 0 !important;  
+        margin-left: 0 !important;
         height: 25em;
     }
-    button.submit-form.btnlogin{
+    button.submit-form.btnlogin {
         margin: 0.1em;
         bottom: 0;
     }
-    .incadastro{
+    .incadastro {
         width: 100%;
         margin-left: 0;
     }
-    .btn-register{
+    .btn-register {
         margin-left: 0 !important;
     }
-    .rowamizade{
+    .rowamizade {
         display: contents;
     }
 }
 
-@media (min-width:576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
     .img-fundo1 {
         height: 400px;
         width: 570px;
@@ -987,7 +984,7 @@ a:link {
         text-align: center;
         margin: 0;
     }
-    .col-lg-12{
+    .col-lg-12 {
         margin-right: 0;
         margin-left: 0;
         padding-left: 0;
@@ -998,7 +995,7 @@ a:link {
         margin-bottom: 2em;
     }
 
-    div.card.card-cascade.wider hr{
+    div.card.card-cascade.wider hr {
         display: none;
     }
     .botao-artigo {
@@ -1008,18 +1005,19 @@ a:link {
         border-color: white;
         color: gray;
     }
-    div.card.card-cascade.wider, .col-sm-4{
+    div.card.card-cascade.wider,
+    .col-sm-4 {
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
-    .fundo-login{
+    .fundo-login {
         width: 100%;
         padding-top: 0 !important;
         margin-top: 0 !important;
     }
-    .pagina-contato{
+    .pagina-contato {
         margin-top: 0 !important;
         padding-top: 0 !important;
         padding-right: 0 !important;
@@ -1027,31 +1025,31 @@ a:link {
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
-    form#contato.login{
+    form#contato.login {
         width: 100%;
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
-        margin-left: 0 !important;  
+        margin-left: 0 !important;
         height: 25em;
     }
-    button.submit-form.btnlogin{
+    button.submit-form.btnlogin {
         margin: 0.1em;
         bottom: 0;
     }
-    .incadastro{
+    .incadastro {
         width: 100%;
         margin-left: 0;
     }
-    .btn-register{
+    .btn-register {
         margin-left: 0 !important;
     }
-    .rowamizade{
+    .rowamizade {
         display: contents;
     }
 }
 
-@media (min-width:420px) and (max-width: 576px) {
+@media (min-width: 420px) and (max-width: 576px) {
     .img-fundo1 {
         height: 350px;
         width: 470px;
@@ -1074,7 +1072,7 @@ a:link {
         text-align: center;
         margin: 0;
     }
-    .col-lg-12{
+    .col-lg-12 {
         margin-right: 0;
         margin-left: 0;
         padding-left: 0;
@@ -1085,15 +1083,14 @@ a:link {
         margin-bottom: 2em;
     }
 
-    div.card.card-cascade.wider hr{
+    div.card.card-cascade.wider hr {
         display: none;
     }
-    .caixa2{
+    .caixa2 {
         margin-top: 0;
         width: 100%;
         display: flex;
         justify-content: center;
-        
     }
     .botao-artigo {
         background-color: white;
@@ -1102,17 +1099,18 @@ a:link {
         border-color: white;
         color: gray;
     }
-    div.card.card-cascade.wider, .col-sm-4{
+    div.card.card-cascade.wider,
+    .col-sm-4 {
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
-    .fundo-login{
+    .fundo-login {
         width: 100%;
         padding-top: 0 !important;
     }
-    .pagina-contato{
+    .pagina-contato {
         margin-top: 0 !important;
         padding-top: 0 !important;
         padding-right: 0 !important;
@@ -1120,31 +1118,31 @@ a:link {
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
-    form#contato.login{
+    form#contato.login {
         width: 100%;
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
-        margin-left: 0 !important;  
+        margin-left: 0 !important;
         height: 25em;
     }
-    button.submit-form.btnlogin{
+    button.submit-form.btnlogin {
         margin: 0.1em;
         bottom: 0;
     }
-    .incadastro{
+    .incadastro {
         width: 100%;
         margin-left: 0;
     }
-    .btn-register{
+    .btn-register {
         margin-left: 0 !important;
     }
-    .rowamizade{
+    .rowamizade {
         display: contents;
     }
 }
 
-@media (min-width:260px) and (max-width:420px) {
+@media (min-width: 260px) and (max-width: 420px) {
     #accordion {
         width: 290px;
     }
@@ -1181,7 +1179,7 @@ a:link {
         margin-right: 0.6em;
     }
 
-    .col-lg-12{
+    .col-lg-12 {
         margin-right: 0;
         margin-left: 0;
         padding-left: 0;
@@ -1192,7 +1190,7 @@ a:link {
         margin-bottom: 2em;
     }
 
-    div.card.card-cascade.wider hr{
+    div.card.card-cascade.wider hr {
         display: none;
     }
 
@@ -1211,7 +1209,7 @@ a:link {
         flex-direction: column;
         text-align: center;
     }
-    .caixa2{
+    .caixa2 {
         margin-top: 0;
         width: 100%;
         display: flex;
@@ -1225,17 +1223,18 @@ a:link {
         border-color: white;
         color: gray;
     }
-    div.card.card-cascade.wider, .col-sm-4{
+    div.card.card-cascade.wider,
+    .col-sm-4 {
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
-    .fundo-login{
+    .fundo-login {
         width: 100%;
         padding-top: 0 !important;
     }
-    .pagina-contato{
+    .pagina-contato {
         margin-top: 0 !important;
         padding-top: 0 !important;
         padding-right: 0 !important;
@@ -1243,29 +1242,29 @@ a:link {
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
-    form#contato.login{
+    form#contato.login {
         width: 100%;
         padding-right: 0 !important;
         padding-left: 0 !important;
         margin-right: 0 !important;
-        margin-left: 0 !important;  
+        margin-left: 0 !important;
         height: 25em;
     }
-    button.submit-form.btnlogin{
+    button.submit-form.btnlogin {
         margin: 0.1em;
         bottom: 0;
     }
-    .incadastro{
+    .incadastro {
         width: 100%;
     }
-    .incadastro{
+    .incadastro {
         width: 100%;
         margin-left: 0;
     }
-    .btn-register{
+    .btn-register {
         margin-left: 0 !important;
     }
-    .rowamizade{
+    .rowamizade {
         display: contents;
     }
 }
@@ -1282,7 +1281,7 @@ a:link {
         /* background: white; */
         -webkit-transition: width 2s, height 2s;
         /* ------For Safari 3.1 to 6.0------ */
-        transition: all .3s ease-in;
+        transition: all 0.3s ease-in;
         margin: 10px;
         /* box-shadow: 1px 1px 9px black; */
         /* border: 4px solid white; */
@@ -1331,10 +1330,9 @@ a:link {
         border-color: white;
         color: gray;
     }
-  
+
     /* -------------------------//--------------------------------//---------------------------------- */
 }
-
 
 /*amigos*/
 
@@ -1360,7 +1358,6 @@ a:link {
     /* Remove this if you don't want the 3D effect */
 }
 
-
 /* This container is needed to position the front and back side */
 
 .flip-card-inner {
@@ -1372,13 +1369,11 @@ a:link {
     transform-style: preserve-3d;
 }
 
-
 /* Do an horizontal flip when you move the mouse over the flip box container */
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
-
 
 /* Position the front and back side */
 
@@ -1390,14 +1385,12 @@ a:link {
     backface-visibility: hidden;
 }
 
-
 /* Style the front side (fallback if image is missing) */
 
 .flip-card-front {
     background-color: #bbb;
     color: black;
 }
-
 
 /* Style the back side */
 
@@ -1428,14 +1421,14 @@ a:link {
     transition: width 0.4s linear;
 }
 
-.searchbar:hover>.search_input {
+.searchbar:hover > .search_input {
     padding: 0 10px;
     width: 450px;
     caret-color: rgb(0, 38, 255);
     transition: width 0.4s linear;
 }
 
-.searchbar:hover>.search_icon {
+.searchbar:hover > .search_icon {
     background: white;
     color: rgb(0, 38, 255);
 }
@@ -1450,7 +1443,6 @@ a:link {
     border-radius: 50%;
     color: white;
 }
-
 
 /*fim amigos*/
 
@@ -1496,14 +1488,15 @@ div .navop li a:hover {
 }
 
 .btn-floating {
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+        0 4px 15px 0 rgba(0, 0, 0, 0.15);
     width: 47px;
     height: 47px;
     position: relative;
     z-index: 1;
     vertical-align: middle;
     overflow: hidden;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     margin: 10px;
     border-radius: 50%;
     padding: 0;
@@ -1526,11 +1519,11 @@ a:not([href]):not([tabindex]) {
 }
 
 .purple-gradient {
-    background-color: #027ba3!important;
+    background-color: #027ba3 !important;
 }
 
 .float-left {
-    float: left!important;
+    float: left !important;
 }
 
 .file-field .file-path-wrapper {
@@ -1544,7 +1537,7 @@ a:not([href]):not([tabindex]) {
     margin-top: 1.5rem;
 }
 
-.file-field input[type=file] {
+.file-field input[type="file"] {
     position: absolute;
     top: 0;
     right: 0;
@@ -1570,18 +1563,19 @@ a:not([href]):not([tabindex]) {
     border: 1px solid #159ada;
     background-color: #159ada;
     cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.05);
 }
 
 .fa,
 .fas {
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
-.md-form input[type=text] {
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+.md-form input[type="text"] {
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     outline: 0;
     box-shadow: none;
     border: none;
@@ -1596,7 +1590,8 @@ a:not([href]):not([tabindex]) {
 .btnMostrarEsconder1:hover {
     background-color: #ffffff;
     cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.05);
 }
 
@@ -1626,26 +1621,27 @@ div.card.card-cascade.wider {
     padding: 1.5em;
 }
 
-h4{
+h4 {
     margin: 0;
 }
 
-.marginartigo{
+.marginartigo {
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
-.btnlogin{
+.btnlogin {
     display: inline-block;
     position: relative;
-    bottom: 7em;
+    bottom: 1em;
+    right: 1em;
 }
 
-.btn-register{
+.btn-register {
     margin-left: 33em;
 }
 
-.btn-submit{
+.btn-submit {
     float: none;
     display: inline-block;
     position: relative;
@@ -1653,7 +1649,7 @@ h4{
     left: 20px;
 }
 
-.conteudofotos{
+.conteudofotos {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1662,15 +1658,14 @@ h4{
 .conteudofotos a {
     display: block;
     width: 20%;
-    
 }
 
 .conteudofotos a img {
-    width:100%;
+    width: 100%;
     height: 190px;
 }
 
-.over{
+.over {
     width: 100%;
     height: 300px;
     overflow: auto;

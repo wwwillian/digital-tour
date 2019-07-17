@@ -23,9 +23,9 @@ class User extends Authenticatable
      * @var array
      */
     protected $primaryKey = 'id';
-    
+
     protected $fillable = [
-        'name', 'email', 'password', 'image', 'cupphoto', 'date', 'gender', 'maritalstatus', 'location', 'mobilenumber', 'facebook', 'instagram', 'skype', 'experience'
+        'name', 'email', 'password', 'image', 'date', 'gender', 'location', 'facebook', 'instagram', 'skype', 'experience', 'cupphoto', 'maritalstatus', 'mobilenumber'
     ];
 
     /**
@@ -48,32 +48,31 @@ class User extends Authenticatable
 
     public function messages()
     {
-        return $this -> hasMany(Message::class);
+        return $this->hasMany(Message::class);
     }
 
     public function posts()
     {
-        return $this -> hasMany(Posts::class);
+        return $this->hasMany(Posts::class);
     }
 
     public function comments()
     {
-        return $this -> hasMany(Comments::class);
+        return $this->hasMany(Comments::class);
     }
 
     public function gallerys()
     {
-        return $this -> hasMany(Gallerys::class);
+        return $this->hasMany(Gallerys::class);
     }
 
     public function videos()
     {
-        return $this -> hasMany(Videos::class);
+        return $this->hasMany(Videos::class);
     }
 
     public function Friends()
     {
-        return $this -> hasMany(Friends::class);
+        return $this->hasMany(Friends::class);
     }
-
 }

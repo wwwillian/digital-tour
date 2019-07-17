@@ -2,11 +2,12 @@
 
 @section('content')
 
-<div class="container mt-5 img-fundo1" style="background-image: url('img/viagem1.jpg')"></div>
+<div class="container mt-5 img-fundo1 d-flex align-items-baseline justify-content-center" style="background-image: url('img/viagem1.jpg')">
+    <h1 class="mt-2 fundo-text">Quem Somos</h1>
+</div>
 <div class="container mt-5 quemsomos">
     <div class="row">
-        <div class="col-lg-9 col-md-10 mx-auto quemsomos">
-            <h1 id="quemsomos">Quem somos? Somos assim...</h1>
+        <div class="quemsomos">
             <p>Somos um grupo de amigos, <strong>apaixonados por viajar e conhecer lugares e pessoas novas</strong>.
                 Amamos a programação, tecnologia e inovar. Nosso propósito é ajudar as pessoas a terem
                 <strong>experiências únicas e momentos inesquecíveis</strong>. <strong>Queremos ajudar você a realizar o
@@ -32,10 +33,11 @@
                 <div class="mt-5 mb-5 divvalores">
                     <h2 class="h6 text-center">Valores:</h2>
                     <ul class="ul-valores">
-                        <li>Satisfação do cliente.</li>
-                        <li>Valorização e respeito às pessoas.</li>
-                        <li>Responsabilidade social.</li>
-                        <li>Respeito ao Meio Ambiente.</li>
+
+                        <li><i class="fas fa-thumbs-up"></i> Satisfação do cliente.</li>
+                        <li><i class="fas fa-hands-helping"></i> Valorização e respeito às pessoas.</li>
+                        <li><i class="fas fa-hand-peace"></i> Responsabilidade social.</li>
+                        <li><i class="fas fa-feather-alt"></i> Respeito ao Meio Ambiente.</li>
                     </ul>
                 </div>
             </div>

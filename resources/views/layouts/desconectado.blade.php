@@ -9,17 +9,22 @@
     <title>{{ config('app.name', 'Digital-tour') }}</title>
     <link rel="icon" href="{{ asset('img/logorev1.png')}}">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
 
     <script>
-        window.laravel = {!! json_encode([
-            'csrf' => csrf_token(),
-            'pusher' =>[
-                   'key' => config('broadcasting.connections.pusher.key'),
-                   'cluster' => config('broadcasting.connections.pusher.options.cluster'),
-            ]
-        ]) !!}
+        window.laravel = {
+            !!json_encode([
+                'csrf' => csrf_token(),
+                'pusher' => [
+                    'key' => config('broadcasting.connections.pusher.key'),
+                    'cluster' => config('broadcasting.connections.pusher.options.cluster'),
+                ]
+            ]) !!
+        }
     </script>
 
 <body>
@@ -84,29 +89,6 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-10 mx-auto text-center mt-4 map">
                         <ul class="list-inline text-center">
-                            <li><a href="{{ route('feed') }}">
-                                    <span>Feed</span>
-                                </a></li>
-                            <li><span>|</span></li>
-                            <li><a href="{{ route('perfil') }}">
-                                    <span>Perfil</span>
-                                </a></li>
-                            <li><span>|</span></li>
-                            <li><a href="{{ route('profile') }}">
-                                    <span>Editar Perfil</span>
-                                </a></li>
-                            <li><span>|</span></li>
-                            <li><a href="{{ route('gallery') }}">
-                                    <span>Mural</span>
-                                </a></li>
-                            <li><span>|</span></li>
-                            <li><a href="{{ route('amigos') }}">
-                                    <span>Amigos</span>
-                                </a></li>
-                            <li><span>|</span></li>
-                            <li><a href="{{ route('chat') }}">
-                                    <span>Chat</span>
-                            <li><span>|</span></li>
                             <li><a href="{{ route('quemsomos') }}">
                                     <span>Quem somos</span>
                                 </a></li>

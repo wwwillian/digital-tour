@@ -55,8 +55,6 @@ Route::get('/cadastro', 'PaginasController@mostrarCadastro')->name('cadastro');
 
 Route::get('/faq', 'PaginasController@mostrarFaq')->name('faq');
 
-//Route::get('/contato', 'PaginasController@mostrarContato')->name('contato');
-
 Route::get('/contato', 'MailController@index')->name('enviando');
 Route::post('/contato', 'MailController@postContact')->name('postContact');
 

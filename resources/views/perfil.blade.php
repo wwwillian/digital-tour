@@ -7,8 +7,8 @@
 <div class="">
     <div class="col-lg-12 col-md-12 col-xl-12">
         <div class="awesome user width-cover mt-5">
-            @if(auth()->user()->cupPhoto != null)
-                <div class="container img-fundo" id="btnMostrarEsconder" style="background-image: url({{ url('storage/usersfundo/'.auth()->user()->cupPhoto) }})">
+            @if(auth()->user()->cupphoto != null)
+                <div class="container img-fundo" id="btnMostrarEsconder" style="background-image: url({{ url('storage/usersfundo/'.auth()->user()->cupphoto) }})">
                 </div>
             @else
                 <div class="container img-fundo" id="btnMostrarEsconder" style="background-image: url(/img/imagenopaisagem.jpg)">
@@ -97,7 +97,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Status Civil</th>
-                                                                <td>{{ auth()->user()->maritalStatus  }}</td>
+                                                                <td>{{ auth()->user()->maritalstatus  }}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Localizacao</th>
@@ -118,7 +118,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Celular</th>
-                                                                <td>{{ auth()->user()->mobileNumber  }}</td>
+                                                                <td>{{ auth()->user()->mobilenumber  }}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Facebook</th>
