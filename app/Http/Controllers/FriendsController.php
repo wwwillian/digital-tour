@@ -13,17 +13,10 @@ use Illuminate\Support\Facades\Auth;
 
 class FriendsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        
         $friends = $this->amizades(Auth::user()->id);
         $posts = $this->seusPosts(Auth::user()->id);
-
         return view('perfil')
             ->with('friends', $friends)
             ->with('posts', $posts);
@@ -32,37 +25,24 @@ class FriendsController extends Controller
     public function usuario($id)
     {
         $amigos = User::where("user_id", "=", $id)
-        ->join('users', 'users.id', '=', 'friends.user_id');
-
+            ->join('users', 'users.id', '=', 'friends.user_id');
         return $amigos;
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function seusPosts($id)
     {
         $posts = Posts::orderBy('posts.id', 'desc')
-        ->where("user_id", "=", $id)
+            ->where("user_id", "=", $id)
             ->join('users', 'users.id', '=', 'posts.user_id')
-                ->get();
-
+            ->get();
         return $posts;
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $data = $request->all();
         $user = auth()->user();
-        foreach(Posts::all() as $key => $value){
+        foreach (Posts::all() as $key => $value) {
             $posts = $value;
         }
 
@@ -71,7 +51,7 @@ class FriendsController extends Controller
             'comments'
         ]);
 
-        if(Input::file('photo')) {
+        if (Input::file('photo')) {
             $photo = Input::file('photo');
             $extensao = $photo->getClientOriginalExtension();
             if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
@@ -82,13 +62,13 @@ class FriendsController extends Controller
         }
 
         $gallerys = new Gallerys;
-        $gallerys->comments= $request->input('comments');
+        $gallerys->comments = $request->input('comments');
         $gallerys->photo = '';
         $gallerys->user_id = $user->id;
 
         $gallerys->save();
 
-        if($request->hasFile('photo') && $request->file('photo')->isValid()) {
+        if ($request->hasFile('photo') && $request->file('photo')->isValid()) {
 
             if ($user->photo && Storage::exists("user/{$gallerys->photo}"))
                 Storage::delete("photo/{$gallerys->photo}");
@@ -114,12 +94,13 @@ class FriendsController extends Controller
             ->with('success', 'Atualizado com Sucesso!');
     }
 
-    public function exibirFotos(){
+    public function exibirFotos()
+    {
 
         $foto = Gallerys::all();
 
-        foreach ($foto as $key => $value){
-            if($value->user_id == auth()->user()->id){
+        foreach ($foto as $key => $value) {
+            if ($value->user_id == auth()->user()->id) {
                 $foto = $value->user_id;
             }
         }
@@ -130,30 +111,26 @@ class FriendsController extends Controller
     public function posts($id)
     {
         $posts = Posts::orderBy('posts.id', 'desc')
-                ->get();
+            ->get();
 
         return $posts;
     }
 
-    
+
     public function amigos($id)
     {
         $amigos = Friends::where("user_id", "=", $id)
             ->join('users', 'users.id', '=', 'friends.friend_id')
-                ->get();
-        //$amigos = Friends::select('friend_id')->where("user_id", "=", $id)->get();
-        // ->user_id->get();
- 
+            ->get();
         return $amigos;
     }
 
-    public function show(Request $request, $id)
+    public function show($id)
     {
         $botao = Friends::where("user_id", "=", $id)->get();
         $amigo = User::find($id);
         $posts = $this->posts(Auth::user()->id);
         $amigos = $this->amigos($id);
-
         return view('perfil-amigos')
             ->with('amigo', $amigo)
             ->with('amigos', $amigos)
@@ -165,7 +142,7 @@ class FriendsController extends Controller
     {
         $friends = Friends::where("user_id", "=", $id)
             ->join('users', 'users.id', '=', 'friends.friend_id')
-                ->get();
+            ->get();
 
         return $friends;
     }
@@ -215,7 +192,8 @@ class FriendsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id) {
+    public function destroy($id)
+    {
         $friend = Friends::find($id);
         if (isset($friend)) {
             $friend->delete();
@@ -236,7 +214,7 @@ class FriendsController extends Controller
             'photo'
         ]);
 
-        if(Input::file('photo')) {
+        if (Input::file('photo')) {
             $photo = Input::file('photo');
             $extensao = $photo->getClientOriginalExtension();
             if ($extensao != 'jpg' && $extensao != 'png' && $extensao != 'jpeg') {
@@ -254,21 +232,19 @@ class FriendsController extends Controller
 
         $post->save();
 
-            if(Input::file('photo'))
-             {
-                 $name = kebab_case($request->name).uniqid($post->id);
-                 $extension = $request->photo->extension();
-                 $nameImage = "{$name}.$extension";
-                 $data['photo'] = $nameImage;
+        if (Input::file('photo')) {
+            $name = kebab_case($request->name) . uniqid($post->id);
+            $extension = $request->photo->extension();
+            $nameImage = "{$name}.$extension";
+            $data['photo'] = $nameImage;
 
-                 $upload = $request->photo->storeAs('posts', $nameImage);
+            $upload = $request->photo->storeAs('posts', $nameImage);
 
-                 if(!$upload)
-                     return redirect()
-                         ->route('profile')
-                         ->with('erro', 'Falha ao fazer o upload da imagem fundo');
-
-            }
+            if (!$upload)
+                return redirect()
+                    ->route('profile')
+                    ->with('erro', 'Falha ao fazer o upload da imagem fundo');
+        }
         $post->update($data);
 
         return redirect()

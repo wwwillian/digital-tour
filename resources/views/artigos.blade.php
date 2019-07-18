@@ -1,14 +1,14 @@
 @extends('layouts.desconectado')
-@section('content')
 
-<div class="conteiner">
-    <div class="marginartigo col-md-10">
-        <div class="card mb-3 offset-md-2" style="max-width: 750px;">
+@section('content')
+<div class="container">
+    <div class="marginartigo">
+        <div class="card mb-3">
             <div class="row no-gutters">
                 <div class="col-md-4 col-lg-4">
                     <img src="../img/gastro.jpg" class="card-img" alt="Gastronomia">
                 </div>
-                <div>
+                <div class="col-md-8 col-lg-8">
                     <div class="card-body">
                         <a href="#" target="_blank">
                             <h5 class="card-title">Gastronomia Brasileira</h5>
@@ -28,12 +28,12 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-3 offset-md-2" style="max-width: 750px;">
+        <div class="card mb-3">
             <div class="row no-gutters">
                 <div class="col-md-4 col-lg-4">
                     <img src="../img/photo6.jpg" class="card-img" alt="Arte">
                 </div>
-                <div>
+                <div class="col-md-8 col-lg-8">
                     <div class="card-body">
                         <a href="#" target="_blank">
                             <h5 class="card-title">Arte</h5>
@@ -58,12 +58,12 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-3 offset-md-2" style="max-width: 750px;">
+        <div class="card mb-3 ">
             <div class="row no-gutters">
                 <div class="col-md-4 col-lg-4">
                     <img src="../img/stadium.jpg" class="card-img" alt="E-sports">
                 </div>
-                <div>
+                <div class="col-md-8 col-lg-8">
                     <div class="card-body">
                         <a href="#" target="_blank">
                             <h5 class="card-title">E-sports</h5>
@@ -119,12 +119,12 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-3 offset-md-2" style="max-width: 750px;">
+        <div class="card mb-3 ">
             <div class="row no-gutters">
                 <div class="col-md-4 col-lg-4">
                     <img src="../img/ferias.jpeg" class="card-img" alt="...">
                 </div>
-                <div>
+                <div class="col-md-8 col-lg-8">
                     <div class="card-body">
                         <a href="#" target="_blank">
                             <h5 class="card-title">Viagens</h5>
@@ -191,12 +191,12 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-3 offset-md-2" style="max-width: 750px;">
+        <div class="card mb-3 ">
             <div class="row no-gutters">
                 <div class="col-md-4 col-lg-4">
                     <img src="../img/musica.jpg" class="card-img" alt="...">
                 </div>
-                <div>
+                <div class="col-md-8 col-lg-8">
                     <div class="card-body">
                         <a href="#" target="_blank">
                             <h5 class="card-title">Música</h5>
@@ -217,12 +217,12 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-3 offset-md-2" style="max-width: 750px;">
+        <div class="card mb-3 ">
             <div class="row no-gutters">
                 <div class="col-md-4 col-lg-4">
                     <img src="../img/cutulra.jpg" class="card-img" alt="...">
                 </div>
-                <div>
+                <div class="col-md-8 col-lg-8">
                     <div class="card-body">
                         <a href="#" target="_blank">
                             <h5 class="card-title">Cultura Brasileira</h5>

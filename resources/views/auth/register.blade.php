@@ -54,10 +54,11 @@
 
                 </div>
             </div>
-            <div class="form-group mb-5 mr-3">
+            <div class="form-group">
                 <button type="submit" class="submit-form" onclick="return validar_form_cadastro()">
                     {{ __('Register') }}
                 </button>
+                <div class="clearfix"></div>
             </div>
         </form>
     </section>

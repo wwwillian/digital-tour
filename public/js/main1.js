@@ -15,22 +15,20 @@ $(document).ready(function(e) {
 });
 
 $(document).ready(function() {
-
-    $('.artigo').hide();
-    $('.botao-artigo').click(function(e) {
-
-        $(this).parent().next('.artigo').toggle('d-none');
-
-
+    $(".artigo").hide();
+    $(".botao-artigo").click(function(e) {
+        $(this)
+            .parent()
+            .next(".artigo")
+            .toggle("d-none");
     });
-
 });
 
 $(document).ready(function() {
-    baguetteBox.run('.tz-gallery', {
+    baguetteBox.run(".tz-gallery", {
         // Custom options
     });
-})
+});
 
 function validar_form_contato() {
     var nome = formcontato.nome.value;

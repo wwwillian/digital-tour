@@ -1,7 +1,6 @@
 @extends('layouts.desconectado')
 
 @section('content')
-
 <div class="caixa2 container">
     <div id="accordion">
         <div class="fundo-faq">
@@ -96,5 +95,4 @@
 <br>
 <br>
 <br>
-
 @stop

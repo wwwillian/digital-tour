@@ -19,13 +19,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
     <script>
-        window.laravel = {!! json_encode([
-            'csrf' => csrf_token(),
-            'pusher' =>[
-                   'key' => config('broadcasting.connections.pusher.key'),
-                   'cluster' => config('broadcasting.connections.pusher.options.cluster'),
-            ]
-        ]) !!}
+        window.laravel = {
+            !!json_encode([
+                'csrf' => csrf_token(),
+                'pusher' => [
+                    'key' => config('broadcasting.connections.pusher.key'),
+                    'cluster' => config('broadcasting.connections.pusher.options.cluster'),
+                ]
+            ]) !!
+        }
     </script>
 
 </head>
@@ -96,30 +98,6 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-10 mx-auto text-center mt-4 map">
                         <ul class="list-inline text-center">
-
-                            <li><a href="{{ route('feed') }}">
-                                    <span>Feed</span>
-                                </a></li>
-                            <li><span>|</span></li>
-                            <li><a href="{{ route('perfil') }}">
-                                    <span>Perfil</span>
-                                </a></li>
-                            <li><span>|</span></li>
-                            <li><a href="{{ route('profile') }}">
-                                    <span>Editar Perfil</span>
-                                </a></li>
-                            <li><span>|</span></li>
-                            <li><a href="{{ route('gallery') }}">
-                                    <span>Mural</span>
-                                </a></li>
-                            <li><span>|</span></li>
-                            <li><a href="{{ route('amigos') }}">
-                                    <span>Amigos</span>
-                                </a></li>
-                            <li><span>|</span></li>
-                            <li><a href="{{ route('chat') }}">
-                                    <span>Chat</span>
-                            <li><span> | </span></li>
                             <li><a href="{{ route('quemsomos') }}">
                                     <span>Quem somos</span>
                                 </a></li>

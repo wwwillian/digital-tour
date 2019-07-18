@@ -27,10 +27,11 @@
                         <label for="mensagem">Mensagem</label>
                         <textarea class="form-control text" name="bodyMessage" id="mensagem" placeholder="Escreva aqui sua mensagem!"></textarea>
                     </div>
-                    <a href="/home">Voltar para home</a>
-                    <button class="submit-form" onclick="return validar_form_contato()">Enviar</button>
+                    <div class="form-group">
+                        <a href="/home" class="ml-3">Voltar para home</a>
+                        <button class="submit-form mr-3" onclick="return validar_form_contato()">Enviar</button>
+                    </div>
                 </form>
-
             </div>
         </div>
     </div>
