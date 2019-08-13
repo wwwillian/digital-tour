@@ -10,9 +10,9 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-                        <a href="#" target="_blank">
-                            <h5 class="card-title">Gastronomia Brasileira</h5>
-                        </a>
+
+                        <h5 class="card-title">Gastronomia Brasileira</h5>
+
                         <p class="card-text">Culinária brasileira e sua origem, muitos dos componentes das receitas</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>
@@ -35,9 +35,9 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-                        <a href="#" target="_blank">
-                            <h5 class="card-title">Arte</h5>
-                        </a>
+
+                        <h5 class="card-title">Arte</h5>
+
                         <p class="card-text">A importância da arte na vida do homem, seu meio artístico e cutural</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>
@@ -65,9 +65,9 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-                        <a href="#" target="_blank">
-                            <h5 class="card-title">E-sports</h5>
-                        </a>
+
+                        <h5 class="card-title">E-sports</h5>
+
                         <p class="card-text">Entenda o que é eSport e saiba como ele virou uma febre mundial!</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>
@@ -126,9 +126,9 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-                        <a href="#" target="_blank">
-                            <h5 class="card-title">Viagens</h5>
-                        </a>
+
+                        <h5 class="card-title">Viagens</h5>
+
                         <p class="card-text">Quer Viajar? Planejando o roteiro de uma viagem de volta ao mundo.</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>
@@ -198,9 +198,9 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-                        <a href="#" target="_blank">
-                            <h5 class="card-title">Música</h5>
-                        </a>
+
+                        <h5 class="card-title">Música</h5>
+
                         <p class="card-text">Viagem ao som de uma boa música e sinta os seus benéficios!!!</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>
@@ -224,9 +224,9 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-                        <a href="#" target="_blank">
-                            <h5 class="card-title">Cultura Brasileira</h5>
-                        </a>
+
+                        <h5 class="card-title">Cultura Brasileira</h5>
+
                         <p class="card-text">O que acontece na cultura Brasileira, da onde veio suas histórias?</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>

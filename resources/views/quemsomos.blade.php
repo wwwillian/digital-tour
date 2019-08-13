@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container mt-5 img-fundo1 d-flex align-items-baseline justify-content-center" style="background-image: url('img/viagem1.jpg')">
+<div class="container mt-5 img-fundo1 d-flex align-items-baseline justify-content-center" style="background-image: url('img/india.jpg')">
     <h1 class="mt-2 fundo-text">Quem Somos</h1>
 </div>
 <div class="container mt-5 quemsomos">

@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="fundo-contato mt-5">
+                <div class="fundo-contato">
                     <span class="SpanFaqContatoCadastro">Contato</span>
                 </div>
                 <form action="{{ route('postContact') }}" name="formcontato" id="contato" method="post">

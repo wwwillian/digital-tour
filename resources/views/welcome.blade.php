@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <div id="video-carousel-example2" class="carousel slide carousel-fade margin-top" data-ride="carousel">
+            <div id="video-carousel-example2" class="carousel slide carousel-fade margin-top margin-bottom" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
                     <li data-target="#video-carousel-example2" data-slide-to="1"></li>
@@ -78,7 +78,7 @@
                 <table>
                     <tr>
                         <p class="mb-0"><span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span>
-                            <td><img class="fotoperf mb-0" src="/img/perfil11.png" alt="img perfil" width="120"></td> <span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span>
+                            <td><img class="fotoperf mb-0" src="/img/cabelocurto.jpg" alt="img perfil" width="120"></td> <span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span>
                         </p>
                         <span>
                             <em>Viagem para </em><strong>Disney</strong>
@@ -97,7 +97,7 @@
                 <table>
                     <tr>
                         <p class="mb-0"><span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span>
-                            <td><img class="fotoperf mb-0" src="/img/perfil02.png" alt="img perfil" width="120"></td> <span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span>
+                            <td><img class="fotoperf mb-0" src="/img/oculos.jpg" alt="img perfil" width="120"></td> <span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span>
                         </p>
                         <span>
                             <em>Viagem para </em><strong>Canadá</strong>
@@ -116,7 +116,7 @@
                 <table>
                     <tr>
                         <p class="mb-0"><span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span>
-                            <td><img class="fotoperf mb-0" src="/img/oculos.jpg" alt="img perfil" width="120"></td> <span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span>
+                            <td><img class="fotoperf mb-0" src="/img/cabelo.jpg" alt="img perfil" width="120"></td> <span class="glyphicon glyphicon-star-empt" aria-hedden="true"></span>
                         </p>
                         <span><em>Viagem para </em><strong>Africa do Sul</strong></span>
                         <hr>
