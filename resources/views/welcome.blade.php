@@ -1,9 +1,10 @@
 @extends('layouts.desconectado')
 
 @section('content')
+
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-12">
             <div id="video-carousel-example2" class="carousel slide carousel-fade margin-top margin-bottom" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
@@ -28,7 +29,7 @@
                     <div class="carousel-item">
                         <div class="view">
                             <video class="video-fluid cvideos" width="100%" autoplay loop muted>
-                                <source src="/videos/forest.mp4" type="video/mp4" />
+                                <source src="/videos/barco.mp4" type="video/mp4" />
                             </video>
                             <div class="mask rgba-purple-slight"></div>
                         </div>

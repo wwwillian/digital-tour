@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="tudo">
         <h3>{{ users.length }} online.</h3>
 
         <div class="users scroll">
@@ -27,6 +27,9 @@
 </script>
 
 <style>
+    .tudo{
+        margin-top: 100px;
+    }
     .users{
         float: left;
         width: 100%;

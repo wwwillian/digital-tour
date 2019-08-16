@@ -19,15 +19,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
     <script>
-        window.laravel = {
-            !!json_encode([
-                'csrf' => csrf_token(),
-                'pusher' => [
-                    'key' => config('broadcasting.connections.pusher.key'),
-                    'cluster' => config('broadcasting.connections.pusher.options.cluster'),
-                ]
-            ]) !!
-        }
+        window.laravel = {!! json_encode([
+            'csrf' => csrf_token(),
+            'pusher' =>[
+                   'key' => config('broadcasting.connections.pusher.key'),
+                   'cluster' => config('broadcasting.connections.pusher.options.cluster'),
+            ]
+        ]) !!}
     </script>
 
 </head>
@@ -37,7 +35,7 @@
         <header>
             <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
 
-                <a href="/"><img src="../img/l.png" width="120"></a>
+                <a href="/"><img src="../img/l1.png" width="120"></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

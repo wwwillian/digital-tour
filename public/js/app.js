@@ -1716,6 +1716,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -6393,7 +6398,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.float-left{float:left;}\ntextarea{\n    width: 700px;\n    border-radius: 5px;\n    border: 1px solid #CCCCCC;\n    padding: 6px;\n    max-width: 700px;\n    float: left;\n}\nbutton{\n    margin: 12px 6px;\n}\n", ""]);
+exports.push([module.i, "\n.float-left{float:left;}\ntextarea{\n    width: 100%;\n    border-radius: 5px;\n    border: 1px solid #CCCCCC;\n    padding: 6px;\n    max-width: 100%;\n    float: left;\n}\nbutton{\n    margin: 12px 6px;\n}\n", ""]);
 
 // exports
 
@@ -6412,7 +6417,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.chat-message[data-v-ca0fb00a]{\n    float: left;\n    width: 100%;\n    margin: 10px 0;\n}\n.chat-info[data-v-ca0fb00a]{\n    float: left;\n    width: 100%;\n}\n.chat-info span[data-v-ca0fb00a]{\n    float: right;\n}\n.chat-img[data-v-ca0fb00a]{\n    float: left;\n}\n.chat-img img[data-v-ca0fb00a]{\n    max-width: 60px;\n    border-radius: 100%;\n    border: 1px solid #FFFFFF;\n}\n.message[data-v-ca0fb00a]{\n    background: #FFFFFF;\n    /*float: left;*/\n    padding: 12px 10px;\n    border-radius: 4px;\n    color: #221d1d;\n    position: relative;\n    margin: 32px 9px 0 72px;\n}\n.message.owner[data-v-ca0fb00a]{\n    background: #dcf8c6;\n}\n.message[data-v-ca0fb00a]:before{\n    position: absolute;\n    right: 100%;\n    top: 15px;\n    border: solid transparent;\n    border-right-color: #FFFFFF;\n    content: '';\n    height: 0;\n    width: 0;\n    pointer-events: none;\n    border-width: 6px;\n    margin-top: -8px;\n}\n.message.owner[data-v-ca0fb00a]:before{\n    border-right-color: #dcf8c6;\n}\n", ""]);
+exports.push([module.i, "\n.chat-message[data-v-ca0fb00a]{\n    float: left;\n    width: 100%;\n    margin: 10px 0;\n}\n.chat-info[data-v-ca0fb00a]{\n    float: left;\n    width: 100%;\n}\n.chat-img[data-v-ca0fb00a]{\n    float: left;\n}\n.chat-img img[data-v-ca0fb00a]{\n    max-width: 60px;\n    border-radius: 100%;\n    border: 1px solid #FFFFFF;\n}\n.message[data-v-ca0fb00a]{\n    background: #FFFFFF;\n    /*float: left;*/\n    padding: 12px 10px;\n    border-radius: 4px;\n    color: #221d1d;\n    position: relative;\n    margin: 32px 9px 0 72px;\n}\n.message.owner[data-v-ca0fb00a]{\n    background: #dcf8c6;\n}\n.message[data-v-ca0fb00a]:before{\n    position: absolute;\n    right: 100%;\n    top: 15px;\n    border: solid transparent;\n    border-right-color: #FFFFFF;\n    content: '';\n    height: 0;\n    width: 0;\n    pointer-events: none;\n    border-width: 6px;\n    margin-top: -8px;\n}\n.message.owner[data-v-ca0fb00a]:before{\n    border-right-color: #dcf8c6;\n}\n", ""]);
 
 // exports
 
@@ -6431,7 +6436,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.messages[data-v-708f0ef0]{\n    margin-top: 73px;\n    height: 629px;\n    max-height: 629px;\n    overflow-x: hidden;\n    overflow-y: auto;\n}\n", ""]);
+exports.push([module.i, "\n.messages[data-v-708f0ef0]{\n    margin-top: 100px;\n    height: 500px;\n    max-height: 620px;\n    overflow-x: hidden;\n    overflow-y: auto;\n    margin-bottom: 40px;\n}\n", ""]);
 
 // exports
 
@@ -6450,7 +6455,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.users{\n    float: left;\n    width: 100%;\n    overflow-y: auto;\n    overflow-x: hidden;\n    height: 629px;\n    max-height: 629px;\n}\n.user{\n    float: left;\n    width: 100%;\n    margin: 10px 0;\n}\n.user-img{\n    float: left;\n}\n.user-img img{\n    max-width: 40px;\n    border: 1px solid #FFFFFF;\n    border-radius: 100%;\n}\n.user strong{\n    float: left;\n    margin: 9px 4px;\n}\n", ""]);
+exports.push([module.i, "\n.tudo{\n    margin-top: 100px;\n}\n.users{\n    float: left;\n    width: 100%;\n    overflow-y: auto;\n    overflow-x: hidden;\n    height: 629px;\n    max-height: 629px;\n}\n.user{\n    float: left;\n    width: 100%;\n    margin: 10px 0;\n}\n.user-img{\n    float: left;\n}\n.user-img img{\n    max-width: 40px;\n    border: 1px solid #FFFFFF;\n    border-radius: 100%;\n}\n.user strong{\n    float: left;\n    margin: 9px 4px;\n}\n", ""]);
 
 // exports
 
@@ -48531,49 +48536,55 @@ var render = function() {
     [
       _c("messages"),
       _vm._v(" "),
-      _c("textarea", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.body,
-            expression: "body"
-          }
-        ],
-        attrs: { placeholder: "Sua Mensagem:" },
-        domProps: { value: _vm.body },
-        on: {
-          keydown: _vm.keydownMessage,
-          input: function($event) {
-            if ($event.target.composing) {
-              return
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-10" }, [
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.body,
+                expression: "body"
+              }
+            ],
+            attrs: { placeholder: "Sua Mensagem:" },
+            domProps: { value: _vm.body },
+            on: {
+              keydown: _vm.keydownMessage,
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.body = $event.target.value
+              }
             }
-            _vm.body = $event.target.value
-          }
-        }
-      }),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-success",
-          attrs: { disabled: _vm.loading },
-          on: {
-            click: function($event) {
-              $event.preventDefault()
-              return _vm.sendMessage($event)
-            }
-          }
-        },
-        [
-          _c("pulse-loader", {
-            staticClass: "float-left",
-            attrs: { loading: _vm.loading, color: "#FFF", size: "8px" }
-          }),
-          _vm._v("\n        Enviar\n    ")
-        ],
-        1
-      )
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-2" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-success",
+              attrs: { disabled: _vm.loading },
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.sendMessage($event)
+                }
+              }
+            },
+            [
+              _c("pulse-loader", {
+                staticClass: "float-left",
+                attrs: { loading: _vm.loading, color: "#FFF", size: "8px" }
+              }),
+              _vm._v("\n        Enviar\n    ")
+            ],
+            1
+          )
+        ])
+      ])
     ],
     1
   )
@@ -48604,7 +48615,7 @@ var render = function() {
     _c("div", { staticClass: "chat-info" }, [
       _c("b", [_vm._v(_vm._s(_vm.message.user.name))]),
       _vm._v(" "),
-      _c("span", [_vm._v(_vm._s(_vm.message.created_at))])
+      _c("span", [_vm._v(" | " + _vm._s(_vm.message.created_at))])
     ]),
     _vm._v(" "),
     _vm.message.user.image
@@ -48684,7 +48695,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "tudo" }, [
     _c("h3", [_vm._v(_vm._s(_vm.users.length) + " online.")]),
     _vm._v(" "),
     _c(
@@ -49634,7 +49645,7 @@ var formatComponentName = (noop);
     if (config.warnHandler) {
       config.warnHandler.call(null, msg, vm, trace);
     } else if (hasConsole && (!config.silent)) {
-      // console.error(("[Vue warn]: " + msg + trace));
+      console.error(("[Vue warn]: " + msg + trace));
     }
   };
 
@@ -62630,8 +62641,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/willian/docker/digital-tour/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/willian/docker/digital-tour/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/digital-tour2/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/digital-tour2/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

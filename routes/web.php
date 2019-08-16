@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/legal', function () {
+    return view('legal');
+});
 
 Route::group(['middleware'=>'auth'], function (){
     Route::get('chat', 'Chat\ChatController@mostrarChat')->name('chat');

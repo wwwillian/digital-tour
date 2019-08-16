@@ -62,15 +62,9 @@ class UserController extends Controller
                     ->route('profile')
                     ->with('erro', 'Falha ao fazer o upload da imagem fundo');
         }
-
-
-
         $user->update($data);
-
-
-
         return redirect()
-            ->route('profile')
+            ->route('perfil')
             ->with('success', 'Atualizado com Sucesso!');
     }
 }

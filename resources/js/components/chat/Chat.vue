@@ -1,9 +1,12 @@
 <template>
     <div>
         <messages></messages>
-
+    <div class="row">
+    <div class="col-10">
         <textarea @keydown="keydownMessage" v-model="body" placeholder="Sua Mensagem:"></textarea>
-
+    </div>
+    
+    <div class="col-2">
         <button :disabled="loading" @click.prevent="sendMessage" class="btn btn-success">
             <pulse-loader
                 :loading="loading"
@@ -13,6 +16,8 @@
             </pulse-loader>
             Enviar
         </button>
+        </div>
+        </div>
     </div>
 </template>
 
@@ -55,11 +60,11 @@
 <style>
     .float-left{float:left;}
     textarea{
-        width: 700px;
+        width: 100%;
         border-radius: 5px;
         border: 1px solid #CCCCCC;
         padding: 6px;
-        max-width: 700px;
+        max-width: 100%;
         float: left;
     }
     button{

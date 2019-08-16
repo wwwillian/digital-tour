@@ -5,33 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>{{ config('app.name', 'Digital-tour') }}</title>
     <link rel="icon" href="{{ asset('img/logonovo3.png')}}">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link rel="canonical" href="https://mdbootstrap.com/plugins/jquery/carousel-3d/">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
 
     <script>
-        window.laravel = {
-            !!json_encode([
-                'csrf' => csrf_token(),
-                'pusher' => [
-                    'key' => config('broadcasting.connections.pusher.key'),
-                    'cluster' => config('broadcasting.connections.pusher.options.cluster'),
-                ]
-            ]) !!
-        }
+        window.laravel = {!! json_encode([
+            'csrf' => csrf_token(),
+            'pusher' =>[
+                   'key' => config('broadcasting.connections.pusher.key'),
+                   'cluster' => config('broadcasting.connections.pusher.options.cluster'),
+            ]
+        ]) !!}
     </script>
 
 <body>
     <div class="conteudo">
         <header>
             <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
-                <a href="/"><img src="../img/l.png" width="120"></a>
+                <a href="/"><img src="../img/l1.png" width="120"></a>
                 <!-- <span href="/">Digital Tour</span> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -111,6 +108,8 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/JohnBlazek/codepen-resources/master/3d-carousel/js/libs.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main1.js')}}"></script>
 </body>

@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Digital-tour') }}</title>
-    <link rel="icon" href="{{ asset('img/logorev1.png')}}">
+    <link rel="icon" href="{{ asset('img/logonovo3.png')}}">
 
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -32,8 +32,7 @@
     <div id="app" class="conteudo">
         <header>
             <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
-                <a href="/"><img src="../img/logorev1.png" width="60"></a>
-                <span href="/">Digital Tour</span>
+                <a href="/"><img src="../img/l1.png" width="120"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

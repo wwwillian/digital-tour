@@ -53,6 +53,12 @@ section .esc {
 .margin-bottom {
     margin-bottom: 100px;
 }
+h5.card-title{
+    font-size: 2em;
+}
+p.card-text{
+    font-size: 1.2em;
+}
 
 .awesome {
     display: flex;
@@ -850,7 +856,18 @@ a:link {
         padding-left: 0;
         padding-right: 0;
     }
-
+    div.caixa2.container{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    div.fundo-faq{
+        width: 100%;
+    }
+    #accordion{
+        width: 100%;
+    }
     div.card.card-cascade.wider {
         margin-bottom: 2em;
     }
@@ -896,6 +913,10 @@ a:link {
     .btn-register {
         margin-left: 0 !important;
     }
+    .resp{    
+        padding-right: 0; 
+        padding-left: 0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -903,9 +924,7 @@ a:link {
         height: 350px;
         width: 720px;
     }
-    #accordion {
-        width: 700px;
-    }
+
     .fundo-faq {
         width: 700px;
     }
@@ -968,6 +987,22 @@ a:link {
     }
     .rowamizade {
         display: contents;
+    }
+    div.caixa2.container{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    div.fundo-faq{
+        width: 100%;
+    }
+    #accordion{
+        width: 100%;
+    }
+    .resp{    
+        padding-right: 0; 
+        padding-left: 0;
     }
 }
 
@@ -1059,6 +1094,22 @@ a:link {
     }
     .rowamizade {
         display: contents;
+    }
+    div.caixa2.container{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    div.fundo-faq{
+        width: 100%;
+    }
+    #accordion{
+        width: 100%;
+    }
+    .resp{    
+        padding-right: 0; 
+        padding-left: 0;
     }
 }
 
@@ -1152,6 +1203,22 @@ a:link {
     }
     .rowamizade {
         display: contents;
+    }
+    div.caixa2.container{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    div.fundo-faq{
+        width: 100%;
+    }
+    #accordion{
+        width: 100%;
+    }
+    .resp{    
+        padding-right: 0; 
+        padding-left: 0;
     }
 }
 
@@ -1280,6 +1347,22 @@ a:link {
     .rowamizade {
         display: contents;
     }
+    div.caixa2.container{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    div.fundo-faq{
+        width: 100%;
+    }
+    #accordion{
+        width: 100%;
+    }
+    .resp{    
+        padding-right: 0; 
+        padding-left: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1322,9 +1405,6 @@ a:link {
         border: none;
         margin-top: 0px;
         padding: 13px 0px 0px 0px;
-    }
-    .usuarios {
-        margin-top: 80px;
     }
     /* Comentários na tela Welcome */
     .titulo001,
@@ -1460,7 +1540,7 @@ a:link {
 /*fim amigos*/
 main.main {
     padding-bottom: 100px;
-    margin-top: 120px;
+    /* margin-top: 120px; */
 }
 
 footer.footer {
@@ -1706,3 +1786,4 @@ h4 {
     margin-top: 0;
     margin-bottom: 0;
 }
+
