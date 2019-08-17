@@ -1,11 +1,11 @@
 @extends('layouts.conectado')
 
 @section('content')
-<div class="container">
+<div class="container mt-5">
     <div class="mt-5">
         <div class="col-lg-12 col-md-12 col-xl-12 mt-5">
             <div class="row">
-                <div class="d-flex justify-content-center h-100">
+                <div class="d-flex justify-content-center h-100 mt-5">
                     <form class="searchbar" method="Post" action="/pesquisar-amigos">
                         @csrf
                         <input class="search_input" type="text" id="pesquisar" name="pesquisa" placeholder="Search...">

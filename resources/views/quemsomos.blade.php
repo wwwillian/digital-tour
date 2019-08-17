@@ -1,13 +1,13 @@
 @extends('layouts.desconectado')
 
 @section('content')
-
+<div class="margin-top"></div>
 <div class="container mt-5 img-fundo1 d-flex align-items-baseline justify-content-center" style="background-image: url('img/india.jpg')">
     <h1 class="mt-2 fundo-text">Quem Somos</h1>
 </div>
 <div class="container mt-5 quemsomos">
     <div class="row">
-        <div class="quemsomos">
+        <div class="quemsomos ">
             <p>Somos um grupo de amigos, <strong>apaixonados por viajar e conhecer lugares e pessoas novas</strong>.
                 Amamos a programação, tecnologia e inovar. Nosso propósito é ajudar as pessoas a terem
                 <strong>experiências únicas e momentos inesquecíveis</strong>. <strong>Queremos ajudar você a realizar o

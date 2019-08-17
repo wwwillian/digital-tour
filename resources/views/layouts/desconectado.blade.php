@@ -28,7 +28,8 @@
     <div class="conteudo">
         <header>
             <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg  scrolling-navbar navbar-light double-nav navbar-transparente container-fluid">
-                <a href="/"><img src="../img/l1.png" width="120"></a>
+                <a href="/"><img src="../img/logonovo3.png" width="70"></a>
+                <a href="/"><img src="../img/logotext1.png" width="120"></a>
                 <!-- <span href="/">Digital Tour</span> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

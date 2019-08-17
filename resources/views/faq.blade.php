@@ -3,7 +3,7 @@
 @section('content')
 <div class="caixa2 container">
     <div id="accordion">
-        <div class="fundo-faq">
+        <div class="fundo-faq margin-top">
             <span class="SpanFaqContatoCadastro">FAQ</span>
         </div>
         <div class="card">

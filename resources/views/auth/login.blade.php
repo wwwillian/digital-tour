@@ -3,8 +3,8 @@
 @section('content')
 
 <div class="container">
-    <section class="pagina-contato login1 margin-top mt-5 pt-3">
-        <div class="fundo-login">
+    <section class="pagina-contato login1 mt-5 pt-3">
+        <div class="fundo-login margin-top">
             <span class="SpanFaqContatoCadastro">Login</span>
         </div>
         <form method="POST" action="{{ route('login') }}" id="contato" class="login">

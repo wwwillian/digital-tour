@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center profil">
         <div class="col-md-8 resp">
-            <div class="card">
+            <div class="card margin-top">
                 <div class="card-header">
                     <span>Editar Perfil</span>
                 </div>
@@ -97,7 +97,7 @@
                             <label for="maritalstatus" class="col-3 mb-4 col-form-label text-md-right">Status Civil</label>
                             <div class="col-9 mb-4">
                                 <select name="maritalstatus">
-                                    <option value="">Selecione</option>
+                                    <option>Selecione</option>
                                     <option value="Casado">Casado</option>
                                     <option value="Enrolado">Enrolado</option>
                                     <option value="Namorando">Namorando</option>

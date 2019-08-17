@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <section class="my-5">
-        <div class="card-header border-0 font-weight-bold">Postagem</div>
+        <div class="card-header border-0 font-weight-bold margin-top">Postagem</div>
         <div class="d-md-flex flex-md-fill mt-4 px-1">
             <div class="col-sm-12 col-mg-2 col-lg-2">
                 <div class="d-flex justify-content-center mr-md-5">

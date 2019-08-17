@@ -26,11 +26,9 @@ html {
 header nav.navbar-transparente {
     position: fixed !important;
     top: 0;
-    background: #16222a;
-    background: -webkit-linear-gradient(to top, #3a6073, #16222a);
-    background: linear-gradient(to top, #f1f0f0 0%, #4c8762 90%);
-    /* box-shadow: 1px 1px 5px black; */
-    height: 80px;
+    background: #0f2f4b;
+    box-shadow: 1px 1px 5px black;
+    height: 70px;
 }
 
 .navbar span {
@@ -89,6 +87,7 @@ p.card-text{
 }
 
 .img-perfil {
+    margin-top: 56px;
     margin-left: 3.5em;
     position: relative;
 }
@@ -779,8 +778,12 @@ ul {
 /* ++++++++++++++++++Sobre Nós+++++++++++++++++++ */
 
 .navbar-light .navbar-nav .nav-link {
-    color: gray;
-    font-weight: bold;
+    color: #f1f0f0 !important;
+    background-color: #0f2f4b;
+}
+
+.margin-top{
+    margin-top: 100px;
 }
 
 /* ***********Perfil do Usuário*********** */
@@ -825,6 +828,9 @@ a:link {
 }
 
 @media (max-width: 986px) {
+    .navbar{
+        padding-top: 0;
+    }
     .ul-header {
         display: none;
     }
@@ -840,9 +846,7 @@ a:link {
     }
     .navbar-light .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-    .navbar {
-        padding: 10px 0 0 !important;
+        border-color: #fff !important;
     }
     .imgcar {
         display: none;

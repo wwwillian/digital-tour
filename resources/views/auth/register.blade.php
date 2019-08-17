@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <section class="pagina-contato margin-top mt-5 pt-3">
-        <div class="fundo-contato">
+        <div class="fundo-contato margin-top">
             <span class="SpanFaqContatoCadastro">Cadastro</span>
         </div>
         <form method="POST" action="{{ route('register') }}" id="contato">

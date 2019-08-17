@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="marginartigo">
-        <div class="card mb-3">
+        <div class="card mb-3 margin-top">
             <div class="row no-gutters">
                 <div class="col-md-4 col-lg-4">
                     <img src="../img/gastro.jpg" class="card-img" alt="Gastronomia">
