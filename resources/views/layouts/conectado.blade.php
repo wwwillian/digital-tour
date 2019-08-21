@@ -122,7 +122,7 @@
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/main1.js')}}"></script>
-    <script src="{{asset('unisharp/laravel-ckeditor/ckeditor.js')}}"></script>
+    <script src="{{ asset('unisharp/laravel-ckeditor/ckeditor.js')}}"></script>
     <script>
         CKEDITOR.replace('description');
     </script>

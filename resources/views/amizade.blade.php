@@ -15,7 +15,7 @@
             </div>
             <div class="row rowamizade">
                 @foreach($friends as $friend)
-                <div class="col-4 mt-5">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-5">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="view overlay flip-card-front">

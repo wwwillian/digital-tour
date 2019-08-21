@@ -1,6 +1,7 @@
 @extends('layouts.conectado')
 @section('content')
-<div class="conteiner pt-5">
+
+<div class="mt-5 pt-5">
         <app-root></app-root>
 </div>
 <script type="text/javascript" src="{{ asset('js/runtime.js') }}"></script>

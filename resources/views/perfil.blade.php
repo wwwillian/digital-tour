@@ -171,14 +171,18 @@
                                         <button type="submit" class="submit-form mt-4 mr-3">Publicar</button>
                                     </form>
                                 </div>
-                                <div class="conteudofotos  tz-gallery pt-5 pb-5 pl-5 pr-3 gallerydiv">
-                                    @foreach($posts as $key => $value)
-                                    @if($value->photo != null)
-                                    <a class="lightbox mr-4 mb-4" href="{{url('storage/posts/'.$value->photo)}}">
-                                        <img src="{{url('storage/posts/'.$value->photo)}}" alt="Park" class="mr-4 mb-4">
-                                    </a>
-                                    @endif
-                                    @endforeach
+                                <div class="conteudofoto tz-gallery pt-5 pb-5 pl-5 pr-5 gallerydiv">
+                                    <div class="row">
+                                        @foreach($posts as $key => $value)
+                                        @if($value->photo != null)
+                                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                            <a class="lightbox mr-4 mb-4" href="{{url('storage/posts/'.$value->photo)}}">
+                                                <img src="{{url('storage/posts/'.$value->photo)}}" alt="Park" class="mr-4 mb-4" width="100%">
+                                            </a>
+                                        </div>
+                                        @endif
+                                        @endforeach
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -191,11 +195,11 @@
                                         </div>
                                     </div>
                                     <div class="card-block margin-rigth">
-                                        <div class="amigos-css p-5">
+                                        <div class="amigos-css">
                                             <div class="row">
                                                 @if($friends)
                                                 @foreach($friends as $friend)
-                                                <div class="col-4">
+                                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                                     <div class="card card-personal mb-md-0 mb-4">
                                                         <div class="view overlay">
                                                             @if($friend->image != null)

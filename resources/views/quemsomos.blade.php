@@ -33,7 +33,6 @@
                 <div class="mt-5 mb-5 divvalores">
                     <h2 class="h6 text-center">Valores:</h2>
                     <ul class="ul-valores">
-
                         <li><i class="fas fa-thumbs-up"></i> Satisfação do cliente.</li>
                         <li><i class="fas fa-hands-helping"></i> Valorização e respeito às pessoas.</li>
                         <li><i class="fas fa-hand-peace"></i> Responsabilidade social.</li>

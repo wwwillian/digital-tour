@@ -23,4 +23,9 @@ $(document).ready(function() {
             .toggle("d-none");
     });
 });
-// inicio
+
+$(document).ready(function() {
+    baguetteBox.run(".tz-gallery", {
+        // Custom options
+    });
+});

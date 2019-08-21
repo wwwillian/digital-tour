@@ -10,9 +10,7 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-
                         <h5 class="card-title">Gastronomia Brasileira</h5>
-
                         <p class="card-text">A culinária do Brasil é fruto de uma mistura de ingredientes europeus, indígenas e africanos. Muitos dos componentes das receitas e técnicas de preparo são de origem indígena, tendo sofrido modificações por parte dos portugueses e dos escravos oriundos da África. Esses faziam adaptações dos seus pratos típicos substituindo os ingredientes que faltassem por correspondentes locais.</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>
@@ -35,9 +33,7 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-
                         <h5 class="card-title">Arte</h5>
-
                         <p class="card-text">O homem diante dos diversos setores sociais é influenciado a seguir os caminhos da arte, pela necessidade de se adequar a cultura do seu habitat. Caminhos esses, que o leva ao conhecimento e ao aperfeiçoamento da ciência, em seu desenvolvimento geral. O homem precisa conhecer o meio artístico cultural e se desenvolver dentro dele.</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>
@@ -65,9 +61,7 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-
                         <h5 class="card-title">E-sports</h5>
-
                         <p class="card-text">As origens do esporte eletrônico estão, possivelmente, na Coreia do Sul e em alguns pontos da Ásia e Europa. Os jogos do gênero de estratégia em tempo real cresceram nesses locais, além de levarem ainda popularidade aos jogadores profissionais que surgiram na onda. Na Coreia do Sul, por exemplo, o eSport é uma modalidade competitiva reconhecida oficialmente desde o ano 2000.</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>
@@ -126,9 +120,7 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-
                         <h5 class="card-title">Viagens</h5>
-
                         <p class="card-text">Você quer viajar, ótimo. Mas para onde? Definir um itinerário é essencial, já que uma viagem de volta ao mundo não necessariamente significa viajar o mundo todo. Faça uma lista dos lugares que você deseja conhecer e defina o tempo disponível que pretende ficar em cada um deles. Nessa etapa, é importante buscar algumas informações básicas sobre os destinos escolhidos, como exigência de visto e o clima da região no período de sua visita.</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>
@@ -198,9 +190,7 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-
                         <h5 class="card-title">Música</h5>
-
                         <p class="card-text">O feito de cantar ou escutar uma canção pode desencadear efeitos emocionais numa pessoa. Tristeza, alegria, nostalgia, raiva, muitos são os sentimentos que veem aos ouvintes da música. Estes sentimentos, quando contidos em várias pessoas, podem gerar movimentos sociais. Como exemplo, os movimentos: punk, grunge, alternativo e emotivo (este, o mais popular no Brasil). Muitos movimentos buscavam, como meta, uma maior liberdade de expressão e uma melhor qualidade de vida na sociedade. </p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>
@@ -224,9 +214,7 @@
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <div class="card-body">
-
                         <h5 class="card-title">Cultura Brasileira</h5>
-
                         <p class="card-text">A diversidade cultural predominante no Brasil é consequência também da grande extensão territorial e das características geradas em cada região do país. O indivíduo branco, que participou da formação da cultura brasileira, fazia parte de vários grupos que chegaram ao país durante a época colonial.</p>
                     </div>
                     <button class="botao-artigo offset-md-10">Ver mais</button>

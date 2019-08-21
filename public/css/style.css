@@ -153,6 +153,10 @@ div#heading6.card-header {
     display: inline-block;
 }
 
+.amigos-css{
+    padding: 35px;
+}
+
 .tab-header {
     margin-top: 1em;
 }
@@ -989,9 +993,9 @@ a:link {
     .btn-register {
         margin-left: 0 !important;
     }
-    .rowamizade {
+    /* .rowamizade {
         display: contents;
-    }
+    } */
     div.caixa2.container{
         padding-right: 0 !important;
         padding-left: 0 !important;
@@ -1096,9 +1100,9 @@ a:link {
     .btn-register {
         margin-left: 0 !important;
     }
-    .rowamizade {
+    /* .rowamizade {
         display: contents;
-    }
+    } */
     div.caixa2.container{
         padding-right: 0 !important;
         padding-left: 0 !important;
@@ -1205,9 +1209,9 @@ a:link {
     .btn-register {
         margin-left: 0 !important;
     }
-    .rowamizade {
+    /* .rowamizade {
         display: contents;
-    }
+    } */
     div.caixa2.container{
         padding-right: 0 !important;
         padding-left: 0 !important;
@@ -1223,6 +1227,9 @@ a:link {
     .resp{    
         padding-right: 0; 
         padding-left: 0;
+    }
+    .amigos-css{
+        padding: 0;
     }
 }
 
@@ -1348,9 +1355,9 @@ a:link {
     .btn-register {
         margin-left: 0 !important;
     }
-    .rowamizade {
+    /* .rowamizade {
         display: contents;
-    }
+    } */
     div.caixa2.container{
         padding-right: 0 !important;
         padding-left: 0 !important;
@@ -1366,6 +1373,9 @@ a:link {
     .resp{    
         padding-right: 0; 
         padding-left: 0;
+    }
+    .amigos-css{
+        padding: 0px;
     }
 }
 
