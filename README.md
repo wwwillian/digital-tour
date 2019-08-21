@@ -24,12 +24,8 @@ b) rodar o comando
 $ php artisan migrate
 c) em caso de erro ver com americo para resolver o conflito do maria_db e mysql
 
-Qualquer duvida estarei aqui para auxilia-los
-
-------------------------------------------------------------------------------------------------------
 
 Configurar Vue.js no Laravel
-
 --------------------------------------------------------------------------------------------------
 1 entrar no site https://nodejs.org/en/download/ e baixar o node para seu pc
 
@@ -40,29 +36,23 @@ $ npm install
 
 4 ativar o vue
 $ npm run watch
--------------------------------------------------------------------------------------------------------------	
 
 Configurar Vuex
+-------------------------------------------------------------------------------------------------------------	
 
--------------------------------------------------------------------------------------------------------------
 1 no terminal parar o vue com ctrl + c
 
 2 instalar o vuex com comando
 $ npm i vuex --save
--------------------------------------------------------------------------------------------------------------
 
 Instalacao do Load de Mensagem
-
 -------------------------------------------------------------------------------------------------------------
 
 1 instalar o load mensagem so rodar o comando
 
 $ npm install vue-spinner
 
--------------------------------------------------------------------------------------------------------------
-
 Implementando o RealTime
-
 -------------------------------------------------------------------------------------------------------------
 
 1 entrar em conf app.php verificar se em * Application Service Providers essa linha esta descomentada
